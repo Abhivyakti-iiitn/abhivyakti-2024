@@ -1,0 +1,79 @@
+.EventCard{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 5.73vw;
+}
+
+.EventCard:hover {
+    opacity: 1;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.EventCard:nth-child(2n) {
+    margin-left: 4.43vw;
+    transform: translate3d(0,9.11vw,0);
+}
+
+.hiddenCard {
+    opacity: 0;
+    transform: translateY(90px) scale(0.9);
+    transition: all 0.5s;
+}
+
+.showCard {
+    opacity: 0.65;
+    transform: translateY(0px) scale(1);
+}
+
+.eventContainer {
+    height: 100%;
+    padding: 1.5rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event__img-container {
+    overflow: hidden;
+    width: 35.16vw;
+    height: 38.49vw;
+}
+
+.event__img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+}
+
+.event__img:hover {
+    transform: scale(1.1);
+}
+
+.event__content {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    width: 35.16vw;
+}
+
+.event__name {
+    margin-bottom: 0;
+    font-size: 2.5vw;
+    line-height: 1.51vw;
+    margin-top: 1.93vw;
+    font-weight: 50;
+    text-transform: uppercase;
+}
+
+.event__desc {
+    margin: 0;
+    font-size: 1.5vw;
+    line-height: .99vw;
+    margin-top: 0.57vw;
+    font-weight: 100;
+}

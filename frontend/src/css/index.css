@@ -1,4 +1,45 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-bottom: 7.84vw;
+}
+
+.EventCards {
+    display: block;
+    width: auto;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: auto;
+    padding-inline-start: 40px;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.Events__heading {
+    text-transform: uppercase;
+    background: linear-gradient(#f9daa8, #bc615e);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: auto;
+    font-family: "Carta Marina W00 Regular";
+}
+
+@media (min-width: 768px) {
+    .EventCards {
+        max-width: 83.61vw;
+    }
 }
