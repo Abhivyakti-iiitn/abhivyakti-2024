@@ -1,8 +1,9 @@
+import FirefliesAnimation from "./components/FirefliesAnimation"
 import "./css/index.css"
 function App() {
   return (
     <div className="App">
-     Start Here!
+     <FirefliesAnimation />
     </div>
   );
 }
