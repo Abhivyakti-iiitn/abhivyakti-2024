@@ -4,7 +4,7 @@ import EventCard from './Components/EventCard';
 
 const events = [{name:'a', desc:"event a"},{ name:'b', desc: 'event b'},{ name:'c', desc: 'event c'},{ name:'d', desc:'event d'}, {name:'e f', desc:'event e f'}];
 
-function animate() {
+function animateEventCards() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry);
@@ -20,7 +20,7 @@ function animate() {
 
 function App() {
 
-  setTimeout(animate, 0);
+  setTimeout(animateEventCards, 0);
 
   return (
     <div className="App">
