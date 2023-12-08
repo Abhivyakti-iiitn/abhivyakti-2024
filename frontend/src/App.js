@@ -1,10 +1,8 @@
-// import "./css/index.css";
-import "./index.css";
+import "./css/index.css";
 import FirefliesAnimation from "./Components/FirefliesAnimation"
-import EventCards from './Components/EventCards';
-import { useNavigate } from "react-router-dom"
+import EventCard from './Components/EventCard';
 
-const events = [{name:'a', desc:"event a"},{ name:'b', desc: 'event b'},{ name:'c', desc: 'event c'},{ name:'d', desc:'event d'}, {name:'e f', desc:'event e f'}, {name:'Event', desc:'event Event'}];
+const events = [{name:'a', desc:"event a"},{ name:'b', desc: 'event b'},{ name:'c', desc: 'event c'},{ name:'d', desc:'event d'}, {name:'e f', desc:'event e f'}];
 
 function animate() {
   const observer = new IntersectionObserver((entries) => {
@@ -21,10 +19,6 @@ function animate() {
 }
 
 function App() {
-  // const navigate = useNavigate();
-  // function rerouteToEvent(id) {
-  //   navigate(`/events/${id}`);
-  // }
 
   setTimeout(animate, 0);
 
@@ -35,9 +29,10 @@ function App() {
       <div className="EventCards">
         {
           events.map((event) =>
-            <EventCards imgSrc = {`./assets/${event.name.replace(" ", "-")}.jpg`} name={event.name.replace(" ", "-")} desc={event.desc} key={event.name.replace(" ", "-")} />
+            <EventCard exploreAllEvents={false} imgSrc = {`./assets/${event.name.replace(" ", "-")}.jpg`} name={event.name.replace(" ", "-")} desc={event.desc} key={event.name.replace(" ", "-")} />
           )
         }
+        <EventCard exploreAllEvents={true} />
       </div>
     </div>
   );
