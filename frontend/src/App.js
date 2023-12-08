@@ -1,3 +1,4 @@
+import FirefliesAnimation from "./components/FirefliesAnimation"
 import "./css/index.css";
 import EventCards from './EventCards';
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <FirefliesAnimation />
       <h1 className="Events__heading">Events</h1>
       <div className="EventCards">
         {
