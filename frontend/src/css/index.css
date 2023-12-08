@@ -29,6 +29,7 @@ body {
 }
 
 .Events__heading {
+    font-size: xxx-large;
     text-transform: uppercase;
     background: linear-gradient(#f9daa8, #bc615e);
     color: transparent;

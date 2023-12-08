@@ -1,6 +1,6 @@
 import React from 'react'
-import './EventCards.css'
-import imgSrc from './assets/EventImages/a.jpg'
+// import './EventCards.css'
+import imgSrc from '../assets/EventImages/a.jpg'
 
 function EventCards(props) {
     return (

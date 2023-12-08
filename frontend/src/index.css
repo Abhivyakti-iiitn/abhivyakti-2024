@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 7.84vw;
+}
+.App .EventCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-inline-start: 40px;
+  margin: auto;
+}
+
+.Events__heading {
+  font-size: xxx-large;
+  text-transform: uppercase;
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: auto;
+  font-family: "Carta Marina W00 Regular";
+}
+
+.EventCard {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 5.73vw;
+}
+.EventCard.hiddenCard {
+  opacity: 0;
+  transform: translateY(90px) scale(0.9);
+  transition: all 0.5s;
+}
+.EventCard.showCard {
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+}
+.EventCard .eventContainer {
+  height: 100%;
+  padding: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.EventCard .eventContainer .event__img-container {
+  overflow: hidden;
+  width: 35.16vw;
+  height: 38.49vw;
+}
+.EventCard .eventContainer .event__img-container .event__img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s;
+}
+.EventCard .eventContainer .event__img-container .event__img:hover {
+  transform: scale(1.1);
+}
+.EventCard .eventContainer .event__content {
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  width: 35.16vw;
+}
+.EventCard .eventContainer .event__content .event__name {
+  margin-bottom: 0;
+  font-size: 2.5vw;
+  line-height: 1.51vw;
+  margin-top: 1.93vw;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+.EventCard .eventContainer .event__content .event__desc {
+  margin: 0;
+  font-size: 1.5vw;
+  color: rgb(144, 144, 144);
+  line-height: 0.99vw;
+  margin-top: 0.57vw;
+  font-weight: 100;
+}
+.EventCard:nth-child(2n) {
+  margin-left: 4.43vw;
+}
+.EventCard:nth-child(2n).hiddenCard {
+  transform: translateY(calc(90px + 9.11vw)) scale(0.9);
+}
+.EventCard:nth-child(2n).showCard {
+  transform: translateY(9.11vw) scale(1);
+}/*# sourceMappingURL=index.css.map */

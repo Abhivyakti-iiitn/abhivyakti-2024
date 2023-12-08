@@ -1,7 +1,119 @@
+$card-margin: 5.73vw;
+$card-spacing: 4.43vw;
+$text-color-gradient-1: #f9daa8;
+$text-color-gradient-2: #bc615e;
+$font-family: "Carta Marina W00 Regular";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 7.84vw;
+
+  .EventCards {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    padding-inline-start: 40px;
+    margin: auto;
+  }
+}
+
 .Events__heading {
-    text-transform: uppercase;
-    background: linear-gradient(to right, #f9daa8, #bc615e);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  font-size: xxx-large;
+  text-transform: uppercase;
+  background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: auto;
+  font-family: $font-family;
+}
+
+// Single Card Component
+.EventCard {
+  display: flex; 
+  flex-direction: column;
+  width: auto;
+  margin-bottom: $card-margin;
+
+  &.hiddenCard {
+    opacity: 0;
+    transform: translateY(90px) scale(0.9);
+    transition: all 0.5s;
+  }
+
+  &.showCard {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+
+  .eventContainer {
+    height: 100%;
+    padding: 1.5rem;
+    width: fit-content;
+    margin: 0 auto;
+
+    .event__img-container {
+      overflow: hidden;
+      width: 35.16vw;
+      height: 38.49vw;
+
+      .event__img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        transition: all 0.8s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .event__content {
+      display: flex;
+      font-family: sans-serif;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #fff;
+      width: 35.16vw;
+
+      .event__name {
+        margin-bottom: 0;
+        font-size: 2.5vw;
+        line-height: 1.51vw;
+        margin-top: 1.93vw;
+        font-weight: 50;
+        text-transform: uppercase;
+      }
+
+      .event__desc {
+        margin: 0;
+        font-size: 1.5vw;
+        color: rgb(144, 144, 144);
+        line-height: 0.99vw;
+        margin-top: 0.57vw;
+        font-weight: 100;
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-left: $card-spacing;
+    &.hiddenCard {
+        transform: translateY(calc(90px + 9.11vw)) scale(0.9);
+    }
+    
+    &.showCard {
+        transform: translateY(9.11vw) scale(1);
+    }
+  }
 }

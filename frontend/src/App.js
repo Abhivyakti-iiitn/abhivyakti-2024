@@ -1,6 +1,8 @@
-import FirefliesAnimation from "./components/FirefliesAnimation"
-import "./css/index.css";
-import EventCards from './EventCards';
+// import "./css/index.css";
+import "./index.css";
+import FirefliesAnimation from "./Components/FirefliesAnimation"
+import EventCards from './Components/EventCards';
+import { useNavigate } from "react-router-dom"
 
 const events = [{name:'a', desc:"event a"},{ name:'b', desc: 'event b'},{ name:'c', desc: 'event c'},{ name:'d', desc:'event d'}, {name:'e f', desc:'event e f'}, {name:'Event', desc:'event Event'}];
 
@@ -19,6 +21,11 @@ function animate() {
 }
 
 function App() {
+  // const navigate = useNavigate();
+  // function rerouteToEvent(id) {
+  //   navigate(`/events/${id}`);
+  // }
+
   setTimeout(animate, 0);
 
   return (
@@ -27,8 +34,8 @@ function App() {
       <h1 className="Events__heading">Events</h1>
       <div className="EventCards">
         {
-          events.map((event) => 
-              <EventCards imgSrc = {`./assets/${event.name.replace(" ", "-")}.jpg`} name={event.name.replace(" ", "-")} desc={event.desc} key={event.name.replace(" ", "-")} />
+          events.map((event) =>
+            <EventCards imgSrc = {`./assets/${event.name.replace(" ", "-")}.jpg`} name={event.name.replace(" ", "-")} desc={event.desc} key={event.name.replace(" ", "-")} />
           )
         }
       </div>
