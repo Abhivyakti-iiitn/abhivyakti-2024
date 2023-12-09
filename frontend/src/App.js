@@ -1,9 +1,9 @@
 import "./css/index.css";
-// import FirefliesAnimation from "./components/FirefliesAnimation"
-// import EventCard from './components/EventCard';
-// import Header from "./components/Header";
-import Event from "./components/EventPage/Event";
-import MainPage from "./components/MainPage";
+// import FirefliesAnimation from "./Components/FirefliesAnimation"
+// import EventCard from './Components/EventCard';
+// import Header from "./Components/Header";
+import Event from "./Components/EventPage/Event";
+import MainPage from "./Components/MainPage";
 import { Routes, Route } from 'react-router-dom'
 
 
