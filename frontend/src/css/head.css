@@ -1,0 +1,46 @@
+*{
+    font-family: "Carta Marina W00 Regular";
+}
+.headinga {
+    background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font-size: 25px;
+    font-weight: 700;
+    width: 20%;
+    border: 2px solid #BC615E;
+    /* background-image: linear-gradient(to bottom, #F0C8A1, #BC615E); */
+    border-radius: inherit;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh; 
+    margin-bottom: 40vh;
+    padding: 10px;
+}
+.A{
+    height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+@media screen and (max-width: 700px) {
+    .headinga {
+        width: 30%; 
+        margin-bottom: 5vh; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .headinga {
+        width: 40%; 
+        margin-bottom: 5vh; 
+    }
+}
+@media screen and (max-width: 300px) {
+    .headinga {
+        width: 50%; 
+        margin-bottom: 5vh; 
+    }
+}
+  
