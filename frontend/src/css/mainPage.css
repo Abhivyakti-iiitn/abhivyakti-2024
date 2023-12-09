@@ -33,8 +33,9 @@
 .main__header .top .right ul {
   list-style: none;
   text-align: right;
-  line-height: 2rem;
-  font-size: 1rem;
+
+  line-height: 3rem;
+  font-size: 1.5rem;
 }
 .main__header .mid {
   width: 100%;
