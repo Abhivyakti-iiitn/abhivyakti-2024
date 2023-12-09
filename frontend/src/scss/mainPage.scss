@@ -1,0 +1,65 @@
+@import 'variables';
+
+.main__header {
+    background: url(../assets/MainPage/HeaderImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100% ;
+    height: 100vh;
+    // width: 100%;
+    flex-direction: column;
+
+    display: flex;
+
+    & .top {
+        display: flex;
+        width: 100%;
+        color: white;
+        justify-content: space-between;
+
+        .left ul{
+            display: flex;
+            gap: 15%;
+            font-size: 1.4rem;
+            margin-top: 50%;
+            text-decoration: none;
+            list-style: none;
+
+            div{
+                border: 2px solid white;
+                height: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .right{
+
+            margin-top: 5%;
+            margin-right: 5%;
+            ul{
+                list-style: none;
+                text-align: right;
+                 line-height: 2rem;
+                 font-size: 1rem;
+            }
+        }
+    }
+
+    & .mid{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        h1{
+            font-size: 4rem;
+             font-family: 'LLDOT','Dot', 'Times New Roman', Times, serif;
+             font-weight: bolder;
+             color: rgba(128, 128, 128, 0.46);
+        }
+        h3{
+            color: white;
+            font-size: xx-large;
+        }
+    }
+
+
+}
