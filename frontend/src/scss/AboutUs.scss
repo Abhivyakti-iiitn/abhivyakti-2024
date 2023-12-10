@@ -1,0 +1,60 @@
+.component.about-us {
+    width: 100%;
+    height: 100vh;
+    background-color: black; /* Black background */
+    color: white; /* Font color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+    .content {
+      width: 90em;
+      height:10vh;
+      text-align: left; /* Align text to the left */
+      margin: 2em;
+  
+      h2 {
+        // font-family: 'Verdana', sans-serif; /* Font family for h2 */
+        margin-bottom: 10px; /* Add margin below the title */
+      }
+  
+      p {
+        font-family: 'Verdana', sans-serif; /* Font family for paragraphs */
+      }
+    }
+  
+    .image {
+      img {
+        max-width: 100%; /* Reduce the size of the image */
+        min-width: 70%;
+        height: 100vh;
+        width: 70%; /* Make the image responsive */
+        margin-top: 20px; /* Add margin above the image */
+      }
+    }
+  
+    /* Media query for mobile view */
+    // @media screen and (max-width: 768px) {
+    //   .component.about-us{
+    //    flex-direction: column;
+    //    justify-content: center;
+    //    align-items: center;
+    //   }
+
+    //     .content {
+    //     text-align: center; /* Center align text in mobile view */
+    //   }
+  
+    //   .image {
+    //     img {
+    //       min-width: 50%;
+    //       margin-left: 3em; /* Adjust margin as needed */
+    //     }
+    //   }
+    // }
+  
+  
+  
+  

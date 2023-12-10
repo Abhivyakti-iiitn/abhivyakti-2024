@@ -1,0 +1,55 @@
+h2{
+  text-align: left;
+}
+
+.component.speaker-section {
+  width:min-content;
+  height:60vh;
+  background-color: black; /* Black background */
+  color: white; /* Font color */
+  padding: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  
+    .content {
+      max-width: 1200px; /* Adjust max-width as needed */
+      margin: 0 auto;
+  
+      h2 {
+        // font-family: 'Verdana', sans-serif; /* Font family for h2 */
+        margin-bottom: 20px;
+      }
+    }
+  
+    .speaker-info,
+    .speaker-images {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .speaker {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: 300px; /* Adjust max-width as needed */
+      margin-right: 20px; /* Adjust margin between speakers */
+      margin-bottom: 20px; /* Adjust margin below each speaker */
+      display: flex; /* Set display to flex */
+      flex-direction: row; /* Set direction to row */
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Add border-radius for rounded corners */
+        margin-right: 10px; /* Adjust margin between image and text */
+      }
+  
+      p {
+        font-family: 'Verdana', sans-serif; /* Font family for paragraphs */
+        margin-top: 10px; /* Adjust margin above speaker info */
+      }
+    }
+  }
+  
+  
+  
+  

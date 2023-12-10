@@ -3,6 +3,10 @@ import FirefliesAnimation from "./FirefliesAnimation"
 import EventCard from './EventCard';
 import Header from "./Header";
 import Event from "./EventPage/Event";
+import HorizontalScrolling from "./HorizontalScrolling";
+import AboutUs from "./AboutUs";
+import PastGlimpses from "./PastGlimpses";
+import Speakers from "./Speakers";
 
 const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
 
@@ -36,6 +40,10 @@ function MainPage() {
                     )
                 }
                 <EventCard exploreAllEvents={true} />
+                <HorizontalScrolling />
+                {/* <AboutUs /> */}
+                {/* <PastGlimpses /> */}
+                {/* <Speakers /> */}
             </div>
         </div>
     );
