@@ -1,6 +1,7 @@
 import "./css/index.css";
 import FirefliesAnimation from "./Components/FirefliesAnimation"
 import EventCard from './Components/EventCard';
+import HorizontalScrollingComponent from "./Components/HorizontalScrolling";
 
 const events = [{name:'a', desc:"event a"},{ name:'b', desc: 'event b'},{ name:'c', desc: 'event c'},{ name:'d', desc:'event d'}, {name:'e f', desc:'event e f'}];
 
@@ -33,6 +34,9 @@ function App() {
           )
         }
         <EventCard exploreAllEvents={true} />
+      </div>
+      <div className="AboutUs">
+        <HorizontalScrollingComponent />
       </div>
     </div>
   );
