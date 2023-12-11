@@ -21,8 +21,12 @@ h2{
         margin-bottom: 20px;
       }
     }
-  
-    .speaker-info,
+
+    .speaker-info{
+      display: flex;
+      flex-direction: row;
+    }
+
     .speaker-images {
       display: flex;
       flex-direction: row;
@@ -44,8 +48,17 @@ h2{
       }
   
       p {
-        font-family: 'Verdana', sans-serif; /* Font family for paragraphs */
+        // font-family: 'Verdana', sans-serif; /* Font family for paragraphs */
         margin-top: 10px; /* Adjust margin above speaker info */
+      }
+    }
+    .social-media-icons {
+      display: flex;
+      flex-direction: row; /* Display social media icons in a row */
+      margin-top: 10px; /* Add margin between speaker info and social media icons */
+  
+      a {
+        margin-right: 10px; /* Adjust margin between social media icons */
       }
     }
   }

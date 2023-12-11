@@ -17,8 +17,16 @@ const data = {
       pastGlimpses6
   ],
   "speakers": [
-      { "name": "Speaker 1", "image": speaker1, "info": "Speaker 1 Info" },
-      { "name": "Speaker 2", "image": speaker1, "info": "Speaker 2 Info" }
+      { "name": "Speaker 1", "image": speaker1, "info": "Speaker 1 Info","socialMedia": {
+        "twitter": "https://www.instagram.com/speaker1",
+        "instagram": "https://www.facebook.com/speaker1",
+        "linkedin": "https://www.linkedin.com/in/speaker1"
+      } },
+      { "name": "Speaker 2", "image": speaker1, "info": "Speaker 2 Info","socialMedia": {
+        "twitter": "https://www.instagram.com/speaker1",
+        "instagram": "https://www.facebook.com/speaker1",
+        "linkedin": "https://www.linkedin.com/in/speaker1"
+      } }
   ],
   "aboutUs": {
       "text": "Abhivyakti, IIIT Nagpur's annual cultural event, is a dynamic fusion of art, talent, and diversity. It provides a platform for students to express their creativity and celebrate their uniqueness. From intercollege competitions to inspiring speakers, Abhivyakti is a journey from passion to stardom. It's a path where persistence conquers obstacles, leading to a constellation of success.",

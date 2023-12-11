@@ -1,3 +1,5 @@
+// scss/PastGlimpses.scss
+
 .component.past-glimpses {
     width: 100%;
     height:100vh;
@@ -6,30 +8,35 @@
     padding: 2em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-  
-    .content {
-      // max-width: 1200px; /* Adjust max-width as needed */
-      width:100%;
-      margin: 0 auto;
-  
-      h2 {
-        // font-family: 'Verdana', sans-serif; /* Font family for h2 */
-        margin-bottom: 20px;
-      }
-    }
-  
-    .image-grid {
-      display: flex;
-      width: 100%;
-      height: 15em;
-      // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid with a minimum width of 250px */
-      gap: 20px; /* Adjust the gap between images */
-      
-      img {
-        border-radius: 8px; /* Add border-radius for rounded corners */
-      }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
   }
-  
-  
+
+  .image-grid {
+    width:100%;
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap:1em;
+
+    img {
+      max-width: 100%;
+      height: 12.5em;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border-radius:8px;
+    }
+  }
+}
+
