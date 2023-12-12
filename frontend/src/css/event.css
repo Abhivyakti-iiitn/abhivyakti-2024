@@ -1,5 +1,4 @@
-
-.container{
+.container {
     /* height: 100vh; */
     scroll-behavior: smooth;
     overflow-y: auto;
@@ -7,12 +6,19 @@
     background: url("../assets/EventPageAsst/Eventback1.png"), url("../assets//EventPageAsst/Eventback2.png");
     background-position: top, left 105rem;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 30%, 100% 30% ;
-    background-attachment: scroll;  
+    background-size: 100% 30%, 100% 30%;
+    background-attachment: scroll;
     color: white;
+
     &::-webkit-scrollbar {
         display: none;
     }
-    background-color: #0F0001;
 
+    background-color: #0F0001;
 }
+
+/* @media screen and (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+} */

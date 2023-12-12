@@ -76,7 +76,47 @@
     margin-left: -20%;
     border-bottom: 2px solid #5C4646;
 }
-
+@media screen and (max-width: 1200px){
+    .symbol{
+        width: 5%;
+        margin-top: 10vh;
+      }
+      .clubname{
+        font-size: 60px;
+        width: 70%;
+        margin-top: 5vh;
+      }
+      .line1,.line2{
+        margin: 5vh 3vh 0vh 3vh;
+      }
+      .container1{
+        margin: 0vh 3vh 0vh 3vh;
+        flex-direction: column;
+      }
+      .innerdiv{
+        margin-bottom: 15%;
+        width: 100%;
+      }
+      .intro,.line3,.line4{
+          width: 100%;
+      }
+      .intro{
+          margin-top: 5%;
+          margin-bottom: 5%;
+          font-size: 30px;
+      }
+      .vline{
+        height: 0vh;
+      }
+      .line4{
+          margin: 2vh 3vh 0vh 3vh;
+          margin-left: 0;
+      }
+      .details{
+        margin-top: 1%;
+        font-size: 30px;
+      }
+}
 @media screen and (max-width: 768px){
     .symbol{
       width: 5%;
@@ -115,5 +155,6 @@
     }
     .details{
       margin-top: 1%;
+      font-size: 20px;
     }
 }

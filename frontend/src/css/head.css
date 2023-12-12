@@ -24,10 +24,20 @@
     margin-right: auto;
     margin-top: 20vh;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
     .headinga {
+        font-size: 40px;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .headinga {
+        font-size: 25px;
         width: 30%; 
         margin-bottom: 5vh; 
+    }
+    .A{
+        height: 15vh;
     }
 }
 
@@ -36,11 +46,17 @@
         width: 40%; 
         margin-bottom: 5vh; 
     }
+    .A{
+        height: 10vh;
+    }
 }
 @media screen and (max-width: 300px) {
     .headinga {
         width: 50%; 
         margin-bottom: 5vh; 
+    }
+    .A{
+        height: 7vh;
     }
 }
   
