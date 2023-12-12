@@ -1,3 +1,5 @@
+// src/assets
+
 import aboutUs from "./AboutUs/about-us.svg";
 import pastGlimpses1 from "./PastGlimpsesImages/about-us.svg";
 import pastGlimpses2 from "./PastGlimpsesImages/about-us.svg";

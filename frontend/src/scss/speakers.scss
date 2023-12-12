@@ -6,7 +6,7 @@ h2{
 .component.speaker-section {
   width:fit-content;
   height:100vh;
-  color: white; 
+  color: white; /* Font color */
   padding: 4em;
   display: flex;
   flex-direction: row;
@@ -22,15 +22,18 @@ h2{
       flex-direction: row;
 
       .speaker__name{
-      font-size: xxx-large;
-      text-transform: uppercase;
-      background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      margin: auto;
-      font-family: $font-family;
-      text-align: left; 
+        width: 20vw;
+        min-width: fit-content;
+        max-width: fit-content;
+        font-size: 3rem;
+        text-transform: uppercase;
+        background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        // margin: auto;
+        font-family: $font-family;
+        text-align: left;
       }
     }
   
@@ -63,19 +66,43 @@ h2{
       //   height: auto;
       //   border-radius: 8px; 
       // }
-  
-      p {
-        font-size: 18px;
+        
+      .speaker__info{
+        margin-top: -2rem;
+        text-align: left;
+        font-size: 1.2rem;
+        font-family: $font-family;
       }
+
+      // p {
+
+      //   speake.info{
+      //     background-color: aqua;
+      //     margin-left: 5vw;
+      //     margin-right: 5vw;
+      //     min-width: 10vw;
+      //     text-align: justify;
+      //     font-size: 1.2rem;
+      //     font-family: $font-family;
+      //   }
+        
+      // }
     }
     .social-media-icons {
       display: flex;
       flex-direction: row;
-      margin-top: 10px;
-      margin-left: 2rem;
+      margin-top: -2vw;
+      align-items: center;
+
+      p{
+        margin-right: -8vw;
+        font-weight:900;  
+      }
+
 
       img{
-        width: 1.5vw;
+        width: 1.6vw;
+        margin-top: 0.4vw;
       }
   
       a {

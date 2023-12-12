@@ -16,10 +16,14 @@ const Speakers = () => {
           {data.speakers.map((speaker, index) => (
             <div key={index} className="speaker">
               <div className='speaker-content'>
-                <p>
-                  <h3 className='speaker__name'>{speaker.name}</h3>: {speaker.info} 
+                <p className='leftSideText'>
+                  <h3 className='speaker__name'>{speaker.name}</h3>
+                  <div className='speaker__info'>{speaker.info} </div>
                 </p>
                 <div className="social-media-icons">
+                  <p>
+                    |
+                  </p>
                   <a href={speaker.socialMedia.twitter} target="_blank" rel="noopener noreferrer">
                     <img src={instaIcon} alt="Instagram" />
                   </a>
