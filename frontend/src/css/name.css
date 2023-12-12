@@ -30,6 +30,7 @@
 .heading:after {
     left: 100%;
     width: 179%;
+    /* width: 30vw; */
 }
 .subhead{
     font-size: 35px;
@@ -139,8 +140,8 @@
 
 @media screen and (max-width: 450px) {
     .heading:after{
-        width: 15%;
-        margin-left: -10%;
+        width: 12%;
+        margin-left: -8%;
     }
     .subhead{
         font-size: 20px;
@@ -148,12 +149,12 @@
         margin-top: -4%;
     }
     .heading:before {
-        right: 90%;
+        right: 92%;
     }
     .vline1{
         width: 10%;
         height: 85vw;
-        margin-top: -12%;
+        margin-top: -8%;
         z-index: 10;
     }
     .sidecontainer{

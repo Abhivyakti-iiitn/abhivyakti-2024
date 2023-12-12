@@ -49,6 +49,7 @@
     text-align: justify;
     font-size: 20px;
     text-justify: inter-word;
+    margin: 5% auto 5% auto;
 }
 
 .line3{
@@ -74,6 +75,7 @@
 .line4{
     width: 120%;
     margin-left: -20%;
+    margin-top: 20%;
     border-bottom: 2px solid #5C4646;
 }
 @media screen and (max-width: 1200px){

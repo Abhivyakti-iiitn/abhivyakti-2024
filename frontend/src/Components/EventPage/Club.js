@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/club.css';
-import symbol from '../../assets/EventPageAsst/symbol.png'
+import symbol from '../../assets/EventPageAsst/symbol2.png'
 
 function Club() {
     return (
