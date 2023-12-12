@@ -12,30 +12,28 @@ const Speakers = () => {
   return (
     <div className="component speaker-section">
       <div className="content">
-        <h2>Speakers</h2>
         <div className="speaker-info">
           {data.speakers.map((speaker, index) => (
-            <>
-            <div className='speaker-content'>
             <div key={index} className="speaker">
-              <p>{`${speaker.name}: ${speaker.info}`}</p>
-            </div>
-            <div className="social-media-icons">
-                <a href={speaker.socialMedia.twitter} target="_blank" rel="noopener noreferrer">
-                  <img src={instaIcon} alt="Instagram" />
-                </a>
-                <a href={speaker.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
-                  <img src={fbIcon} alt="Facebook" />
-                </a>
-                <a href={speaker.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
-                  <img src={linkedinIcon} alt="LinkedIn" />
-                </a>
+              <div className='speaker-content'>
+                <p>
+                  <h3 className='speaker__name'>{speaker.name}</h3>: {speaker.info} 
+                </p>
+                <div className="social-media-icons">
+                  <a href={speaker.socialMedia.twitter} target="_blank" rel="noopener noreferrer">
+                    <img src={instaIcon} alt="Instagram" />
+                  </a>
+                  <a href={speaker.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
+                    <img src={fbIcon} alt="Facebook" />
+                  </a>
+                  <a href={speaker.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinIcon} alt="LinkedIn" />
+                  </a>
+                </div>
               </div>
-            </div>  
-            <div key={index} className="speaker">
-            <img src={speaker.image} alt={`Speaker ${index + 1}`} />
+              {/* <div className='speakers__image'></div> */}
+              <img className="speaker__header" src={speaker.image} alt={`Speaker ${index + 1}`} />
             </div>
-            </>
           ))}
         </div>
       </div>  

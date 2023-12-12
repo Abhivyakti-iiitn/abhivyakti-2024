@@ -1,64 +1,85 @@
+@import 'variables';
 h2{
   text-align: left;
 }
 
 .component.speaker-section {
-  width:min-content;
-  height:60vh;
-  background-color: black; /* Black background */
-  color: white; /* Font color */
+  width:fit-content;
+  height:100vh;
+  color: white; 
   padding: 4em;
   display: flex;
   flex-direction: row;
   align-items:center;
   
     .content {
-      max-width: 1200px; /* Adjust max-width as needed */
-      margin: 0 auto;
-  
-      h2 {
-        // font-family: 'Verdana', sans-serif; /* Font family for h2 */
-        margin-bottom: 20px;
-      }
+      width: fit-content;
+      height: fit-content;
     }
 
     .speaker-info{
       display: flex;
       flex-direction: row;
-    }
 
-    .speaker-images {
-      display: flex;
-      flex-direction: row;
+      .speaker__name{
+      font-size: xxx-large;
+      text-transform: uppercase;
+      background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin: auto;
+      font-family: $font-family;
+      text-align: left; 
+      }
     }
   
     .speaker {
-      width: 100%; /* Take full width on smaller screens */
-      max-width: 300px; /* Adjust max-width as needed */
-      margin-right: 20px; /* Adjust margin between speakers */
+      width: 100vw; /* Take full viewport width */
+      max-width: 80vw; /* Remove the max-width restriction if needed */
       margin-bottom: 20px; /* Adjust margin below each speaker */
-      display: flex; /* Set display to flex */
-      flex-direction: row; /* Set direction to row */
-  
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px; /* Add border-radius for rounded corners */
-        margin-right: 10px; /* Adjust margin between image and text */
+      display: flex;
+      flex-direction: row;
+
+      .speaker-content {
+        width: 50%; /* Adjust as needed */
+        padding-right: 20px; /* Add padding between speaker name/info and image */
       }
+      
+      // img.speaker-image {
+      //   height: auto;
+      //   border-radius: 8px;
+      // }
+
+      .speaker__header{
+        max-width: 30vw;
+        padding-right: 30vh;
+        padding-left: 20vh;
+
+      }
+      // img {  
+      //   background-color: bisque;
+      //   // max-width: 50%;
+      //   height: auto;
+      //   border-radius: 8px; 
+      // }
   
       p {
-        // font-family: 'Verdana', sans-serif; /* Font family for paragraphs */
-        margin-top: 10px; /* Adjust margin above speaker info */
+        font-size: 18px;
       }
     }
     .social-media-icons {
       display: flex;
-      flex-direction: row; /* Display social media icons in a row */
-      margin-top: 10px; /* Add margin between speaker info and social media icons */
+      flex-direction: row;
+      margin-top: 10px;
+      margin-left: 2rem;
+
+      img{
+        width: 1.5vw;
+      }
   
       a {
-        margin-right: 10px; /* Adjust margin between social media icons */
+        margin-right: 10px; 
       }
     }
   }

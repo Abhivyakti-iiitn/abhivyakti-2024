@@ -29,7 +29,7 @@ function MainPage() {
         <div className="App">
             {/* <FirefliesAnimation /> */}
             <Header />
-            <h1 className="Events__heading">Events</h1>
+            <h2 className="Events__heading">Events</h2>
             <div className="EventCards">
                 {
                     events.map((event) =>
