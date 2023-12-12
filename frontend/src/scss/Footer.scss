@@ -1,0 +1,87 @@
+// scss/Footer.scss
+@import 'variables';
+
+.footer {
+    width: 100%;
+    height: 30%;
+    margin-bottom: -30%;
+  background-color: black;
+  color: #fff;
+  font-family: $font-family;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+
+    .footer-section {
+      flex: 1;
+      max-width: 300px;
+
+      h3 {
+        font-size: large;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 0.5em;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 0.5em;
+      }
+
+      .social-icons {
+        display: flex;
+
+        a {
+          color: #fff;
+          font-size: 1.5em;
+          margin-right: 1em;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 2em;
+    text-align: center;
+    font-size: smaller;
+
+    p {
+      margin: 0.5em 0;
+    }
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

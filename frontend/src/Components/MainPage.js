@@ -7,7 +7,7 @@ import Header from "./Header";
 import Event from "./EventPage/Event";
 import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
-
+import Footer from "./Footer"
 const events = [
   { name: "a", desc: "event a" },
   { name: "b", desc: "event b" },
@@ -53,6 +53,7 @@ function MainPage() {
         <EventCard exploreAllEvents={true} />
         <HorizontalScrolling />
         <Sponsors />
+        <Footer />
       </div>
     </div>
   );
