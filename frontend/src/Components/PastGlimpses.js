@@ -8,7 +8,7 @@ const PastGlimpses = () => {
   return (
     <div className="component past-glimpses">
       <div className="content">
-        <h2>Past Glimpses</h2>
+        <h2 className='PastGlimpse__heading'>Past Glimpses</h2>
       </div>
       <div className="image-grid">
           {data.pastGlimpsesImages.map((image, index) => (

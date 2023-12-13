@@ -9,12 +9,15 @@ const AboutUs = () => {
   return (
     <div className="component about-us">
       <div className="content">
-        <h2>About Us</h2>
+
+        <h2 className='About__heading'>About</h2>
             <p>{data.aboutUs.text}</p>
       </div>
+
       <div className="image">
-      <img src={data.aboutUs.image} alt="About Us" />
+        <img src={data.aboutUs.image} alt="About Us" />
       </div>
+      
     </div>
   );
 };

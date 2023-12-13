@@ -17,16 +17,17 @@ const HorizontalScrolling = () => {
   return (
     <section ref={targetRef} className="horizontal-scrolling">
       <div className="sticky-container">
+      <div className="background-image"></div>
         <motion.div style={{ x }} className="motion-div">
-          <div className="component-wrapper">
+          {/* <div className="component-wrapper"> */}
             <AboutUs />
-          </div>
-          <div className="component-wrapper">
+          {/* </div> */}
+          {/* <div className="component-wrapper"> */}
             <PastGlimpses />
-          </div>
-          <div className="component-wrapper">
+          {/* </div> */}
+          {/* <div className="component-wrapper"> */}
             <Speakers />
-          </div>
+          {/* </div> */}
         </motion.div>
       </div>
     </section>
