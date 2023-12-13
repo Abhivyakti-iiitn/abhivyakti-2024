@@ -5,7 +5,8 @@
     font-size: 40px;
     font-weight: 400;
     width: auto;
-    margin: 5% 0% 0% 10%; 
+    margin: 5% auto 0% auto; 
+    text-align: center;
 }
 
 .linef1{
@@ -17,10 +18,9 @@
 @media screen and (max-width: 450px) {
     .faq{
         font-size: 20px;
-        margin-top: 15%;
     }
     .linef1{
         width: 70%;
-        margin-top: 40%;
+        margin-top: 60%;
     }
 }

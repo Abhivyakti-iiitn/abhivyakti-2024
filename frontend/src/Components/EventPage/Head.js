@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../../css/head.css';
-import A from '../../assets/EventPageAsst/A.png';
+import A from '../../assets/EventPageAsst/A2.png';
 
 function Head() {
   return (
