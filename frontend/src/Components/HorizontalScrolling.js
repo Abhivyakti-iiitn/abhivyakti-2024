@@ -1,3 +1,5 @@
+// components/HorizontalScrolling.js
+
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import AboutUs from './AboutUs';
@@ -15,25 +17,25 @@ const HorizontalScrolling = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="horizontal-scrolling">
-      <div className="sticky-container">
-      <div className="background-image"></div>
-        <motion.div style={{ x }} className="motion-div">
-          {/* <div className="component-wrapper"> */}
+    <>
+      <div ref={targetRef} className="horizontal-scrolling">
+        <div className="sticky-container">
+          <div className="background-image"></div>
+          <motion.div style={{ x }} className="motion-div">
             <AboutUs />
-          {/* </div> */}
-          {/* <div className="component-wrapper"> */}
             <PastGlimpses />
-          {/* </div> */}
-          {/* <div className="component-wrapper"> */}
             <Speakers />
-          {/* </div> */}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
-    </section>
+
+      <div className="vertical-scrolling">
+      <AboutUs />
+      <PastGlimpses />
+      <Speakers />
+      </div>
+</>
   );
 };
 
 export default HorizontalScrolling;
-
-

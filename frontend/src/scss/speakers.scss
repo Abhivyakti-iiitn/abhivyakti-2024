@@ -1,28 +1,138 @@
+// scss/speakers.scss
+
 @import 'variables';
-h2{
+
+h2 {
   text-align: left;
 }
 
 .component.speaker-section {
-  width:fit-content;
-  height:100vh;
-  color: white; /* Font color */
-  padding: 4em;
+  width: fit-content;
+  height: 100vh;
+  color: white;
+  padding: 4vw; // Adjusted to vw for better scalability
   display: flex;
   flex-direction: row;
-  align-items:center;
-  
-    .content {
-      width: fit-content;
-      height: fit-content;
+  align-items: center;
+
+  .content {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .speaker-info {
+    display: flex;
+    flex-direction: row;
+
+    .speaker__name {
+      width: 20vw;
+      min-width: fit-content;
+      max-width: fit-content;
+      font-size: 3vw;
+      text-transform: uppercase;
+      background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-family: $font-family;
+      text-align: left;
+    }
+  }
+
+  .speaker {
+    width: 100vw;
+    max-width: 80vw;
+    margin-bottom: 2vw; // Adjusted to vw for better scalability
+    display: flex;
+    flex-direction: row;
+
+    .speaker-content {
+      width: 50%;
+      padding-right: 2vw; // Adjusted to vw for better scalability
     }
 
-    .speaker-info{
+    .speaker__header {
+      width: 30vw; // Adjusted to vw for better scalability
+      height: 30vw; // Set a constant size using vw
+      padding-right: 5vw; // Adjusted to vw for better scalability
+      padding-left: 2vw; // Adjusted to vw for better scalability
+      object-fit: cover; // Maintain aspect ratio while covering container
+    }
+
+    .speaker__info {
+      margin-top: -2vw;
+      text-align: left;
+      font-size: 1.2vw;
+      font-family: $font-family;
+    }
+
+    .social-media-icons {
       display: flex;
       flex-direction: row;
+      margin-top: -2vw;
+      align-items: center;
 
-      .speaker__name{
-        width: 20vw;
+      p {
+        margin-right: -1vw; // Adjusted to vw for better scalability
+        font-weight: 900;
+      }
+
+      img {
+        width: 1.6vw;
+        margin-top: 0.4vw;
+      }
+
+      a {
+        margin-right: 1vw; // Adjusted to vw for better scalability
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+ // scss/speakers.scss
+
+.component.speaker-section {
+  // background-color: aliceblue;
+  max-width: 100vw;
+  min-height: fit-content;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Updated to column layout */
+  align-items: center;
+  padding-bottom: 160vw;
+  overflow: hidden;
+  
+  .content {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .speaker-info {
+    display: flex;
+    flex-direction: column; /* Updated to column layout */
+
+    .speaker {
+      // background-color: pink;
+      width: 100vw;
+      max-width: 80vw;
+      margin-bottom: 20px;
+      display: grid;
+
+      .speaker-content {
+        // background-color: green;
+        width: 80vw;
+      }
+
+      .speaker__header {
+        // background-color: black;
+        min-width: 80vw;
+        min-height: 80vw;
+        padding-left: 10%;
+        padding-bottom: 15%;
+      }
+      .speaker__name {
+        width: auto;
         min-width: fit-content;
         max-width: fit-content;
         font-size: 3rem;
@@ -31,86 +141,41 @@ h2{
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        // margin: auto;
         font-family: $font-family;
         text-align: left;
+        margin-bottom: -2vw;
       }
-    }
-  
-    .speaker {
-      width: 100vw; /* Take full viewport width */
-      max-width: 80vw; /* Remove the max-width restriction if needed */
-      margin-bottom: 20px; /* Adjust margin below each speaker */
-      display: flex;
-      flex-direction: row;
-
-      .speaker-content {
-        width: 50%; /* Adjust as needed */
-        padding-right: 20px; /* Add padding between speaker name/info and image */
-      }
-      
-      // img.speaker-image {
-      //   height: auto;
-      //   border-radius: 8px;
-      // }
-
-      .speaker__header{
-        max-width: 30vw;
-        padding-right: 30vh;
-        padding-left: 20vh;
-
-      }
-      // img {  
-      //   background-color: bisque;
-      //   // max-width: 50%;
-      //   height: auto;
-      //   border-radius: 8px; 
-      // }
-        
-      .speaker__info{
-        margin-top: -2rem;
+    
+      .speaker__info {
         text-align: left;
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-family: $font-family;
       }
 
-      // p {
+      .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        margin-top: -15vw;
+        align-items: center;
 
-      //   speake.info{
-      //     background-color: aqua;
-      //     margin-left: 5vw;
-      //     margin-right: 5vw;
-      //     min-width: 10vw;
-      //     text-align: justify;
-      //     font-size: 1.2rem;
-      //     font-family: $font-family;
-      //   }
-        
-      // }
-    }
-    .social-media-icons {
-      display: flex;
-      flex-direction: row;
-      margin-top: -2vw;
-      align-items: center;
+        p {
+          margin-left: 3vw;
+          margin-right: -1vw;
+          font-size: 3rem;
+          font-weight: 900;
+        }
 
-      p{
-        margin-right: -8vw;
-        font-weight:900;  
-      }
+        img {
+          width: 8vw;
+          margin-top: 0.4vw;
+        }
 
-
-      img{
-        width: 1.6vw;
-        margin-top: 0.4vw;
-      }
-  
-      a {
-        margin-right: 10px; 
+        a {
+          margin-right: 10px;
+        }
       }
     }
   }
-  
-  
-  
-  
+}
+
+}
