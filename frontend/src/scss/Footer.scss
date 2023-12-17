@@ -85,3 +85,28 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    min-width: 100vw;
+    padding-left: 0; // Reset left padding on smaller screens for the entire .footer-section
+
+    h3 {
+      padding-left:1rem; // Added left padding to h3 and ul
+    }
+
+    li {
+      padding-left: 1rem;
+    }
+    p{
+      padding-left: 1rem;
+    }
+    .social-icons{
+      padding-left: 1rem;
+    }
+  }
+}

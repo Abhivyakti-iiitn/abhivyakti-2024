@@ -3,10 +3,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import data from '../assets/data';
-import "../scss/speakers.scss";
-import instaIcon from "../assets/speakers/socialIcon1.svg";
-import linkedinIcon from "../assets/speakers/socialIcon2.svg";
-import fbIcon from "../assets/speakers/socialIcon3.svg";
+import '../scss/speakers.scss';
+import instaIcon from '../assets/speakers/socialIcon1.svg';
+import linkedinIcon from '../assets/speakers/socialIcon2.svg';
+import fbIcon from '../assets/speakers/socialIcon3.svg';
 
 const Speakers = () => {
   return (
@@ -21,9 +21,7 @@ const Speakers = () => {
                   <div className='speaker__info'>{speaker.info} </div>
                 </p>
                 <div className="social-media-icons">
-                  <p>
-                    |
-                  </p>
+                  <p>|</p>
                   <a href={speaker.socialMedia.twitter} target="_blank" rel="noopener noreferrer">
                     <img src={instaIcon} alt="Instagram" />
                   </a>
@@ -35,12 +33,11 @@ const Speakers = () => {
                   </a>
                 </div>
               </div>
-              {/* <div className='speakers__image'></div> */}
               <img className="speaker__header" src={speaker.image} alt={`Speaker ${index + 1}`} />
             </div>
           ))}
         </div>
-      </div>  
+      </div>
     </div>
   );
 };

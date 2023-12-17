@@ -51,3 +51,26 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .sponsors {
+    h2 {
+      font-size: 3rem;
+      margin: 0 0 10vh 0;
+    }
+  }
+
+  .sponsor-section {
+    h3 {
+      font-size: 2rem;
+      margin: 0 0 3vh 0;
+    }
+
+    .sponsor-grid {
+      img {
+        min-width: 20vw;
+        margin-bottom: 1vh;
+      }
+    }
+  }
+}

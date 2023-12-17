@@ -1,33 +1,57 @@
+// scss/HorizontalScrollingSection.scss
 
-.component-wrapper {
-  margin: 5rem; // Adjust margin as needed
+.vertical-scrolling{
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  display: none;
 }
-
 
 .horizontal-scrolling {
-  position: relative; 
-  width:99vw;
-  height:500vh;
- 
+  position: relative;
+  width: 100vw;
+  height: 500vh;
+  // display: none;
 }
-  .sticky-container {
-    background-image: url('../../public/about-background.svg');
-    background-size: 65%;
-    background-repeat: no-repeat; 
-    width: 100%;
-    position: sticky;
-    top: 0;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    overflow: hidden;
-  }
 
-    .motion-div {
-      display: flex;
-      gap: 1rem; // Adjust gap as needed
-    }
-      // .component-wrapper {
-      //   margin: 5rem; // Adjust margin as needed
-      // }
+.sticky-container {
+  background-image: url('../../public/about-background.svg');
+  background-size: 65%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.motion-div {
+  display: flex;
+  gap: 1vw; // Adjusted to vw for better scalability
+}
+
+@media screen and (max-width: 767px) {
+
+  .vertical-scrolling{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    color: white;
+    margin-bottom: 20vh;
+    // background-color: grey;
+    
+  }
+  
+  .horizontal-scrolling {
+    position: relative;
+    width: 100vw;
+    height: 500vh;
+    display: none;
+  }
+  
+
+}
 
