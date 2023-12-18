@@ -2,8 +2,8 @@
 
 @import 'variables';
 
-.component.past-glimpses {
-  width: 100vw;
+.container__past-glimpses {
+  width: 135vw;
   height: 100vh;
   color: white;
   display: flex;
@@ -11,12 +11,14 @@
   justify-content: center;
   align-items: center;
   margin-left: 10vw;
+  overflow: hidden;
 }
 
-.content {
-  flex: 1;
-  padding: 2vw; // Adjusted to vw for better scalability
+.pg__content {
+  margin-top: 0vw;
+  margin-right: 5vw;
 
+ 
   .PastGlimpse__heading {
     font-size: 3vw;
     text-transform: uppercase;
@@ -31,7 +33,8 @@
 }
 
 .image-grid {
-  width: 100%;
+  width: 100vw;
+  height: fit-content;
   flex: 5;
   display: grid;
   grid-template-columns: repeat(3, 1fr); // 2 columns by default
@@ -39,20 +42,18 @@
   gap: 1vw; // Adjusted to vw for better scalability
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 35vw;
+    height: auto;
     box-sizing: border-box;
   }
 }
 
-// Media query for mobile
-@media screen and (max-width: 767px) {
-// scss/PastGlimpses.scss
 
-.component.past-glimpses {
-  // background-color: gray;
+@media screen and (max-width: 767px) {
+
+.container__past-glimpses {
   width: 100vw;
-  height:100vh;
+  height: 140vw;
   color: white;
   display: flex;
   flex-direction: column; /* Updated to column layout */
@@ -62,19 +63,18 @@
   margin-bottom: 20vw;
 }
 
-.content {
-  margin-top: 20vh;
-  margin-bottom: 5vh;
-  max-height: 3rem;
+.pg__content {
+  margin-top: 20vw;
+  margin-bottom: 5vw;
 
   .PastGlimpse__heading {
-    font-size: 2rem;
+    background-color: black;
+    font-size: 10vw;
     text-transform: uppercase;
     background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    margin: auto;
     font-family: $font-family;
     text-align: center;
   }
@@ -82,18 +82,19 @@
 
 .image-grid {
   // background-color: green;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  max-height: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr); /* Updated to 2 columns and 3 rows */
-  gap: 1em;
+  gap: 2vw;
+  // padding-top: 10px;
 
   img {
-    margin-top: auto;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+
   }
 }
 

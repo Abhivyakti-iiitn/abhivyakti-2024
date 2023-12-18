@@ -6,8 +6,8 @@ import '../scss/PastGlimpses.scss';
 
 const PastGlimpses = () => {
   return (
-    <div className="component past-glimpses">
-      <div className="content">
+    <div className="container__past-glimpses">
+      <div className="pg__content">
         <h2 className='PastGlimpse__heading'>Past Glimpses</h2>
       </div>
       <div className="image-grid">

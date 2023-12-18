@@ -9,7 +9,7 @@ function EventCards(props) {
             <div id={props.id} className='EventCard hiddenCard' onClick={()=>{nav('/event')}}>
                 <div className='event-container'>
                     <div className='event__img-container'>
-                        <img src={imgSrc} className='event__img'></img>
+                        <img src={imgSrc} className='event__img' alt='event_image'></img>
                     </div>
                     <div className='event__content'>
                         <div className='event__name'>{props.name}</div>

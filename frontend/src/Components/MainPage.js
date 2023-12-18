@@ -51,10 +51,12 @@ function MainPage() {
           />
         ))}
         <EventCard exploreAllEvents={true} />
-        <HorizontalScrolling />
+      </div>
+          <div className="horizontalScroll">
+            <HorizontalScrolling />
+          </div>
         <Sponsors />
         <Footer />
-      </div>
     </div>
   );
 }
