@@ -5,8 +5,9 @@
 h2 {
   text-align: left;
 }
-
-.component.speaker-section {
+ 
+.container__speaker{
+  margin-left: 5vw;
   width: auto;
   height: 100vh;
   color: white;
@@ -16,9 +17,10 @@ h2 {
   align-items: center;
   overflow: hidden;
 
-  .content {
+  .speaker__content {
     width: fit-content;
     height: fit-content;
+  
   }
 
   .speaker-info {
@@ -49,15 +51,14 @@ h2 {
 
     .speaker-content {
       width: 50%;
-      padding-right: 2vw; // Adjusted to vw for better scalability
+      padding-right: 2vw;
     }
 
     .speaker__header {
-      width: 30vw; // Adjusted to vw for better scalability
-      height: 30vw; // Set a constant size using vw
-      padding-right: 5vw; // Adjusted to vw for better scalability
-      padding-left: 2vw; // Adjusted to vw for better scalability
-      object-fit: cover; // Maintain aspect ratio while covering container
+      width: 30vw; 
+      height: 30vw; 
+      object-fit:cover; 
+      margin-left: -10vw;
     }
 
     .speaker__info {
@@ -68,13 +69,15 @@ h2 {
     }
 
     .social-media-icons {
+      margin-top: -1vw;
       display: flex;
       flex-direction: row;
-      margin-top: -2vw;
       align-items: center;
 
       p {
-        margin-right: -1vw; // Adjusted to vw for better scalability
+        font-size: 2.5vw;
+        line-height: 0px;
+        margin-right: 1vw;
         font-weight: 900;
       }
 
@@ -84,59 +87,56 @@ h2 {
       }
 
       a {
-        margin-right: 1vw; // Adjusted to vw for better scalability
+        margin-right: 1vw;
       }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
- // scss/speakers.scss
 
-.component.speaker-section {
-  // background-color: aliceblue;
+.container__speaker {
   max-width: 100vw;
-  min-height: fit-content;
+  min-height: fit-content; 
   color: white;
   display: flex;
-  flex-direction: column; /* Updated to column layout */
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 160vw;
+  padding-bottom: 100vw;
   overflow: hidden;
   
-  .content {
+  .speaker__content {
     width: fit-content;
     height: fit-content;
   }
 
   .speaker-info {
     display: flex;
-    flex-direction: column; /* Updated to column layout */
+    flex-direction: column;
 
     .speaker {
-      // background-color: pink;
       width: 100vw;
-      max-width: 80vw;
-      margin-bottom: 20px;
+      height: fit-content;
+      margin-bottom: 5vw;
       display: grid;
+      padding-left: 3vw;
 
       .speaker-content {
-        // background-color: green;
         width: 80vw;
       }
 
       .speaker__header {
-        // background-color: black;
         min-width: 80vw;
         min-height: 80vw;
-        padding-left: 10%;
-        padding-bottom: 15%;
+        padding-left: 0vw;
+        padding-bottom: 15vw;
+        margin-bottom: 3vw;
       }
       .speaker__name {
         width: auto;
         min-width: fit-content;
         max-width: fit-content;
-        font-size: 3rem;
+        font-size: 10vw;
         text-transform: uppercase;
         background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
         color: transparent;
@@ -144,12 +144,12 @@ h2 {
         background-clip: text;
         font-family: $font-family;
         text-align: left;
-        margin-bottom: -2vw;
+        margin-bottom: 2vw;
       }
     
       .speaker__info {
         text-align: left;
-        font-size: 2rem;
+        font-size: 6vw;
         font-family: $font-family;
       }
 
@@ -160,15 +160,16 @@ h2 {
         align-items: center;
 
         p {
-          margin-left: 3vw;
-          margin-right: -1vw;
-          font-size: 3rem;
+          margin-top: 20vw;
+          margin-left: 0vw;
+          margin-right: 2vw;
+          font-size: 11vw;
           font-weight: 900;
         }
 
         img {
           width: 8vw;
-          margin-top: 0.4vw;
+          margin-top: 10vw;
         }
 
         a {

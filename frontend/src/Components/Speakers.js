@@ -10,8 +10,8 @@ import fbIcon from '../assets/speakers/socialIcon3.svg';
 
 const Speakers = () => {
   return (
-    <div className="component speaker-section">
-      <div className="content">
+    <div className="container__speaker">
+      <div className="speaker__content">
         <div className="speaker-info">
           {data.speakers.map((speaker, index) => (
             <div key={index} className="speaker">
