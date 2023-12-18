@@ -2,12 +2,13 @@
 @import 'variables';
 
 .sponsors {
+  margin-bottom: -0.4vw;
   height: fit-content;
-  width: 100vw; // Adjusted to use viewport width
-  max-width: 100vw;
-  margin: 2vh auto; // Adjusted to use viewport height
+  // width: 98.8vw; 
+  margin-right: 0px;
   text-align: center;
-  background: url('../../public/sponsor_bg.svg') center/cover no-repeat; // Adjust the path to your actual image
+  background: url('../../public/sponsor_bg.svg') center/cover no-repeat;
+  overflow: hidden;
 
   h2 {
     font-size: 4vw; // Adjusted font size using viewport width
@@ -23,6 +24,7 @@
 }
 
 .sponsor-section {
+  max-width: inherit;
   margin: 2vh 0; // Adjusted margin using viewport height
 
   h3 {

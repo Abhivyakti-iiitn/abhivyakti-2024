@@ -27,7 +27,7 @@ body {
 }
 
 .Events__heading {
-    font-size: xxx-large;
+    font-size: 3vw;
     text-transform: uppercase;
     background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
     color: transparent;
@@ -58,7 +58,8 @@ body {
     .event-container {
         height: 100%;
         padding: 1.5rem;
-        width: fit-content;
+        max-width: -moz-fit-content;
+            width: fit-content;
         margin: 0 auto;
 
        

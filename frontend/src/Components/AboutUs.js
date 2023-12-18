@@ -7,12 +7,12 @@ import '../scss/AboutUs.scss';
 
 const AboutUs = () => {
   return (
-    <div className="component about-us">
-      <div className="content">
+    <div className="container__about-us">
+      <div className="about__content">
         <h2 className='About__heading'>About</h2>
         <p>{data.aboutUs.text}</p>
       </div>
-      <div className="image">
+      <div className="about__image">
         <img src={data.aboutUs.image} alt="About Us" />
       </div>
     </div>
