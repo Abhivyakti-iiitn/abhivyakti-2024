@@ -7,13 +7,14 @@ h2 {
 }
 
 .component.speaker-section {
-  width: fit-content;
+  width: auto;
   height: 100vh;
   color: white;
-  padding: 4vw; // Adjusted to vw for better scalability
+  padding: 4vw; 
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 
   .content {
     width: fit-content;
@@ -42,7 +43,7 @@ h2 {
   .speaker {
     width: 100vw;
     max-width: 80vw;
-    margin-bottom: 2vw; // Adjusted to vw for better scalability
+    margin-bottom: 2vw;
     display: flex;
     flex-direction: row;
 

@@ -9,12 +9,13 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 
 .content {
   color: rgb(199, 190, 172);
   width: 50vw;
-  margin: 2vw; // Adjusted to vw for better scalability
+  margin: 2vw; 
 
   .About__heading {
     font-size: 3vw;
@@ -42,7 +43,7 @@
   img {
     max-width: 80vw;
     height: 80vh;
-    margin-top: 1vw; // Adjusted to vw for better scalability
+    margin-top: 1vw; 
   }
 }
 
