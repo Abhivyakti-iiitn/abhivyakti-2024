@@ -40,8 +40,14 @@ legend {
 
 .EventRound {
     padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     border-left: 2px solid $text-color-gradient-2;
+    display: flex;
+    // align-items: center;
+}
+
+.RoundContent {
+    top: 8.48px;
 }
 
 .diamond {
@@ -51,6 +57,7 @@ legend {
     border: 1px solid white;
     position: relative;
     left: calc(-2rem - 4.24px);
+    top: 1.06px;
     transform: rotate(45deg);
 }
 
