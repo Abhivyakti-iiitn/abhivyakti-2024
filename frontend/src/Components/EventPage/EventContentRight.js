@@ -1,5 +1,7 @@
 import React from 'react'
 import Round from './Round'
+import Faq from './Faq'
+import Head from './Head'
 
 const EventContentRight = (props) => {
   return (
@@ -45,7 +47,7 @@ const EventContentRight = (props) => {
           <div>
             {props.regulations}
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   )

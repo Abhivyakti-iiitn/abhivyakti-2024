@@ -3,6 +3,7 @@ import EventContentLeft from './EventContentLeft';
 import EventContentRight from './EventContentRight';
 
 import '../../css/EventContent.css';
+// import "../../css/temp.css";
 
 const EventContent = (props) => {
   console.log(props);

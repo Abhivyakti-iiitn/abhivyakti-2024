@@ -4,6 +4,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   display: flex;
+  height: auto;
+  position:relative;
 }
 .EventContent-left {
   width: 40vw;
@@ -59,4 +61,44 @@ legend {
 
 .glow {
   background-color: #fff;
+}
+
+.EventContent-left {
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    padding: 40px;
+    width: 100%;
+    height:fit-content;
+}
+
+.sticky-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white; /* Set text color to white */
+  font-family: inherit; /* Use the parent font family */
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white; /* Set text color to white */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button-icon {
+  margin-left: 5px;
 }
