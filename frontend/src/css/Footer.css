@@ -1,0 +1,91 @@
+.footer {
+  width: 100%;
+  height: 30%;
+  margin-bottom: -30%;
+  background-color: black;
+  color: #fff;
+  font-family: "Carta Marina W00 Regular";
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+  max-width: 300px;
+}
+.footer .footer-content .footer-section h3 {
+  font-size: large;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+.footer .footer-content .footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer-content .footer-section ul li {
+  margin-bottom: 0.5em;
+}
+.footer .footer-content .footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .footer-content .footer-section ul li a:hover {
+  color: rgb(205, 41, 41);
+}
+.footer .footer-content .footer-section p {
+  margin-bottom: 0.5em;
+}
+.footer .footer-content .footer-section .social-icons {
+  display: flex;
+}
+.footer .footer-content .footer-section .social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 1em;
+  transition: color 0.3s ease;
+}
+.footer .footer-content .footer-section .social-icons a:hover {
+  color: rgb(205, 41, 41);
+}
+.footer .footer-bottom {
+  margin-top: 2em;
+  text-align: center;
+  font-size: smaller;
+}
+.footer .footer-bottom p {
+  margin: 0.5em 0;
+}
+.footer .footer-bottom a {
+  color: rgb(205, 41, 41);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .footer-bottom a:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    min-width: 100vw;
+    padding-left: 0;
+  }
+  .footer-section h3 {
+    padding-left: 1rem;
+  }
+  .footer-section li {
+    padding-left: 1rem;
+  }
+  .footer-section p {
+    padding-left: 1rem;
+  }
+  .footer-section .social-icons {
+    padding-left: 1rem;
+  }
+}
