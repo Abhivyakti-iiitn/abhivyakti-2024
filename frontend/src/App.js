@@ -32,7 +32,7 @@
       <div className="PApp">
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          <Route path="/event" element={<Event />}></Route>
+          <Route path="/event/:eventname" element={<Event />}></Route>
         </Routes>
       </div>
     );

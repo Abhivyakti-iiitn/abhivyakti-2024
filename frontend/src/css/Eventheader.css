@@ -1,0 +1,53 @@
+.main__header {
+  background: url(../assets/MainPage/HeaderImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  flex-direction: column;
+  display: flex;
+}
+.main__header .top {
+  display: flex;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+}
+.main__header .top .left ul {
+  display: flex;
+  gap: 15%;
+  font-size: 1.4rem;
+  margin-top: 50%;
+  text-decoration: none;
+  list-style: none;
+}
+.main__header .top .left ul div {
+  border: 2px solid white;
+  height: 20px;
+  margin-right: 20px;
+}
+.main__header .top .right {
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.main__header .top .right ul {
+  list-style: none;
+  text-align: right;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+.main__header .mid {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.main__header .mid h1 {
+  font-size: 4rem;
+  font-family: "LLDOT", "Dot", "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+.main__header .mid h3 {
+  color: white;
+  font-size: xx-large;
+}
