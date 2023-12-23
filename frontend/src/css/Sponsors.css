@@ -1,0 +1,62 @@
+.sponsors {
+  margin-bottom: -0.4vw;
+  height: fit-content;
+  margin-right: 0px;
+  text-align: center;
+  background: url("../../public/sponsor_bg.svg") center/cover no-repeat;
+  overflow: hidden;
+}
+.sponsors h2 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0 0 5vh 0;
+  font-family: "Carta Marina W00 Regular";
+  text-align: center;
+}
+
+.sponsor-section {
+  max-width: inherit;
+  margin: 2vh 0;
+}
+.sponsor-section h3 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0 0 1vh 0;
+  font-family: "Carta Marina W00 Regular";
+}
+.sponsor-section .sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vh;
+  margin-bottom: 10vh;
+}
+.sponsor-section .sponsor-grid img {
+  max-width: 8vw;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .sponsors h2 {
+    font-size: 3rem;
+    margin: 0 0 10vh 0;
+  }
+  .sponsor-section h3 {
+    font-size: 2rem;
+    margin: 0 0 3vh 0;
+  }
+  .sponsor-section .sponsor-grid img {
+    min-width: 20vw;
+    margin-bottom: 1vh;
+  }
+}

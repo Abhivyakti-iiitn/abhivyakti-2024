@@ -1,0 +1,84 @@
+.container__past-glimpses {
+  width: 135vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  overflow: hidden;
+}
+
+.pg__content {
+  margin-top: 0vw;
+  margin-right: 5vw;
+}
+.pg__content .PastGlimpse__heading {
+  font-size: 3vw;
+  text-transform: uppercase;
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: auto;
+  font-family: "Carta Marina W00 Regular";
+  text-align: left;
+}
+
+.image-grid {
+  width: 100vw;
+  height: fit-content;
+  flex: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1vw;
+}
+.image-grid img {
+  width: 35vw;
+  height: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .container__past-glimpses {
+    width: 100vw;
+    height: 140vw;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Updated to column layout */
+    justify-content: center;
+    align-items: center;
+    margin-left: 0vw;
+    margin-bottom: 20vw;
+  }
+  .pg__content {
+    margin-top: 20vw;
+    margin-bottom: 5vw;
+  }
+  .pg__content .PastGlimpse__heading {
+    background-color: black;
+    font-size: 10vw;
+    text-transform: uppercase;
+    background: linear-gradient(#f9daa8, #bc615e);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Carta Marina W00 Regular";
+    text-align: center;
+  }
+  .image-grid {
+    width: 100vw;
+    max-height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); /* Updated to 2 columns and 3 rows */
+    gap: 2vw;
+  }
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}

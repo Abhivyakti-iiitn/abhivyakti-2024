@@ -1,0 +1,66 @@
+@import 'variables';
+
+.EventContent {
+    background: linear-gradient(to right, $text-color-gradient-1, $text-color-gradient-2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    &-left {
+        width: 40vw;
+        margin-top: 10px;
+    }
+    &-right {
+        width: 60vw;
+        display: flex; 
+        flex-direction: column;
+        margin: auto; 
+        margin-top: 10px; 
+    }
+}
+
+fieldset{
+    border: 2px solid transparent; 
+    border-top-color: $text-color-gradient-2; 
+    box-sizing: border-box; 
+    grid-area: 1 / 1; 
+    padding: 20px; 
+    width: inherit; 
+
+    &:nth-of-type(1){ 
+        background: content-box center/contain no-repeat violet; 
+    }
+}
+
+legend {
+    font: 15pt/0 $font-family; 
+    margin: auto; /* to center */
+    padding: 0 4px; 
+}
+
+.EventRound {
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    border-left: 2px solid $text-color-gradient-2;
+    display: flex;
+    // align-items: center;
+}
+
+.RoundContent {
+    top: 8.48px;
+}
+
+.diamond {
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border: 1px solid white;
+    position: relative;
+    left: calc(-2rem - 4.24px);
+    top: 1.06px;
+    transform: rotate(45deg);
+}
+
+.glow {
+    background-color: #fff;
+}
