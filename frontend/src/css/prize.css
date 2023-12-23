@@ -1,0 +1,44 @@
+.prize{
+    text-align: center;
+    background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25vh;
+    margin-top: 10vh;
+}
+.prize_amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 20px;
+}
+.add_prize{
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 20px;
+}
+.register_btn{
+    text-align: center;
+    font-size: 16px;
+    margin: 20vh auto 15vh auto;
+    border: 2px solid red;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 2vh 6vh 2vh 6vh;
+    border-image: linear-gradient(to bottom, #F9DAA8, #BC615E) 1;
+}
+@media screen and (max-width: 450px) {
+    .prize_amount{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .prize{
+        margin-bottom: 10vh;
+    }
+    .add_prize{
+        margin-top: 0vh;
+    }
+}

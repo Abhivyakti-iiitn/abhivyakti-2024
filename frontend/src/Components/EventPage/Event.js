@@ -5,6 +5,8 @@ import Club from './Club'
 import Timeline from './Timeline'
 import Faq from './Faq'
 import EventContent from './EventContent';
+import Prize from './Prize';
+import Contact from './Contact';
 import FAQ from './Faq';
 import content from '../../assets/EventContent.json';
 
@@ -20,6 +22,7 @@ function Event() {
             <Faq/> */}
             <EventContent content={content.showStopper} />
             <Faq />
+            <Contact />
         </div>
     );
 }
