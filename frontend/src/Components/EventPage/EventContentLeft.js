@@ -1,32 +1,35 @@
 import React from 'react';
-
-const EventContentLeft = () => {
+import deadline from "../../assets/EventImages/deadline.svg";
+import teamSize from "../../assets/EventImages/Group.svg";
+import fees from "../../assets/EventImages/fees.svg";
+import prize from "../../assets/EventImages/prize.svg";
+const EventContentLeft = (props) => {
   return (
     <div className='EventContent-left'>
       <div className='sticky-content'>
         <div className='info-item'>
-          <img className='icon' src='/path/to/calendar-icon.png'/>
+          <img className='icon' src={deadline}/>
           <div className='info'>
           Registration Deadline: 
-          <span>Date below it</span>
+          <span>{props.date}</span>
           </div>
         </div>
         <div className='info-item'>
-          <img className='icon' src='/path/to/users-icon.png' />
+          <img className='icon' src={teamSize} />
           <div className='info'>
-          Team size: <span>No. below it</span>
+          Team size: <span>{props.team}</span>
           </div>
         </div>
         <div className='info-item'>
-          <img className='icon' src='/path/to/money-icon.png'/>
+          <img className='icon' src={fees}/>
           <div className='info'>
-          Registration Fee: <span>10 rs</span>
+          Registration Fee: <span>{props.fees}</span>
           </div>
         </div>
         <div className='info-item'>
-          <img className='icon' src='/path/to/trophy-icon.png'/>
+          <img className='icon' src={prize}/>
           <div className='info'>
-          Prize Pool: <span>Prize pool</span>
+          Prize Pool: <span>{props.pool}</span>
           </div>
         </div>
         <button className='register-button'>

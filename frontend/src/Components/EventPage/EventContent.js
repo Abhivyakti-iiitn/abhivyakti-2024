@@ -10,7 +10,12 @@ const EventContent = (props) => {
 
   return (
     <div className='EventContent'>
-        <EventContentLeft />
+        <EventContentLeft 
+          date = {props.content.registrationDate}
+          team = {props.content.Team}
+          fees = {props.content.fees}
+          pool = {props.content.pool}
+        />
         <EventContentRight 
           details={props.content.details}
           timeline={props.content.timeline}

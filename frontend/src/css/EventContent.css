@@ -85,6 +85,7 @@ legend {
   color: white; /* Set text color to white */
   font-family: inherit; /* Use the parent font family */
   gap:12px;
+  margin-top:8px;
 }
 
 .info{
@@ -110,6 +111,7 @@ legend {
   align-items: center;
   width:fit-content;
   transition: color 0.3s ease;
+  font-size: x-large;
 }
 
 .register-button:hover{
@@ -137,7 +139,7 @@ legend {
 .EventContent-left::before {
   top: 0;
   left: 0;
-  right: 54%;
+  right: 55%;
   border: 2px solid;
   border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
   border-image-slice: 1;
@@ -146,7 +148,7 @@ legend {
 /* Right border */
 .EventContent-left::after {
   top: 0;
-  right: 40%;
+  right: 39%;
   height: 25%;
   border: 2px solid;
   border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
