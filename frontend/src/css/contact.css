@@ -1,0 +1,113 @@
+.or{
+    text-align: center;
+    margin-top: 3%;
+}
+.contact{
+    text-align: center;
+}
+.arrow{
+    display: block;
+    margin: 2% auto 10% auto;
+    height: 2vw;
+}
+.box_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30vh;
+}
+.box_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+.box_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.box_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+}
+.contact_info{
+    margin-top: 4vh;
+}
+.input_tag{
+    width: 55vh;
+    border-radius: 15px;
+    border: none;
+    padding-left: 4vh;
+}
+.tag1,.tag2{
+    height:30px
+}
+.tag3{
+    height: 150px;
+    position: relative;
+}
+.tag3::placeholder{
+    vertical-align: top;
+}
+input, textarea {
+    background-color: #2E2E2E;
+}
+.title1{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1050px) {
+    .box_1 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 2000vh;
+      margin-bottom: 10vh;
+    }
+    .box_2 {
+      width: 80%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .box_3{
+        justify-content: space-evenly;
+    }
+    .box_4 {
+      width: 80%;
+      margin: 10% 5% 5% 5%;
+    }
+    .title3{
+        margin-top: 5%;
+    }
+    .other_contact{
+        justify-content: center;
+        text-align: center;
+    }
+    .input_tag {
+      width: 50vw;
+    }
+    .contact_info{
+        margin-top: 2vh;
+    }
+    .arrow{
+        height: 2.5vh;
+    }
+  }
+  
+@media screen and (max-width: 480px) {
+    .box_3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .title2{
+        margin-top: 25%;
+    }
+  }
