@@ -115,9 +115,9 @@ legend {
 }
 
 .register-button:hover{
-  color: black;
-  background-color: white;
-  border-image: none;
+  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .button-icon {
