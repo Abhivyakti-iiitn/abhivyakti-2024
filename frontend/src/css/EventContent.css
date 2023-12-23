@@ -9,7 +9,9 @@
 }
 .EventContent-left {
   width: 40vw;
-  margin-top: 10px;
+  margin: auto;
+  /* margin-top: 10px; */
+  font-size: larger;
 }
 .EventContent-right {
   width: 60vw;
@@ -68,7 +70,6 @@ legend {
     top: 0px;
     background-color: transparent;
     padding: 40px;
-    width: 100%;
     height:fit-content;
 }
 
@@ -83,6 +84,12 @@ legend {
   margin-bottom: 10px;
   color: white; /* Set text color to white */
   font-family: inherit; /* Use the parent font family */
+  gap:12px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
@@ -90,15 +97,61 @@ legend {
 }
 
 .register-button {
-  background-color: #007bff;
-  color: white; /* Set text color to white */
-  border: none;
-  padding: 10px;
+  background-color: black;
+  color:white; /* Set text color to white */
+  border: 2px solid;
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E);
+  border-image-slice: 1;
+  border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
+  width:fit-content;
+  transition: color 0.3s ease;
+}
+
+.register-button:hover{
+  color: black;
+  background-color: white;
+  border-image: none;
 }
 
 .button-icon {
   margin-left: 5px;
 }
+
+.EventContent-left {
+  position: relative;
+}
+
+.EventContent-left::before,
+.EventContent-left::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+}
+
+/* Top border */
+.EventContent-left::before {
+  top: 0;
+  left: 0;
+  right: 54%;
+  border: 2px solid;
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
+  border-image-slice: 1;
+}
+
+/* Right border */
+.EventContent-left::after {
+  top: 0;
+  right: 40%;
+  height: 25%;
+  border: 2px solid;
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
+  border-image-slice: 1;
+  transform: skewX(45deg); /* Tilt the right border to the left */
+  transform-origin: bottom; /* Set the transform origin to the bottom */
+}
+
