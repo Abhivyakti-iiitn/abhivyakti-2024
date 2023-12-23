@@ -4,7 +4,24 @@ import Faq from './Faq'
 import Head from './Head'
 
 const EventContentRight = (props) => {
-  const [alreadyGlowing, setAlreadyGlowing] = useState(false);  
+  const [alreadyGlowing, setAlreadyGlowing] = useState(false);
+  const [glowIndex, setGlowIndex] = useState(-1);
+
+  useEffect(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    for (let i = 0; i < props.timeline.length; i++) {
+      const date = props.timeline[i];
+      const parts = date.split('/');
+      const eventDate = new Date(`20${parts[2]}`, parts[1] - 1, parts[0]);
+
+      if (today <= eventDate) {
+        setGlowIndex(i);
+        break; // Set the glow index and exit the loop
+      }
+    }
+  }, [props.timeline]);
 
   const handleGlowing = () => {
     if (!alreadyGlowing) {
@@ -15,10 +32,10 @@ const EventContentRight = (props) => {
     console.log("ret false");
     return false;
   };
-  
+
   return (
     <div className='EventContent-right'>
-      <div className='EventDetail details'>
+      <div className='EventDetail EventDetailsSection'>
         <div className='EventContent_heading'>
           <fieldset>
             <legend>
@@ -26,7 +43,7 @@ const EventContentRight = (props) => {
             </legend>
           </fieldset>
         </div>
-        <div className='EventContent_content'>
+        <div className='EventContent_content paddingLeft'>
           {props.details}
         </div>
       </div>
@@ -41,14 +58,7 @@ const EventContentRight = (props) => {
         <div className='EventContent_content'>
           {props.timeline.map((date, id) => {
             const isLastElement = id === props.timeline.length - 1;
-
-            const parts = date.split('/');
-            const eventDate = new Date(`20${parts[2]}`, parts[1] - 1, parts[0]);
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            console.log("check"+alreadyGlowing);
-            const glow = today <= eventDate && handleGlowing();
-            console.log(glow);
+            const glow = id === glowIndex;
 
             return (
               <Round key={id} date={date} isLastTimeline={isLastElement} glow={glow} />
@@ -64,8 +74,8 @@ const EventContentRight = (props) => {
             </legend>
           </fieldset>
         </div>
-        <div className='EventContent_content'>
-          <div className='rules'>
+        <div className='EventContent_content paddingLeft'>
+          <div className='EventRules'>
             Rules: {props.rules}
           </div>
           <div>

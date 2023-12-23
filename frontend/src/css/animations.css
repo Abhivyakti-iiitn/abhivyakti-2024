@@ -1,0 +1,374 @@
+#sky {
+  animation: skyAnimation 8s linear infinite, lightAnimation 10s linear infinite;
+
+}
+
+
+#bg {
+  animation: bgAnimation 8s linear infinite, lightAnimation 10s linear infinite;
+  z-index: 2;
+}
+
+#character {
+  animation: characterAnimation 8s linear infinite, characterLightAnimation 10s linear infinite;
+}
+
+#tie {
+  transform-origin: 809px 832px;
+  animation: rotateTieAnimation 4s linear infinite;
+}
+
+#right {
+  transform-origin: 1025px 639px;
+  animation: rotateRightAnimation 4s linear infinite;
+}
+
+#left {
+  transform-origin: 787px 640px;
+  animation: rotateLeftAnimation 4s linear infinite;
+}
+
+#guitar {
+  transform-origin: 900px 700px;
+  animation: rotateGuitarAnimation 4s linear infinite;
+}
+
+#shoulder {
+  animation: moveUpDownAnimation 4s linear infinite;
+}
+
+
+#hair1 {
+  transform-origin: 935px 432px;
+  animation: hair1Animation 2s linear infinite;
+}
+
+#hair2 {
+  transform-origin: 935px 434px;
+  animation: hair2Animation 2s linear infinite;
+}
+
+#hair3 {
+  transform-origin: 937px 437px;
+  animation: hair3Animation 2s linear infinite;
+}
+
+#lightning {
+  animation: strikeAnimation 10s linear infinite;
+}
+
+@keyframes characterLightAnimation {
+  0% {}
+
+  46% {
+    filter: brightness(1) contrast(1);
+  }
+
+  48% {
+    filter: brightness(0.8) contrast(5);
+  }
+
+  50% {
+    filter: brightness(1) contrast(1);
+  }
+
+  52% {
+    filter: brightness(0.8) contrast(5);
+  }
+
+  54% {
+    filter: brightness(1) contrast(1);
+  }
+
+  55% {
+    filter: brightness(0.8) contrast(5);
+  }
+
+  65% {
+    filter: brightness(1) contrast(1);
+  }
+
+
+  100% {}
+
+}
+
+@keyframes lightAnimation {
+  0% {}
+
+  46% {
+    filter: brightness(1) contrast(1);
+  }
+
+  48% {
+    filter: brightness(3) contrast(2);
+  }
+
+  50% {
+    filter: brightness(1) contrast(1);
+  }
+
+  52% {
+    filter: brightness(3) contrast(2);
+  }
+
+  54% {
+    filter: brightness(1) contrast(1);
+  }
+
+  55% {
+    filter: brightness(3) contrast(2);
+  }
+
+  65% {
+    filter: brightness(1) contrast(1);
+  }
+
+
+  100% {}
+
+}
+
+@keyframes strikeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  46% {
+    opacity: 0;
+  }
+
+  48% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  52% {
+    opacity: 1;
+  }
+
+  54% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes moveUpDownAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+
+  90% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+
+}
+
+@keyframes hair1Animation {
+  0% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(-4deg);
+  }
+
+}
+
+@keyframes hair2Animation {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  }
+
+}
+
+@keyframes hair3Animation {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+
+}
+
+@keyframes rotateGuitarAnimation {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+
+}
+
+@keyframes rotateTieAnimation {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+
+}
+
+@keyframes rotateLeftAnimation {
+  0% {
+    transform: rotate(-1.5deg);
+  }
+
+  50% {
+    transform: rotate(1.5deg);
+  }
+
+  100% {
+    transform: rotate(-1.5deg);
+  }
+
+}
+
+@keyframes rotateRightAnimation {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+
+}
+
+@keyframes characterAnimation {
+  0% {
+    filter: brightness(2) contrast(1.25);
+
+  }
+
+  12% {
+    filter: brightness(2) contrast(1.25);
+
+  }
+
+  50% {
+    filter: brightness(0.6) contrast(1.75);
+  }
+
+  87% {
+    filter: brightness(2) contrast(1.25);
+
+  }
+
+  100% {
+    filter: brightness(2) contrast(1.25);
+
+  }
+}
+
+@keyframes bgAnimation {
+  0% {
+    filter: brightness(1) contrast(1.15);
+
+  }
+
+  12% {
+    filter: brightness(1) contrast(1.15);
+
+  }
+
+  50% {
+    filter: brightness(0.6) contrast(1.75);
+  }
+
+  87% {
+    filter: brightness(1) contrast(1.15);
+
+  }
+
+  100% {
+    filter: brightness(1) contrast(1.15);
+
+  }
+}
+
+@keyframes skyAnimation {
+  0% {
+    filter: brightness(0.75);
+  }
+
+  12% {
+    filter: brightness(0.75);
+  }
+
+  50% {
+    filter: brightness(3);
+  }
+
+  87% {
+    filter: brightness(0.75);
+  }
+
+  100% {
+    filter: brightness(0.75);
+  }
+}

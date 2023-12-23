@@ -10,22 +10,33 @@
 .EventContent_content{
   font-size: large;
   color: #fff;
-  margin-bottom: 5rem;
+  margin: 1.5rem 0 5rem 0;
+}
+.EventContent_content > * {
+  font-family: serif;
 }
 .EventDetail {
   flex-direction: column;
 }
+.EventRules {
+  margin-bottom: 1rem;
+}
+.paddingLeft {
+  padding-left: 2rem
+}
 .EventContent-left {
   width: 40vw;
+  /* display: flex;
+  flex-direction: column; */
   margin: auto;
-  /* margin-top: 10px; */
+  margin-top: 0;
   font-size: larger;
 }
 .EventContent-right {
   width: 60vw;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 10px;
 }
 .EventContent-right_right {
@@ -49,9 +60,10 @@ fieldset:nth-of-type(1) {
 }
 
 legend {
-  font: 21pt/0 "Carta Marina W00 Regular";
-  margin-left: 0px;
-  padding: 0 4px;
+  font: 23pt/0 "Carta Marina W00 Regular";
+  margin-left: -1.5rem;
+  padding-left: 2rem;
+  padding-right: 0 4px;
 }
 
 .EventRound {
@@ -81,6 +93,7 @@ legend {
 
 .RoundNo {
   padding-right: 1rem;
+  border-right: 1px solid white;
 }
 
 .diamond {
@@ -148,9 +161,9 @@ legend {
 }
 
 .register-button:hover{
-  color: black;
-  background-color: white;
-  border-image: none;
+  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .button-icon {

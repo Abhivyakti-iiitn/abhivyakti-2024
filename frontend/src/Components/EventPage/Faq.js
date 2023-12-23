@@ -18,7 +18,7 @@ const Faq = () => {
 
     return (
         <div className="faq-container">
-            <h1>FAQs</h1>
+            <h1>FAQ</h1>
             {faqData.map((faq, index) => (
                 <div key={index} className="faq-item">
                     <div className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
