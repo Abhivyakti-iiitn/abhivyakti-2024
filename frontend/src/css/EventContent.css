@@ -7,6 +7,14 @@
   height: auto;
   position:relative;
 }
+.EventContent_content{
+  font-size: large;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.EventDetail {
+  flex-direction: column;
+}
 .EventContent-left {
   width: 40vw;
   margin: auto;
@@ -14,6 +22,13 @@
   font-size: larger;
 }
 .EventContent-right {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+}
+.EventContent-right_right {
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -34,8 +49,8 @@ fieldset:nth-of-type(1) {
 }
 
 legend {
-  font: 15pt/0 "Carta Marina W00 Regular";
-  margin: auto; /* to center */
+  font: 21pt/0 "Carta Marina W00 Regular";
+  margin-left: 0px;
   padding: 0 4px;
 }
 
@@ -45,9 +60,27 @@ legend {
   border-left: 2px solid #bc615e;
   display: flex;
 }
+.LastRound {
+  border: none;
+  padding-bottom: 0;
+}
 
 .RoundContent {
   top: 8.48px;
+  color: #fff;
+}
+
+.RoundDetails {
+  padding: 1rem;
+}
+
+.RoundDate {
+  padding-left: 1rem;
+  border-left: 1px solid white;
+}
+
+.RoundNo {
+  padding-right: 1rem;
 }
 
 .diamond {
