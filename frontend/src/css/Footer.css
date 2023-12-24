@@ -6,9 +6,17 @@
   color: #fff;
   font-family: "Carta Marina W00 Regular";
 }
+
+.footer h2{
+  text-align: center;
+  margin-top: -1.3em;
+  color: #fff;
+  font-family: "Carta Marina W00 Regular";
+}
 .footer .footer-content {
   display: flex;
   justify-content: space-around;
+  background-color: black;
 }
 .footer .footer-content .footer-section {
   flex: 1;
@@ -52,8 +60,10 @@
   color: rgb(205, 41, 41);
 }
 .footer .footer-bottom {
-  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
+  background-color: black;
   font-size: smaller;
 }
 .footer .footer-bottom p {

@@ -28,8 +28,10 @@ function Event() {
             <Timeline/>
             <Faq/> */}
             <EventContent content={content[params.eventname]} />
+            <Prize/>
             <Faq />
             <Contact />
+
             <Footer/>
             
         </div>

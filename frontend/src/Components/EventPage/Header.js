@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react'
 import "../../css/Eventheader.css"
+import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 
 function Header(props) {
     console.log("sad", props)
+
+
     return (
         <>
-            <div className='main__header'>
+            <div className={`event_header ${props.event.name.toLowerCase()}`} >
                 <div div className='top' >
                     <div className="left">
                         <ul>
+                            <img src={logo} alt="Loho Here" srcset="" />
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>
@@ -25,8 +29,18 @@ function Header(props) {
                     </div>
                 </div >
                 <div className="mid">
-                    <h1>{props.event.name} <br></br></h1>
-                    <h3>tagline, tagline, tagline</h3>
+                    <div className="mid_left">
+
+                        <h1>{props.event.name} <br></br></h1>
+                        <h3>tagline, tagline, tagline</h3>
+                    </div>
+                    <div className="mid_right">
+                        <h4>Brought to you by</h4>
+                        <p><span><img src={logo} alt="clublogo" srcset="" /><br />
+                            club Name</span></p>
+                        <h4>sponsored by</h4>
+                        <p><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /></p>
+                    </div>
                 </div>
             </div >
         </>

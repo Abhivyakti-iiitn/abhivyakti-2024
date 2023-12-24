@@ -1,10 +1,13 @@
 .EventContent {
-  background: linear-gradient(to right, #f9daa8, #bc615e);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  /* background: linear-gradient(to right, #f9daa8, #bc615e); */
+  background-image: linear-gradient(to right bottom, #000000, #000000, #050001a0, #000000, #3f0b19, #3f0b19, #3f0b19, #3f0b19, #21010193, #08000190, #000000, #000000);
+  /* background-image:url(../assets/EventPageAsst/starpod.png) ;
+  background-size:500em; */
+  /* color: transparent; */
+  /* -webkit-background-clip: text;
+  background-clip: text; */
   display: flex;
-  height: auto;
+  height: 100vh;
   position:relative;
 }
 .EventContent_content{
@@ -34,10 +37,29 @@
 }
 .EventContent-right {
   width: 60vw;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   /* margin: auto; */
   margin-top: 10px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgb(33, 1, 1);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #3f0b196a;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5b1024;
+    
+    border-radius: 10px;
+  }
+
 }
 .EventContent-right_right {
   width: 60vw;
@@ -146,10 +168,11 @@ legend {
   background-color: black;
   color:white; /* Set text color to white */
   border: 2px solid;
+  border-radius: 10px;  
   border-image: linear-gradient(to right,#F9DAA8 , #BC615E);
   border-image-slice: 1;
-  border-radius: 10px;
-  padding: 20px;
+  padding: 10px 20px;
+  margin-top: 5%;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -162,6 +185,7 @@ legend {
 .register-button:hover{
   background: linear-gradient(to bottom, #F9DAA8, #BC615E);
   -webkit-text-fill-color: transparent;
+  background-clip:text ;
   -webkit-background-clip: text;
 }
 
