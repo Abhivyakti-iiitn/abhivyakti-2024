@@ -6,7 +6,7 @@ function EventCards(props) {
     const nav = useNavigate();
     if (!props.exploreAllEvents) {
         return (
-            <div id={props.id} className='EventCard hiddenCard' onClick={()=>{nav('/event')}}>
+            <div id={props.id} className='EventCard hiddenCard' onClick={()=>{nav(`/event/${props.name}`)}}>
                 <div className='event-container'>
                     <div className='event__img-container'>
                         <img src={imgSrc} className='event__img' alt='event_image'></img>

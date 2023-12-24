@@ -2,6 +2,7 @@
     text-align: center;
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);
     -webkit-text-fill-color: transparent; 
+    background-clip: text;
     -webkit-background-clip: text; 
     font-size: 40px;
     font-weight: 400;
@@ -25,9 +26,9 @@
     font-size: 16px;
     margin: 20vh auto 15vh auto;
     border: 2px solid red;
-    border-radius: 40px;
     width: fit-content;
     padding: 2vh 6vh 2vh 6vh;
+    border-radius: 40px;
     border-image: linear-gradient(to bottom, #F9DAA8, #BC615E) 1;
 }
 @media screen and (max-width: 450px) {
