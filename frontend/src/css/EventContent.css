@@ -1,0 +1,228 @@
+.EventContent {
+  /* background: linear-gradient(to right, #f9daa8, #bc615e); */
+  background-image: linear-gradient(to right bottom, #000000, #000000, #050001a0, #000000, #3f0b19, #3f0b19, #3f0b19, #3f0b19, #21010193, #08000190, #000000, #000000);
+  /* background-image:url(../assets/EventPageAsst/starpod.png) ;
+  background-size:500em; */
+  /* color: transparent; */
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+  display: flex;
+  height: 100vh;
+  position:relative;
+}
+.EventContent_content{
+  font-size: large;
+  color: #fff;
+  margin: 1.5rem 0 5rem 0;
+}
+.EventContent_content > * {
+  font-family: serif;
+}
+.EventDetail {
+  flex-direction: column;
+}
+.EventRules {
+  margin-bottom: 1rem;
+}
+.paddingLeft {
+  padding-left: 2rem
+}
+.EventContent-left {
+  width: 40vw;
+  /* display: flex;
+  flex-direction: column; */
+  margin: auto;
+  margin-top: 0;
+  font-size: larger;
+}
+.EventContent-right {
+  width: 60vw;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  margin-top: 10px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgb(33, 1, 1);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #3f0b196a;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5b1024;
+    
+    border-radius: 10px;
+  }
+
+}
+.EventContent-right_right {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+}
+
+fieldset {
+  border: 2px solid transparent;
+  border-top-color: #bc615e;
+  box-sizing: border-box;
+  grid-area: 1/1;
+  padding: 20px;
+  width: inherit;
+}
+fieldset:nth-of-type(1) {
+  background: content-box center/contain no-repeat violet;
+}
+
+legend {
+  font: 23pt/0 "Carta Marina W00 Regular";
+  margin-left: -1.5rem;
+  padding-left: 2rem;
+  padding-right: 0 4px;
+}
+
+.EventRound {
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+  border-left: 2px solid #bc615e;
+  display: flex;
+}
+.LastRound {
+  border: none;
+  padding-bottom: 0;
+}
+
+.RoundContent {
+  top: 8.48px;
+  color: #fff;
+}
+
+.RoundDetails {
+  padding: 1rem;
+}
+
+.RoundDate {
+  padding-left: 1rem;
+  border-left: 1px solid white;
+}
+
+.RoundNo {
+  padding-right: 1rem;
+}
+
+.diamond {
+  height: 6px;
+  width: 6px;
+  background-color: black;
+  border: 1px solid white;
+  position: relative;
+  left: calc(-2rem - 4.24px);
+  top: 1.06px;
+  transform: rotate(45deg);
+}
+
+.glow {
+  background-color: #fff;
+}
+
+.EventContent-left {
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    padding: 40px;
+    height:fit-content;
+}
+
+.sticky-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white; /* Set text color to white */
+  font-family: inherit; /* Use the parent font family */
+  gap:12px;
+  margin-top:8px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.register-button {
+  background-color: black;
+  color:white; /* Set text color to white */
+  border: 2px solid;
+  border-radius: 10px;  
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E);
+  border-image-slice: 1;
+  padding: 10px 20px;
+  margin-top: 5%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:fit-content;
+  transition: color 0.3s ease;
+  font-size: x-large;
+}
+
+.register-button:hover{
+  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  background-clip:text ;
+  -webkit-background-clip: text;
+}
+
+.button-icon {
+  margin-left: 5px;
+}
+
+.EventContent-left {
+  position: relative;
+}
+
+.EventContent-left::before,
+.EventContent-left::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+}
+
+/* Top border */
+.EventContent-left::before {
+  top: 0;
+  left: 0;
+  right: 55%;
+  border: 2px solid;
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
+  border-image-slice: 1;
+}
+
+/* Right border */
+.EventContent-left::after {
+  top: 0;
+  right: 39%;
+  height: 25%;
+  border: 2px solid;
+  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
+  border-image-slice: 1;
+  transform: skewX(45deg); /* Tilt the right border to the left */
+  transform-origin: bottom; /* Set the transform origin to the bottom */
+}
+

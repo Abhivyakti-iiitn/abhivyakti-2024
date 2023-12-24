@@ -24,7 +24,7 @@ body {
 }
 
 .Events__heading {
-  font-size: xxx-large;
+  font-size: 3vw;
   text-transform: uppercase;
   background: linear-gradient(#f9daa8, #bc615e);
   color: transparent;
@@ -52,6 +52,7 @@ body {
 .EventCard .event-container {
   height: 100%;
   padding: 1.5rem;
+  max-width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }

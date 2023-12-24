@@ -1,0 +1,155 @@
+h2 {
+  text-align: left;
+}
+
+.container__speaker {
+  margin-left: 5vw;
+  width: auto;
+  height: 100vh;
+  color: white;
+  padding: 4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+.container__speaker .speaker__content {
+  width: fit-content;
+  height: fit-content;
+}
+.container__speaker .speaker-info {
+  display: flex;
+  flex-direction: row;
+}
+.container__speaker .speaker-info .speaker__name {
+  width: 20vw;
+  min-width: fit-content;
+  max-width: fit-content;
+  font-size: 3vw;
+  text-transform: uppercase;
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Carta Marina W00 Regular";
+  text-align: left;
+}
+.container__speaker .speaker {
+  width: 100vw;
+  max-width: 80vw;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+.container__speaker .speaker .speaker-content {
+  width: 50%;
+  padding-right: 2vw;
+}
+.container__speaker .speaker .speaker__header {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  margin-left: -10vw;
+}
+.container__speaker .speaker .speaker__info {
+  margin-top: -2vw;
+  text-align: left;
+  font-size: 1.2vw;
+  font-family: "Carta Marina W00 Regular";
+}
+.container__speaker .speaker .social-media-icons {
+  margin-top: -1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container__speaker .speaker .social-media-icons p {
+  font-size: 2.5vw;
+  line-height: 0px;
+  margin-right: 1vw;
+  font-weight: 900;
+}
+.container__speaker .speaker .social-media-icons img {
+  width: 1.6vw;
+  margin-top: 0.4vw;
+}
+.container__speaker .speaker .social-media-icons a {
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 767px) {
+  .container__speaker {
+    max-width: 100vw;
+    min-height: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100vw;
+    overflow: hidden;
+  }
+  .container__speaker .speaker__content {
+    width: fit-content;
+    height: fit-content;
+  }
+  .container__speaker .speaker-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__speaker .speaker-info .speaker {
+    width: 100vw;
+    height: fit-content;
+    margin-bottom: 5vw;
+    display: grid;
+    padding-left: 3vw;
+  }
+  .container__speaker .speaker-info .speaker .speaker-content {
+    width: 80vw;
+  }
+  .container__speaker .speaker-info .speaker .speaker__header {
+    min-width: 80vw;
+    min-height: 80vw;
+    padding-left: 0vw;
+    padding-bottom: 15vw;
+    margin-bottom: 3vw;
+  }
+  .container__speaker .speaker-info .speaker .speaker__name {
+    width: auto;
+    min-width: fit-content;
+    max-width: fit-content;
+    font-size: 10vw;
+    text-transform: uppercase;
+    background: linear-gradient(#f9daa8, #bc615e);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Carta Marina W00 Regular";
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+  .container__speaker .speaker-info .speaker .speaker__info {
+    text-align: left;
+    font-size: 6vw;
+    font-family: "Carta Marina W00 Regular";
+  }
+  .container__speaker .speaker-info .speaker .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: -15vw;
+    align-items: center;
+  }
+  .container__speaker .speaker-info .speaker .social-media-icons p {
+    margin-top: 20vw;
+    margin-left: 0vw;
+    margin-right: 2vw;
+    font-size: 11vw;
+    font-weight: 900;
+  }
+  .container__speaker .speaker-info .speaker .social-media-icons img {
+    width: 8vw;
+    margin-top: 10vw;
+  }
+  .container__speaker .speaker-info .speaker .social-media-icons a {
+    margin-right: 10px;
+  }
+}

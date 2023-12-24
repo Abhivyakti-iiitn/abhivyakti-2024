@@ -1,0 +1,106 @@
+.showstopper {
+  background: url(../assets/EventPageAsst/showstopper.png);
+}
+
+.starpod {
+  background: url(../assets/EventPageAsst/starpod.png);
+}
+
+.beatsmithshowdown {
+  background: url(../assets/EventPageAsst/beatboxshowdown.png);
+}
+
+.event_header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  flex-direction: column;
+  display: flex;
+}
+.event_header .top {
+  display: flex;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+}
+.event_header .top .left ul {
+  display: flex;
+  gap: 10px;
+  font-size: 1.4rem;
+  margin-top: 20%;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+}
+.event_header .top .left ul div {
+  border: 2px solid white;
+  height: 20px;
+  margin-right: 10px;
+}
+.event_header .top .left ul img {
+  display: inline;
+  justify-self: end;
+  max-width: 40%;
+}
+.event_header .top .right {
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.event_header .top .right ul {
+  list-style: none;
+  text-align: right;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+.event_header .mid {
+  width: 100%;
+  height: 50%;
+  margin-left: 10%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.event_header .mid h1 {
+  font-size: 4rem;
+  font-family: "LLDOT", "Dot", "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+@media (max-width: 650px) {
+  .event_header .mid h1 {
+    text-align: center;
+  }
+}
+.event_header .mid h3 {
+  color: white;
+  font-size: xx-large;
+}
+@media (max-width: 650px) {
+  .event_header .mid h3 {
+    font-size: x-large;
+    margin-top: -1.3em;
+    text-align: center;
+  }
+}
+.event_header .mid .mid_right {
+  margin-right: 15%;
+  text-align: end;
+}
+.event_header .mid .mid_right p {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+@media (max-width: 650px) {
+  .event_header .mid .mid_right {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 650px) {
+  .event_header .mid {
+    flex-direction: column;
+    margin-left: auto;
+  }
+}

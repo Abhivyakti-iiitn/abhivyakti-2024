@@ -1,10 +1,11 @@
 // components/Footer.js
 import React from 'react';
-import '../scss/Footer.scss';
+import '../css/Footer.css';
 
 const Footer = () => {
   return (
     <div className="footer">
+
       <div className="footer-content">
         <div className="footer-section">
           <h3>Quick Links</h3>

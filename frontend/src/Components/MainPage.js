@@ -9,9 +9,9 @@ import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
 const events = [
-  { name: "a", desc: "event a" },
-  { name: "b", desc: "event b" },
-  { name: "c", desc: "event c" },
+  { name: "showstopper", desc: "event a" },
+  { name: "beatsmithShowdown", desc: "event b" },
+  { name: "starpod", desc: "event c" },
   { name: "d", desc: "event d" },
   { name: "e f", desc: "event e f" },
 ];
