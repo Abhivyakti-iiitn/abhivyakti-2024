@@ -131,4 +131,17 @@
 .GoogleSignIn {
     margin: 0.75rem 0;
     width: 100%;
+    & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.GoogleSignInBtn {
+    width: 100%;
+    
+    &>* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }

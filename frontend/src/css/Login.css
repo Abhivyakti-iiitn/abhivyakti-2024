@@ -126,3 +126,15 @@
   margin: 0.75rem 0;
   width: 100%;
 }
+.GoogleSignIn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GoogleSignInBtn {
+  width: 100%;
+}
+.GoogleSignInBtn > * {
+  font-family: Arial, Helvetica, sans-serif;
+}

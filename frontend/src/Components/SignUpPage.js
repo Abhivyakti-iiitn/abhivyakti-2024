@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 import '../css/Login.css';
 import logo from "../assets/EventPageAsst/logoPlaceHolder.svg";
 import { useNavigate } from 'react-router-dom';
+import { GoogleLogin } from 'react-google-login';
+import { gapi } from 'gapi-script';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+
+const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const SignUpPage = () => {
     const [userName, setUserName] = useState('');
@@ -13,20 +17,16 @@ const SignUpPage = () => {
 
     const navigateTo = useNavigate();
 
-    function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
-    }
-    window.onload = function () {
-        google.accounts.id.initialize({
-            client_id: "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com",
-            callback: handleCredentialResponse
-        });
-        google.accounts.id.renderButton(
-            document.getElementById("buttonDiv"),
-            { theme: "outline", size: "large" }  // customization attributes
-        );
-        google.accounts.id.prompt(); // also display the One Tap dialog
-    }
+    useEffect(() => {
+        function start() {
+            gapi.client.init({
+                clientId: clientId,
+                scope: ""
+            })
+        }
+
+        gapi.load('client:auth2', start)
+    })
 
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
@@ -115,7 +115,15 @@ const SignUpPage = () => {
                             </button>
                         </form>
                         <div className='GoogleSignIn'>
-                            <div id="buttonDiv"></div>
+                            <GoogleLogin
+                                className='GoogleSignInBtn'
+                                clientId={clientId}
+                                buttonText="Continue with Google"
+                                onSuccess={(res) => {console.log("Login successful", res.profileObj);}}
+                                onFailure={(res) => {console.log("Failed to authorize google id", res);}}
+                                cookiePolicy='single_host_origin'
+                                isSignedIn={true}
+                            />
                         </div>
                         <div className='SignUpToLogin'>
                             <span>
