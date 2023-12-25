@@ -23,35 +23,35 @@ const Form = () => {
     };
   
     return (
-      <div>
-        <h2>React Form</h2>
-        <form onSubmit={handleSubmit}>
+      <div className='formDiv'>
+        <h1>Registration Form</h1>
+        <form onSubmit={handleSubmit} className='form'>
           {/* Team Name */}
-          <div>
+          <div className='infoDiv'>
             <label>Team Name</label>
             <input type="text" name="teamName" onChange={handleInputChange} required />
           </div>
   
           {/* Team Lead Name */}
-          <div>
+          <div className='infoDiv'>
             <label>Team Lead Name</label>
             <input type="text" name="teamLeadName" onChange={handleInputChange} required />
           </div>
   
           {/* Contact Number */}
-          <div>
+          <div className='infoDiv'>
             <label>Contact Number</label>
             <input type="tel" name="contactNo" onChange={handleInputChange} required />
           </div>
   
           {/* Email ID */}
-          <div>
+          <div className='infoDiv'>
             <label>Email ID</label>
             <input type="email" name="emailId" onChange={handleInputChange} required />
           </div>
   
           {/* College Name */}
-          <div>
+          <div className='infoDiv'>
             <label>College Name</label>
             <input type="text" name="collegeName" onChange={handleInputChange} required />
           </div>
@@ -59,7 +59,7 @@ const Form = () => {
           {/* Questions Section */}
           <div>
             {questionsData.questionsSection.questions.map((question) => (
-              <div key={question.id}>
+              <div key={question.id} className='infoDiv'>
                 <label>{question.label}</label>
                 {question.type === 'radio' ? (
                   question.options.map((option) => (

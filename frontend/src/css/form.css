@@ -1,0 +1,24 @@
+.formDiv {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
