@@ -7,6 +7,8 @@
   import MainPage from "./Components/MainPage";
   import { Routes, Route } from 'react-router-dom'
 import FormPage from "./Components/RegistrationForm/FormPage";
+import LoginPage from "./Components/Auth/LoginPage";
+import SignUpPage from "./Components/Auth/SignUpPage";
 
 
   // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -35,6 +37,8 @@ import FormPage from "./Components/RegistrationForm/FormPage";
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/event/:eventname" element={<Event />}></Route>
           <Route path="/form" element={<FormPage/>}></Route>
+          <Route path="/signin" element={<LoginPage/>}></Route>
+          <Route path="/signup" element={<SignUpPage/>}></Route>
         </Routes>
       </div>
     );
