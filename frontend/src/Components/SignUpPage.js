@@ -121,7 +121,7 @@ const SignUpPage = () => {
                             <span>
                                 Already have an account?
                             </span>
-                            <span className='linkToLogin' onClick={() => { navigateTo(`/login`) }}>
+                            <span className='linkToLogin' onClick={() => { navigateTo(`/`) }}>
                                 Log In
                             </span>
                         </div>
