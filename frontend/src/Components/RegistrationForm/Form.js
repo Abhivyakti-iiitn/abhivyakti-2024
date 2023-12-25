@@ -29,35 +29,35 @@ const Form = () => {
           {/* Team Name */}
           <div className='infoDiv'>
             <label>Team Name</label>
-            <input type="text" name="teamName" onChange={handleInputChange} required />
+            <input type="text" name="teamName" onChange={handleInputChange} required placeholder="Team Name" className="input"/>
           </div>
   
           {/* Team Lead Name */}
           <div className='infoDiv'>
             <label>Team Lead Name</label>
-            <input type="text" name="teamLeadName" onChange={handleInputChange} required />
+            <input type="text" name="teamLeadName" onChange={handleInputChange} required placeholder="Team Lead" className="input"/>
           </div>
   
           {/* Contact Number */}
           <div className='infoDiv'>
             <label>Contact Number</label>
-            <input type="tel" name="contactNo" onChange={handleInputChange} required />
+            <input type="tel" name="contactNo" onChange={handleInputChange} required placeholder="Enter your contact no."className="input"/>
           </div>
   
           {/* Email ID */}
           <div className='infoDiv'>
             <label>Email ID</label>
-            <input type="email" name="emailId" onChange={handleInputChange} required />
+            <input type="email" name="emailId" onChange={handleInputChange} required placeholder="Enter your Email Id"className="input"/>
           </div>
   
           {/* College Name */}
           <div className='infoDiv'>
             <label>College Name</label>
-            <input type="text" name="collegeName" onChange={handleInputChange} required />
+            <input type="text" name="collegeName" onChange={handleInputChange} required placeholder="College/Institute Name"className="input"/>
           </div>
   
           {/* Questions Section */}
-          <div>
+          <div className='questionDiv'>
             {questionsData.questionsSection.questions.map((question) => (
               <div key={question.id} className='infoDiv'>
                 <label>{question.label}</label>
@@ -69,6 +69,7 @@ const Form = () => {
                         name={question.id}
                         value={option}
                         onChange={() => handleRadioChange(question.id, option)}
+                        className="input"
                       />
                       {option}
                     </label>
@@ -79,12 +80,12 @@ const Form = () => {
                     onChange={handleInputChange}
                     rows="4"
                     cols="50"
+                    placeholder="Your text goes here"
                   />
                 )}
               </div>
             ))}
           </div>
-  
           <button type="submit">Continue</button>
         </form>
       </div>

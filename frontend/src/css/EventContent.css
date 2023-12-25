@@ -166,7 +166,7 @@ legend {
   margin-right: 10px;
 }
 
-.register-button {
+button{
   background-color: black;
   color:white; /* Set text color to white */
   border: 2px solid;
@@ -184,7 +184,7 @@ legend {
   font-size: x-large;
 }
 
-.register-button:hover{
+button:hover{
   background: linear-gradient(to bottom, #F9DAA8, #BC615E);
   -webkit-text-fill-color: transparent;
   background-clip:text ;
