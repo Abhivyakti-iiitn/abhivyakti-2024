@@ -43,20 +43,20 @@ function Header(props) {
                     </div>
                 </div>
             </div >
-            <div className={`sticky_header ${props.event.name.toLowerCase()}`} >
+            <div className={`sticky_header`} >
                 <div div className='top' >
                     <div className="left">
                         <h1>{props.event.name} <br></br></h1>
-                        <h3>tagline, tagline, tagline</h3>
+                        {/* <h3>tagline, tagline, tagline</h3> */}
                     </div>
-                    <div className="right">
+                    {/* <div className="right">
                         <ul>
                             <li>ABOUT</li>
                             <li>EVENTS</li>
                             <li>TEAM</li>
                             <li>CONTACT</li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div >
             </div >
 
