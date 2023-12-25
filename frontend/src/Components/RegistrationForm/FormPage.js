@@ -1,10 +1,12 @@
-import React from 'react';
-import EventContent from "../../assets/EventContent.json";
+import React from 'react'
+import FormPageLeft from './FormPageLeft'
+import Form from './Form'
 
 const FormPage = () => {
   return (
-    <div>
-        <h1>EventContent.showStopper.name</h1>
+    <div className='FormPage'>
+        <FormPageLeft />
+        <Form />
     </div>
   )
 }

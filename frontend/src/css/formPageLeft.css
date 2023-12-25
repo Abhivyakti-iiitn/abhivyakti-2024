@@ -1,0 +1,39 @@
+.main {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: none;
+}
+
+img {
+  width: 6em;
+  margin: 2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 2px solid;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
+  border-image-slice: 1;
+  padding: 4px;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+p {
+  color: white;
+}
