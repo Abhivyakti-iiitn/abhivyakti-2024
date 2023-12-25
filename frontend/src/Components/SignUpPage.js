@@ -13,20 +13,20 @@ const SignUpPage = () => {
 
     const navigateTo = useNavigate();
 
-    function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
-    }
-    window.onload = function () {
-        google.accounts.id.initialize({
-            client_id: "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com",
-            callback: handleCredentialResponse
-        });
-        google.accounts.id.renderButton(
-            document.getElementById("buttonDiv"),
-            { theme: "outline", size: "large" }  // customization attributes
-        );
-        google.accounts.id.prompt(); // also display the One Tap dialog
-    }
+    // function handleCredentialResponse(response) {
+    //     console.log("Encoded JWT ID token: " + response.credential);
+    // }
+    // window.onload = function () {
+    //     google.accounts.id.initialize({
+    //         client_id: "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com",
+    //         callback: handleCredentialResponse
+    //     });
+    //     google.accounts.id.renderButton(
+    //         document.getElementById("buttonDiv"),
+    //         { theme: "outline", size: "large" }  // customization attributes
+    //     );
+    //     google.accounts.id.prompt(); // also display the One Tap dialog
+    // }
 
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
@@ -87,35 +87,47 @@ const SignUpPage = () => {
                                 <label htmlFor='passwordForm' className='loginLabel'>
                                     Password
                                 </label>
-                                <div className='passwordInputDiv'> 
+                                <div className='passwordInputDiv'>
                                     <input
                                         className='passwordInput'
                                         name='passwordForm'
-                                        type={`${showPassword?'text':'password'}`}
+                                        type={`${showPassword ? 'text' : 'password'}`}
                                         placeholder='Enter Your Password'
                                         value={userPassword}
                                         onChange={handlePasswordChange}
                                     />
-                                    {(showPassword?
+                                    {(showPassword ?
                                         <VisibilityOffOutlinedIcon
                                             className='EyeIcon'
-                                            onClick={() => {setShowPassword(false)}}
+                                            onClick={() => { setShowPassword(false) }}
                                         />
                                         :
                                         <VisibilityOutlinedIcon
                                             className='EyeIcon'
-                                            onClick={() => {setShowPassword(true)}}
+                                            onClick={() => { setShowPassword(true) }}
                                         />
                                     )}
                                 </div>
                             </div>
-                            
+
                             <button className='submitButton' type='submit' >
                                 Create account
                             </button>
                         </form>
                         <div className='GoogleSignIn'>
-                            <div id="buttonDiv"></div>
+                            <div id="g_id_onload"
+                                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                                data-login_uri="https://your.domain/your_login_endpoint"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
                         </div>
                         <div className='SignUpToLogin'>
                             <span>
