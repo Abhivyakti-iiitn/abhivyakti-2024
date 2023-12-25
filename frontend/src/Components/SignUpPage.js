@@ -13,21 +13,6 @@ const SignUpPage = () => {
 
     const navigateTo = useNavigate();
 
-    // function handleCredentialResponse(response) {
-    //     console.log("Encoded JWT ID token: " + response.credential);
-    // }
-    // window.onload = function () {
-    //     google.accounts.id.initialize({
-    //         client_id: "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com",
-    //         callback: handleCredentialResponse
-    //     });
-    //     google.accounts.id.renderButton(
-    //         document.getElementById("buttonDiv"),
-    //         { theme: "outline", size: "large" }  // customization attributes
-    //     );
-    //     google.accounts.id.prompt(); // also display the One Tap dialog
-    // }
-
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
         document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
@@ -115,19 +100,7 @@ const SignUpPage = () => {
                             </button>
                         </form>
                         <div className='GoogleSignIn'>
-                            <div id="g_id_onload"
-                                data-client_id="604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com"
-                                data-login_uri="http://localhost:3000"
-                                data-auto_prompt="false">
-                            </div>
-                            <div class="g_id_signin"
-                                data-type="standard"
-                                data-size="large"
-                                data-theme="outline"
-                                data-text="sign_in_with"
-                                data-shape="rectangular"
-                                data-logo_alignment="left">
-                            </div>
+                            GoogleSignIn
                         </div>
                         <div className='SignUpToLogin'>
                             <span>
