@@ -1,0 +1,80 @@
+.formDiv {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #5E6366;
+  font-size: large;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #323232;
+  opacity: 60%;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.input {
+  color: #ABAFB1;
+  border: none;
+  border-radius: 12px;
+  font-size: larger;
+}
+
+input, textarea::placeholder {
+  color: #ABAFB1;
+}
+
+textarea {
+  color: white;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.questionDiv {
+  gap: 24px;
+}
+
+.register-button {
+  background-color: black;
+  color: white; /* Set text color to white */
+  border: 2px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
+  border-image-slice: 1;
+  padding: 10px 20px;
+  margin-top: 5%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease;
+  font-size: x-large;
+}
+
+.register-button:hover {
+  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

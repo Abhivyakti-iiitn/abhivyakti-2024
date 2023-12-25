@@ -1,0 +1,25 @@
+{
+    "questionsSection": {
+      "label": "Questions Section",
+      "questions": [
+        {
+          "id": "q1",
+          "label": "Are you familiar with React?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": "q2",
+          "label": "Have you worked on any React projects before?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+            "id": "q3",
+            "label": "Explain your experience with React in a few sentences.",
+            "type": "textarea"
+        }
+      ]
+    }
+  }
+  
