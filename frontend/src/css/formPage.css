@@ -1,0 +1,4 @@
+.FormPage {
+  display: flex;
+  flex-direction: row;
+}

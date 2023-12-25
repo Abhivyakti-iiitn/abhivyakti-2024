@@ -1,6 +1,7 @@
 import React from 'react'
 import FormPageLeft from './FormPageLeft'
 import Form from './Form'
+import "../../newscss/formPage.scss"
 
 const FormPage = () => {
   return (
