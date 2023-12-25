@@ -33,6 +33,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.SignupFormArea {
+  width: 18.6rem;
+}
+
 .signUpHeading {
   background: linear-gradient(#f9daa8, #bc615e);
   font-size: 2rem;
@@ -42,6 +46,8 @@
   background-clip: text;
   margin-top: 0;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .loginInputs {

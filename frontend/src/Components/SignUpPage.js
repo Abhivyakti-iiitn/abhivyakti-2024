@@ -26,7 +26,7 @@ const SignUpPage = () => {
         }
 
         gapi.load('client:auth2', start)
-    })
+    }, []);
 
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;

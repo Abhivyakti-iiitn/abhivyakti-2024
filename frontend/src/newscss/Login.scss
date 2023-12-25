@@ -36,6 +36,10 @@
     }
 }
 
+.SignupFormArea {
+    width: 18.6rem;
+}
+
 .signUpHeading {
     background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
     font-size: 2rem;
@@ -45,6 +49,8 @@
     background-clip: text;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .loginInputs {

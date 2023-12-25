@@ -9,6 +9,7 @@ import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
 import SignUpPage from "./SignUpPage";
+import LoginPage from "./LoginPage";
 const events = [
   { name: "showstopper", desc: "event a" },
   { name: "beatsmithShowdown", desc: "event b" },
@@ -57,7 +58,8 @@ function MainPage() {
             <HorizontalScrolling />
           </div>
         <Sponsors />
-        <SignUpPage />
+        {/* <SignUpPage />
+        <LoginPage /> */}
         <Footer />
     </div>
   );
