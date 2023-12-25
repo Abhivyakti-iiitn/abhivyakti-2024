@@ -3,7 +3,7 @@ import "../../css/Eventheader.css"
 import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 
 function Header(props) {
-    console.log("sad", props)
+    // console.log("sad", props)
 
 
     return (
@@ -43,6 +43,23 @@ function Header(props) {
                     </div>
                 </div>
             </div >
+            <div className={`sticky_header`} >
+                <div div className='top' >
+                    <div className="left">
+                        <h1>{props.event.name} <br></br></h1>
+                        {/* <h3>tagline, tagline, tagline</h3> */}
+                    </div>
+                    {/* <div className="right">
+                        <ul>
+                            <li>ABOUT</li>
+                            <li>EVENTS</li>
+                            <li>TEAM</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div> */}
+                </div >
+            </div >
+
         </>
     )
 }

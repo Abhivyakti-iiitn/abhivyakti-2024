@@ -104,3 +104,35 @@
     margin-left: auto;
   }
 }
+
+.sticky_header {
+  opacity: 0%;
+  height: 10%;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  background-color: transparent;
+  transition: 0.1s all;
+  display: flex;
+  justify-content: center;
+}
+.sticky_header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.sticky_header .top .left {
+  margin-left: 2%;
+}
+.sticky_header .top .right {
+  margin-right: 5%;
+}
+.sticky_header .top .right ul {
+  list-style: none;
+}
+
+.shown {
+  opacity: 100%;
+}
