@@ -1,4 +1,5 @@
 .AllEvents {
+  background-color: #0F0001;
   color: white;
   display: flex;
   flex-direction: column;
@@ -38,8 +39,17 @@
   width: 100%;
   height: 2px;
   background: #bc615e;
+  animation: mymove 0.5s ease-in-out;
 }
 
+@keyframes mymove {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .AllEventsFS {
   margin-top: 1rem;
   border: 2px solid transparent;
@@ -54,6 +64,10 @@
   font: 24pt/0 "Carta Marina W00 Regular";
   margin: auto;
   padding: 0 24px;
+}
+
+.EventSlides {
+  height: 100vh;
 }
 
 .EventSlide {

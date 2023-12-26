@@ -10,6 +10,7 @@ import FormPage from "./Components/RegistrationForm/FormPage";
 import LoginPage from "./Components/Auth/LoginPage";
 import SignUpPage from "./Components/Auth/SignUpPage";
 import Profile from "./Components/Profile";
+import AllEvents from "./Components/AllEvents";
 
 
   // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -41,6 +42,7 @@ import Profile from "./Components/Profile";
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/signup" element={<SignUpPage/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
+          <Route path="/allevents" element={<AllEvents/>}></Route>
         </Routes>
       </div>
     );

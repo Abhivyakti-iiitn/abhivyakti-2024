@@ -4,6 +4,7 @@ import Footer from './Footer';
 import {useNavigate} from "react-router-dom";
 import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from './LogoComponent';
+import StickyHeader from './StickyHeader';
 
 function Profile() {
     const navigateTo = useNavigate(); 
@@ -13,26 +14,7 @@ function Profile() {
     }
     return (
         <>
-            <div className={`pro_sticky_header`} >
-                <div div className='top' >
-                    <div className="left">
-                        <ul>
-                        <LogoComponent/>
-                            <li><div></div></li>
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-linkedin"></i></li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
-                        </ul>
-                    </div>
-                    <div className="right">
-                        <ul>
-                            <li onClick={()=>navigateTo('/')}>HOME</li>
-                            <li onClick={handleSignout}>SIGN OUT</li>
-                           
-                        </ul>
-                    </div>
-                </div >
-            </div >
+           <StickyHeader type = "1"/>
             <div className='profile_page'>
                 <div className='profile_heading'>
                     <div class="horizontal-line1"></div>
