@@ -101,9 +101,6 @@ const SignUpPage = () => {
                                     Create account
                                 </button>
                             </form>
-                            <div className='GoogleSignIn'>
-                                GoogleSignIn
-                            </div>
                             <div className='SignUpToLogin'>
                                 <span>
                                     Already have an account?
@@ -116,7 +113,6 @@ const SignUpPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
