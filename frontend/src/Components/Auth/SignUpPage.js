@@ -101,14 +101,11 @@ const SignUpPage = () => {
                                     Create account
                                 </button>
                             </form>
-                            <div className='GoogleSignIn'>
-                                GoogleSignIn
-                            </div>
                             <div className='SignUpToLogin'>
                                 <span>
                                     Already have an account?
                                 </span>
-                                <span className='linkToLogin' onClick={() => { navigateTo(`/`) }}>
+                                <span className='linkToLogin' onClick={() => { navigateTo(`/login`) }}>
                                     Log In
                                 </span>
                             </div>
@@ -116,7 +113,7 @@ const SignUpPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </>
     )
 }
