@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
@@ -7,6 +7,7 @@ function Header() {
     const nav = useNavigate();
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
     const particleCount = 200;
+    const [isLoggedin, setisLoggedin] = useState(false)
 
     //mounting the fire particle effect.
     useEffect(() => {
@@ -107,10 +108,19 @@ function Header() {
 
         animate();
 
+        if (localStorage.getItem("usrName")) {
+            // setisLoggedin(true);
+        }
         return () => {
             window.removeEventListener('resize', handleResize);
         };
+
+
     }, []);
+
+
+
+  
 //end of the useEffect hook
 
     return (
@@ -136,8 +146,8 @@ function Header() {
                     </div>
                     <div className="right">
                         <ul>
-                            <li onClick={()=>nav('/login')}>Login</li>
-                            <li>Profile</li>
+                            {!isLoggedin && <li onClick={()=>nav('/login')}>Login</li>}
+                           {isLoggedin && <li>Profile</li>}
                             <li>ABOUT</li>
                             <li>EVENTS</li>
                             <li>TEAM</li>

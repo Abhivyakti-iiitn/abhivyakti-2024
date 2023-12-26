@@ -37,11 +37,19 @@ const EventContentRight = (props) => {
     <div className='EventContent-right'>
       <div className='EventDetail EventDetailsSection'>
         <div className='EventContent_heading'>
-          <fieldset>
+          {/* <fieldset>
             <legend>
               Details
             </legend>
-          </fieldset>
+          </fieldset> */}
+          <div className="liner">
+
+            {/* <div className="line"></div> */}
+            <h1>
+            Details
+            </h1>
+            <div className="line"></div>
+          </div>
         </div>
         <div className='EventContent_content paddingLeft'>
           {props.details}
@@ -49,11 +57,19 @@ const EventContentRight = (props) => {
       </div>
       <div className='EventDetail roundsAndTimline'>
         <div className='EventContent_heading'>
-          <fieldset>
-            <legend>
+          {/* <fieldset>
+            <h2>
               Rounds & Timeline
-            </legend>
-          </fieldset>
+            </h2>
+          </fieldset> */}
+          <div className="liner">
+
+            {/* <div className="line"></div> */}
+            <h1>
+              Rounds & Timeline
+            </h1>
+            <div className="line"></div>
+          </div>
         </div>
         <div className='EventContent_content'>
           {props.timeline.map((date, id) => {
@@ -68,11 +84,19 @@ const EventContentRight = (props) => {
       </div>
       <div className='EventDetail rulesAndRegulation'>
         <div className='EventContent_heading'>
-          <fieldset>
+          {/* <fieldset>
             <legend>
               Rules & Regulations
             </legend>
-          </fieldset>
+          </fieldset> */}
+          <div className="liner">
+
+            {/* <div className="line"></div> */}
+            <h1>
+              Rules & Regulations
+            </h1>
+            <div className="line"></div>
+          </div>
         </div>
         <div className='EventContent_content paddingLeft'>
           <div className='EventRules'>
@@ -81,7 +105,7 @@ const EventContentRight = (props) => {
           <div>
             {props.regulations}
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   )

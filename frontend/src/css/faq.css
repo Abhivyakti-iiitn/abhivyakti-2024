@@ -13,6 +13,7 @@
   h1{
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
   }
   
@@ -27,15 +28,14 @@
   .faq-question {
     cursor: pointer;
     font-size: 20px;
-    line-height: 28px;
     font-weight: 700;
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     /* color:white; */
     font-family: sans-serif;
     margin: 0px;
-    padding: 24px;
     height: 100%;
     /* background-color: #2E2E2E; */
     border-radius: 12px;
@@ -57,14 +57,18 @@
     /* Adjust the duration (0.5s) as needed */
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     /* font-family: sans-serif; */
   }
   
   
   .faq-header {
+    padding: 5px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-top: 0%;
   }
   
   .faq-toggle-button {
