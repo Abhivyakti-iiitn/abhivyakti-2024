@@ -7,7 +7,7 @@ const FormPageLeft = () => {
   return (
     <div className='main'>
       <img src={logo}></img>
-      <div className='content'>
+      <div className='formContent'>
         <div className='title'>
           <h1>{EventContent.showstopper.name}</h1>
         </div>  

@@ -12,12 +12,14 @@
     border-image-slice: 1;
 }
 
-img{
+.main{
+    img{
     width:6em;
     margin:2em
 }
+}
 
-.content{
+.formContent{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +36,8 @@ img{
     margin: 0px;
 }
 
-p{
+.main{
+    p{
     color: white;
+}
 }
