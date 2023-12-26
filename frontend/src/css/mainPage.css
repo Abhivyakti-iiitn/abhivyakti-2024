@@ -65,22 +65,52 @@
 }
 
 
-/* svg formating css */
-.svg-background {
+.svgContainer{
+
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  
+}
+/* svg formating css */
+.svg-background {
   min-width: 100vw;
   min-height: 120vh;
   z-index: 1;
+ 
   /* Send the SVG to the background */
 }
 
+.svg-character {
+  min-width: 100vw;
+  min-height: 120vh;
+  z-index: 1;
+ 
+  /* Send the SVG to the background */
+}
 
+.characterContianer{
+  position: absolute;
+  top:0;
+  z-index: 3;
+}
 /* css for fire particle canvas */
 canvas {
   display: block;
   position: absolute;
   z-index: 2;
+}
+
+.left{
+  opacity: 0;
+  animation: leftHud 2s forwards 1.5s;
+}
+.right{
+  opacity: 0;
+  animation: rightHud 2s forwards 1.5s;
+}
+.mid{
+  opacity: 0;
+  animation: midHud 2s forwards 1.5s;
 }

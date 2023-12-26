@@ -4,7 +4,7 @@ import Svg from './SVG';
 
 function Header() {
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-    const particleCount = 200;
+    const particleCount = 50;
 
     //mounting the fire particle effect.
     useEffect(() => {
@@ -119,7 +119,10 @@ function Header() {
                 <canvas id="fireCanvas"></canvas>
 
                 {/* the background image rendered as SVG so that I can animate it */}
+                <div className='svgContainer'>
                 <Svg />
+                </div>
+                
                 {/* ignore this :- <img id="mysvg" className="svg-background" src="./bgimg.svg" alt="Animated SVG"></img> */}
 
 
