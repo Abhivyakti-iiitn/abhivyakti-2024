@@ -16,10 +16,10 @@ const LoginPage = () => {
 
     const navigateTo = useNavigate();
 
-    useEffect(() => {
-        const footerHeight = document.querySelector('.footer').offsetHeight;
-        document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
-    }, [])
+    // useEffect(() => {
+    //     const footerHeight = document.querySelector('.footer').offsetHeight;
+    //     document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
+    // }, [])
 
     const handleNameChange = (e) => {
         e.preventDefault();
@@ -95,7 +95,7 @@ const LoginPage = () => {
                                 <span>
                                     First Time Here?
                                 </span>
-                                <span className='linkToLogin' onClick={() => { navigateTo(`/login`) }}>
+                                <span className='linkToLogin' onClick={() => { navigateTo(`/signup`) }}>
                                     Sign Up
                                 </span>
                             </div>
@@ -103,6 +103,7 @@ const LoginPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -37,7 +37,7 @@ import SignUpPage from "./Components/Auth/SignUpPage";
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/event/:eventname" element={<Event />}></Route>
           <Route path="/form" element={<FormPage/>}></Route>
-          <Route path="/signin" element={<LoginPage/>}></Route>
+          <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/signup" element={<SignUpPage/>}></Route>
         </Routes>
       </div>

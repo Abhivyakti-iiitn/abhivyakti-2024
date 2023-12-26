@@ -22,7 +22,7 @@
   display: flex;
   gap: 15%;
   font-size: 1.4rem;
-  margin-top: 50%;
+  margin-top: 30%;
   text-decoration: none;
   list-style: none;
 }
@@ -32,6 +32,19 @@
   height: 20px;
   margin-right: 20px;
 }
+.main__header .top .left ul li {
+  cursor: pointer;
+}
+.main__header .top .right ul li {
+  
+  transition: all 0.3s ease;
+}
+.main__header .top .right ul li:hover {
+  cursor: pointer;
+  color: brown;
+}
+
+
 
 .main__header .top .right {
   margin-top: 5%;
