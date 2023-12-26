@@ -1,6 +1,7 @@
 @import '_variables.scss';
 
 .AllEvents {
+    overflow-x: hidden;
     background-color: #0F0001;
     color: white;
     display: flex;
@@ -35,17 +36,17 @@
             padding: 0.75em 1em;
             background: transparent;
             color: white;
-        
+
             &-items {
                 display: flex;
                 flex-direction: row;
                 position: relative;
-        
+
                 &>* {
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 }
             }
-        
+
             &-item {
                 font-size: 0.75rem;
                 padding: 0 2rem;
@@ -53,13 +54,13 @@
                 margin-right: 0.25em;
                 transition: color 0.06s linear;
                 user-select: none;
-        
+
                 &:hover {
                     cursor: pointer;
                     color: $text-color-gradient-2;
                 }
             }
-        
+
             &-underline {
                 height: 3px;
                 width: 40px;
@@ -70,7 +71,7 @@
                 transition: transform 0.5s, width 0.1s ease-in;
             }
         }
-        
+
     }
 }
 
@@ -78,6 +79,7 @@
     0% {
         width: 0%;
     }
+
     100% {
 
         width: 100%;
@@ -103,6 +105,10 @@
 
 .EventSlides {
     height: 100vh;
+    @media (max-width:850px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .EventSlide {
@@ -110,14 +116,32 @@
     display: flex;
     margin: 1.5rem 2rem;
     border-radius: 10px;
-
+    
     .EventImage {
         height: 100%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        @media (max-width:850px) {
+            width: 100%;
+            height: 100%;
+            
+            margin: 0%;
+        }
+        
     }
-
+    
+    & .EventSlide__Img{
+        @media (max-width:850px) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 60%;
+            margin: 0%;
+        }
+    }
+    
     &__Content {
+        
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -125,18 +149,19 @@
         padding: 0 1rem;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
 
+    }
+    
     &__desc {
         font-size: 1.25rem;
     }
-
+    
     &__text {
         &>* {
             font-family: 'Times New Roman', Times, serif;
         }
     }
-
+    
     &__name {
         font-size: 2.25rem;
         font-family: $font-family;
@@ -145,19 +170,22 @@
         -webkit-background-clip: text;
         background-clip: text;
     }
-
+    
     &__learnmore {
         display: flex;
         align-items: center;
         margin-top: 1rem;
         cursor: pointer;
-
+        
         &-arrow {
             margin-left: 0.2rem;
         }
     }
-
+    
     &__btn {
+        @media (max-width:850px) {
+           margin-bottom: 5%;
+        }
         .EventRegBtn {
             font-size: 1.15rem;
             background-color: transparent;
@@ -167,9 +195,48 @@
             border-image-slice: 1;
             cursor: pointer;
         }
-
+        
         &>* {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     }
+    @media (max-width:850px) {
+        flex-direction: column;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+    }
+}
+
+.blur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.114);
+    backdrop-filter: blur(2px);
+    padding: 0px 10px ;
+    @media (max-width:850px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    & .EventSlide__text .EventSlide__learnmore{
+        @media (max-width:850px) {
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+}
+
+
+.EventSlide__Content{
+    padding: 0%;
 }

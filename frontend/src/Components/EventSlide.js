@@ -27,15 +27,18 @@ const EventSlide = (props) => {
                 <img className='EventImage' src={imgSrc} />
             </div>
             <div className='EventSlide__Content' style={contentStyle}>
-                <div className='EventSlide__text'>
-                    <div className='EventSlide__name'>{props.event.name}</div>
-                    <div className='EventSlide__desc'>Description</div>
-                    <div className='EventSlide__learnmore' onClick={()=>{nav(`/event/${props.event.name}`)}}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
-                </div>
-                <div className='EventSlide__btn'>
-                    <button className='EventRegBtn'>
-                        Register
-                    </button>
+                <div className="blur">
+
+                    <div className='EventSlide__text'>
+                        <div className='EventSlide__name'>{props.event.name}</div>
+                        <div className='EventSlide__desc'>Description</div>
+                        <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
+                    </div>
+                    <div className='EventSlide__btn'>
+                        <button className='EventRegBtn'>
+                            Register
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

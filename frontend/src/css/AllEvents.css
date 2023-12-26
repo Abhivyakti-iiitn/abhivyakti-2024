@@ -1,4 +1,5 @@
 .AllEvents {
+  overflow-x: hidden;
   background-color: #0F0001;
   color: white;
   display: flex;
@@ -88,6 +89,12 @@
 .EventSlides {
   height: 100vh;
 }
+@media (max-width: 850px) {
+  .EventSlides {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .EventSlide {
   height: 8rem;
@@ -99,6 +106,22 @@
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+@media (max-width: 850px) {
+  .EventSlide .EventImage {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+  }
+}
+@media (max-width: 850px) {
+  .EventSlide .EventSlide__Img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    margin: 0%;
+  }
 }
 .EventSlide__Content {
   width: 100%;
@@ -132,6 +155,11 @@
 .EventSlide__learnmore-arrow {
   margin-left: 0.2rem;
 }
+@media (max-width: 850px) {
+  .EventSlide__btn {
+    margin-bottom: 5%;
+  }
+}
 .EventSlide__btn .EventRegBtn {
   font-size: 1.15rem;
   background-color: transparent;
@@ -143,4 +171,45 @@
 }
 .EventSlide__btn > * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media (max-width: 850px) {
+  .EventSlide {
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+}
+
+.blur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.114);
+  backdrop-filter: blur(2px);
+  padding: 0px 10px;
+}
+@media (max-width: 850px) {
+  .blur {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .blur .EventSlide__text .EventSlide__learnmore {
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.EventSlide__Content {
+  padding: 0%;
 }

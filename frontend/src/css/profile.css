@@ -176,6 +176,7 @@
   align-items: center;
   width: 100%;
   background-size: 100% 30rem;
+  z-index: 3;
 }
 .pro_sticky_header .top {
   display: flex;
