@@ -5,7 +5,7 @@ import Svg from './SVG';
 
 function Header() {
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-  
+    const nav = useNavigate();
    const [isLoggedin, setisLoggedin] = useState(false)
    const particleCount = 50;
 
