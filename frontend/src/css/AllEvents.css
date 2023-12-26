@@ -23,23 +23,42 @@
 .AllEvents .EventTypeControl > * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.AllEvents .EventTypeControl .EventTypeBtn {
-  font-size: 0.75rem;
-  padding: 0 2rem;
-  cursor: pointer;
+.AllEvents .EventTypeControl .EventTypeBtns {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0.75em 1em;
+  background: transparent;
+  color: white;
 }
-.AllEvents .EventTypeControl .active {
+.AllEvents .EventTypeControl .EventTypeBtns-items {
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
-.AllEvents .EventTypeControl .active:after {
-  content: "";
+.AllEvents .EventTypeControl .EventTypeBtns-items > * {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.AllEvents .EventTypeControl .EventTypeBtns-item {
+  font-size: 0.75rem;
+  padding: 0 2rem;
+  padding-bottom: 0.75rem;
+  margin-right: 0.25em;
+  transition: color 0.06s linear;
+  user-select: none;
+}
+.AllEvents .EventTypeControl .EventTypeBtns-item:hover {
+  cursor: pointer;
+  color: #bc615e;
+}
+.AllEvents .EventTypeControl .EventTypeBtns-underline {
+  height: 3px;
+  width: 40px;
+  border-radius: 2px;
+  background: #bc615e;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #bc615e;
-  animation: mymove 0.5s ease-in-out;
+  transition: transform 0.5s, width 0.1s ease-in;
 }
 
 @keyframes mymove {
@@ -61,7 +80,7 @@
 }
 
 .AllEventsL {
-  font: 24pt/0 "Carta Marina W00 Regular";
+  font: 32pt/0 "Carta Marina W00 Regular";
   margin: auto;
   padding: 0 24px;
 }
@@ -90,11 +109,14 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.EventSlide__desc {
+  font-size: 1.25rem;
+}
 .EventSlide__text > * {
   font-family: "Times New Roman", Times, serif;
 }
 .EventSlide__name {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: "Carta Marina W00 Regular";
   background: linear-gradient(#f9daa8, #bc615e);
   color: transparent;
@@ -111,7 +133,13 @@
   margin-left: 0.2rem;
 }
 .EventSlide__btn .EventRegBtn {
+  font-size: 1.15rem;
   background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-image: linear-gradient(#F9DAA8, #BC615E);
+  border-image-slice: 1;
+  cursor: pointer;
 }
 .EventSlide__btn > * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
