@@ -23,7 +23,7 @@ const MenuItems = [
   
     return (
       <div
-        className={`Allmenu-item ${selected ? "Allmenu-item--selected" : ""}`}
+        className={`EventTypeBtns-item ${selected ? "EventTypeBtns-item--selected" : ""}`}
         data-slug={item.slug}
         onClick={() => {
           onItemSelect(item);
@@ -78,11 +78,11 @@ const MenuItems = [
     ));
   
     return (
-      <div className="Allmenu">
-        <div className="Allmenu-items" ref={menuItemsRef}>
+      <div className="EventTypeBtns">
+        <div className="EventTypeBtns-items" ref={menuItemsRef}>
           {renderItems}
           <div
-            className="Allmenu-dash"
+            className="EventTypeBtns-underline"
             style={{
               width: dashWidth,
               transform: `translate3d(${dashPosition}px, 0 , 0)`
@@ -95,7 +95,6 @@ const MenuItems = [
 
 const AllEvents = () => {
     const [eventType, setEventType] = useState('');
-    const [activeButton, setActiveButton] = useState('all'); 
 
     const filteredEvents = eventType === "Solo" ? eventsArray.filter(event => event.Team === "Solo") : eventsArray.filter(event => event.Team !== "Solo");
     const events = eventType ? filteredEvents : eventsArray;
@@ -122,39 +121,6 @@ const AllEvents = () => {
                       handleClick(item.slug);
                     }}
                 />
-                {/* <div
-                    key='all'
-                    className={`EventTypeBtn ${activeButton === 'all' ? 'active' : ''}`}
-                    onClick={() => {
-                        setEventType('');
-                        setActiveButton('all');
-                    }}
-                >
-                    All Events
-                    <div className='AllEventsUnderline'></div>
-                </div>
-                <div
-                    key='solo'
-                    className={`EventTypeBtn ${activeButton === 'solo' ? 'active' : ''}`}
-                    onClick={() => {
-                        setEventType('Solo');
-                        setActiveButton('solo');
-                    }}
-                >
-                    Solo Events
-                    <div className='AllEventsUnderline'></div>
-                </div>
-                <div
-                    key='team'
-                    className={`EventTypeBtn ${activeButton === 'team' ? 'active' : ''}`}
-                    onClick={() => {
-                        setEventType('Team');
-                        setActiveButton('team');
-                    }}
-                >
-                    Team Events
-                    <div key={'underline'} className='AllEventsUnderline'></div>
-                </div> */}
             </div>
             <div className='EventSlides'>
                 {events.map((event) => (
