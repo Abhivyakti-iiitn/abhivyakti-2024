@@ -1,10 +1,17 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 import '../../css/prize.css';
 
 function Prize() {
+    const navigateTo = useNavigate();
     return (
-        <div>
-            <div className='prize'>PRIZE POOL</div>
+        <div className='prize_pool'>
+            <div className="liner">
+
+                <div className="line"></div>
+                <span className='prize'>PRIZE POOL</span>
+                <div className="line"></div>
+            </div>
             <div className='prize_amount'>
                 <div>
                     <div>Second Prize</div>
@@ -23,7 +30,7 @@ function Prize() {
                 <div>Additional Prizes</div>
                 <div>T-shirts/ Goodies /Swag pack/ Certificates.</div>
             </div>
-            <div className='register_btn'>Register Now</div>
+            <div className='register_btn' onClick={()=>navigateTo('/form')}>Register Now</div>
         </div>
     );
 }

@@ -18,17 +18,22 @@ const Faq = () => {
 
     return (
         <div className="faq-container">
-            <h1>FAQ</h1>
+            <div className="liner">
+
+                <div className="line"></div>
+                <h1>FAQ</h1>
+                <div className="line"></div>
+            </div>
             {faqData.map((faq, index) => (
                 <div key={index} className="faq-item">
                     <div className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
                         <div className="faq-header" onClick={() => toggleAnswer(index)}>
                             {faq.question}
-                            <button
+                            <span
                                 className="faq-toggle-button"
                             >
                                 {activeIndex === index ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-                            </button>
+                            </span>
                         </div>
                         <animated.div style={fadeIn} className={`faq-answer ${activeIndex === index ? 'show' : ''}`}>
                             {faq.answer}

@@ -6,8 +6,7 @@
     -webkit-background-clip: text; 
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 25vh;
-    margin-top: 10vh;
+    
 }
 .prize_amount{
     display: flex;
@@ -36,9 +35,7 @@
         flex-direction: column;
         height: 60vh;
     }
-    .prize{
-        margin-bottom: 10vh;
-    }
+
     .add_prize{
         margin-top: 0vh;
     }

@@ -3,11 +3,17 @@ import React from 'react';
 import '../../css/Footer.css';
 
 const Footer = () => {
+
+    const clickhandle = () => {
+        document.querySelector(".container").scrollTo(0,0);
+    }
     return (
         <div className="footer">
+            <div onClick={clickhandle} style={{cursor:'pointer'}}>
 
-            <h2>^</h2>
-            <h2>Back to Top</h2>
+                <h2>^</h2>
+                <h2>Back to Top</h2>
+            </div>
 
             <div className="footer-content">
 

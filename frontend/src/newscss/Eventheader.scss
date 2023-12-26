@@ -20,6 +20,22 @@
     flex-direction: column;
 
     display: flex;
+    
+
+    
+    // &::after{
+    //     content: "";
+    //     z-index: 12;
+    //     transform: translateY(30%);
+    //     margin-top: 5%;
+    //     height: 10%;
+    //     width: 100%;
+    //     background-color: rgba(53, 5, 5, 0.808);
+    //     filter: blur(10px);
+    //     -webkit-filter: blur(10px);
+    //     // box-shadow: 0px 10px 10px rgb(109, 9, 9);
+    //     // mix-blend-mode: color;
+    // }
 
 
     & .top {
@@ -113,6 +129,7 @@
             margin-left: auto;
         }
     }
+    
 }
 
 .sticky_header{

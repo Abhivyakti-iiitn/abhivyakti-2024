@@ -57,7 +57,7 @@
 
 
 .backdrop{
-  
+  filter: brightness(0.8) contrast(1.25);
   animation: scaleBackAnimation 1.5s linear, svgContainerAnimation 1.5s forwards 1.5s;
 }
 

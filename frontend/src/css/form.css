@@ -1,5 +1,5 @@
 .formDiv {
-  background-color: black;
+  background-color: #0F0001;
   width: 100%;
   height: auto;
   display: flex;
@@ -28,6 +28,11 @@
   border-radius: 12px;
   padding: 8px;
 }
+@media (max-width: 650px) {
+  .infoDiv {
+    width: 80%;
+  }
+}
 
 .input {
   color: #ABAFB1;
@@ -52,6 +57,10 @@
 
 .questionDiv {
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form button {
@@ -70,6 +79,7 @@
   width: fit-content;
   transition: color 0.3s ease;
   font-size: x-large;
+  margin-bottom: 5%;
 }
 
 .form button:hover {
