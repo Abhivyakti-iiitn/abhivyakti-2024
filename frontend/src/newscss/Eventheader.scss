@@ -53,6 +53,11 @@
             list-style: none;
             align-items: center;
 
+            li:hover{
+                cursor: pointer;
+                color: brown;
+            }
+
             div {
                 border: 2px solid white;
                 height: 20px;
@@ -75,6 +80,11 @@
                 text-align: right;
                 line-height: 3rem;
                 font-size: 1.5rem;
+
+                li:hover{
+                    cursor: pointer;
+                    color: brown;
+                }
 
             }
         }

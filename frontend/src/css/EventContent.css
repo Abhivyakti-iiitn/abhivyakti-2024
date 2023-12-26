@@ -217,25 +217,26 @@ button:hover {
   position: relative;
 }
 
-.EventContent-left::before,
-.EventContent-left::after {
+/* .EventContent-left::before{
   content: '';
   position: absolute;
   border-style: solid;
-}
+} */
 
 /* Top border */
-.EventContent-left::before {
-  top: 0;
-  left: 0;
-  right: 55%;
-  border: 2px solid;
+.EventContent-left {
+  background-image: url(../assets/EventPageAsst//Vector\ 13.svg);
+  background-repeat: no-repeat;
+  background-position: -9vw 0%;
+  background-size: contain;
+  /* right: 55%; */
+  /* border: 2px solid;
   border-image: linear-gradient(to right, #F9DAA8, #BC615E);
-  border-image-slice: 1;
+  border-image-slice: 1; */
 }
 
 /* Right border */
-.EventContent-left::after {
+/* .EventContent-left::after {
   top: 0;
   right: 39%;
   height: 25%;
@@ -243,10 +244,9 @@ button:hover {
   border-image: linear-gradient(to right, #F9DAA8, #BC615E);
   border-image-slice: 1;
   transform: skewX(45deg);
-  /* Tilt the right border to the left */
   transform-origin: bottom;
-  /* Set the transform origin to the bottom */
-}
+ 
+} */
 
 @media (max-width:650px) {
   .EventContent {
@@ -271,12 +271,13 @@ button:hover {
     width: 90%;
   }
 
-  .EventContent-left::before{
+  /* .EventContent-left::before {
     width: 100%;
-  }
-  .EventContent-left::after {
+  } */
+
+  /* .EventContent-left::after {
     display: none;
-  }
+  } */
 
   .EventContent-left .info-item {
     display: flex;
@@ -299,11 +300,11 @@ button:hover {
   }
 }
 
-.prize_pool{
+.prize_pool {
   margin: 2%;
 }
 
-.prize_pool .liner{
+.prize_pool .liner {
   width: 100%;
   margin-top: 2%;
   margin-bottom: 5%;
@@ -313,7 +314,8 @@ button:hover {
   text-align: center;
   gap: 10px;
 }
-.liner{
+
+.liner {
   width: 100%;
   display: flex;
   align-items: center;
@@ -322,11 +324,23 @@ button:hover {
   gap: 10px;
 }
 
-.line{
+.line {
   border: 1px solid red;
   border-image: linear-gradient(to right, #F9DAA8, #BC615E);
   border-image-slice: 1;
   height: 0px;
   flex: 2;
   width: 100%;
+}
+
+.sticktoleft {
+  position: sticky;
+  left: 0%;
+  top: 10%;
+}
+
+@media (max-width:650px) {
+  .sticktoleft {
+    position: relative;
+  }
 }

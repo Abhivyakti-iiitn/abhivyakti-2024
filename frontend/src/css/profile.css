@@ -1,138 +1,223 @@
-.horizontal-line1, .horizontal-line2{
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 100%;
-    border-top: 2px solid #E1AE90;
-}
-.horizontal-line1{
-    width: 35%;
-}
-.profile_heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 12vh;
-}
-.profile,.tag{
-    text-align: center;
-    background: linear-gradient(to bottom, #F9DAA8, #BC615E);
-    -webkit-text-fill-color: transparent; 
-    background-clip: text;
-    -webkit-background-clip: text; 
-    font-size: 40px;
-    font-weight: 400;
-}
-.tag{
-    font-size: 25px;
-}
-.all_events{
-    display: flex;
-    flex-direction: row;
-    margin: 5vh 10vh 0vh 10vh;
-    justify-content: space-between;
-}
-.head1{
-    width: 35vw;
-}
-.head2{
-    width: 65vw;
-}
-.events_heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.sub_events{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.horizontal-line2{
-    margin:auto 3vh auto 3vh;
-}
-.hl2{
-    margin-right: -10vh;
-}
-.user_details{
-    height: 80vh;
-    background-color: #2E2E2E;
-    border-radius: 10px;
-    margin-right: 3vh;
-    margin-top: 3vh;
-    
-}
-.event_details{
-    height: 80vh;
-    background-color: #2E2E2E;
-    border-radius: 10px;
-    margin-top: 3vh;
-}
-.profile_detail{
-    margin: 13vh 0vh 0vh 3vh;
-}
-.registered_events{
-    white-space: nowrap;
-}
-.d1{
-    margin-bottom: 3vh;
+.horizontal-line1,
+.horizontal-line2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  border-top: 2px solid #E1AE90;
 }
 
-.eventCard{
-    height: 50%;
-    width: fit-content;
-    background-color: purple;
-    margin: 13vh 0vh 0vh 5vh;
-    border-radius: 10px;
-    border: 2px solid #F9DAA8;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-image: url('../assets/EventPageAsst/showstopperblur2.jpg');
-    background-size: cover; 
-    background-position: center;
+.horizontal-line1 {
+  width: 35%;
 }
-.evnt_name{
-    z-index: 10;
-    text-align: center;
-    font-size: 24px;
+
+.profile_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12vh;
 }
-.evnt_detail{
-    margin-left: 1vh;
-    font-size: 10px;
+
+.profile,
+.tag {
+  text-align: center;
+  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  font-weight: 400;
 }
-.evnt_reg,.reg_name{
-    margin-left: 1vh;
-    
+
+.tag {
+  font-size: 25px;
 }
-.reg_detail{
-    margin-top: 17vh;
+
+.all_events {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 10vh 0vh 10vh;
+  justify-content: space-between;
 }
-.event_detail{
-    margin-top: 7vh;
+
+.head1 {
+  width: 35vw;
+}
+
+.head2 {
+  width: 65vw;
+}
+
+.events_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub_events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizontal-line2 {
+  margin: auto 3vh auto 3vh;
+}
+
+.hl2 {
+  margin-right: -10vh;
+}
+
+.user_details {
+  height: 80vh;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+  margin-right: 3vh;
+  margin-top: 3vh;
+}
+
+.event_details {
+  height: 80vh;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+  margin-top: 3vh;
+}
+
+.profile_detail {
+  margin: 13vh 0vh 0vh 3vh;
+}
+
+.registered_events {
+  white-space: nowrap;
+}
+
+.d1 {
+  margin-bottom: 3vh;
+}
+
+.eventCard {
+  height: 50%;
+  width: fit-content;
+  background-color: purple;
+  margin: 13vh 0vh 0vh 5vh;
+  border-radius: 10px;
+  border: 2px solid #F9DAA8;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url("../assets/EventPageAsst/showstopperblur2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.evnt_name {
+  z-index: 10;
+  text-align: center;
+  font-size: 24px;
+}
+
+.evnt_detail {
+  margin-left: 1vh;
+  font-size: 10px;
+}
+
+.evnt_reg,
+.reg_name {
+  margin-left: 1vh;
+}
+
+.reg_detail {
+  margin-top: 17vh;
+}
+
+.event_detail {
+  margin-top: 7vh;
+}
+
+.profile_page {
+  background-color: #0F0001;
+  padding-bottom: 10%;
 }
 
 @media screen and (max-width: 768px) {
-    .all_events{
-        flex-direction: column;
-    }
-    .head1,
-    .head2 {
-        width: 100%;
-    }
-    .infobox{
-        height: auto;
-        padding-bottom: 10vh;
-        text-align: center;
-    }
-    .hl2,.user_details{
-        margin-right: 0vh;
-        margin-bottom: 5vh;
-    }
-    .eventCard {
-        width: fit-content;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 5vh auto 0vh auto;
-    }
+  .all_events {
+    flex-direction: column;
+  }
+  .head1,
+  .head2 {
+    width: 100%;
+  }
+  .infobox {
+    height: auto;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+  .hl2,
+  .user_details {
+    margin-right: 0vh;
+    margin-bottom: 5vh;
+  }
+  .eventCard {
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5vh auto 0vh auto;
+  }
+}
+.pro_sticky_header {
+  height: 10vh;
+  background: url(../assets/MainPage/HeaderImg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  top: 0%;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: 100% 30rem;
+}
+.pro_sticky_header .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.pro_sticky_header .top .left ul {
+  display: flex;
+  gap: 10px;
+  font-size: 1.4rem;
+  list-style: none;
+  align-items: center;
+  color: white;
+  padding-left: 10%;
+}
+.pro_sticky_header .top .left ul li:hover {
+  cursor: pointer;
+  color: brown;
+}
+.pro_sticky_header .top .left ul div {
+  border: 2px solid white;
+  height: 20px;
+  margin-right: 10px;
+}
+.pro_sticky_header .top .left ul img {
+  display: inline;
+  justify-self: end;
+  max-width: 20%;
+}
+.pro_sticky_header .top .right {
+  margin-right: 2%;
+}
+.pro_sticky_header .top .right ul {
+  color: white;
+  list-style: none;
+  text-align: right;
+}
+.pro_sticky_header .top .right ul li {
+  margin-top: 2%;
+  cursor: pointer;
+}
+.pro_sticky_header .top .right ul li:hover {
+  color: brown;
+  cursor: pointer;
 }

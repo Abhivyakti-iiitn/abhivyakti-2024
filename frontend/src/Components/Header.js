@@ -2,6 +2,8 @@ import React, { useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
+import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
+import LogoComponent from './LogoComponent';
 
 function Header() {
     const nav = useNavigate();
@@ -110,7 +112,7 @@ function Header() {
         animate();
 
         if (localStorage.getItem("usrName")) {
-            // setisLoggedin(true);
+            setisLoggedin(true);
         }
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -142,6 +144,7 @@ function Header() {
                 <div div className='top' >
                     <div className="left">
                         <ul>
+                        <LogoComponent/>
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>
@@ -151,7 +154,7 @@ function Header() {
                     <div className="right">
                         <ul>
                             {!isLoggedin && <li onClick={()=>nav('/login')}>Login</li>}
-                           {isLoggedin && <li>Profile</li>}
+                           {isLoggedin && <li onClick={()=>nav('/profile')}>Profile</li>}
                             <li>ABOUT</li>
                             <li>EVENTS</li>
                             <li>TEAM</li>

@@ -8,7 +8,7 @@ const EventContentLeft = (props) => {
 
   const navigateTo = useNavigate()
   return (
-    <div className='EventContent-left'>
+    <div className='EventContent-left sticktoleft'>
       <div className='sticky-content'>
         <div className='info-item'>
           <img className='icon' src={deadline}/>

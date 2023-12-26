@@ -19,6 +19,7 @@ const LoginPage = () => {
 
     const handleSubmit = () => {
         localStorage.setItem("usrName", "demoUser");
+        navigateTo('/');
     }
 
     useEffect(() => {
@@ -45,7 +46,7 @@ const LoginPage = () => {
                 <div className='loginContainer'>
                     <div className='bgImageLogin'>
                         <div className='logoLogin'>
-                            <img src={logo} alt="clublogo" srcset="" className='LoginClubLogo' />
+                            <img src={logo} alt="clublogo" srcset="" className='LoginClubLogo' onClick={()=>navigateTo('/')} />
                         </div>
                     </div>
 
