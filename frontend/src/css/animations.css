@@ -57,6 +57,7 @@
 
 
 .backdrop{
+  
   animation: scaleBackAnimation 1.5s linear, svgContainerAnimation 1.5s forwards 1.5s;
 }
 

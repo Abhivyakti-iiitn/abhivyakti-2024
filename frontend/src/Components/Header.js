@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
-import {useNavigate} from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
 
 function Header() {
-    const nav = useNavigate();
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
     const particleCount = 50;
 
@@ -139,8 +137,6 @@ function Header() {
                     </div>
                     <div className="right">
                         <ul>
-                            <li onClick={()=>nav('/login')}>Login</li>
-                            <li>Profile</li>
                             <li>ABOUT</li>
                             <li>EVENTS</li>
                             <li>TEAM</li>
