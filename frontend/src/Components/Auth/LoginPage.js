@@ -91,9 +91,6 @@ const LoginPage = () => {
                                     Login
                                 </button>
                             </form>
-                            <div className='GoogleSignIn'>
-                                GoogleLogin
-                            </div>
                             <div className='SignUpToLogin'>
                                 <span>
                                     First Time Here?
@@ -106,7 +103,6 @@ const LoginPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
