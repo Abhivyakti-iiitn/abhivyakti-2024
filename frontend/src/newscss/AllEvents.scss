@@ -1,5 +1,63 @@
 @import '_variables.scss';
 
+html {
+    --duration: 0.5s;
+    --dark: #2c3e50;
+    --off-white: #ecf0f1;
+}
+
+.Allapp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Allmenu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0.75em 1em;
+    background: transparent;
+    color: white;
+
+    &-items {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &>* {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+
+    &-item {
+        font-size: 0.75rem;
+        padding: 0 2rem;
+        padding-bottom: 0.75rem;
+        margin-right: 0.25em;
+        transition: color 0.06s linear;
+        user-select: none;
+
+        &:hover {
+            cursor: pointer;
+            color: $text-color-gradient-2;
+        }
+    }
+
+    &-dash {
+        height: 3px;
+        width: 40px;
+        border-radius: 2px;
+        background: $text-color-gradient-2;
+        position: absolute;
+        bottom: 0;
+        transition: transform var(--duration), width 0.1s ease-in;
+    }
+}
+
 .AllEvents {
     color: white;
     display: flex;
@@ -60,7 +118,7 @@
 }
 
 .AllEventsL {
-    font: 24pt/0 $font-family;
+    font: 32pt/0 $font-family;
     margin: auto;
     padding: 0 24px;
 }
@@ -87,6 +145,10 @@
         border-bottom-right-radius: 10px;
     }
 
+    &__desc {
+        font-size: 1.25rem;
+    }
+
     &__text {
         &>* {
             font-family: 'Times New Roman', Times, serif;
@@ -94,7 +156,7 @@
     }
 
     &__name {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-family: $font-family;
         background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
         color: transparent;
@@ -115,7 +177,13 @@
 
     &__btn {
         .EventRegBtn {
+            font-size: 1.15rem;
             background-color: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border-image: linear-gradient(#F9DAA8, #BC615E);
+            border-image-slice: 1;
+            cursor: pointer;
         }
 
         &>* {
