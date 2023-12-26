@@ -9,7 +9,6 @@ import Event from "./EventPage/Event";
 import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
-import AllEvents from "./AllEvents";
 const events = [
   { name: "showstopper", desc: "event a" },
   { name: "beatsmithShowdown", desc: "event b" },
@@ -48,9 +47,8 @@ function MainPage() {
   return (
     <div className="App">
       {/* <FirefliesAnimation /> */}
-      {/* <Header /> */}
-      <AllEvents />
-      {/* <h2 className="Events__heading">Events</h2>
+      <Header />
+      <h2 className="Events__heading">Events</h2>
       <div className="EventCards">
         {events.map((event) => (
           <EventCard
@@ -67,7 +65,7 @@ function MainPage() {
         <HorizontalScrolling />
       </div>
       <Sponsors />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
