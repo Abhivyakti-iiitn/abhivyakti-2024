@@ -39,18 +39,23 @@
     font-size: larger;
 }
 
-input,textarea::placeholder{
+.infoDiv{
+    input::placeholder,textarea::placeholder{
     color:#ABAFB1;
 }
-
-textarea{
-    color:white;
 }
 
-h1{
+.infoDiv{textarea{
+    color:white;
+}
+}
+
+.formDiv{
+    h1{
     width:100%;
     text-align: center;
     font-size:xx-large;
+}
 }
 
 .questionDiv{
@@ -58,7 +63,8 @@ h1{
     // padding:none;  
 }
 
-.register-button {
+.form{
+    button{
     background-color: black;
     color:white; /* Set text color to white */
     border: 2px solid;
@@ -75,10 +81,13 @@ h1{
     transition: color 0.3s ease;
     font-size: x-large;
   }
+}
   
-  .register-button:hover{
+  .form{
+    button:hover{
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);
     -webkit-text-fill-color: transparent;
     background-clip:text ;
     -webkit-background-clip: text;
   }
+}

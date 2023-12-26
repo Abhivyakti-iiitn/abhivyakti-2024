@@ -31,8 +31,10 @@
   justify-content: center;
   align-items: center;
   margin: 0px;
+  width: 100%;
 }
 
-.main p {
+.rules p {
   color: white;
+  font-size: large;
 }
