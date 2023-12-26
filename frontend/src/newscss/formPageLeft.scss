@@ -1,5 +1,5 @@
 .main{
-    background-color: black;
+    background-color: #0F0001;
     height:auto;
     width:100%;
     display:flex;
@@ -7,15 +7,16 @@
     // justify-content: center;
     align-content: center;
     margin: none;
-    border-right: 2px solid;
-    border-image: linear-gradient(to right,#F9DAA8, #BC615E);
-    border-image-slice: 1;
+    // border-right: 2px solid;
+    // border-image: linear-gradient(to right,#F9DAA8, #BC615E);
+    // border-image-slice: 1;
 }
 
 .main{
     img{
     width:6em;
-    margin:2em;
+    margin-top: 2em;
+    margin-left: 2em;
 }
 }
 
@@ -46,4 +47,20 @@
     font-size: large;
     // background-color: #BC615E;
 }
+}
+
+.lineVer{
+    width: 0px;
+    border: 2px solid red;
+    border-right: 2px solid;
+    border-image: linear-gradient(to right,#F9DAA8, #BC615E);
+    border-image-slice: 1;
+    margin-top: 1%;
+    height: 90vh;
+
+    @media (max-width:1000px){
+        width: 90%;
+        align-self: center;
+        height: 0px;
+    }
 }

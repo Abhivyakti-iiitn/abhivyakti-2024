@@ -13,13 +13,20 @@ const LoginPage = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userPassword, setUserPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    // const [isLogin, setisLogin] = useState(false);
 
     const navigateTo = useNavigate();
 
-    // useEffect(() => {
-    //     const footerHeight = document.querySelector('.footer').offsetHeight;
-    //     document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
-    // }, [])
+    const handleSubmit = () => {
+        localStorage.setItem("usrName", "demoUser");
+    }
+
+    useEffect(() => {
+        if (localStorage.getItem("usrName")) {
+            // navigateTo("/");
+        }
+
+    }, [])
 
     const handleNameChange = (e) => {
         e.preventDefault();
@@ -45,7 +52,7 @@ const LoginPage = () => {
                     <div className='LoginSignUpForm'>
                         <div className='SignupFormArea'>
                             <p className='signUpHeading'>Login</p>
-                            <form className='SignupForm'>
+                            <form className='SignupForm' onSubmit={handleSubmit}>
 
                                 <div className='loginInputs'>
                                     <label htmlFor='emailForm' className='loginLabel'>
@@ -103,7 +110,7 @@ const LoginPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

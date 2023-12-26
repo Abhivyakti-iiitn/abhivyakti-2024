@@ -8,6 +8,7 @@ const FormPage = () => {
     <div>
     <div className='FormPage'>
         <FormPageLeft />
+        <div className='lineVer'></div>
         <Form />
     </div>
     <Footer />
