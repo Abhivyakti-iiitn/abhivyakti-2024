@@ -20,25 +20,35 @@
 
 .main__header .top .left ul {
   display: flex;
-  gap: 15%;
+  gap: 10%;
   font-size: 1.4rem;
   margin-top: 30%;
   text-decoration: none;
   list-style: none;
+  align-items: center;
+}
+
+.main__header .top .left ul img {
+  display: inline;
+  justify-self: end;
+  max-width: 40%;
 }
 
 .main__header .top .left ul div {
   border: 2px solid white;
-  height: 20px;
-  margin-right: 20px;
+  height: 40px;
+  margin-right: 10px;
 }
+
 .main__header .top .left ul li {
   cursor: pointer;
 }
+
 .main__header .top .right ul li {
-  
+
   transition: all 0.3s ease;
 }
+
 .main__header .top .right ul li:hover {
   cursor: pointer;
   color: brown;
@@ -78,22 +88,56 @@
 }
 
 
-/* svg formating css */
-.svg-background {
+.svgContainer {
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+}
+
+/* svg formating css */
+.svg-background {
   min-width: 100vw;
   min-height: 120vh;
   z-index: 1;
+
   /* Send the SVG to the background */
 }
 
+.svg-character {
+  min-width: 100vw;
+  min-height: 120vh;
+  z-index: 1;
+
+  /* Send the SVG to the background */
+}
+
+.characterContianer {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
 
 /* css for fire particle canvas */
 canvas {
   display: block;
   position: absolute;
   z-index: 2;
+}
+
+.left {
+  opacity: 0;
+  animation: leftHud 2s forwards 1.5s;
+}
+
+.right {
+  opacity: 0;
+  animation: rightHud 2s forwards 1.5s;
+}
+
+.mid {
+  opacity: 0;
+  animation: midHud 2s forwards 1.5s;
 }

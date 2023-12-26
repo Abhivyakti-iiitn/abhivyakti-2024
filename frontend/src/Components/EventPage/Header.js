@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
 import "../../css/Eventheader.css"
+import {useNavigate} from "react-router-dom";
 import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
+import LogoComponent from '../LogoComponent';
 
 function Header(props) {
     // console.log("sad", props)
+    const navigateTo = useNavigate();
 
 
     return (
@@ -12,7 +15,7 @@ function Header(props) {
                 <div div className='top' >
                     <div className="left">
                         <ul>
-                            <img src={logo} alt="Loho Here" srcset="" />
+                            <LogoComponent/>
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>

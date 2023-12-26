@@ -1,4 +1,10 @@
-.FormPage{
+.FormPage {
     display: flex;
+    background-color: #0F0001;
     flex-direction: row;
+    overflow-x: hidden;
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
 }

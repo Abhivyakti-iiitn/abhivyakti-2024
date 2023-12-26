@@ -33,6 +33,10 @@
   list-style: none;
   align-items: center;
 }
+.event_header .top .left ul li:hover {
+  cursor: pointer;
+  color: brown;
+}
 .event_header .top .left ul div {
   border: 2px solid white;
   height: 20px;
@@ -52,6 +56,10 @@
   text-align: right;
   line-height: 3rem;
   font-size: 1.5rem;
+}
+.event_header .top .right ul li:hover {
+  cursor: pointer;
+  color: brown;
 }
 .event_header .mid {
   width: 100%;

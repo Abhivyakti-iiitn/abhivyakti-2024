@@ -23,6 +23,7 @@
 .LoginClubLogo {
     margin: 2.5rem;
     width: 10%;
+    cursor: pointer;
 
     @media (max-width:650px) {
         width: 10%;
@@ -68,6 +69,7 @@
     background-clip: text;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .loginInputs {
@@ -106,6 +108,7 @@
 .loginInput {
     border: 1px solid $text-color-gradient-2;
     background-color: transparent;
+    color: white;
     border-radius: 5px;
     padding: 0.75rem;
     margin: 0.2rem 0;

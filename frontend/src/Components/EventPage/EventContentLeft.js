@@ -3,9 +3,12 @@ import deadline from "../../assets/EventImages/deadline.svg";
 import teamSize from "../../assets/EventImages/Group.svg";
 import fees from "../../assets/EventImages/fees.svg";
 import prize from "../../assets/EventImages/prize.svg";
+import {useNavigate} from "react-router-dom";
 const EventContentLeft = (props) => {
+
+  const navigateTo = useNavigate()
   return (
-    <div className='EventContent-left'>
+    <div className='EventContent-left sticktoleft'>
       <div className='sticky-content'>
         <div className='info-item'>
           <img className='icon' src={deadline}/>
@@ -32,10 +35,10 @@ const EventContentLeft = (props) => {
           Prize Pool: <span>{props.pool}</span>
           </div>
         </div>
-        <button className='register-button'>
+      </div>
+        <button className='register-button' onClick={()=>navigateTo('/form')}>
           Register Now
         </button>
-      </div>
     </div>
   );
 };

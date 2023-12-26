@@ -8,25 +8,32 @@
   background-clip: text; */
   display: flex;
   /* height: 100vh; */
-  position:relative;
+  position: relative;
+  padding-top: 2%;
 }
-.EventContent_content{
+
+.EventContent_content {
   font-size: large;
   color: #fff;
   margin: 1.5rem 0 5rem 0;
 }
-.EventContent_content > * {
+
+.EventContent_content>* {
   font-family: serif;
 }
+
 .EventDetail {
   flex-direction: column;
 }
+
 .EventRules {
   margin-bottom: 1rem;
 }
+
 .paddingLeft {
   padding-left: 2rem
 }
+
 .EventContent-left {
   width: 40vw;
   /* display: flex;
@@ -35,6 +42,7 @@
   margin-top: 0;
   font-size: larger;
 }
+
 .EventContent-right {
   width: 60vw;
   padding: 1%;
@@ -43,24 +51,29 @@
   /* margin: auto; */
   margin-top: 10px;
   overflow-y: auto;
+
   &::-webkit-scrollbar {
     width: 10px;
   }
+
   &::-webkit-scrollbar-track {
     background: rgb(33, 1, 1);
     border-radius: 10px;
   }
+
   &::-webkit-scrollbar-thumb {
     background: #3f0b196a;
     border-radius: 10px;
   }
+
   &::-webkit-scrollbar-thumb:hover {
     background: #5b1024;
-    
+
     border-radius: 10px;
   }
 
 }
+
 .EventContent-right_right {
   width: 60vw;
   display: flex;
@@ -69,24 +82,25 @@
   margin-top: 10px;
 }
 
-fieldset {
-  border: 2px solid transparent;
+/* fieldset {
+  border-top: 2px solid transparent;
   border-top-color: #bc615e;
   box-sizing: border-box;
   grid-area: 1/1;
   padding: 20px;
   width: inherit;
-}
-fieldset:nth-of-type(1) {
-  background: content-box center/contain no-repeat violet;
-}
+} */
 
-legend {
+/* fieldset:nth-of-type(1) {
+  background: content-box center/contain no-repeat violet;
+} */
+
+/* legend {
   font: 23pt/0 "Carta Marina W00 Regular";
   margin-left: -1.5rem;
   padding-left: 2rem;
   padding-right: 0 4px;
-}
+} */
 
 .EventRound {
   padding-left: 2rem;
@@ -94,6 +108,7 @@ legend {
   border-left: 2px solid #bc615e;
   display: flex;
 }
+
 .LastRound {
   border: none;
   padding-bottom: 0;
@@ -135,11 +150,11 @@ legend {
 }
 
 .EventContent-left {
-    position: sticky;
-    top: 0px;
-    background-color: transparent;
-    padding: 40px;
-    height:fit-content;
+  position: sticky;
+  top: 0px;
+  background-color: transparent;
+  padding: 40px;
+  height: fit-content;
 }
 
 .sticky-content {
@@ -151,13 +166,15 @@ legend {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: white; /* Set text color to white */
-  font-family: inherit; /* Use the parent font family */
-  gap:12px;
-  margin-top:8px;
+  color: white;
+  /* Set text color to white */
+  font-family: inherit;
+  /* Use the parent font family */
+  gap: 12px;
+  margin-top: 8px;
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: column;
 }
@@ -166,12 +183,13 @@ legend {
   margin-right: 10px;
 }
 
-button{
+.EventContent button {
   background-color: black;
-  color:white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
   border: 2px solid;
-  border-radius: 10px;  
-  border-image: linear-gradient(to right,#F9DAA8 , #BC615E);
+  border-radius: 10px;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
   border-image-slice: 1;
   padding: 10px 20px;
   margin-top: 5%;
@@ -179,15 +197,15 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  width:fit-content;
+  width: fit-content;
   transition: color 0.3s ease;
   font-size: x-large;
 }
 
-button:hover{
+button:hover {
   background: linear-gradient(to bottom, #F9DAA8, #BC615E);
   -webkit-text-fill-color: transparent;
-  background-clip:text ;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -199,32 +217,130 @@ button:hover{
   position: relative;
 }
 
-.EventContent-left::before,
-.EventContent-left::after {
+/* .EventContent-left::before{
   content: '';
   position: absolute;
   border-style: solid;
-}
+} */
 
 /* Top border */
-.EventContent-left::before {
-  top: 0;
-  left: 0;
-  right: 55%;
-  border: 2px solid;
-  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
-  border-image-slice: 1;
+.EventContent-left {
+  background-image: url(../assets/EventPageAsst//Vector\ 13.svg);
+  background-repeat: no-repeat;
+  background-position: -9vw 0%;
+  background-size: contain;
+  /* right: 55%; */
+  /* border: 2px solid;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
+  border-image-slice: 1; */
 }
 
 /* Right border */
-.EventContent-left::after {
+/* .EventContent-left::after {
   top: 0;
   right: 39%;
   height: 25%;
   border: 2px solid;
-  border-image: linear-gradient(to right,#F9DAA8 , #BC615E) ;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
   border-image-slice: 1;
-  transform: skewX(45deg); /* Tilt the right border to the left */
-  transform-origin: bottom; /* Set the transform origin to the bottom */
+  transform: skewX(45deg);
+  transform-origin: bottom;
+ 
+} */
+
+@media (max-width:650px) {
+  .EventContent {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .EventContent-left {
+    margin: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .EventContent-right {
+    margin-left: 10%;
+    padding-top: 10%;
+    /* padding-left: 20px; */
+    padding-right: 10%;
+    width: 90%;
+  }
+
+  /* .EventContent-left::before {
+    width: 100%;
+  } */
+
+  /* .EventContent-left::after {
+    display: none;
+  } */
+
+  .EventContent-left .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .EventContent-left .sticky-content {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10%;
+    margin: 0%;
+    background-color: transparent;
+    padding: 0%;
+  }
 }
 
+.prize_pool {
+  margin: 2%;
+}
+
+.prize_pool .liner {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.liner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.line {
+  border: 1px solid red;
+  border-image: linear-gradient(to right, #F9DAA8, #BC615E);
+  border-image-slice: 1;
+  height: 0px;
+  flex: 2;
+  width: 100%;
+}
+
+.sticktoleft {
+  position: sticky;
+  left: 0%;
+  top: 10%;
+}
+
+@media (max-width:650px) {
+  .sticktoleft {
+    position: relative;
+  }
+}

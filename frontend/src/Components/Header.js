@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
+import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
+import LogoComponent from './LogoComponent';
 
 function Header() {
     const nav = useNavigate();
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-    const particleCount = 200;
+  
+   const [isLoggedin, setisLoggedin] = useState(false)
+   const particleCount = 50;
 
     //mounting the fire particle effect.
     useEffect(() => {
@@ -107,10 +111,19 @@ function Header() {
 
         animate();
 
+        if (localStorage.getItem("usrName")) {
+            setisLoggedin(true);
+        }
         return () => {
             window.removeEventListener('resize', handleResize);
         };
+
+
     }, []);
+
+
+
+  
 //end of the useEffect hook
 
     return (
@@ -121,13 +134,17 @@ function Header() {
                 <canvas id="fireCanvas"></canvas>
 
                 {/* the background image rendered as SVG so that I can animate it */}
+                <div className='svgContainer'>
                 <Svg />
+                </div>
+                
                 {/* ignore this :- <img id="mysvg" className="svg-background" src="./bgimg.svg" alt="Animated SVG"></img> */}
 
 
                 <div div className='top' >
                     <div className="left">
                         <ul>
+                        <LogoComponent/>
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>
@@ -136,8 +153,8 @@ function Header() {
                     </div>
                     <div className="right">
                         <ul>
-                            <li onClick={()=>nav('/login')}>Login</li>
-                            <li>Profile</li>
+                            {!isLoggedin && <li onClick={()=>nav('/login')}>Login</li>}
+                           {isLoggedin && <li onClick={()=>nav('/profile')}>Profile</li>}
                             <li>ABOUT</li>
                             <li>EVENTS</li>
                             <li>TEAM</li>

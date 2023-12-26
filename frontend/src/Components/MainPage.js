@@ -1,6 +1,7 @@
 // src/Components/MainPage.js
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/index.css";
+import {useNavigate} from "react-router-dom"
 import FirefliesAnimation from "./FirefliesAnimation";
 import EventCard from "./EventCard";
 import Header from "./Header";
@@ -31,8 +32,16 @@ function animateEventCards() {
 }
 
 function MainPage() {
+
+  const navigateTo = useNavigate()
+
+  const [isLoggedin, setisLoggedin] = useState(false)
+
   useEffect(() => {
     animateEventCards();
+    if (localStorage.getItem("usrName")) {
+      // setisLoggedin(true);
+    }
   }, []);
 
   return (
@@ -52,11 +61,11 @@ function MainPage() {
         ))}
         <EventCard exploreAllEvents={true} />
       </div>
-          <div className="horizontalScroll">
-            <HorizontalScrolling />
-          </div>
-        <Sponsors />
-        <Footer />
+      <div className="horizontalScroll">
+        <HorizontalScrolling />
+      </div>
+      <Sponsors />
+      <Footer />
     </div>
   );
 }
