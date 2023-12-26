@@ -12,12 +12,14 @@
     border-image-slice: 1;
 }
 
-img{
+.main{
+    img{
     width:6em;
-    margin:2em
+    margin:2em;
+}
 }
 
-.content{
+.formContent{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +34,16 @@ img{
     justify-content: center;
     align-items: center;
     margin: 0px;
+    width:100%;
 }
 
-p{
+.rules{
+    p{
     color: white;
+    // padding: 18px;
+    // width:100%;
+    // height:auto;
+    font-size: large;
+    // background-color: #BC615E;
+}
 }
