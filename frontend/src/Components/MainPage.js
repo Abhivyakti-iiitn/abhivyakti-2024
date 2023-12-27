@@ -11,10 +11,10 @@ import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
 const events = [
   { name: "showstopper", desc: "event a" },
-  { name: "beatsmithShowdown", desc: "event b" },
+  { name: "beatsmithshowdown", desc: "event b" },
   { name: "starpod", desc: "event c" },
-  { name: "d", desc: "event d" },
-  { name: "e f", desc: "event e f" },
+  { name: "mun", desc: "event d" },
+  { name: "rhymeriot", desc: "event e f" },
 ];
 
 function animateEventCards() {
