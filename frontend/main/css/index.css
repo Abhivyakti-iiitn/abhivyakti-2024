@@ -53,6 +53,7 @@ body {
   height: 100%;
   padding: 1.5rem;
   max-width: -moz-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -128,7 +129,11 @@ body {
     transform: translateY(9.11vw) scale(1);
   }
 }
-.fas.southeast, .far.southeast, .fal.southeast, .fad.southeast { transform: rotate(45deg);}
+
+.fas.southeast, .far.southeast, .fal.southeast, .fad.southeast {
+  transform: rotate(45deg);
+}
+
 .explore {
   color: #fff;
   width: 35.16vw;
@@ -140,6 +145,7 @@ body {
   font-size: 2.5vw;
 }
 .explore__text {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 1023px) {
@@ -148,4 +154,4 @@ body {
     font-size: 5.18vw;
     height: 85.97vw;
   }
-}
+}/*# sourceMappingURL=index.css.map */
