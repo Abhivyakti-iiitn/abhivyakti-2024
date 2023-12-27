@@ -3,6 +3,18 @@ import '../../css/contact.css';
 import Arr from '../../assets/EventPageAsst/arrow.png';
 
 function Contact() {
+    const contactBtnStyles = {
+        fontSize: '1.15rem',
+        backgroundColor: 'transparent',
+        color: 'white',
+        padding: '1rem 2rem',
+        marginTop: '1rem',
+        color: 'white',
+        backgroundImage: 'linear-gradient(#F9DAA8, #BC615E)',
+        borderImage: 'linear-gradient(#F9DAA8, #BC615E)',
+        borderImageSlice: 1,
+        cursor: 'pointer',
+      };
     return (
         <div>
             <div className='or'>or</div>
@@ -36,6 +48,7 @@ function Contact() {
                         <input type='text' placeholder='Name' className='input_tag tag1'></input><br></br>
                         <input type='' placeholder='phone no./email address' className='input_tag tag2'></input><br></br>
                         <input type='text' placeholder='ask your Queries' className='input_tag tag3'></input>
+                        <button type='submit' className={'contactSubmitBtn'} style={contactBtnStyles}>Submit</button>
                     </form>
                 </div>
             </div>
