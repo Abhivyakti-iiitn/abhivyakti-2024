@@ -54,7 +54,7 @@ function EventCards(props) {
     else {
         return (
             <div className='EventCard explore'>
-                <div className='explore__text'>
+                <div className='explore__text' onClick={()=>nav('/allevents')}>
                     Explore all events &#8600;
                 </div>
             </div>

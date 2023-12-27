@@ -141,3 +141,8 @@ canvas {
   opacity: 0;
   animation: midHud 2s forwards 1.5s;
 }
+
+.explore .explore__text:hover{
+   cursor: pointer;
+   color: brown;
+}

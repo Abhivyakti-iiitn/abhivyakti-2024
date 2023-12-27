@@ -1,0 +1,83 @@
+.termsconditions {
+    background: var(--difference, radial-gradient(100% 100% at 50% 0%, rgba(161, 10, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #0F0001);
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+
+    span{
+        color: rgb(31, 1, 1);
+        font-size: large;
+        font-weight: bold;
+        background-color: rgb(49, 4, 4);
+        border-radius: 20px;
+        padding:  0.2rem 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        display: flex;
+
+        &:hover{
+            background-color: brown;
+            cursor: pointer;
+        }
+    }
+
+    .tc_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0% 10%;
+
+        & .tc_cont_item {
+
+            & .head {
+                color: #FFF;
+                font-family: Crimson Pro;
+                font-size: 2.82125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 3.12325rem;
+
+                @media (max-width:550px) {
+                    color: #FFF;
+                    font-family: Crimson Pro;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.93856rem;
+
+                }
+            }
+
+            & .para {
+                color: #FFF;
+
+                text-align: justify;
+                font-family: Crimson Pro;
+                font-size: 1.75rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 3.12325rem;
+
+                /* 178.471% */
+                @media (max-width:550px) {
+                    font-family: Crimson Pro;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.93856rem;
+                    /* 172.319% */
+                }
+            }
+        }
+    }
+
+    .liner {
+        gap: 6%
+    }
+}
