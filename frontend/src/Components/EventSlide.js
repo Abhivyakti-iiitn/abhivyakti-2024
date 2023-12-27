@@ -2,6 +2,8 @@ import React from 'react';
 import showstopperImgSrc from '../assets/EventPageAsst/showstopper.png'
 import starpodImgSrc from '../assets/EventPageAsst/starpod.png'
 import beatsmithshowdownImgSrc from '../assets/EventPageAsst/beatboxshowdown.png'
+import munImg from '../assets/EventPageAsst/munmain.png';
+import rhymeriotImg from '../assets/EventPageAsst/rhymeriot.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 
