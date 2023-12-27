@@ -1,8 +1,10 @@
 // components/Footer.js
 import React from 'react';
 import '../css/Footer.css';
+import {Link, useNavigate} from "react-router-dom";
 
 const Footer = () => {
+  const navigateTo = useNavigate();
   return (
     <div className="footer">
 
@@ -10,11 +12,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Teams</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/schedule">Schedule</a></li>
-            <li><a href="/sponsors">Sponsors</a></li>
-            <li><a href="/about">About Us</a></li>
+            <li><Link to="/">Register</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/schedule">Home</Link></li>
+            <li><Link to="/sponsors">Profile Page</Link></li>
+            <li ><Link to="/termsandconditions">Terms & Conditions</Link></li>
           </ul>
         </div>
 
@@ -28,15 +30,15 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <p>Stay connected on social media for updates and highlights!</p>
           <div className="social-icons">
-            <a href="https://www.facebook.com/examplefest" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.facebook.com/examplefest" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://www.instagram.com/examplefest" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="https://www.instagram.com/examplefest" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram-square"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -45,9 +47,9 @@ const Footer = () => {
         <p>&copy; 2024 Abhivyakti@IITN. All rights reserved.</p>
         <p>
           Developed and Managed by
-          <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.example.com" target="_blank" rel="noopener noreferrer">
             __students
-          </a>
+          </Link>
         </p>
       </div>
     </div>

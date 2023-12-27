@@ -11,6 +11,7 @@ import LoginPage from "./Components/Auth/LoginPage";
 import SignUpPage from "./Components/Auth/SignUpPage";
 import Profile from "./Components/Profile";
 import AllEvents from "./Components/AllEvents";
+import TandC from "./Components/TandC";
 
 
   // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -43,6 +44,7 @@ import AllEvents from "./Components/AllEvents";
           <Route path="/signup" element={<SignUpPage/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/allevents" element={<AllEvents/>}></Route>
+          <Route path="/termsandconditions" element={<TandC/>}></Route>
         </Routes>
       </div>
     );

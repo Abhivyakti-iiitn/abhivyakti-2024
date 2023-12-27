@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.termsconditions {
+  background: var(--difference, radial-gradient(100% 100% at 50% 0%, rgba(161, 10, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #0F0001);
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.termsconditions span {
+  color: rgb(31, 1, 1);
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(49, 4, 4);
+  border-radius: 20px;
+  padding: 0.2rem 2rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  display: flex;
+}
+.termsconditions span:hover {
+  background-color: brown;
+  cursor: pointer;
+}
+.termsconditions .tc_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 10%;
+}
+.termsconditions .tc_content .tc_cont_item .head {
+  color: #FFF;
+  font-family: Crimson Pro;
+  font-size: 2.82125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.12325rem;
+}
+@media (max-width: 550px) {
+  .termsconditions .tc_content .tc_cont_item .head {
+    color: #FFF;
+    font-family: Crimson Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.93856rem;
+  }
+}
+.termsconditions .tc_content .tc_cont_item .para {
+  color: #FFF;
+  text-align: justify;
+  font-family: Crimson Pro;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.12325rem;
+  /* 178.471% */
+}
+@media (max-width: 550px) {
+  .termsconditions .tc_content .tc_cont_item .para {
+    font-family: Crimson Pro;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.93856rem;
+    /* 172.319% */
+  }
+}
+.termsconditions .liner {
+  gap: 6%;
+}

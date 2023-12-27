@@ -1,15 +1,16 @@
 // components/Footer.js
 import React from 'react';
 import '../../css/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
     const clickhandle = () => {
-        document.querySelector(".container").scrollTo(0,0);
+        document.querySelector(".container").scrollTo(0, 0);
     }
     return (
         <div className="footer">
-            <div onClick={clickhandle} style={{cursor:'pointer'}}>
+            <div onClick={clickhandle} style={{ cursor: 'pointer' }}>
 
                 <h2>^</h2>
                 <h2>Back to Top</h2>
@@ -20,11 +21,11 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/">Teams</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/schedule">Schedule</a></li>
-                        <li><a href="/sponsors">Sponsors</a></li>
-                        <li><a href="/about">About Us</a></li>
+                        <li><Link to="/">Register</Link></li>
+                        <li><Link to="/events">Events</Link></li>
+                        <li><Link to="/schedule">Home</Link></li>
+                        <li><Link to="/sponsors">Profile Page</Link></li>
+                        <li ><Link to="/termsandconditions">Terms & Conditions</Link></li>
                     </ul>
                 </div>
 
