@@ -5,7 +5,7 @@ import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from '../LogoComponent';
 
 function Header(props) {
-    // console.log("sad", props)
+    // console.log("sad", props.event)
     const navigateTo = useNavigate();
 
 
@@ -35,7 +35,7 @@ function Header(props) {
                     <div className="mid_left">
 
                         <h1>{props.event.name} <br></br></h1>
-                        <h3>tagline, tagline, tagline</h3>
+                        <h3>{props.event.tagline}</h3>
                     </div>
                     <div className="mid_right">
                         <h4>Brought to you by</h4>

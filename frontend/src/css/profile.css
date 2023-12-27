@@ -68,7 +68,6 @@
 }
 
 .user_details {
-  color: white;
   height: 80vh;
   background-color: #2E2E2E;
   border-radius: 10px;
@@ -218,6 +217,7 @@
 .pro_sticky_header .top .right ul li {
   margin-top: 2%;
   cursor: pointer;
+  font-family: "Crimson Pro", Courier, monospace;
 }
 .pro_sticky_header .top .right ul li:hover {
   color: brown;

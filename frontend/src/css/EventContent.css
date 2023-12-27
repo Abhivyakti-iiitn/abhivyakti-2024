@@ -20,7 +20,7 @@
 }
 
 .EventContent_content>* {
-  font-family: serif;
+  font-family: "Crimson Pro";
 }
 
 .EventDetail {
@@ -169,7 +169,7 @@
   margin-bottom: 10px;
   color: white;
   /* Set text color to white */
-  font-family: inherit;
+  font-family: 'Crimson Pro';
   /* Use the parent font family */
   gap: 12px;
   margin-top: 8px;
@@ -283,9 +283,11 @@ button:hover {
   .EventContent-left .info-item {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
   }
+
 
   .EventContent-left .sticky-content {
 
@@ -344,4 +346,8 @@ button:hover {
   .sticktoleft {
     position: relative;
   }
+}
+
+.info >*{
+  font-family: 'Crimson Pro', Courier, monospace;
 }

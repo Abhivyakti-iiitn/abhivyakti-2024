@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 function EventCards(props) {
     const nav = useNavigate();
 
-    let cleanedName = props.name; 
+    let cleanedName = props.name?.toLowerCase();
     let imgSrc;
 
     switch (cleanedName) {

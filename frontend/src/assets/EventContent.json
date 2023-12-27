@@ -1,58 +1,92 @@
 {
-    "showstopper": {
-      "name": "showstopper",
-      "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
-      "timeline": ["15/1/24", "4/2/24", "10/2/24", "10/2/24", "15/2/24"],
-      "rules": "Judging criteria includes: · Vocal and Instrumental Excellence (40 points).Performance and Expression (30 points) · Overall Presentation (30 points). The judges&#39; collective scores across these categories will determine the final outcome of the competition.",
-      "regulations": "chipi chipi chapa chapa dubi dubi daba daba magico ni dubi dubi boom boom boom boom",
-      "registrationDate": "15/1/24",
-      "Team": "4",
-      "fees": "10 Rs",
-      "pool": "69 Cr"
-    },
-    "starpod": {
-      "name": "starpod",
-      "details": "Join us for a cosmic journey where every step is a twinkle in the vast expanse of the universe, where the stage is your launching pad of expression, and where you dance not just with your body, but with the constellations. Don't miss this opportunity to sparkle and be part of the stellar showcase of \"Cosmic Rhythms.\"",
-      "timeline": ["20/2/24", "5/3/24", "12/3/24", "12/3/24", "20/3/24"],
-      "rules": "",
-      "regulations": "twinkle twinkle little star, dance with grace from afar",
-      "registrationDate": "20/2/24",
-      "Team": "5",
-      "fees": "15 Rs",
-      "pool": "100 Cr"
-    },
-    "beatsmithShowdown": {
-        "name": "beatsmithShowdown",
-        "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
-        "timeline": ["10/3/24", "25/3/24", "2/4/24", "2/4/24", "10/4/24"],
-        "rules": "No pre-recorded beats allowed. All beats must be created live.",
-        "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
-        "registrationDate": "10/3/24",
-        "Team": "Solo",
-        "fees": "20 Rs",
-        "pool": "50 Cr"
-      },
-    "mun": {
-        "name": "mun",
-        "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
-        "timeline": ["10/3/24", "25/3/24", "2/4/24", "2/4/24", "10/4/24"],
-        "rules": "No pre-recorded beats allowed. All beats must be created live.",
-        "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
-        "registrationDate": "10/3/24",
-        "Team": "Solo",
-        "fees": "20 Rs",
-        "pool": "50 Cr"
-      },
-    "rhymeriot": {
-        "name": "rhymeriot",
-        "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
-        "timeline": ["10/3/24", "25/3/24", "2/4/24", "2/4/24", "10/4/24"],
-        "rules": "No pre-recorded beats allowed. All beats must be created live.",
-        "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
-        "registrationDate": "10/3/24",
-        "Team": "Solo",
-        "fees": "20 Rs",
-        "pool": "50 Cr"
-      }
+  "showstopper": {
+    "name": "showstopper",
+    "tagline": "A Solo Dance Competition",
+    "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
+    "timeline": [
+      "15/1/24",
+      "4/2/24",
+      "10/2/24",
+      "10/2/24",
+      "15/2/24"
+    ],
+    "rules": "Judging criteria includes: · Vocal and Instrumental Excellence (40 points).Performance and Expression (30 points) · Overall Presentation (30 points). The judges&#39; collective scores across these categories will determine the final outcome of the competition.",
+    "regulations": "chipi chipi chapa chapa dubi dubi daba daba magico ni dubi dubi boom boom boom boom",
+    "registrationDate": "15/1/24",
+    "Team": "4",
+    "fees": "10 Rs",
+    "pool": "69 Cr"
+  },
+  "starpod": {
+    "name": "starpod",
+    "tagline": "A Stand up comedy competition",
+    "details": "Join us for a cosmic journey where every step is a twinkle in the vast expanse of the universe, where the stage is your launching pad of expression, and where you dance not just with your body, but with the constellations. Don't miss this opportunity to sparkle and be part of the stellar showcase of \"Cosmic Rhythms.\"",
+    "timeline": [
+      "20/2/24",
+      "5/3/24",
+      "12/3/24",
+      "12/3/24",
+      "20/3/24"
+    ],
+    "rules": "",
+    "regulations": "twinkle twinkle little star, dance with grace from afar",
+    "registrationDate": "20/2/24",
+    "Team": "5",
+    "fees": "15 Rs",
+    "pool": "100 Cr"
+  },
+  "beatsmithShowdown": {
+    "name": "beatsmithShowdown",
+    "tagline": "A Beat-Boxing Competition",
+    "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
+    "timeline": [
+      "10/3/24",
+      "25/3/24",
+      "2/4/24",
+      "2/4/24",
+      "10/4/24"
+    ],
+    "rules": "No pre-recorded beats allowed. All beats must be created live.",
+    "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
+    "registrationDate": "10/3/24",
+    "Team": "Solo",
+    "fees": "20 Rs",
+    "pool": "50 Cr"
+  },
+  "mun": {
+    "name": "mun",
+    "tagline": "tagline,tagline,tagline",
+    "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
+    "timeline": [
+      "10/3/24",
+      "25/3/24",
+      "2/4/24",
+      "2/4/24",
+      "10/4/24"
+    ],
+    "rules": "No pre-recorded beats allowed. All beats must be created live.",
+    "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
+    "registrationDate": "10/3/24",
+    "Team": "Solo",
+    "fees": "20 Rs",
+    "pool": "50 Cr"
+  },
+  "rhymeriot": {
+    "name": "rhymeriot",
+    "tagline": "tagline,tagline,tagline",
+    "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
+    "timeline": [
+      "10/3/24",
+      "25/3/24",
+      "2/4/24",
+      "2/4/24",
+      "10/4/24"
+    ],
+    "rules": "No pre-recorded beats allowed. All beats must be created live.",
+    "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
+    "registrationDate": "10/3/24",
+    "Team": "Solo",
+    "fees": "20 Rs",
+    "pool": "50 Cr"
   }
-    
+}

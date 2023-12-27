@@ -45,7 +45,8 @@
 }
 
 .main__header .top .right ul li {
-
+  text-transform: uppercase;
+  font-family: 'Crimson Pro', Courier, monospace;
   transition: all 0.3s ease;
 }
 
@@ -73,15 +74,23 @@
   height: 50%;
   text-align: center;
   z-index: 3;
-  font-family: "Crimson Pro";
+  /* font-family: "Carata Maria"; */
 }
 
 .main__header .mid h1 {
   font-size: 4rem;
-  font-family: "Crimson Pro";
+  font-family: "Carta Marina W00 Regular";
   font-weight: bolder;
   color: rgba(128, 128, 128, 0.46);
 }
+.main__header .mid h1 .year {
+  font-size: 4rem;
+  font-family: "Carta Marina W00 Regular";
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+
+
 
 .main__header .mid h3 {
   color: white;

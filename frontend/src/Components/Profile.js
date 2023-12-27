@@ -14,7 +14,7 @@ function Profile() {
     }
     return (
         <>
-           <StickyHeader type = "1"/>
+           <StickyHeader type = {1}/>
             <div className='profile_page'>
                 <div className='profile_heading'>
                     <div class="horizontal-line1"></div>
