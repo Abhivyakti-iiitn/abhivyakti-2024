@@ -21,14 +21,15 @@ function Event() {
     function fx() {
         let header = document.querySelector(".event_header");
         let header2 = document.querySelector(".sticky_header");
+        let comp = document.querySelector(".EventContent");
         let cont = document.querySelector(".container");
-        if (cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100) && !header2.classList.contains('shown')) {
+        if (cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100) && !header2.classList.contains('shown') && cont.scrollTop < header.clientHeight + comp.clientHeight) {
 
             // console.log(header.clientHeight - (header.clientHeight * 20 / 100))
             // console.log(header.classList)
             header2.classList.add("shown");
-        }else if(cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100) && header2.classList.contains('shown')){
-            
+        } else if (cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100) && header2.classList.contains('shown') || cont.scrollTop > header.clientHeight + comp.clientHeight && header2.classList.contains('shown')) {
+
             header2.classList.remove("shown");
         }
 
@@ -46,7 +47,7 @@ function Event() {
 
 
     const params = useParams();
-    // console.log(params);
+    console.log("ADS", params.eventname);
     // console.log(content);
     return (
         <div className='container'>

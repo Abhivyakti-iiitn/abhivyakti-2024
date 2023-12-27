@@ -31,6 +31,28 @@
         "Team": "Solo",
         "fees": "20 Rs",
         "pool": "50 Cr"
+      },
+    "mun": {
+        "name": "mun",
+        "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
+        "timeline": ["10/3/24", "25/3/24", "2/4/24", "2/4/24", "10/4/24"],
+        "rules": "No pre-recorded beats allowed. All beats must be created live.",
+        "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
+        "registrationDate": "10/3/24",
+        "Team": "Solo",
+        "fees": "20 Rs",
+        "pool": "50 Cr"
+      },
+    "rhymeriot": {
+        "name": "rhymeriot",
+        "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
+        "timeline": ["10/3/24", "25/3/24", "2/4/24", "2/4/24", "10/4/24"],
+        "rules": "No pre-recorded beats allowed. All beats must be created live.",
+        "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
+        "registrationDate": "10/3/24",
+        "Team": "Solo",
+        "fees": "20 Rs",
+        "pool": "50 Cr"
       }
   }
     

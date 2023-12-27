@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "../../css/Eventheader.css"
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from '../LogoComponent';
 
@@ -15,7 +15,7 @@ function Header(props) {
                 <div div className='top' >
                     <div className="left">
                         <ul>
-                            <LogoComponent/>
+                            <LogoComponent />
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>
@@ -46,23 +46,6 @@ function Header(props) {
                     </div>
                 </div>
             </div >
-            <div className={`sticky_header`} >
-                <div div className='top' >
-                    <div className="left">
-                        <h1>{props.event.name} <br></br></h1>
-                        {/* <h3>tagline, tagline, tagline</h3> */}
-                    </div>
-                    {/* <div className="right">
-                        <ul>
-                            <li>ABOUT</li>
-                            <li>EVENTS</li>
-                            <li>TEAM</li>
-                            <li>CONTACT</li>
-                        </ul>
-                    </div> */}
-                </div >
-            </div >
-
         </>
     )
 }

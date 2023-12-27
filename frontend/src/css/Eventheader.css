@@ -9,6 +9,13 @@
 .beatsmithshowdown {
   background: url(../assets/EventPageAsst/beatboxshowdown.png);
 }
+.mun {
+  background: url(../assets/EventPageAsst/munmainbg.png);
+}
+
+.rhymeriot {
+  background: url(../assets/EventPageAsst/rhymeriotbg.png);
+}
 
 .event_header {
   background-repeat: no-repeat;
