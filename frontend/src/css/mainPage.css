@@ -73,11 +73,12 @@
   height: 50%;
   text-align: center;
   z-index: 3;
+  font-family: "Crimson Pro";
 }
 
 .main__header .mid h1 {
   font-size: 4rem;
-  font-family: "LLDOT", "Dot", "Times New Roman", Times, serif;
+  font-family: "Crimson Pro";
   font-weight: bolder;
   color: rgba(128, 128, 128, 0.46);
 }
@@ -85,6 +86,7 @@
 .main__header .mid h3 {
   color: white;
   font-size: xx-large;
+  font-family: "Crimson Pro";
 }
 
 
