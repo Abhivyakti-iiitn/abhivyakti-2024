@@ -138,13 +138,31 @@
 .EventSlide__text > * {
   font-family: "Times New Roman", Times, serif;
 }
-.EventSlide__name {
+.EventSlide .shortcardename {
   font-size: 2.25rem;
   font-family: "Carta Marina W00 Regular";
   background: linear-gradient(#f9daa8, #bc615e);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+@media (max-width: 850px) {
+  .EventSlide .shortcardename {
+    font-size: 10vw;
+  }
+}
+.EventSlide .longcardename {
+  font-size: 2.25rem;
+  font-family: "Carta Marina W00 Regular";
+  background: linear-gradient(#f9daa8, #bc615e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@media (max-width: 850px) {
+  .EventSlide .longcardename {
+    font-size: 7vw;
+  }
 }
 .EventSlide__learnmore {
   display: flex;

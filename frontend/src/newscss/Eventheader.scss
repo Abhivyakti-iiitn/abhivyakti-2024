@@ -54,6 +54,9 @@
             text-decoration: none;
             list-style: none;
             align-items: center;
+            li{
+                transition: all 0.3s ease-in-out;
+            }
 
             li:hover {
                 cursor: pointer;
@@ -83,14 +86,15 @@
                 text-align: right;
                 line-height: 3rem;
                 font-size: 1.5rem;
-                
+
 
                 li:hover {
                     cursor: pointer;
                     color: brown;
                 }
 
-                li{
+                li {
+                    transition: all 0.3s ease-in-out;
                     font-family: 'Crimson Pro', Courier, monospace;
                 }
 
@@ -109,11 +113,38 @@
         h1 {
             font-size: 4rem;
             text-transform: uppercase;
-            font-family: 'Carata Maria', 'Times New Roman', Times, serif;
+            font-family: 'Carta Marina W00 Regular', 'Times New Roman', Times, serif;
             font-weight: bolder;
             color: rgba(128, 128, 128, 0.46);
-            @media (max-width:650px) {
 
+            @media (max-width:1000px) {
+                font-size: 9vw;
+                text-align: center;
+            }
+        }
+
+        .longhname {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: 'Carta Marina W00 Regular', 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            color: rgba(128, 128, 128, 0.46);
+
+            @media (max-width:1000px) {
+                font-size: 9vw;
+                text-align: center;
+            }
+        }
+
+        .shorthname {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: 'Carta Marina W00 Regular', 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            color: rgba(128, 128, 128, 0.46);
+
+            @media (max-width:1000px) {
+                font-size: 12vw;
                 text-align: center;
             }
         }
@@ -122,9 +153,9 @@
             color: white;
             font-size: xx-large;
 
-            @media (max-width:650px) {
+            @media (max-width:1000px) {
 
-                font-size: x-large;
+                font-size: 5vw;
                 margin-top: -1.3em;
                 text-align: center;
             }
@@ -141,12 +172,12 @@
                 flex-wrap: wrap;
             }
 
-            @media (max-width:650px) {
+            @media (max-width:1000px) {
                 margin-right: 5%;
             }
         }
 
-        @media (max-width:650px) {
+        @media (max-width:1000px) {
 
             flex-direction: column;
             margin-left: auto;
@@ -154,6 +185,10 @@
     }
 
 }
+
+
+
+
 
 .sticky_header {
     opacity: 0%;

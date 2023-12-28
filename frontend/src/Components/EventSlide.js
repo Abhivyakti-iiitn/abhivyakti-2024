@@ -34,7 +34,7 @@ const EventSlide = (props) => {
                 <div className="blur">
 
                     <div className='EventSlide__text'>
-                        <div className='EventSlide__name'>{props.event.name}</div>
+                        <div className={`EventSlide__name ${props.event.name?.length > 15 ? "longcardename":"shortcardename"}`}>{props.event.name}</div>
                         <div className='EventSlide__desc'>Description</div>
                         <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
                     </div>

@@ -27,6 +27,9 @@
   list-style: none;
   align-items: center;
 }
+.main__header .top .left ul li{
+  transition: all 0.3s ease-in-out;
+}
 
 .main__header .top .left ul img {
   display: inline;
@@ -40,14 +43,16 @@
   margin-right: 10px;
 }
 
-.main__header .top .left ul li {
+.main__header .top .left ul li:hover {
   cursor: pointer;
+  color: brown;
+  
 }
 
 .main__header .top .right ul li {
   text-transform: uppercase;
   font-family: 'Crimson Pro', Courier, monospace;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .main__header .top .right ul li:hover {

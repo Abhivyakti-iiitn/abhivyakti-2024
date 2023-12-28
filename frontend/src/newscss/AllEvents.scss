@@ -162,13 +162,28 @@
         }
     }
     
-    &__name {
+    .shortcardename {
         font-size: 2.25rem;
         font-family: $font-family;
         background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        @media (max-width:850px) {
+            font-size: 10vw;
+        }
+    }
+
+    .longcardename{
+        font-size: 2.25rem;
+        font-family: $font-family;
+        background: linear-gradient($text-color-gradient-1, $text-color-gradient-2);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        @media (max-width:850px) {
+            font-size: 7vw;
+        }
     }
     
     &__learnmore {
