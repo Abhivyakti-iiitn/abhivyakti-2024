@@ -1,6 +1,7 @@
 .EventContent {
   /* background: linear-gradient(to right, #f9daa8, #bc615e); */
-  background-image: linear-gradient(to right bottom, #000000, #000000, #050001a0, #000000, #3f0b19, #3f0b19, #3f0b19, #3f0b19, #21010193, #08000190, #000000, #000000);
+  /* background-image: linear-gradient(to right bottom, #000000, #000000, #050001a0, #000000, #3f0b19, #3f0b19, #3f0b19, #3f0b19, #21010193, #08000190, #000000, #000000); */
+  background: radial-gradient(48.34% 103.59% at 84.18% 61.57%, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 37.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(115.12% 113.71% at 5.87% 2.76%, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 36.46%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(196deg, #7C1A31 6.93%, #BB1E36 35.19%, #A41F33 46.49%, #953140 57.8%, #7A7A7A 87.37%);
   /* background-image:url(../assets/EventPageAsst/starpod.png) ;
   background-size:500em; */
   /* color: transparent; */
@@ -19,7 +20,7 @@
 }
 
 .EventContent_content>* {
-  font-family: serif;
+  font-family: "Crimson Pro";
 }
 
 .EventDetail {
@@ -168,7 +169,7 @@
   margin-bottom: 10px;
   color: white;
   /* Set text color to white */
-  font-family: inherit;
+  font-family: 'Crimson Pro';
   /* Use the parent font family */
   gap: 12px;
   margin-top: 8px;
@@ -282,9 +283,11 @@ button:hover {
   .EventContent-left .info-item {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
   }
+
 
   .EventContent-left .sticky-content {
 
@@ -343,4 +346,8 @@ button:hover {
   .sticktoleft {
     position: relative;
   }
+}
+
+.info >*{
+  font-family: 'Crimson Pro', Courier, monospace;
 }

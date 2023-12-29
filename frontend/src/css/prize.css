@@ -27,6 +27,7 @@
     border: 2px solid red;
     width: fit-content;
     padding: 2vh 6vh 2vh 6vh;
+    cursor: pointer;
     border-radius: 40px;
     border-image: linear-gradient(to bottom, #F9DAA8, #BC615E) 1;
 }
@@ -39,4 +40,11 @@
     .add_prize{
         margin-top: 0vh;
     }
+}
+
+.register_btn:hover{
+    background: linear-gradient(to bottom, #F9DAA8, #BC615E);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }

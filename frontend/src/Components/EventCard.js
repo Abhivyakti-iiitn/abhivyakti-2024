@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 function EventCards(props) {
     const nav = useNavigate();
 
-    let cleanedName = props.name; 
+    let cleanedName = props.name?.toLowerCase();
     let imgSrc;
 
     switch (cleanedName) {
@@ -55,7 +55,7 @@ function EventCards(props) {
         return (
             <div className='EventCard explore'>
                 <div className='explore__text' onClick={()=>nav('/allevents')}>
-                    Explore all events &#8600;
+                    Explore all events <i class="fas fa-arrow-right southeast"></i>
                 </div>
             </div>
         )

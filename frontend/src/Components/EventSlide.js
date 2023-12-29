@@ -2,8 +2,8 @@ import React from 'react';
 import showstopperImgSrc from '../assets/EventPageAsst/showstopper.png'
 import starpodImgSrc from '../assets/EventPageAsst/starpod.png'
 import beatsmithshowdownImgSrc from '../assets/EventPageAsst/beatboxshowdown.png'
-import munImg from '../assets/EventPageAsst/munmain.png';
-import rhymeriotImg from '../assets/EventPageAsst/rhymeriot.png';
+import munImg from '../assets/EventPageAsst/munmainbg.png';
+import rhymeriotImg from '../assets/EventPageAsst/rhymeriotbg.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +11,8 @@ const eventImages = {
     showstopper: showstopperImgSrc,
     starpod: starpodImgSrc,
     beatsmithShowdown: beatsmithshowdownImgSrc,
+    mun:munImg,
+    rhymeriot: rhymeriotImg 
 };
 
 const EventSlide = (props) => {
@@ -32,7 +34,7 @@ const EventSlide = (props) => {
                 <div className="blur">
 
                     <div className='EventSlide__text'>
-                        <div className='EventSlide__name'>{props.event.name}</div>
+                        <div className={`EventSlide__name ${props.event.name?.length > 15 ? "longcardename":"shortcardename"}`}>{props.event.name}</div>
                         <div className='EventSlide__desc'>Description</div>
                         <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
                     </div>

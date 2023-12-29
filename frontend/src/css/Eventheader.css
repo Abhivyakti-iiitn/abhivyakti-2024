@@ -33,6 +33,9 @@
   list-style: none;
   align-items: center;
 }
+.event_header .top .left ul li {
+  transition: all 0.3s ease-in-out;
+}
 .event_header .top .left ul li:hover {
   cursor: pointer;
   color: brown;
@@ -61,6 +64,10 @@
   cursor: pointer;
   color: brown;
 }
+.event_header .top .right ul li {
+  transition: all 0.3s ease-in-out;
+  font-family: "Crimson Pro", Courier, monospace;
+}
 .event_header .mid {
   width: 100%;
   height: 50%;
@@ -71,12 +78,40 @@
 }
 .event_header .mid h1 {
   font-size: 4rem;
-  font-family: "LLDOT", "Dot", "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-family: "Carta Marina W00 Regular", "Times New Roman", Times, serif;
   font-weight: bolder;
   color: rgba(128, 128, 128, 0.46);
 }
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .event_header .mid h1 {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+.event_header .mid .longhname {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Carta Marina W00 Regular", "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+@media (max-width: 1000px) {
+  .event_header .mid .longhname {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+.event_header .mid .shorthname {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Carta Marina W00 Regular", "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+@media (max-width: 1000px) {
+  .event_header .mid .shorthname {
+    font-size: 12vw;
     text-align: center;
   }
 }
@@ -84,9 +119,9 @@
   color: white;
   font-size: xx-large;
 }
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .event_header .mid h3 {
-    font-size: x-large;
+    font-size: 5vw;
     margin-top: -1.3em;
     text-align: center;
   }
@@ -101,12 +136,12 @@
   gap: 5px;
   flex-wrap: wrap;
 }
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .event_header .mid .mid_right {
     margin-right: 5%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .event_header .mid {
     flex-direction: column;
     margin-left: auto;

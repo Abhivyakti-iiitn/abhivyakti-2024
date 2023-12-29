@@ -9,13 +9,14 @@ import Event from "./EventPage/Event";
 import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
-const events = [
-  { name: "showstopper", desc: "event a" },
-  { name: "beatsmithshowdown", desc: "event b" },
-  { name: "starpod", desc: "event c" },
-  { name: "mun", desc: "event d" },
-  { name: "rhymeriot", desc: "event e f" },
-];
+import events from "../assets/EventDetails.json"
+// const events = [
+//   { name: "showstopper", tagline: "event a" },
+//   { name: "beatsmithshowdown", tagline: "event b" },
+//   { name: "starpod", tagline: "event c" },
+//   { name: "mun", tagline: "event d" },
+//   { name: "rhymeriot", tagline: "event e f" },
+// ];
 
 function animateEventCards() {
   const observer = new IntersectionObserver((entries) => {
@@ -55,7 +56,7 @@ function MainPage() {
             exploreAllEvents={false}
             imgSrc={`./assets/${event.name.replace(" ", "-")}.jpg`}
             name={event.name.replace(" ", "-")}
-            desc={event.desc}
+            desc={event.tagline}
             key={event.name.replace(" ", "-")}
           />
         ))}

@@ -217,6 +217,7 @@
 .pro_sticky_header .top .right ul li {
   margin-top: 2%;
   cursor: pointer;
+  font-family: "Crimson Pro", Courier, monospace;
 }
 .pro_sticky_header .top .right ul li:hover {
   color: brown;

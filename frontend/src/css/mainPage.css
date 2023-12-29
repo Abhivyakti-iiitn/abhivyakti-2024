@@ -27,6 +27,9 @@
   list-style: none;
   align-items: center;
 }
+.main__header .top .left ul li{
+  transition: all 0.3s ease-in-out;
+}
 
 .main__header .top .left ul img {
   display: inline;
@@ -40,13 +43,16 @@
   margin-right: 10px;
 }
 
-.main__header .top .left ul li {
+.main__header .top .left ul li:hover {
   cursor: pointer;
+  color: brown;
+  
 }
 
 .main__header .top .right ul li {
-
-  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-family: 'Crimson Pro', Courier, monospace;
+  transition: all 0.3s ease-in-out;
 }
 
 .main__header .top .right ul li:hover {
@@ -73,18 +79,28 @@
   height: 50%;
   text-align: center;
   z-index: 3;
+  /* font-family: "Carata Maria"; */
 }
 
 .main__header .mid h1 {
   font-size: 4rem;
-  font-family: "LLDOT", "Dot", "Times New Roman", Times, serif;
+  font-family: "Carta Marina W00 Regular";
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.46);
+}
+.main__header .mid h1 .year {
+  font-size: 4rem;
+  font-family: "Carta Marina W00 Regular";
   font-weight: bolder;
   color: rgba(128, 128, 128, 0.46);
 }
 
+
+
 .main__header .mid h3 {
   color: white;
   font-size: xx-large;
+  font-family: "Crimson Pro";
 }
 
 

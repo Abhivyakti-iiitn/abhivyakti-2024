@@ -32,6 +32,9 @@
   align-items: center;
   margin: 0% 10%;
 }
+.termsconditions .tc_content .tc_cont_item {
+  width: 100%;
+}
 .termsconditions .tc_content .tc_cont_item .head {
   color: #FFF;
   font-family: Crimson Pro;
