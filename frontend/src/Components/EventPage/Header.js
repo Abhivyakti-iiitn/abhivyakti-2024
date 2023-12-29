@@ -11,7 +11,7 @@ function Header(props) {
 
     return (
         <>
-            <div className={`event_header ${props.event.name.toLowerCase()}`} >
+            <div className={`event_header ${props.event.name.toLowerCase().replace(' ', '')}`} >
                 <div div className='top' >
                     <div className="left">
                         <ul>
