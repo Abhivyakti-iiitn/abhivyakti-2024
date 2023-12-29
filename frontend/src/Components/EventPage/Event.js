@@ -51,13 +51,13 @@ function Event() {
     // console.log(content);
     return (
         <div className='container'>
-            <Header event={content[params.eventname]} />
+            <Header event={content[params.eventname.toLowerCase()]} />
             {/* <Head/>
             <Name/>
             <Club/>
             <Timeline/>
             <Faq/> */}
-            <EventContent content={content[params.eventname]} />
+            <EventContent content={content[params.eventname.toLowerCase()]} />
             <Prize />
             <Faq />
             <Contact />
