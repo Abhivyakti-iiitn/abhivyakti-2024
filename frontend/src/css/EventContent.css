@@ -158,17 +158,9 @@
   height: fit-content;
 }
 
-.EventContent-left .register-button {
-  font-family: 'Crimson Pro', serif;
-}
-
 .sticky-content {
   display: flex;
   flex-direction: column;
-}
-
-.sticky-content .info-item>* {
-  font-family: 'Crimson Pro';
 }
 
 .info-item {
