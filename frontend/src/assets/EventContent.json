@@ -5,37 +5,30 @@
     "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
     "timeline": [
       {
-        "head":"Round 1 | 15/1/24",
-        "para":[
-          "In this round, participants are required to impress our judges with a 1-1.5 minute performance, sans props.",
-          "From this round, 8-10 outstanding performers will be selected for the final round."
-        ]
-      },
-      {
-        "head":"Round 2(Finals) | ",
-        "para":[
-          "In the finals, you'll have 4-6 minutes to showcase your skills. This is a prop round where you must incorporate at least two distinct props into your performance for a minimum of 10 seconds each.",
-          "All dance forms are welcome, but the effective use of props will be a crucial judging criterion.",
-          "Please note that dangerous props like fire,blades,sharp mirrors, scissors, and nails are not allowed, but all other props are permitted."
+        "head":[
+          "Round 1 | 15/1/24",
+          "Round 2(Finals) | "
+        ],
+        "date":[
+          "15/1/24",
+          "24/1/24"
+        ],
+        "content":[
+          "In this round, participants are required to impress our judges with a 1-1.5 minute performance, sans props.From this round, 8-10 outstanding performers will be selected for the final round.",
+          "In the finals, you'll have 4-6 minutes to showcase your skills. This is a prop round where you must incorporate at least two distinct props into your performance for a minimum of 10 seconds each.All dance forms are welcome, but the effective use of props will be a crucial judging criterion.Please note that dangerous props like fire,blades,sharp mirrors, scissors, and nails are not allowed, but all other props are permitted."
         ]
       }
     ],
     "rules":[
-      {
-        "name":"round 1",
-        "list":[
+          "round 1",
           "Ensure your pre-recorded music is in .mp3 format and adhere to time limits, as violations may lead to penalties.",
           "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time of registration along with the form.",
           "No props are allowed in this round.",
           "The video must be shot on a static camera",
           "The video must not be edited at any point of time.",
           "In this round the costume will be overlooked.",
-          "The judge's decisions are final, and rule violations can result in disqualification."
-        ]
-      },
-      {
-        "name":"Round 2(Finals)",
-        "list":[
+          "The judge's decisions are final, and rule violations can result in disqualification.",
+          "Round 2(Finals)",
           "Time limit for this round is 4-6 (can be changed based on the participations) minutes.",
           "This round is a prop round, in this round the participants have to prepare their performance with at least 2 different props. Each prop should be used in dance for at least 10 seconds. The two props must be distinct from each other.",
           "All dance forms are allowed in this round.",
@@ -47,20 +40,14 @@
           "Scissors",
           "Nails",
           "Rest all other props are allowed in this round."
-        ]
-      }
     ],
     "regulations": [
-      {
-        "list":[
         "Choreography",
         "Technique",
         "Creativity",
         "Energy",
         "Costume",
         "Overall Impact"
-        ]
-      }
     ],
     "registrationDate": "15/1/24",
     "Team": "4",
@@ -79,21 +66,24 @@
     "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. ‘Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
     "timeline": [
       {
-        "head":"Round 1 (Eliminator) | 10/12/23",
-        "para":"In this preliminary round, comedians will submit their recorded stand-up performances online. This serves as the eliminator, where your comedic creativity and talent will shine through the screen. Ensure that your submission embodies the theme and adheres to the rules, as it will determine your journey to the exciting final round. Get ready to bring the laughter to life in your quest for stardom at \"Star-Pod.\""
-      },
-      {
-        "head":"Round 2 (at IIITN Campus) | 1/02/24 | Time-12:00 AM",
-        "para":"The final round is where the magic happens, an in-person gathering of comedic talents. Selected comedians will take the stage, delivering their unique stand-up routines before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your comedic expression to new heights, leave the audience in splits, and compete for top honors in the realm of comedy at \"Star-Pod.\""
-      },
-      {
-        "head":"Round 1 Result | 04/02/24 | Time-12:00 AM",
-        "para":""
-      },
-      {
-        "head":"Round 2 (Finals) | 23rd Feb 2024 | Time-4:30 PM",
-        "para":""
-
+        "head":[
+          "Round 1 (Eliminator) | 10/12/23",
+          "Round 2 (at IIITN Campus) | 1/02/24 | Time-12:00 AM",
+          "Round 1 Result | 04/02/24 | Time-12:00 AM",
+          "Round 2 (Finals) | 23/02/24 | Time-4:30 PM"
+        ],
+        "date":[
+            "10/12/23",
+            "1/02/24",
+            "04/02/24",
+            "23/02/24"
+        ],
+        "content":[
+          "In this preliminary round, comedians will submit their recorded stand-up performances online. This serves as the eliminator, where your comedic creativity and talent will shine through the screen. Ensure that your submission embodies the theme and adheres to the rules, as it will determine your journey to the exciting final round. Get ready to bring the laughter to life in your quest for stardom at \"Star-Pod.\"",
+          "The final round is where the magic happens, an in-person gathering of comedic talents. Selected comedians will take the stage, delivering their unique stand-up routines before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your comedic expression to new heights, leave the audience in splits, and compete for top honors in the realm of comedy at \"Star-Pod.\"",
+          "",
+          ""
+        ]
       }
     ],
     "rules": [
@@ -110,9 +100,7 @@
       "Following the Genre somewhere in the Performance - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must. Also, the theme, - “The Strive for Stardom”, must be considered while performing."
     ],
     "regulations":[
-      {
-        "head":"Round 1",
-        "list":[
+          "Round 1",
           "Originality and Creativity",
           "Humor Relevance",
           "Consistency",
@@ -122,12 +110,8 @@
           "Language and Clarity",
           "Appropriateness",
           "Impact",
-          "Adherence to Rules"
-        ]
-      },
-      {
-        "head":"Round 2",
-        "list":[
+          "Adherence to Rules",
+          "Round 2",
           "Originality and Creativity",
           "Humor Relevance",
           "Consistency",
@@ -141,8 +125,6 @@
           "Adherence to Rules",
           "Audience Engagement",
           "Audience Response"
-        ]
-      }
     ],
     "registrationDate": "20/2/24",
     "Team": "5",
@@ -155,12 +137,18 @@
     "details":"Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
     "timeline":[
       {
-      "head":"Preliminary Round | ",
-      "para":"It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
-      },
-      {
-        "head":"Final Round | 22/02/24",
-        "para":"It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
+      "head":[
+            "Preliminary Round | ",
+            "Final Round | 22/02/24"
+        ],
+        "date":[
+          "",
+          "22/02/24"
+        ],
+      "content":[
+        "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals.",
+        "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
+      ]
       }
     ],
     "rules":[
@@ -204,50 +192,33 @@
     "details":"Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
     "timeline":[
       {
-        "head":"For Duet",
+        "head":[
+          "For Duet",
+          "For Group",
+          "In the final showdown"
+        ],
+        "date":[
+          "",
+          "",
+          ""
+        ],
         "para":[
-          "Present a 1-1.5 minute video showcasing your moves, with no props allowed.",
-          "All dance forms are allowed in this round.",
-          "Costumes are not a judging factor in this round.",
-          "From this round, approximately 8 teams will advance to the final round."
-        ]
-      },
-      {
-        "head":"For Group",
-        "para":[
-          "Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.",
-          "Just like duets, the dance form is your canvas, and costumes are not a judging factor.",
-          "Approximately 8 teams will advance to the final round."
-        ]
-      },
-      {
-        "head":"In the final showdown",
-        "para":[
-          "Both duets and groups will have 6-9 minutes to mesmerize the audience.",
-          "Props are allowed in this round, and the chosen song should be relevant to the fest's theme.",
-          "Transitions and sound effects are permitted, but keep safety in mind.",
-          "fire, blades, sharp mirrors, scissors, and nails are prohibited as props."
+          "Present a 1-1.5 minute video showcasing your moves, with no props allowed.All dance forms are allowed in this round.Costumes are not a judging factor in this round.From this round, approximately 8 teams will advance to the final round.",
+          "Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.Just like duets, the dance form is your canvas, and costumes are not a judging factor.Approximately 8 teams will advance to the final round.",
+          "Both duets and groups will have 6-9 minutes to mesmerize the audience.Props are allowed in this round, and the chosen song should be relevant to the fest's theme.Transitions and sound effects are permitted, but keep safety in mind.fire, blades, sharp mirrors, scissors, and nails are prohibited as props."
         ]
       }
     ],
     "rules":[
-      {
-        "head":"Round 1(Online Elimination)",
-        "content":[
-          {
-            "head":"Rules for duet",
-            "para":[
+              "Round 1(Online Elimination)",
+              "Rules for duet",
               "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
               "All dance forms are allowed in this round.",
               "No props are allowed in this round.",
               "The video must be shot on a static camera",
               "The video must not be edited at any point of time.",
-              "In this round the costume will be overlooked."
-            ]
-          },
-          {
-            "head":"Rules for group",
-            "para":[
+              "In this round the costume will be overlooked.",
+              "Rules for group",
               "Total number of members allowed for GROUP in this event is 3-15 per team",
               "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
               "All dance forms are allowed in this round.",
@@ -258,33 +229,17 @@
               "From this round approximately 8 teams will be selected for the final round.",
               "The selected teams have to perform on a song that is relevant to the theme of the fest.",
               "Song choice will not be restricted by it should be coherent with the theme.",
-              "Using transitions and different sound effects are allowed."
-            ]
-          }
-        ]
-      },
-      {
-        "head":"Round 2 Finals",
-        "content":[
-          {
-            "head":"Rules for Duet",
-            "para":[
+              "Using transitions and different sound effects are allowed.",
+              "Round 2 Finals",
+              "Rules for Duet",
               "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
               "The performance can be an extension of their round 1 performance.",
-              "Props are allowed in this round."
-            ]
-          },
-          {
-            "head":"Rules for Group",
-            "para":[
+              "Props are allowed in this round.",
+              "Rules for Group",
               "Total number of members allowed for GROUP are 3-15 members including 2 assistants for lighting and sounds.",
               "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
               "The performance can be an extension of their round 1 performance.",
               "Props are allowed in this round."
-            ]
-          }
-        ]
-      }
     ],
     "regulations":"",
     "registrationDate":"N/A",
@@ -292,5 +247,116 @@
     "pool":"Rs. 25000",
     "prize":[""],
     "addPrize":""
+  },
+  "Praanaant":{
+    "name":"Praanant",
+    "tagline":"Nukkad Natak/Street Play",
+    "details":"In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges ‘Praanaant’—a street play experience where the ‘Strive for Stardom’ meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— ‘Praanaant’ is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
+    "timeline":[
+      {
+        "head":[
+          "Registration open",
+          "Registration close",
+          "Round 1 (Eliminator) Result",
+          "Round 2 (at IIITN Campus) Finals"
+        ],
+        "date":[
+          "10/12/23",
+          "1/02/24",
+          "04/02/024",
+          "23/02/24"
+        ],
+        "para":[
+          "",
+          "",
+          "For the Preliminary Round, participants are required to submit their street play videos online. This phase acts as the eliminator. Ensure that your submission aligns with the event's theme and guidelines, as it will decide your eligibility to progress to the thrilling final round.",
+          "The ultimate stage is set for the live showdown in the conclusive round. Chosen participants will step into the spotlight, presenting their compelling narratives live, captivating an eager audience. Seize this moment to elevate your production, leave a lasting impression, and vie for prestigious accolades."
+        ]
+      }
+    ],
+    "rules":[
+      "General Rules",
+      "Your performance could be in English, Hindi or Bi-lingual Street Play.",
+      "Same play submitted in the Online Round with only slight alterations to character or dialogues must be performed in the final round as well if selected.",
+      "Any use of fluids, flames, heavy or sharp objects, or anything that can damage the stage is prohibited. This includes flammable substances, sharp and potentially harmful objects like candles, matches, lighters, knives, swords, as well as cigarettes, drugs, or alcoholic products during on-stage performances. Violation of these rules will result in penalties or immediate disqualification, based on the severity of the breach.",
+      "Time Limit provided for both online as well as offline rounds must be strictly followed.",
+      "More than one team from the same college can participate.",
+      "One team can have 5-20 members.",
+      "Also provide the name of the Director and Scriptwriter (They may or may not be an actor in the play itself).",
+      "The performance must be original. Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated.",
+      "Dialogues mustn't be pre-recorded.",
+      "The video must have clear visuals as well as audio. Any discrepancy in it will cause deviated judgment which won't be considered our fault and no changes can be made later on.",
+      "In any case the judge's decision will be final.",
+      "Plagiarism is strongly discouraged. Any team found replicating a play without the playwright's consent will face elimination.",
+      "Round 1(Eliminator)",
+      "Teams must submit a video enactment of an original or adapted play.",
+      "Along with the video submission, the script must be provided with proper credits.",
+      "Time Limit – The Video file should be 4-5 minutes long. Not following the time constraints will result in Negative Marking.",
+      "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Pranaant_(Team Name)_(College Name).",
+      "The subject of your email should follow the same format for the name of the video file entry.",
+      "Participants are required to submit their video entry or video entry link via email.",
+      "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
+      "Last Date of Prelim Submission is – 31st Jan 2024.",
+      "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
+      "The dress code of the entire team must be Black and Red to connect somewhere in the play or storyline to bind with our theme 'The Strive for Stardom'.",
+      "Round 2 (At IIITN Campus)",
+      "Time Limit – The Street Play should be 10-15 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
+      "A team can have 4 non-performing/supporting individuals in the team: 1 backstage/props/instrument managers, 3 Instrument players.",
+      "Teams using any Props / Instruments/Audios must bring all their requirements and must be ready well in time as per instructions of the organizer.",
+      "Any specific (Arrangements, props) requirements should be informed to organizers on a prior basis and are subject to availability. The requirements must be mentioned at the time of registration and no further requests will be entertained later on.",
+      "Both adapted and original scripts are allowed.",
+      "Teams should maintain decency and decorum in behavior, attire, and performance.",
+      "All participants shall be required to carry their Institute’s ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
+      "The dress code of the entire team must be Black and Red to connect somewhere in the play or storyline to bind with our theme 'The Strive for Stardom'."
+    ],
+    "regulations":[
+      "Round 1",
+      "Acting Quality",
+      "Direction",
+      "Script and Story",
+      "Characterization",
+      "Originality and Creativity",
+      "Pacing and Timing",
+      "Relevance to Theme",
+      "Overall Impact",
+      "Execution of Challenging Scenes",
+      "Teamwork and Chemistry",
+      "Adherence to Rules and Time Limit",
+      "Originality of Interpretation",
+      "Clarity of Message", 
+      "Costume / Dressing",
+      "Dialogue delivery",
+      "Expressions",
+      "Body language",
+      "Round 2",
+      "Acting Quality",
+      "Direction",
+      "Script and Story",
+      "Characterization",
+      "Audience Engagement",
+      "Audience Response",
+      "Originality and Creativity",
+      "Pacing and Timing",
+      "Relevance to Theme",
+      "Overall Impact",
+      "Execution of Challenging Scenes",
+      "Teamwork and Chemistry",
+      "Adherence to Rules and Time Limit",
+      "Originality of Interpretation",
+      "Lighting effects", 
+      "Sound effects", 
+      "Clarity of Message", 
+      "Costume / Dressing",
+      "Dialogue delivery",
+      "Expressions",
+      "Body language"
+    ],
+    "registrationDate":"10/12/23",
+    "Team":"5-20",
+    "pool":"Rs. 20000",
+    "prize":[""],
+    "addPrize":"",
+    "contact":[""]
   }
 }
