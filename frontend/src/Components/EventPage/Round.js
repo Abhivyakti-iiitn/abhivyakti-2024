@@ -7,7 +7,6 @@ const Round = (props) => {
             <div className='RoundContent'>
                 <div className='RoundTiming'>
                     <span className='RoundNo'>{props.round}</span>
-                    <span className='RoundDate'>{props.date}</span>
                 </div>
                 <div className='RoundDetails'>
                     {props.content}
