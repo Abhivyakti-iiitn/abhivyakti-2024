@@ -11,8 +11,8 @@ const EventContentRight = (props) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    for (let i = 0; i < props.timeline.length; i++) {
-      const date = props.timeline[i];
+    for (let i = 0; i < props.timeline[0].date.length; i++) {
+      const date = props.timeline[0].date[i];
       const parts = date.split('/');
       const eventDate = new Date(`20${parts[2]}`, parts[1] - 1, parts[0]);
 
@@ -72,12 +72,12 @@ const EventContentRight = (props) => {
           </div>
         </div>
         <div className='EventContent_content'>
-          {props.timeline.map((date, id) => {
-            const isLastElement = id === props.timeline.length - 1;
+          {props.timeline[0].date.map((date, id) => {
+            const isLastElement = id === props.timeline[0].date.length - 1;
             const glow = id === glowIndex;
 
             return (
-              <Round key={id} date={date} isLastTimeline={isLastElement} glow={glow} />
+              <Round key={id} round={props.timeline[0].head[id]} content={props.timeline[0].content[id]} date={date} isLastTimeline={isLastElement} glow={glow} />
             )
           })}
         </div>
