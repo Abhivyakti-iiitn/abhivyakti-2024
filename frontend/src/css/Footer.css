@@ -37,7 +37,6 @@
   margin-bottom: 0.5em;
 }
 .footer .footer-content .footer-section ul li a {
-  font-family: 'Crimson Pro';
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -71,7 +70,6 @@
   margin: 0.5em 0;
 }
 .footer .footer-bottom a {
-  font-family: 'Crimson Pro';
   color: rgb(205, 41, 41);
   text-decoration: none;
   transition: color 0.3s ease;
