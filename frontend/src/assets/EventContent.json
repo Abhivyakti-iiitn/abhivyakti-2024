@@ -5,80 +5,80 @@
     "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
     "timeline": [
       {
-        "head":[
+        "head": [
           "Round 1 | 15/1/24",
           "Round 2(Finals) | 24/1/24"
         ],
-        "date":[
+        "date": [
           "15/1/24",
           "24/1/24"
         ],
-        "content":[
+        "content": [
           "In this round, participants are required to impress our judges with a 1-1.5 minute performance, sans props.From this round, 8-10 outstanding performers will be selected for the final round.",
           "In the finals, you'll have 4-6 minutes to showcase your skills. This is a prop round where you must incorporate at least two distinct props into your performance for a minimum of 10 seconds each.All dance forms are welcome, but the effective use of props will be a crucial judging criterion.Please note that dangerous props like fire,blades,sharp mirrors, scissors, and nails are not allowed, but all other props are permitted."
         ]
       }
     ],
-    "rules":[
-          "round 1",
-          "Ensure your pre-recorded music is in .mp3 format and adhere to time limits, as violations may lead to penalties.",
-          "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time of registration along with the form.",
-          "No props are allowed in this round.",
-          "The video must be shot on a static camera",
-          "The video must not be edited at any point of time.",
-          "In this round the costume will be overlooked.",
-          "The judge's decisions are final, and rule violations can result in disqualification.",
-          "Round 2(Finals)",
-          "Time limit for this round is 4-6 (can be changed based on the participations) minutes.",
-          "This round is a prop round, in this round the participants have to prepare their performance with at least 2 different props. Each prop should be used in dance for at least 10 seconds. The two props must be distinct from each other.",
-          "All dance forms are allowed in this round.",
-          "Prop usage will also be one judging criteria in this round.",
-          "Props that can damage the stage or can harm anyone are not allowed:",
-          "Fire",
-          "Blades",
-          "Sharp Mirrors",
-          "Scissors",
-          "Nails",
-          "Rest all other props are allowed in this round."
+    "rules": [
+      "round 1",
+      "Ensure your pre-recorded music is in .mp3 format and adhere to time limits, as violations may lead to penalties.",
+      "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time of registration along with the form.",
+      "No props are allowed in this round.",
+      "The video must be shot on a static camera",
+      "The video must not be edited at any point of time.",
+      "In this round the costume will be overlooked.",
+      "The judge's decisions are final, and rule violations can result in disqualification.",
+      "Round 2(Finals)",
+      "Time limit for this round is 4-6 (can be changed based on the participations) minutes.",
+      "This round is a prop round, in this round the participants have to prepare their performance with at least 2 different props. Each prop should be used in dance for at least 10 seconds. The two props must be distinct from each other.",
+      "All dance forms are allowed in this round.",
+      "Prop usage will also be one judging criteria in this round.",
+      "Props that can damage the stage or can harm anyone are not allowed:",
+      "Fire",
+      "Blades",
+      "Sharp Mirrors",
+      "Scissors",
+      "Nails",
+      "Rest all other props are allowed in this round."
     ],
     "regulations": [
-        "Choreography",
-        "Technique",
-        "Creativity",
-        "Energy",
-        "Costume",
-        "Overall Impact"
+      "Choreography",
+      "Technique",
+      "Creativity",
+      "Energy",
+      "Costume",
+      "Overall Impact"
     ],
     "registrationDate": "15/1/24",
     "Team": "4",
     "fees": "10 Rs",
     "pool": "69 Cr",
-    "prize":[
+    "prize": [
       "first",
       "second",
       "third"
     ],
-    "addPrize":""
+    "addPrize": ""
   },
   "starpod": {
     "name": "starpod",
     "tagline": "Stand up comedy competition",
-    "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. ‘Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
+    "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. 'Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
     "timeline": [
       {
-        "head":[
+        "head": [
           "Round 1 (Eliminator) | 10/12/23",
           "Round 2 (at IIITN Campus) | 1/02/24 | Time-12:00 AM",
           "Round 1 Result | 04/02/24 | Time-12:00 AM",
           "Round 2 (Finals) | 23/02/24 | Time-4:30 PM"
         ],
-        "date":[
-            "10/12/23",
-            "1/02/24",
-            "04/02/24",
-            "23/02/24"
+        "date": [
+          "10/12/23",
+          "1/02/24",
+          "04/02/24",
+          "23/02/24"
         ],
-        "content":[
+        "content": [
           "In this preliminary round, comedians will submit their recorded stand-up performances online. This serves as the eliminator, where your comedic creativity and talent will shine through the screen. Ensure that your submission embodies the theme and adheres to the rules, as it will determine your journey to the exciting final round. Get ready to bring the laughter to life in your quest for stardom at \"Star-Pod.\"",
           "The final round is where the magic happens, an in-person gathering of comedic talents. Selected comedians will take the stage, delivering their unique stand-up routines before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your comedic expression to new heights, leave the audience in splits, and compete for top honors in the realm of comedy at \"Star-Pod.\"",
           "",
@@ -99,59 +99,59 @@
       "Plagiarism is strongly discouraged. Any act found replicating material without proper consent will result in disqualification.",
       "Following the Genre somewhere in the Performance - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must. Also, the theme, - “The Strive for Stardom”, must be considered while performing."
     ],
-    "regulations":[
-          "Round 1",
-          "Originality and Creativity",
-          "Humor Relevance",
-          "Consistency",
-          "Stage Presence",
-          "Timing and Pacing",
-          "Expressiveness",
-          "Language and Clarity",
-          "Appropriateness",
-          "Impact",
-          "Adherence to Rules",
-          "Round 2",
-          "Originality and Creativity",
-          "Humor Relevance",
-          "Consistency",
-          "Stage Presence",
-          "Timing and Pacing",
-          "Expressiveness",
-          "Interaction and Involvement",
-          "Language and Clarity",
-          "Appropriateness",
-          "Impact",
-          "Adherence to Rules",
-          "Audience Engagement",
-          "Audience Response"
+    "regulations": [
+      "Round 1",
+      "Originality and Creativity",
+      "Humor Relevance",
+      "Consistency",
+      "Stage Presence",
+      "Timing and Pacing",
+      "Expressiveness",
+      "Language and Clarity",
+      "Appropriateness",
+      "Impact",
+      "Adherence to Rules",
+      "Round 2",
+      "Originality and Creativity",
+      "Humor Relevance",
+      "Consistency",
+      "Stage Presence",
+      "Timing and Pacing",
+      "Expressiveness",
+      "Interaction and Involvement",
+      "Language and Clarity",
+      "Appropriateness",
+      "Impact",
+      "Adherence to Rules",
+      "Audience Engagement",
+      "Audience Response"
     ],
     "registrationDate": "20/2/24",
     "Team": "5",
     "fees": "15 Rs",
     "pool": "100 Cr"
   },
-  "roadToRedCarpet":{
+  "roadToRedCarpet": {
     "name": "Road to Red Carpet",
-    "tagline":"",
-    "details":"Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
-    "timeline":[
+    "tagline": "",
+    "details": "Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
+    "timeline": [
       {
-      "head":[
-            "Preliminary Round | ",
-            "Final Round | 22/02/24"
+        "head": [
+          "Preliminary Round | ",
+          "Final Round | 22/02/24"
         ],
-        "date":[
+        "date": [
           "",
           "22/02/24"
         ],
-      "content":[
-        "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals.",
-        "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
-      ]
+        "content": [
+          "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals.",
+          "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
+        ]
       }
     ],
-    "rules":[
+    "rules": [
       "Participants: 5-15 members per team.",
       "No age restrictions, open to all interested individuals.",
       "Locations: Teams are allowed to shoot on IIIT Nagpur campus, Nagpur city, and surrounding areas.",
@@ -178,95 +178,99 @@
       "Emphasize fair play, respect, and sportsmanship among participants.",
       "Reiterate the importance of maintaining a professional and respectful demeanour."
     ],
-    "regulations":"",
-    "registrationDate":"N/A",
-    "Team":"N/A",
-    "pool":"Rs. 25000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":""
+    "regulations": "",
+    "registrationDate": "N/A",
+    "Team": "N/A",
+    "pool": "Rs. 25000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": ""
   },
-  "rythmRumble":{
-    "name":"Rythm Rumble",
-    "tagline":"",
-    "details":"Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
-    "timeline":[
+  "rythmRumble": {
+    "name": "Rythm Rumble",
+    "tagline": "",
+    "details": "Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
+    "timeline": [
       {
-        "head":[
+        "head": [
           "For Duet",
           "For Group",
           "In the final showdown"
         ],
-        "date":[
+        "date": [
           "",
           "",
           ""
         ],
-        "content":[
+        "content": [
           "Present a 1-1.5 minute video showcasing your moves, with no props allowed.All dance forms are allowed in this round.Costumes are not a judging factor in this round.From this round, approximately 8 teams will advance to the final round.",
           "Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.Just like duets, the dance form is your canvas, and costumes are not a judging factor.Approximately 8 teams will advance to the final round.",
           "Both duets and groups will have 6-9 minutes to mesmerize the audience.Props are allowed in this round, and the chosen song should be relevant to the fest's theme.Transitions and sound effects are permitted, but keep safety in mind.fire, blades, sharp mirrors, scissors, and nails are prohibited as props."
         ]
       }
     ],
-    "rules":[
-              "Round 1(Online Elimination)",
-              "Rules for duet",
-              "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
-              "All dance forms are allowed in this round.",
-              "No props are allowed in this round.",
-              "The video must be shot on a static camera",
-              "The video must not be edited at any point of time.",
-              "In this round the costume will be overlooked.",
-              "Rules for group",
-              "Total number of members allowed for GROUP in this event is 3-15 per team",
-              "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
-              "All dance forms are allowed in this round.",
-              "No props are allowed in this round.",
-              "The video must be shot on a static camera",
-              "The video must not be edited at any point of time.",
-              "In this round the costume will be overlooked.",
-              "From this round approximately 8 teams will be selected for the final round.",
-              "The selected teams have to perform on a song that is relevant to the theme of the fest.",
-              "Song choice will not be restricted by it should be coherent with the theme.",
-              "Using transitions and different sound effects are allowed.",
-              "Round 2 Finals",
-              "Rules for Duet",
-              "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
-              "The performance can be an extension of their round 1 performance.",
-              "Props are allowed in this round.",
-              "Rules for Group",
-              "Total number of members allowed for GROUP are 3-15 members including 2 assistants for lighting and sounds.",
-              "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
-              "The performance can be an extension of their round 1 performance.",
-              "Props are allowed in this round."
+    "rules": [
+      "Round 1(Online Elimination)",
+      "Rules for duet",
+      "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
+      "All dance forms are allowed in this round.",
+      "No props are allowed in this round.",
+      "The video must be shot on a static camera",
+      "The video must not be edited at any point of time.",
+      "In this round the costume will be overlooked.",
+      "Rules for group",
+      "Total number of members allowed for GROUP in this event is 3-15 per team",
+      "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time registration along with the form.",
+      "All dance forms are allowed in this round.",
+      "No props are allowed in this round.",
+      "The video must be shot on a static camera",
+      "The video must not be edited at any point of time.",
+      "In this round the costume will be overlooked.",
+      "From this round approximately 8 teams will be selected for the final round.",
+      "The selected teams have to perform on a song that is relevant to the theme of the fest.",
+      "Song choice will not be restricted by it should be coherent with the theme.",
+      "Using transitions and different sound effects are allowed.",
+      "Round 2 Finals",
+      "Rules for Duet",
+      "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
+      "The performance can be an extension of their round 1 performance.",
+      "Props are allowed in this round.",
+      "Rules for Group",
+      "Total number of members allowed for GROUP are 3-15 members including 2 assistants for lighting and sounds.",
+      "Time duration for this round is 6-9 minutes. (+1min for stage setup and clearance)",
+      "The performance can be an extension of their round 1 performance.",
+      "Props are allowed in this round."
     ],
-    "regulations":"",
-    "registrationDate":"N/A",
-    "Team":"N/A",
-    "pool":"Rs. 25000",
-    "prize":[""],
-    "addPrize":""
+    "regulations": "",
+    "registrationDate": "N/A",
+    "Team": "N/A",
+    "pool": "Rs. 25000",
+    "prize": [
+      ""
+    ],
+    "addPrize": ""
   },
-  "praanaant":{
-    "name":"Praanant",
-    "tagline":"Nukkad Natak/Street Play",
-    "details":"In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges ‘Praanaant’—a street play experience where the ‘Strive for Stardom’ meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— ‘Praanaant’ is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
-    "timeline":[
+  "praanaant": {
+    "name": "Praanant",
+    "tagline": "Nukkad Natak/Street Play",
+    "details": "In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges 'Praanaant'—a street play experience where the 'Strive for Stardom' meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— 'Praanaant' is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
+    "timeline": [
       {
-        "head":[
+        "head": [
           "Registration open",
           "Registration close",
           "Round 1 (Eliminator) Result",
           "Round 2 (at IIITN Campus) Finals"
         ],
-        "date":[
+        "date": [
           "10/12/23",
           "1/02/24",
           "04/02/024",
           "23/02/24"
         ],
-        "content":[
+        "content": [
           "",
           "",
           "For the Preliminary Round, participants are required to submit their street play videos online. This phase acts as the eliminator. Ensure that your submission aligns with the event's theme and guidelines, as it will decide your eligibility to progress to the thrilling final round.",
@@ -274,7 +278,7 @@
         ]
       }
     ],
-    "rules":[
+    "rules": [
       "General Rules",
       "Your performance could be in English, Hindi or Bi-lingual Street Play.",
       "Same play submitted in the Online Round with only slight alterations to character or dialogues must be performed in the final round as well if selected.",
@@ -291,26 +295,26 @@
       "Round 1(Eliminator)",
       "Teams must submit a video enactment of an original or adapted play.",
       "Along with the video submission, the script must be provided with proper credits.",
-      "Time Limit – The Video file should be 4-5 minutes long. Not following the time constraints will result in Negative Marking.",
+      "Time Limit - The Video file should be 4-5 minutes long. Not following the time constraints will result in Negative Marking.",
       "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Pranaant_(Team Name)_(College Name).",
       "The subject of your email should follow the same format for the name of the video file entry.",
       "Participants are required to submit their video entry or video entry link via email.",
       "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
-      "Last Date of Prelim Submission is – 31st Jan 2024.",
+      "Last Date of Prelim Submission is - 31st Jan 2024.",
       "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
       "The dress code of the entire team must be Black and Red to connect somewhere in the play or storyline to bind with our theme 'The Strive for Stardom'.",
       "Round 2 (At IIITN Campus)",
-      "Time Limit – The Street Play should be 10-15 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
+      "Time Limit - The Street Play should be 10-15 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
       "A team can have 4 non-performing/supporting individuals in the team: 1 backstage/props/instrument managers, 3 Instrument players.",
       "Teams using any Props / Instruments/Audios must bring all their requirements and must be ready well in time as per instructions of the organizer.",
       "Any specific (Arrangements, props) requirements should be informed to organizers on a prior basis and are subject to availability. The requirements must be mentioned at the time of registration and no further requests will be entertained later on.",
       "Both adapted and original scripts are allowed.",
       "Teams should maintain decency and decorum in behavior, attire, and performance.",
-      "All participants shall be required to carry their Institute’s ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "All participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
       "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
       "The dress code of the entire team must be Black and Red to connect somewhere in the play or storyline to bind with our theme 'The Strive for Stardom'."
     ],
-    "regulations":[
+    "regulations": [
       "Round 1",
       "Acting Quality",
       "Direction",
@@ -324,7 +328,7 @@
       "Teamwork and Chemistry",
       "Adherence to Rules and Time Limit",
       "Originality of Interpretation",
-      "Clarity of Message", 
+      "Clarity of Message",
       "Costume / Dressing",
       "Dialogue delivery",
       "Expressions",
@@ -344,112 +348,121 @@
       "Teamwork and Chemistry",
       "Adherence to Rules and Time Limit",
       "Originality of Interpretation",
-      "Lighting effects", 
-      "Sound effects", 
-      "Clarity of Message", 
+      "Lighting effects",
+      "Sound effects",
+      "Clarity of Message",
       "Costume / Dressing",
       "Dialogue delivery",
       "Expressions",
       "Body language"
     ],
-    "registrationDate":"10/12/23",
-    "Team":"5-20",
-    "pool":"Rs. 20000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":[""]
+    "registrationDate": "10/12/23",
+    "Team": "5-20",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
   },
-  "mun":{
-    "name":"Model United Nations (MUN)",
-    "tagline":"",
-    "details":[
-        "MUN is an academic simulation of the United Nations wherein students as delegates step into the shoes of ambassadors from UN member states to debate current international issues on the organization’s agenda.",
-        "COMMITTEES",
-        "WORLD TRADE ORGANIZATION (WTO) -  ( 30-40 delegates )",
-        "The WTO plays a crucial role in the global economy, regulating international trade and fostering economic cooperation among its member states.The Agenda of the committee will be decided soon. This committee aims to address intricate trade-related issues, negotiate trade agreements, and enhance the equity and fairness of the global trading system.",
-        "Constituent Assembly of India Summit -  ( 30-40 delegates )",
-        "The Constituent Assembly of India played a pivotal role in shaping the nation's destiny by drafting its constitution. This summit will commemorate this historic body and discuss its relevance in the modern context. The agenda of the summit will be determined in the near future.The Constituent Assembly of India Summit aims to delve into the intricacies of the Indian constitution's creation, its core principles, and its ongoing significance in the governance of the world's largest democracy",
-        "United Nations Human Rights Council (UNHRC) -  ( 30-40 delegates )",
-        "The UNHRC is a pivotal international body dedicated to the promotion and protection of human rights worldwide. The committee's agenda will be determined at a later date.The UNHRC committee seeks to address pressing human rights issues, advocate for the rights of individuals globally, and engage in dialogue and diplomacy to uphold the principles of human rights.",
-        "International Press Committee (IPC) - ( 10-20 delegates )",
-        "The purpose of the International Press Committee in Model United Nations is to serve as the eyes and ears of the conference, mimicking the role of international journalism in the real world. It aims to provide unbiased, timely, and comprehensive coverage of the MUN proceedings, fostering transparency, accountability, and an authentic atmosphere."
-      ],
-    "timeline":[
+  "mun": {
+    "name": "Model United Nations (MUN)",
+    "tagline": "",
+    "details": [
+      "MUN is an academic simulation of the United Nations wherein students as delegates step into the shoes of ambassadors from UN member states to debate current international issues on the organization's agenda.",
+      "COMMITTEES",
+      "WORLD TRADE ORGANIZATION (WTO) -  ( 30-40 delegates )",
+      "The WTO plays a crucial role in the global economy, regulating international trade and fostering economic cooperation among its member states.The Agenda of the committee will be decided soon. This committee aims to address intricate trade-related issues, negotiate trade agreements, and enhance the equity and fairness of the global trading system.",
+      "Constituent Assembly of India Summit -  ( 30-40 delegates )",
+      "The Constituent Assembly of India played a pivotal role in shaping the nation's destiny by drafting its constitution. This summit will commemorate this historic body and discuss its relevance in the modern context. The agenda of the summit will be determined in the near future.The Constituent Assembly of India Summit aims to delve into the intricacies of the Indian constitution's creation, its core principles, and its ongoing significance in the governance of the world's largest democracy",
+      "United Nations Human Rights Council (UNHRC) -  ( 30-40 delegates )",
+      "The UNHRC is a pivotal international body dedicated to the promotion and protection of human rights worldwide. The committee's agenda will be determined at a later date.The UNHRC committee seeks to address pressing human rights issues, advocate for the rights of individuals globally, and engage in dialogue and diplomacy to uphold the principles of human rights.",
+      "International Press Committee (IPC) - ( 10-20 delegates )",
+      "The purpose of the International Press Committee in Model United Nations is to serve as the eyes and ears of the conference, mimicking the role of international journalism in the real world. It aims to provide unbiased, timely, and comprehensive coverage of the MUN proceedings, fostering transparency, accountability, and an authentic atmosphere."
+    ],
+    "timeline": [
       {
-        "head":[
+        "head": [
           "Registration opens",
           "Registration closes"
         ],
-        "date":[
+        "date": [
           "10/12/23",
           "15/02/24"
         ],
-        "content":[
+        "content": [
           "",
           ""
         ]
       }
     ],
-    "rules":[
+    "rules": [
       "IIITN MUN will follow all the rules and regulations of UN and a detailed ROP will be given by the club soon"
     ],
-    "regulations":[
-      "Professional EB’s will be assigned to each committee"
+    "regulations": [
+      "Professional EB's will be assigned to each committee"
     ],
-    "registrationDate":"10/12/23",
-    "Team":"5-20",
-    "pool":"Rs. 20000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":[""]
+    "registrationDate": "10/12/23",
+    "Team": "5-20",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
   },
-  "kaviSammelan":{
-    "name":"Kavi Sammelan",
-    "tagline":"Poetry Competition",
-    "details":"If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
-    "timeline":[{
-      "head":[
-        "Registration open | 10th Dec 2023",
-        "Registration closes | 1st Feb 2024 | Time-12:00 AM",
-        "Round 1 (Eliminator) Result | 4th Feb 2024 | Time-12:00AM",
-        "Round 2(Finals) | 23rd Feb 2024 | Time-12:30AM"
-      ],
-      "date":[
-        "10/12/23",
-        "1/2/24",
-        "4/2/24",
-        "23/2/24"
-      ],
-      "content":[
-        "",
-        "",
-        "In this preliminary round, poets will submit their recorded performances online. This serves as the eliminator, where your poetic creativity and talent will shine through the screen. Ensure that your submission encapsulates the theme and adheres to the rules, as it will determine your journey to the thrilling final round.",
-        "The final round is where the magic happens, an offline gathering of poetic souls. Selected poets will step onto the stage, bringing their unique verses to life before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your poetic expression to new heights, leave an indelible mark, and compete for top honors in the realm of poetry."
-      ]
-    }],
-    "rules":[
+  "kaviSammelan": {
+    "name": "Kavi Sammelan",
+    "tagline": "Poetry Competition",
+    "details": "If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
+    "timeline": [
+      {
+        "head": [
+          "Registration open | 10th Dec 2023",
+          "Registration closes | 1st Feb 2024 | Time-12:00 AM",
+          "Round 1 (Eliminator) Result | 4th Feb 2024 | Time-12:00AM",
+          "Round 2(Finals) | 23rd Feb 2024 | Time-12:30AM"
+        ],
+        "date": [
+          "10/12/23",
+          "1/2/24",
+          "4/2/24",
+          "23/2/24"
+        ],
+        "content": [
+          "",
+          "",
+          "In this preliminary round, poets will submit their recorded performances online. This serves as the eliminator, where your poetic creativity and talent will shine through the screen. Ensure that your submission encapsulates the theme and adheres to the rules, as it will determine your journey to the thrilling final round.",
+          "The final round is where the magic happens, an offline gathering of poetic souls. Selected poets will step onto the stage, bringing their unique verses to life before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your poetic expression to new heights, leave an indelible mark, and compete for top honors in the realm of poetry."
+        ]
+      }
+    ],
+    "rules": [
       "Round 1 (Eliminator):-",
       "Poet must submit a video enactment of an original poem.",
       "Along with the video submission, the poem must be provided with proper credit.",
-      "Time Limit – The Video file should be 3-5 minutes long. Not following the time Constraints will result in Negative Marking.",
+      "Time Limit - The Video file should be 3-5 minutes long. Not following the time Constraints will result in Negative Marking.",
       "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Kavisammelan_(Participant Name)_(College Name).",
       "The subject of your email should follow the same format for the name of the video file entry.",
       "Participants are required to submit their video entry or video entry link via email.",
       "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
-      "Last Date of Prelim Submission is – 31st Jan 2024.",
+      "Last Date of Prelim Submission is - 31st Jan 2024.",
       "Ensure that your performance video has clear visuals and audio. Any discrepancies in quality may impact the judging process, and changes cannot be made after submission.",
       "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
       "The Poem must flow to the theme, specifically - 'The Strive for Stardom'.",
       "A team can have 4 non-performing/supporting individuals in the team: 1 backstage/props/instrument managers, 3 Instrument players.",
       "Round 2 (at IIITN Campus): -",
-
-      "Time Limit – The Performance should be 6-10 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
+      "Time Limit - The Performance should be 6-10 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
       "Teams should maintain decency and decorum in the behavior, attire, and performance.",
-      "All participants shall be required to carry their Institute’s ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "All participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
       "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
       "The Poem must flow to the theme, specifically - 'The Strive for Stardom'."
     ],
-    "regulations":[
+    "regulations": [
       "Round 1:",
       "Relevance to Theme",
       "Creativity and Originality",
@@ -477,130 +490,486 @@
       "Audience Engagement",
       "Audience Response"
     ],
-    "registrationDate":"10/12/23",
-    "Team":"5-20",
-    "pool":"Rs. 20000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":[""]
+    "registrationDate": "10/12/23",
+    "Team": "5-20",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
   },
   "beatsmithShowdown": {
     "name": "Beatsmith Showdown",
     "tagline": "A Beatboxing Competition",
     "details": "Calling all aspiring beatboxers! Showcase your rhythmic prowess and original vocal beats in our exciting beatboxing competition and be recognized for your unique talent and creativity.",
-    "timeline": [{
-        "head": ["Round 1", "Round 2"],
-        "date":[
-            "16/1/24",
-            "24/1/24"
-          ],
-        "content": ["huh", "Dani G. German"]
-    }],
-    "rules": [
-        "It is a solo beatboxing competition.",
-        "Time limit for the performance will be 2 minutes, exceeding which by 20s will lead to disqualification.",
-        "Use of musical instruments will lead to disqualification.",
-        "Judging criteria includes:\nTechnical skills (40 points)\nCreativity and originality (30 points)\nPerformance and stage presence (30 points).",
-        "The judges' collective scores across these categories will determine the final outcome of the competition.",
-        "Winners get a chance to grab a direct spot in Beatsmith Showdown finale in the main fest which will be a 1v1 eliminator."
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "Round 2"
+        ],
+        "date": [
+          "16/1/24",
+          "24/1/24"
+        ],
+        "content": [
+          "huh",
+          "Dani G. German"
+        ]
+      }
     ],
-    "regulations":[""],
-    "registrationDate":"10/12/23",
-    "Team":"Solo",
-    "pool":"Rs. 20000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":[""]
-},
-"groovegenesis": {
+    "rules": [
+      "It is a solo beatboxing competition.",
+      "Time limit for the performance will be 2 minutes, exceeding which by 20s will lead to disqualification.",
+      "Use of musical instruments will lead to disqualification.",
+      "Judging criteria includes:\nTechnical skills (40 points)\nCreativity and originality (30 points)\nPerformance and stage presence (30 points).",
+      "The judges' collective scores across these categories will determine the final outcome of the competition.",
+      "Winners get a chance to grab a direct spot in Beatsmith Showdown finale in the main fest which will be a 1v1 eliminator."
+    ],
+    "regulations": [
+      ""
+    ],
+    "registrationDate": "10/12/23",
+    "Team": "Solo",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "groovegenesis": {
     "name": "Groove Genesis",
     "tagline": "Instrumental",
     "clubname": "Crescendo - Music Club",
     "description": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
-    "timeline": [{
-        "head": ["Round 1", "Round 2"],
-        "date":[
-            "15/1/24",
-            "23/1/24"
-          ],
-        "content": ["chipi chipi", "chapa chapa"]
-    }],
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "Round 2"
+        ],
+        "date": [
+          "15/1/24",
+          "23/1/24"
+        ],
+        "content": [
+          "chipi chipi",
+          "chapa chapa"
+        ]
+      }
+    ],
     "rules": [
-        "Round 1 (Eliminator)",
-        "Participants can perform any number of songs, solos, or original compositions within a time limit of 2-4 minutes.",
-        "Exceeding the time limit by 30 seconds will lead to disqualification.",
-        "Participants can optionally perform with a backing track.",
-        "Theme, accuracy, and timing (40 points)",
-        "Performance and expression (30 points)",
-        "Overall sync and coordination (30 points)",
-        "The judges' collective scores across these categories will determine the final outcome of the competition. Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
+      "Round 1 (Eliminator)",
+      "Participants can perform any number of songs, solos, or original compositions within a time limit of 2-4 minutes.",
+      "Exceeding the time limit by 30 seconds will lead to disqualification.",
+      "Participants can optionally perform with a backing track.",
+      "Theme, accuracy, and timing (40 points)",
+      "Performance and expression (30 points)",
+      "Overall sync and coordination (30 points)",
+      "The judges' collective scores across these categories will determine the final outcome of the competition. Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
     ],
     "regulations": [
-        "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
     ],
-    "registrationDate":"10/12/23",
-"Team":"5",
-"pool":"Rs. 20000",
-"prize":[""],
-"addPrize":"",
-"contact":[""]
-},
-"rhymeriot": {
+    "registrationDate": "10/12/23",
+    "Team": "5",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "rhymeriot": {
     "name": "Rhyme Riot",
     "tagline": "Battle of bands",
     "description": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
-    "timeline": [{
-        "head": ["Round 1", "Round 2"],
-        "date":[
-            "16/1/24",
-            "23/1/24"
-          ],
-        "content": ["dubi dubi", "daba daba"]
-    }],
-    "rules": [
-        "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
-        "Exceeding the time limit by 60 seconds will lead to disqualification.",
-        "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
-        "Judging criteria includes: \nVocal and Instrumental Excellence (40 points) \nPerformance and Expression (30 points) \nOverall Presentation (30 points)",
-        "The judges' collective scores across these categories will determine the final outcome of the competition.",
-        "Winners get a chance to grab a direct spot in Abhivyakti's finale in the main fest."
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "Round 2"
+        ],
+        "date": [
+          "16/1/24",
+          "23/1/24"
+        ],
+        "content": [
+          "dubi dubi",
+          "daba daba"
+        ]
+      }
     ],
-    "regulations": ["Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."],
-    "registrationDate":"10/12/23",
-"Team":"Solo",
-"pool":"Rs. 20000",
-"prize":[""],
-"addPrize":"",
-"contact":[""]
-},
-"stellarsingOff": {
+    "rules": [
+      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
+      "Exceeding the time limit by 60 seconds will lead to disqualification.",
+      "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
+      "Judging criteria includes: \nVocal and Instrumental Excellence (40 points) \nPerformance and Expression (30 points) \nOverall Presentation (30 points)",
+      "The judges' collective scores across these categories will determine the final outcome of the competition.",
+      "Winners get a chance to grab a direct spot in Abhivyakti's finale in the main fest."
+    ],
+    "regulations": [
+      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+    ],
+    "registrationDate": "10/12/23",
+    "Team": "Solo",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "stellarsingOff": {
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
     "clubname": "Crescendo - Music Club",
     "description": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
-    "timeline": [{
-        "head": ["Round 1", "Round 2"],
-        "date":[
-            "15/1/24",
-            "24/1/24"
-          ],
-        "content": ["magico ni", "magic pony"]
-    }],
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "Round 2"
+        ],
+        "date": [
+          "15/1/24",
+          "24/1/24"
+        ],
+        "content": [
+          "magico ni",
+          "magic pony"
+        ]
+      }
+    ],
     "rules": [
-        "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 3 minutes.",
-        "Exceeding the time limit by 20 seconds will lead to disqualification.",
-        "Participants can optionally perform with one instrumental accompaniment or with a backing track.",
-        "Judging criteria includes:\nVocal Excellence (40 points)\nPerformance and Expression (30 points)\nOverall Presentation (30 points)",
-        "The judges' collective scores across these categories will determine the final outcome of the competition.",
-        "Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
+      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 3 minutes.",
+      "Exceeding the time limit by 20 seconds will lead to disqualification.",
+      "Participants can optionally perform with one instrumental accompaniment or with a backing track.",
+      "Judging criteria includes:\nVocal Excellence (40 points)\nPerformance and Expression (30 points)\nOverall Presentation (30 points)",
+      "The judges' collective scores across these categories will determine the final outcome of the competition.",
+      "Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
     ],
     "regulations": "Any misconduct, obscenity, or foul language can leadto on-the-spot disqualification.",
-    "registrationDate":"10/12/23",
-    "Team":"Solo",
-    "pool":"Rs. 20000",
-    "prize":[""],
-    "addPrize":"",
-    "contact":[""]
-}
-
+    "registrationDate": "10/12/23",
+    "Team": "Solo",
+    "pool": "Rs. 20000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "AdMads": {
+    "name": "Ad Mads",
+    "tagline": "",
+    "clubname": "",
+    "description": "This high-energy event is your chance to transform concepts into captivating commercials. Whether you're a seasoned advertiser or a rookie with a flair for storytelling, this competition welcomes all. This event promises a platform for budding advertisers to shine.",
+    "timeline": [
+      {
+        "head": [
+          "Preliminary Round",
+          "Final Round"
+        ],
+        "date": [
+          ""
+        ],
+        "content": [
+          "Preliminary Round\n Teams will submit a video on the given concept. The deadline for online entries is. From the pool of entries, the top teams will be chosen to advance to the finals.",
+          "Final Round\n The chosen team will have the opportunity to exhibit their ad-making prowess at IIIT Nagpur campus, providing a platform to showcase and celebrate their creative abilities in the field of ad-making. Each team will be allocated a product for the final advertisement, offering a unique opportunity to demonstrate their storytelling and promotional expertise in the context of advertising."
+        ]
+      }
+    ],
+    "rules": [
+      "Participants: 5-7 members per team.",
+      "No age restrictions, open to all interested individuals.",
+      "Content Restrictions: Advertisements should adhere to ethical standards and avoid content that may be offensive, discriminatory, or violate community standards.",
+      "Duration: Advertisements should be within 30 seconds.",
+      "Product Integration: Advertisements should prominently feature the assigned product.",
+      "Submission Deadline: [Day 2 till 12:00PM].",
+      "Format: Advertisements should be submitted in mp4 format, resolution should be not less than 1080x1920.",
+      "Accompanying Documents: Participants must include a brief description of the concept, target audience, and key message with their submission.",
+      "Intellectual Property Rights: Participants retain the intellectual property rights to their advertisements.",
+      "Organizer's Use: By participating, teams grant the organizers permission to use their submitted advertisements for marketing and training purposes related to the event.",
+      "Marketing and Training: The submitted entries may be used by the organizers for promotional and training activities, ensuring proper attribution to the creators.",
+      "Participants are expected to maintain a professional demeanour throughout the event.",
+      "Encourage collaboration among team members and emphasize the importance of teamwork.",
+      "Any form of plagiarism will lead to disqualification.",
+      "Violation of rules and guidelines may result in disqualification.",
+      "Specify the official channels through which organizers will communicate updates, announcements, and important information to participants.",
+      "Participants are expected to respond to official communications promptly.",
+      "Specify any mandatory events, workshops, or sessions that participants must attend.",
+      "Stress the importance of punctuality for all scheduled events.",
+      "If applicable, specify whether subtitles are required for non-English advertisement.",
+      "Encourage environmentally friendly practices during filming and discourage activities that may harm the environment.",
+      "If relevant, outline any COVID-19 safety measures that participants must adhere to during the event.",
+      "Provide emergency contact information and procedures.:",
+      "Emphasize fair play, respect, and sportsmanship among participants.",
+      "Reiterate the importance of maintaining a professional and respectful demeanour.",
+      "Encourage participants to provide feedback on the event to help improve future editions."
+    ],
+    "regulations": "",
+    "registrationDate": "",
+    "Team": "5-7 members",
+    "pool": "Rs. 15,000",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "Bahumukhi": {
+    "name": "Bahumukhi",
+    "tagline": "",
+    "clubname": "Estoria - Drama and poetry Club",
+    "description": "If you have the spirit of a performer burning within you, if you've dreamed of the grand stage as your canvas, then 'Bahumukhi' is your platform to shine. Get ready to mesmerize the audience with your solo act, to captivate their hearts, and unveil the true essence of your character. In this competition, you are the star, the director, and the storyteller all in one, and the stage is your domain. As the name 'Bahumukhi' suggests, you'll be the one portraying multiple role, showcasing your versatility and depth as an actor.'Bahumukhi' isn't just about an act; it's a journey, a climb from obscurity to the dazzling limelight.",
+    "timeline": [
+      {
+        "head": [
+          "Round 1 - Eliminator",
+          "Round 2 - at IIITN Campus"
+        ],
+        "date": [
+          "1/12/24",
+          "22/2/24"
+        ],
+        "content": [
+          "In Round 1 of 'Bahumukhi,' participants will submit their solo acts through video entries. This round serves as the eliminator, where your creativity and exceptional talent will take center stage on screen. Ensure that your submission aligns with the theme and guidelines, as it will determine if you progress to the thrilling final round, where you'll continue your journey toward stardom.",
+          "The final round of 'Bahumukhi' is an offline spectacle. The chosen participants will step onto the stage, where they will perform live, breathing life into their captivating solo acts before an eager and supportive audience. This is your moment to shine, seizing the opportunity to elevate your performance to new heights, leaving an indelible mark, and vying for the highest accolades."
+        ]
+      }
+    ],
+    "rules": [
+      "Round 1 (Eliminator):\n",
+      "Participants must submit a video enactment of an original or adapted solo act.",
+      "Along with the video submission, the script must be provided with proper credits.",
+      "Time Limit: Video files should have a duration of 4-6 minutes. Failure to adhere to the time constraints will result in negative marking.",
+      "Please ensure that your video file entries are named as follows:\n Abhivyakti2K23-24_Bahumukhi_(Participant Name)_(College Name)",
+      "The subject of your email should follow the same format as the name of the video file entry.",
+      "Participants are required to submit their video entry or video entry link via email.",
+      "Ensure that the drive link in your email provides &quot;Open to all&quot; access for viewing the video.",
+      "The last date for preliminary submissions is January 31, 2024.",
+      "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must",
+      "The Protagonist must form the storyline reaching out to “The Strive for Stardom”.",
+      "Round 2 (at IIITN Campus):\n",
+      "Time Limit - The Main Play should be 12-15 minutes long, from Start to Exit. There will be negative marking if teams exceed the performance time.",
+      "The participant can have 1 non-performing individuals in the team, who may manage the Sound, 'if required'.",
+      "Participants using Props / Costume / Dressing must bring all their requirements and must be ready well in time as per instructions of the organizer.",
+      "Any specific (audio, lighting, arrangements, props) requirements should be informed to organizers on prior basis and are subject to availability. The requirements must be mentioned at the time of registration and no further requests will be entertained later on.",
+      "Both adapted and original scripts are allowed.",
+      "Participants should maintain decency and decorum in the behavior, attire and performance.",
+      "Participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "Participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "The Protagonist must form the storyline reaching out to “The Strive for Stardom”.",
+      "General Rules (OPTIONAL FOR WEBSITE):\n",
+      "Performances should be in English, Hindi, or as a bilingual act.",
+      "If selected, the same solo act submitted in the Online Round with slight alterations to character or dialogues must be performed in the final round as well.",
+      "The use of fluids, flames, powders, glitters, heavy or sharp objects, or anything that can damage the stage is strictly prohibited. This includes flammable substances, sharp and potentially harmful objects are prohibited.",
+      "The specified time limits for both online and offline rounds must be strictly adhered to.",
+      "Multiple participants from the same college are allowed to participate.",
+      "Each participant may perform solo.",
+      "Plagiarism is strongly discouraged. Any act found replicating without the playwright's consent will result in elimination.",
+      "The performance must be original. Inappropriate content, religious blasphemy, and vulgarity/obscenity are not permissible.",
+      "Dialogues must be spoken live and must not be pre-recorded.",
+      "Video submissions must feature clear visuals and audio. Any discrepancies may affect the judging process, and the responsibility for such discrepancies will not be attributed to the organizers. No alterations can be made to the submitted videos after the deadline.",
+      "The judges' decisions will be final in all cases."
+    ],
+    "regulations": [
+      "Round 1\n 1. Acting Quality\n 2. Script and Story\n 3. Characterization\n 4. Originality and Creativity\n 5. Pacing and Timing\n 6. Relevance to Theme\n 7. Overall Impact\n 8. Execution of Challenging Scenes\n 9. Adherence to Rules and Time Limit\n 10. Originality of Interpretation\n 11. Clarity of Message\n 12. Costume / Dressing\n 13. Dialogue delivery\n 14. Expressions\n 15. Body language",
+      "Round 2\n 1. Acting Quality\n 2. Script and Story\n 3. Characterization\n 4. Audience Engagement\n 5. Audience Response\n 6. Originality and Creativity\n 7. Pacing and Timing\n 8. Relevance to Theme\n 9. Overall Impact\n 10. Execution of Challenging Scenes\n 11. Adherence to Rules and Time Limit\n 12. Originality of Interpretation\n 13. Sound effects\n 14. Clarity of Message\n 15. Costume / Dressing\n 16. Dialogue delivery\n 17. Expressions\n 18. Body language"
+    ],
+    "registrationDate": "10/12/23 - 1/2/24",
+    "Team": "",
+    "pool": "",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "Andhakaar": {
+    "name": "Andhakaar",
+    "tagline": "Stage Play",
+    "clubname": "Estoria - Drama and poetry club",
+    "description": "In the depths of obscurity, hidden in the shadows, a talent emerged—a story of relentless 'Strive for Stardom'. Welcome to 'Andhkaar', a stage play drama competition that immerses you in a world of darkness, where struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime intertwine.Witness the rise from darkness to dazzling limelight, for this is where stars are born. Come, and let the spotlight shine on 'Andhkaar'.",
+    "timeline": [
+      {
+        "head": [
+          "Round 1 - Eliminator",
+          "Round 2 - at IIITN Campus"
+        ],
+        "date": [
+          ""
+        ],
+        "content": [
+          "In Round 1, participants will submit their video performances online. This round serves as the eliminator, where your creativity and talent will be showcased on screen. Make sure your submission reflects the theme and rules, as it will determine if you advance to the exciting final round.",
+          "The final round is an offline round. The selected participants will take the stage to perform live, bringing their unique stories to life in front of an enthusiastic audience. This is your chance to shine, with the opportunity to take your production to the next level, make your mark, and compete for top honors."
+        ]
+      }
+    ],
+    "rules": [
+      "Round 1 (Eliminator): \n",
+      "Teams must submit a video enactment of an original or adapted play.",
+      "Along with the video submission, the script must be provided with proper credits.",
+      "Time Limit - The Video file should be 9-12 minutes long. Not following the time Constraints will result in Negative Marking.",
+      "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Andhkaar_(Team Name)_(College Name)",
+      "The subject of your email should follow the same format for the name of the video file entry.",
+      "Participants are required to submit their video entry or video entry link via email.",
+      "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
+      "Last Date of Prelim Submission is - 31 st Jan 2024",
+      "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must ",
+      "The Protagonist must have at least “1 min” of Individual Spotlight (Monologue, Emotional breakdown, Dumbact, Musical Act) somewhere in the play or storyline to showcase “The Strive for Stardom”.",
+      "Round 2 (at IIITN Campus): \n",
+      "Time Limit - The Stage Play should be 20-30 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
+      "A team can have 6 non-performing individuals in the team: 3 backstage/props managers\n 1 light in charge\n 1 sound in charge\n 1 round-up artist\n",
+      "Teams using any Props / Costume / Dressing must bring all their requirements and must be ready well in time as per instructions of the organizer.",
+      "Any specific (audio, lighting, arrangements, props) requirements should be informed to organizers on prior basis and are subject to availability. The requirements must be mentioned at the time of registration and no further requests will be entertained later on.",
+      "Both adapted and original scripts are allowed.",
+      "Teams should maintain decency and decorum in the behavior, attire and performance.",
+      "All participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "Following the play in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must",
+      "The Protagonist must have at least “1 min” of Individual Spotlight (Monologue, Emotional breakdown, Dumbact, Musical Act) somewhere in the play or storyline to showcase “The Strive for Stardom”. ",
+      "General Rules (OPTIONAL FOR WEBSITE): \n",
+      "Play should be in English, Hindi or Bi-lingual Drama.",
+      "Same play submitted in the Online Round with only slight alterations to character or dialogues must be performed in the final round as well if selected.",
+      "Any use of fluids, flames, powders, glitters, heavy or sharp objects, or anything that can damage the stage is prohibited. This includes flammable substances, sharp and potentially harmful objects are prohibited.",
+      "Time Limit provided for both online as well as offline rounds must be strictly followed.",
+      "More than one team from the same college can participate.",
+      "One team can have 5-20 members. ",
+      "Also provide the name of the Director and Scriptwriter (They may or may not be an actor in the play itself)",
+      "The performance must be original. Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated.",
+      "Dialogues mustn't be pre-recorded.",
+      "The video must have clear visuals as well as audio. Any discrepancy in it will cause deviated judgment which won't be considered our fault and no changes can be made later on.",
+      "In any case the judge's decision will be final.",
+      "Plagiarism is strongly discouraged. Any team found replicating a play without the playwright's consent will face elimination."
+    ],
+    "regulations": [
+      "Round 1\n 1. Acting Quality\n 2. Direction\n 3. Script and Story\n 4. Characterization\n 5. Originality and Creativity\n 6. Pacing and Timing\n 7. Relevance to Theme\n 8. Overall Impact\n 9. Execution of Challenging Scenes\n 10. Teamwork and Chemistry\n 11. Adherence to Rules and Time Limit\n 12. Originality of Interpretation\n 13. Clarity of Message\n 14. Costume / Dressing\n 15. Dialogue delivery\n 16. Expressions\n 17. Body language",
+      "Round 2\n 1. Acting Quality\n 2. Direction\n 3. Script and Story\n 4. Characterization\n 5. Audience Engagement\n 6. Audience Response\n 7. Originality and Creativity\n 8. Pacing and Timing\n 9. Relevance to Theme\n 10. Overall Impact\n 11. Execution of Challenging Scenes\n 12. Teamwork and Chemistry\n 13. Adherence to Rules and Time Limit\n 14. Originality of Interpretation\n 15. Lighting effects\n 16. Sound effects\n 17. Clarity of Message\n 18. Costume / Dressing\n 19. Dialogue delivery\n 20. Expressions\n 21. Body language"
+    ],
+    "registrationDate": "",
+    "Team": "",
+    "pool": "",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "Bronx Battleground": {
+    "name": "Bronx Battleground",
+    "tagline": "",
+    "clubname": "",
+    "description": "Get ready to be enthralled at Abhivyakti, IIITN's cultural fest, with our Group Dance Competition! Witness mesmerising performances in a variety of dance styles, as talented teams compete for the coveted title of Dance Champions. With live music, esteemed judges, and an electric atmosphere, this event promises to be a celebration of rhythm and artistry that you won't want to miss. Mark your calendars and join us for a night of unforgettable dance performances.",
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "In the finals:"
+        ],
+        "date": [
+          ""
+        ],
+        "content": [
+          "Teams of 5 to 10 members must submit a 2-4 minute video of their performance. No props are allowed in this round, and costumes won't be part of the judging criteria.\n From the elimination round, 4 teams will advance to the finals.",
+          "Teams will compete in a series of sub-rounds, including\n Solo Faceoff,\n Showdown, and\n Challenge Round.\n Only the listed dangerous props like fire, blades, sharp mirrors, scissors, and nails are prohibited in the competition."
+        ]
+      }
+    ],
+    "rules": [
+      "Round 1 (Online Elimination):\n",
+      "The team must contain minimum 5 and maximum 10 members.",
+      "Participants have to submit a video of them performing for 2-4 minutes. They have to submit the drive link of the video at the time registration along with the form.",
+      "No props are allowed in this round.",
+      "The video must be shot on a static camera",
+      "The video must not be edited at any point of time.",
+      "In this round, costumes will be overlooked.",
+      "Round 2 (Finals):\n ",
+      "The team must contain minimum 5 and maximum 10 members.",
+      "Details of each round are as follows:\n Solo face-off: In this round a member from both the team steps in the arena and performs for 1 minute.\n Showdown: In this round each team will be given 3 minutes(approx.) that will be divided into 50 seconds rounds, random song will be played on which each team has to perform for 50 seconds alternatively.\n Challenge round: In this round, one team selects a chit and the other team decides who performs first. There will be 3-5 different challenges and one of the teams get to select a chit based on a toss.",
+      "Each team gets 5-10 mins to prepare for the challenge.\n Both teams then get 1min to 2mins to perform.\n NO Props are allowed for this round.",
+      "From the 4 teams 2 will be selected for the final round which will follow the same rule as mentioned above.",
+      "Optional(For Website):\n ",
+      "Team must take care of the number of performing members.",
+      "One person can stay a member of only one team.",
+      "Dance style allowed is only Hip-Hop.",
+      "Pre- recorded music must be brought by the teams in .mp3 format.",
+      "Time limits must be taken care of, if not can lead to heavy penalties.",
+      "The decision of the judges will be final.",
+      "Violation of any above rule can lead to disqualification."
+    ],
+    "regulations": "",
+    "registrationDate": "",
+    "Team": "5-10 members",
+    "pool": "",
+    "prize": [
+      ""
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  },
+  "Dastaan-e-Chhota Parda": {
+    "name": "Dastaan-e-Chhota Parda",
+    "tagline": "Short film making",
+    "clubname": "",
+    "description": "Prepare for cinematic enchantment at Abhivyakti, IIITN's cultural fest! Embark on a storytelling adventure with our Short-film Making competition. Dive into the realm of visual narratives, craft emotions in every frame, and ignite your journey in the film industry. Your cinematic dreams are just a competition away, so seize the opportunity to make them a reality!",
+    "timeline": [
+      {
+        "head": [
+          "Competition Details:"
+        ],
+        "date": [
+          ""
+        ],
+        "content": [
+          "The first 10 teams to register will be eligible for evaluation, with each institute or university allowed one submission.",
+          "To participate, ensure the legitimacy and authenticity of each team member from your college.",
+          "This competition is all about producing a captivating 6-minute film, with a minimum of 4 minutes dedicated to dance.",
+          "There are no restrictions on song choices, but your film should seamlessly align with the fest's "
+        ]
+      }
+    ],
+    "rules": [
+      "Final submissions must be in .mp4 format, with strict adherence to time limits to avoid penalties.",
+      "The judges' decisions are final, and any violations of the rules can result in disqualification.",
+      "First 10 teams registering will be eligible for evaluation. ",
+      "And each Institute or University is allowed to have 1 submission.",
+      "The legitimacy and authenticity of each participant from team should be sent through an attachment letter from college attesting the participant to be a student of the respective college along with College-IDs.",
+      "This competition is about shooting a film of about 6mins which must include dance for minimum 4mins.",
+      "The film should be coherent with the theme of the Fest.",
+      "Song choice is not restricted",
+      "Originality of the story and concept will be verified.",
+      "Dialogues and Storyline is welcomed, but essence of dance should not be missed."
+    ],
+    "regulations": " 1. Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.\n 2. Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing.",
+    "registrationDate": "",
+    "Team": "",
+    "pool": "",
+    "prize": [
+      "The winning team will receive a cash prize and the honor of having their final submission showcased at the fest and collaboratively featured on the official Instagram handle of D-Taraxia."
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
+  }
 }
