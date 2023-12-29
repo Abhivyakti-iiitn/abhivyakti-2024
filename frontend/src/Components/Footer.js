@@ -21,13 +21,13 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Contact Us</h3>
+          <h2>Contact Us</h2>
           <p>Email: abhivyakti@iiitn.ac.in</p>
           <p>Phone: +91 9969696969</p>
         </div>
 
         <div className="footer-section">
-          <h3>Follow Us</h3>
+          <h2>Follow Us</h2>
           <p>Stay connected on social media for updates and highlights!</p>
           <div className="social-icons">
             <Link to="https://www.facebook.com/examplefest" target="_blank" rel="noopener noreferrer">
