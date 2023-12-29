@@ -202,7 +202,7 @@
           "",
           ""
         ],
-        "para":[
+        "content":[
           "Present a 1-1.5 minute video showcasing your moves, with no props allowed.All dance forms are allowed in this round.Costumes are not a judging factor in this round.From this round, approximately 8 teams will advance to the final round.",
           "Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.Just like duets, the dance form is your canvas, and costumes are not a judging factor.Approximately 8 teams will advance to the final round.",
           "Both duets and groups will have 6-9 minutes to mesmerize the audience.Props are allowed in this round, and the chosen song should be relevant to the fest's theme.Transitions and sound effects are permitted, but keep safety in mind.fire, blades, sharp mirrors, scissors, and nails are prohibited as props."
@@ -266,7 +266,7 @@
           "04/02/024",
           "23/02/24"
         ],
-        "para":[
+        "content":[
           "",
           "",
           "For the Preliminary Round, participants are required to submit their street play videos online. This phase acts as the eliminator. Ensure that your submission aligns with the event's theme and guidelines, as it will decide your eligibility to progress to the thrilling final round.",
@@ -358,5 +358,248 @@
     "prize":[""],
     "addPrize":"",
     "contact":[""]
-  }
+  },
+  "MUN":{
+    "name":"Model United Nations (MUN)",
+    "tagline":"",
+    "details":[
+        "MUN is an academic simulation of the United Nations wherein students as delegates step into the shoes of ambassadors from UN member states to debate current international issues on the organization’s agenda.",
+        "COMMITTEES",
+        "WORLD TRADE ORGANIZATION (WTO) -  ( 30-40 delegates )",
+        "The WTO plays a crucial role in the global economy, regulating international trade and fostering economic cooperation among its member states.The Agenda of the committee will be decided soon. This committee aims to address intricate trade-related issues, negotiate trade agreements, and enhance the equity and fairness of the global trading system.",
+        "Constituent Assembly of India Summit -  ( 30-40 delegates )",
+        "The Constituent Assembly of India played a pivotal role in shaping the nation's destiny by drafting its constitution. This summit will commemorate this historic body and discuss its relevance in the modern context. The agenda of the summit will be determined in the near future.The Constituent Assembly of India Summit aims to delve into the intricacies of the Indian constitution's creation, its core principles, and its ongoing significance in the governance of the world's largest democracy",
+        "United Nations Human Rights Council (UNHRC) -  ( 30-40 delegates )",
+        "The UNHRC is a pivotal international body dedicated to the promotion and protection of human rights worldwide. The committee's agenda will be determined at a later date.The UNHRC committee seeks to address pressing human rights issues, advocate for the rights of individuals globally, and engage in dialogue and diplomacy to uphold the principles of human rights.",
+        "International Press Committee (IPC) - ( 10-20 delegates )",
+        "The purpose of the International Press Committee in Model United Nations is to serve as the eyes and ears of the conference, mimicking the role of international journalism in the real world. It aims to provide unbiased, timely, and comprehensive coverage of the MUN proceedings, fostering transparency, accountability, and an authentic atmosphere."
+      ],
+    "timeline":[
+      {
+        "head":[
+          "Registration opens",
+          "Registration closes"
+        ],
+        "date":[
+          "10/12/23",
+          "15/02/24"
+        ],
+        "content":[
+          "",
+          ""
+        ]
+      }
+    ],
+    "rules":[
+      "IIITN MUN will follow all the rules and regulations of UN and a detailed ROP will be given by the club soon"
+    ],
+    "regulations":[
+      "Professional EB’s will be assigned to each committee"
+    ],
+    "registrationDate":"10/12/23",
+    "Team":"5-20",
+    "pool":"Rs. 20000",
+    "prize":[""],
+    "addPrize":"",
+    "contact":[""]
+  },
+  "Kavi Sammelan":{
+    "name":"Kavi Sammelan",
+    "tagline":"Poetry Competition",
+    "details":"If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
+    "timeline":{
+      "head":[
+        "Registration open | 10th Dec 2023",
+        "Registration closes | 1st Feb 2024 | Time-12:00 AM",
+        "Round 1 (Eliminator) Result | 4th Feb 2024 | Time-12:00AM",
+        "Round 2(Finals) | 23rd Feb 2024 | Time-12:30AM"
+      ],
+      "date":[
+        "10/12/23",
+        "1/2/24",
+        "4/2/24",
+        "23/2/24"
+      ],
+      "content":[
+        "",
+        "",
+        "In this preliminary round, poets will submit their recorded performances online. This serves as the eliminator, where your poetic creativity and talent will shine through the screen. Ensure that your submission encapsulates the theme and adheres to the rules, as it will determine your journey to the thrilling final round.",
+        "The final round is where the magic happens, an offline gathering of poetic souls. Selected poets will step onto the stage, bringing their unique verses to life before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your poetic expression to new heights, leave an indelible mark, and compete for top honors in the realm of poetry."
+      ]
+    },
+    "rules":[
+      "Round 1 (Eliminator):-",
+      "Poet must submit a video enactment of an original poem.",
+      "Along with the video submission, the poem must be provided with proper credit.",
+      "Time Limit – The Video file should be 3-5 minutes long. Not following the time Constraints will result in Negative Marking.",
+      "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Kavisammelan_(Participant Name)_(College Name).",
+      "The subject of your email should follow the same format for the name of the video file entry.",
+      "Participants are required to submit their video entry or video entry link via email.",
+      "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
+      "Last Date of Prelim Submission is – 31st Jan 2024.",
+      "Ensure that your performance video has clear visuals and audio. Any discrepancies in quality may impact the judging process, and changes cannot be made after submission.",
+      "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
+      "The Poem must flow to the theme, specifically - 'The Strive for Stardom'.",
+      "A team can have 4 non-performing/supporting individuals in the team: 1 backstage/props/instrument managers, 3 Instrument players.",
+      "Round 2 (at IIITN Campus): -",
+
+      "Time Limit – The Performance should be 6-10 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
+      "Teams should maintain decency and decorum in the behavior, attire, and performance.",
+      "All participants shall be required to carry their Institute’s ID Cards which they will be required to present at the registration desk before the commencement of the event.",
+      "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
+      "The Poem must flow to the theme, specifically - 'The Strive for Stardom'."
+    ],
+    "regulations":[
+      "Round 1:",
+      "Relevance to Theme",
+      "Creativity and Originality",
+      "Emotional Impact",
+      "Delivery and Diction",
+      "Expression and Emotion",
+      "Stage Presence",
+      "Imagery and Metaphor",
+      "Structure and Flow",
+      "Language and Rhythm",
+      "Overall Artistic Expression",
+      "Adherence to Rules",
+      "Round 2:",
+      "Relevance to Theme",
+      "Creativity and Originality",
+      "Emotional Impact",
+      "Delivery and Diction",
+      "Expression and Emotion",
+      "Stage Presence",
+      "Imagery and Metaphor",
+      "Structure and Flow",
+      "Language and Rhythm",
+      "Overall Artistic Expression",
+      "Adherence to Rules",
+      "Audience Engagement",
+      "Audience Response"
+    ],
+    "registrationDate":"10/12/23",
+    "Team":"5-20",
+    "pool":"Rs. 20000",
+    "prize":[""],
+    "addPrize":"",
+    "contact":[""]
+  },
+  "beatsmithshowdown": {
+    "name": "Beatsmith Showdown",
+    "tagline": "A Beatboxing Competition",
+    "details": "Calling all aspiring beatboxers! Showcase your rhythmic prowess and original vocal beats in our exciting beatboxing competition and be recognized for your unique talent and creativity.",
+    "timeline": {
+        "head": ["Round 1", "Round 2"],
+        "date":[
+            "16/1/24",
+            "24/1/24"
+          ],
+        "content": ["huh", "Dani G. German"]
+    },
+    "rules": [
+        "It is a solo beatboxing competition.",
+        "Time limit for the performance will be 2 minutes, exceeding which by 20s will lead to disqualification.",
+        "Use of musical instruments will lead to disqualification.",
+        "Judging criteria includes:\nTechnical skills (40 points)\nCreativity and originality (30 points)\nPerformance and stage presence (30 points).",
+        "The judges' collective scores across these categories will determine the final outcome of the competition.",
+        "Winners get a chance to grab a direct spot in Beatsmith Showdown finale in the main fest which will be a 1v1 eliminator."
+    ],
+    "registrationDate":"10/12/23",
+    "Team":"Solo",
+    "pool":"Rs. 20000",
+    "prize":[""],
+    "addPrize":"",
+    "contact":[""]
+},
+"groovegenesis": {
+    "name": "Groove Genesis",
+    "tagline": "Instrumental",
+    "clubname": "Crescendo - Music Club",
+    "description": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
+    "timeline": {
+        "head": ["Round 1", "Round 2"],
+        "date":[
+            "15/1/24",
+            "23/1/24"
+          ],
+        "content": ["chipi chipi", "chapa chapa"]
+    },
+    "rules": [
+        "Round 1 (Eliminator)",
+        "Participants can perform any number of songs, solos, or original compositions within a time limit of 2-4 minutes.",
+        "Exceeding the time limit by 30 seconds will lead to disqualification.",
+        "Participants can optionally perform with a backing track.",
+        "Theme, accuracy, and timing (40 points)",
+        "Performance and expression (30 points)",
+        "Overall sync and coordination (30 points)",
+        "The judges' collective scores across these categories will determine the final outcome of the competition. Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
+    ],
+    "regulations": [
+        "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+    ],
+    "registrationDate":"10/12/23",
+"Team":"5",
+"pool":"Rs. 20000",
+"prize":[""],
+"addPrize":"",
+"contact":[""]
+},
+"rhymeRiot": {
+    "name": "Rhyme Riot",
+    "tagline": "Battle of bands",
+    "description": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
+    "timeline": {
+        "head": ["Round 1", "Round 2"],
+        "date":[
+            "16/1/24",
+            "23/1/24"
+          ],
+        "content": ["dubi dubi", "daba daba"]
+    },
+    "rules": [
+        "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
+        "Exceeding the time limit by 60 seconds will lead to disqualification.",
+        "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
+        "Judging criteria includes: \nVocal and Instrumental Excellence (40 points) \nPerformance and Expression (30 points) \nOverall Presentation (30 points)",
+        "The judges' collective scores across these categories will determine the final outcome of the competition.",
+        "Winners get a chance to grab a direct spot in Abhivyakti's finale in the main fest."
+    ],
+    "regulations": "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification.",
+    "registrationDate":"10/12/23",
+"Team":"Solo",
+"pool":"Rs. 20000",
+"prize":[""],
+"addPrize":"",
+"contact":[""]
+},
+"stellarsingOff": {
+    "name": "Stellar Sing-Off",
+    "tagline": "Solo singing",
+    "clubname": "Crescendo - Music Club",
+    "description": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
+    "timeline": {
+        "head": ["Round 1", "Round 2"],
+        "date":[
+            "15/1/24",
+            "24/1/24"
+          ],
+        "content": ["magico ni", "magic pony"]
+    },
+    "rules": [
+        "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 3 minutes.",
+        "Exceeding the time limit by 20 seconds will lead to disqualification.",
+        "Participants can optionally perform with one instrumental accompaniment or with a backing track.",
+        "Judging criteria includes:\nVocal Excellence (40 points)\nPerformance and Expression (30 points)\nOverall Presentation (30 points)",
+        "The judges' collective scores across these categories will determine the final outcome of the competition.",
+        "Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
+    ],
+    "regulations": "Any misconduct, obscenity, or foul language can leadto on-the-spot disqualification.",
+    "registrationDate":"10/12/23",
+    "Team":"Solo",
+    "pool":"Rs. 20000",
+    "prize":[""],
+    "addPrize":"",
+    "contact":[""]
+}
+
 }
