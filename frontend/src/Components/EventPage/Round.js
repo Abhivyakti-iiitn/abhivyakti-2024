@@ -6,11 +6,11 @@ const Round = (props) => {
             <div className={`diamond ${props.glow?'glow':''}`}></div>
             <div className='RoundContent'>
                 <div className='RoundTiming'>
-                    <span className='RoundNo'>Round 1</span>
+                    <span className='RoundNo'>{props.round}</span>
                     <span className='RoundDate'>{props.date}</span>
                 </div>
                 <div className='RoundDetails'>
-                    ok
+                    {props.content}
                 </div>
             </div>
         </div>
