@@ -100,10 +100,18 @@ const EventContentRight = (props) => {
         </div>
         <div className='EventContent_content paddingLeft'>
           <div className='EventRules'>
-            Rules: {props.rules}
+          <ul>
+              {props.rules.map((rule, index) => (
+                <li key={index}>{rule}</li>
+              ))}
+            </ul>
           </div>
           <div>
-            {props.regulations}
+          <ul>
+              {props.regulations.map((regulation, index) => (
+                <li key={index}>{regulation}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
