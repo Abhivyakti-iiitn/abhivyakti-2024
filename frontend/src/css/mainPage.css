@@ -162,3 +162,12 @@ canvas {
    cursor: pointer;
    color: brown;
 }
+
+@media screen and (max-width: 450px){
+  .main__header .mid h1{
+    font-size: 3.6rem;
+  }
+  .main__header .mid h1 .year{
+    font-size: 3.6rem;
+  }
+}
