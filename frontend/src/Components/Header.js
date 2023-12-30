@@ -163,7 +163,7 @@ function Header() {
                     </div>
                 </div >
                 <div className="mid">
-                    <h1>ABHIYAKTI <br></br><div className='year'> 2024</div></h1>
+                    <h1>ABHIVYAKTI <br></br><div className='year'> 2024</div></h1>
                     <h2>Strive For Stardom</h2>
                 </div>
             </div >
