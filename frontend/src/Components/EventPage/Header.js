@@ -35,7 +35,7 @@ function Header(props) {
                     <div className="mid_left">
 
                         <h1 className={`${props.event.name?.length > 15 ? "longhname":"shorthname"}`}>{props.event.name} <br></br></h1>
-                        <h3>{props.event.tagline}</h3>
+                        <h2>{props.event.tagline}</h2>
                     </div>
                     <div className="mid_right">
                         <h4>Brought to you by</h4>

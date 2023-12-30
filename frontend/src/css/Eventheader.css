@@ -115,12 +115,13 @@
     text-align: center;
   }
 }
-.event_header .mid h3 {
+.event_header .mid h2 {
   color: white;
   font-size: xx-large;
+  font-family: "Carta Marina W00 Regular";
 }
 @media (max-width: 1000px) {
-  .event_header .mid h3 {
+  .event_header .mid h2 {
     font-size: 5vw;
     margin-top: -1.3em;
     text-align: center;

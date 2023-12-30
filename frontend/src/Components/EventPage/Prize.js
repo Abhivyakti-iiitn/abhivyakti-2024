@@ -9,7 +9,7 @@ function Prize() {
             <div className="liner">
 
                 <div className="line"></div>
-                <span className='prize'>PRIZE POOL</span>
+                <h1 className='prize'>PRIZE POOL</h1>
                 <div className="line"></div>
             </div>
             <div className='prize_amount'>

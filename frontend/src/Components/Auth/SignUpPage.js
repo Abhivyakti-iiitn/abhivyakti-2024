@@ -42,7 +42,7 @@ const SignUpPage = () => {
 
                     <div className='LoginSignUpForm'>
                         <div className='SignupFormArea'>
-                            <p className='signUpHeading'>Create an account</p>
+                            <h1 className='signUpHeading'>Create an account</h1>
                             <form className='SignupForm'>
                                 <div className='loginInputs'>
                                     <label htmlFor='nameForm' className='loginLabel'>

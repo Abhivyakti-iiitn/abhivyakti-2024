@@ -1,8 +1,8 @@
-.main{
+.main {
     background-color: #0F0001;
-    height:auto;
-    width:100%;
-    display:flex;
+    height: auto;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     // justify-content: center;
     align-content: center;
@@ -12,16 +12,16 @@
     // border-image-slice: 1;
 }
 
-.main{
-    img{
-    width:6em;
-    margin-top: 2em;
-    margin-left: 2em;
-}
+.main {
+    img {
+        width: 6em;
+        margin-top: 2em;
+        margin-left: 2em;
+    }
 }
 
-.formContent{
-    display:flex;
+.formContent {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,36 +29,38 @@
     padding: 2px;
 }
 
-.rules{
+.rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10%;
     align-items: center;
     margin: 0px;
-    width:100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: "Crimson Pro";
 }
 
-.rules{
-    p{
-    color: white;
-    // padding: 18px;
-    // width:100%;
-    // height:auto;
-    font-size: large;
-    // background-color: #BC615E;
-}
+.rules {
+    div ul {
+        text-align: left;
+    }
+    div{
+        width: 100%;
+    }
+
 }
 
-.lineVer{
+.lineVer {
     width: 0px;
     border: 2px solid red;
     border-right: 2px solid;
-    border-image: linear-gradient(to right,#F9DAA8, #BC615E);
+    border-image: linear-gradient(to right, #F9DAA8, #BC615E);
     border-image-slice: 1;
     margin-top: 1%;
-    height: 90vh;
+    height: 190vh;
 
-    @media (max-width:1000px){
+    @media (max-width:1000px) {
         width: 90%;
         align-self: center;
         height: 0px;

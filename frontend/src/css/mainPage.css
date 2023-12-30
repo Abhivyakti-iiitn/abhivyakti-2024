@@ -97,10 +97,10 @@
 
 
 
-.main__header .mid h3 {
+.main__header .mid h2 {
   color: white;
+  text-align: center;
   font-size: xx-large;
-  font-family: "Crimson Pro";
 }
 
 

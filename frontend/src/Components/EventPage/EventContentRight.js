@@ -4,6 +4,7 @@ import Faq from './Faq'
 import Head from './Head'
 
 const EventContentRight = (props) => {
+  let roundRegex = /^[rR]ound [1-9]\d*/;
   const [alreadyGlowing, setAlreadyGlowing] = useState(false);
   const [glowIndex, setGlowIndex] = useState(-1);
 
@@ -46,12 +47,12 @@ const EventContentRight = (props) => {
 
             {/* <div className="line"></div> */}
             <h1>
-            Details
+              Details
             </h1>
             <div className="line"></div>
           </div>
         </div>
-        <div className='EventContent_content paddingLeft'>
+        <div className='EventContent_content '>
           {props.details}
         </div>
       </div>
@@ -98,18 +99,19 @@ const EventContentRight = (props) => {
             <div className="line"></div>
           </div>
         </div>
-        <div className='EventContent_content paddingLeft'>
+        <div className='EventContent_content'>
           <div className='EventRules'>
-          <ul>
+            <ul>
               {props.rules.map((rule, index) => (
-                <li key={index}>{rule}</li>
+
+               roundRegex.test(rule) ? <h3>{rule}</h3> : <li key={index}>{rule}</li>
               ))}
             </ul>
           </div>
           <div>
-          <ul>
+            <ul>
               {props.regulations.map((regulation, index) => (
-                <li key={index}>{regulation}</li>
+               roundRegex.test(regulation) ? <h3>{regulation}</h3> : <li key={index}>{regulation}</li>
               ))}
             </ul>
           </div>

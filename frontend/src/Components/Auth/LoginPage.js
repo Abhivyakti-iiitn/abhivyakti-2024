@@ -52,7 +52,7 @@ const LoginPage = () => {
 
                     <div className='LoginSignUpForm'>
                         <div className='SignupFormArea'>
-                            <p className='signUpHeading'>Login</p>
+                            <h1 className='signUpHeading'>Login</h1>
                             <form className='SignupForm' onSubmit={handleSubmit}>
 
                                 <div className='loginInputs'>

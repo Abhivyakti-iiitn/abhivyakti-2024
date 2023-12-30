@@ -18,13 +18,13 @@ function Profile() {
             <div className='profile_page'>
                 <div className='profile_heading'>
                     <div class="horizontal-line1"></div>
-                    <div className='profile'>PROFILE</div>
+                    <h1 className='profile'>PROFILE</h1>
                     <div class="horizontal-line1"></div>
                 </div>
                 <div className='all_events'>
                     <div className='events_heading head1'>
                         <div className='sub_events'>
-                            <div className='events1 tag'>DETAILS</div>
+                            <h2 className='events1 tag'>DETAILS</h2>
                             <div className='horizontal-line2 hl1'></div>
                         </div>
                         <div className='infobox user_details'>
@@ -37,7 +37,7 @@ function Profile() {
                     </div>
                     <div className='events_heading head2'>
                         <div className='sub_events'>
-                            <div className='registered_events tag'>REGISTERED EVENTS</div>
+                            <h2 className='registered_events tag'>REGISTERED EVENTS</h2>
                             <div className='horizontal-line2 hl2'></div>
                         </div>
                         <div className='infobox event_details'>

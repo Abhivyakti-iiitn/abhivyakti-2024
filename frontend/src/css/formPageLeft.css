@@ -27,14 +27,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 10%;
   align-items: center;
   margin: 0px;
   width: 100%;
+  font-size: 1.5rem;
+  font-family: "Crimson Pro";
 }
 
-.rules p {
-  color: white;
-  font-size: large;
+.rules div ul {
+  text-align: left;
+}
+.rules div {
+  width: 100%;
 }
 
 .lineVer {
@@ -44,7 +49,7 @@
   border-image: linear-gradient(to right, #F9DAA8, #BC615E);
   border-image-slice: 1;
   margin-top: 1%;
-  height: 90vh;
+  height: 190vh;
 }
 @media (max-width: 1000px) {
   .lineVer {
