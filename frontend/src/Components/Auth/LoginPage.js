@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../../css/Login.css';
-import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg";
 import { useNavigate } from 'react-router-dom';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import Footer from '../Footer';
+import LogoComponent from '../../assets/LogoComponent.js';
 
 const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
@@ -46,7 +46,7 @@ const LoginPage = () => {
                 <div className='loginContainer'>
                     <div className='bgImageLogin'>
                         <div className='logoLogin'>
-                            <img src={logo} alt="clublogo" srcset="" className='LoginClubLogo' onClick={()=>navigateTo('/')} />
+                            <LogoComponent />
                         </div>
                     </div>
 

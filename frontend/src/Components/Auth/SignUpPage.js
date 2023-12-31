@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import Footer from '../Footer';
+import LogoComponent from '../../assets/LogoComponent.js';
 
 const SignUpPage = () => {
     const [userName, setUserName] = useState('');
@@ -36,7 +37,7 @@ const SignUpPage = () => {
                 <div className='loginContainer'>
                     <div className='bgImageLogin'>
                         <div className='logoLogin'>
-                        <img src={logo} alt="clublogo" srcset="" className='LoginClubLogo' onClick={()=>navigateTo('/')} />
+                            <LogoComponent />
                         </div>
                     </div>
 
