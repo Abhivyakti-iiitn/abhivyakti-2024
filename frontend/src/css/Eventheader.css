@@ -10,6 +10,14 @@
   background: url(../assets/EventPageAsst/beatboxshowdown.png);
 }
 
+.mun {
+  background: url(../assets/EventPageAsst/munmainbg.png);
+}
+
+.rhymeriot {
+  background: url(../assets/EventPageAsst/rhymeriotbg.png);
+}
+
 .event_header {
   background-repeat: no-repeat;
   background-position: center;
@@ -49,6 +57,11 @@
   display: inline;
   justify-self: end;
   max-width: 40%;
+}
+@media (max-width: 450px) {
+  .event_header .top .left ul {
+    padding-left: 10px;
+  }
 }
 .event_header .top .right {
   margin-top: 5%;

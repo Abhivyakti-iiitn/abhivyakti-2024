@@ -5,6 +5,7 @@ import starpodImg from '../assets/EventPageAsst/starpod.png';
 import beatsmithshowdownImg from '../assets/EventPageAsst/beatboxshowdown.png';
 import munImg from '../assets/EventPageAsst/munmain.png';
 import rhymeriotImg from '../assets/EventPageAsst/rhymeriot.png';
+import defaultImg from '../assets/EventImages/a.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function EventCards(props) {
@@ -30,7 +31,7 @@ function EventCards(props) {
             imgSrc = rhymeriotImg;
             break;
         default:
-            imgSrc = ''; // Set a default value or handle the case where no match is found
+            imgSrc = defaultImg; // Set a default value or handle the case where no match is found
             break;
     }
 

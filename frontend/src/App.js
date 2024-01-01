@@ -39,7 +39,7 @@ import TandC from "./Components/TandC";
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/event/:eventname" element={<Event />}></Route>
-          <Route path="/form" element={<FormPage/>}></Route>
+          <Route path="/form/:eventname" element={<FormPage/>}></Route>
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/signup" element={<SignUpPage/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>

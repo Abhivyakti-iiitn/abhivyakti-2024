@@ -11,6 +11,12 @@
 .beatsmithshowdown {
     background: url(../assets/EventPageAsst/beatboxshowdown.png);
 }
+.mun {
+    background: url(../assets/EventPageAsst/munmainbg.png);
+}
+.rhymeriot {
+    background: url(../assets/EventPageAsst/rhymeriotbg.png);
+}
 
 .event_header {
     // background: var(--bg-header-img);
@@ -73,6 +79,10 @@
                 display: inline;
                 justify-self: end;
                 max-width: 40%;
+            }
+
+            @media (max-width:450px) {
+                padding-left: 10px;
             }
         }
 

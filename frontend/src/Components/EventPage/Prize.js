@@ -2,7 +2,8 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import '../../css/prize.css';
 
-function Prize() {
+function Prize(props) {
+    console.log(props.name)
     const navigateTo = useNavigate();
     return (
         <div className='prize_pool'>
@@ -30,7 +31,7 @@ function Prize() {
                 <div>Additional Prizes</div>
                 <div>T-shirts/ Goodies /Swag pack/ Certificates.</div>
             </div>
-            <div className='register_btn' onClick={()=>navigateTo('/form')}>Register Now</div>
+            <div className='register_btn' onClick={()=>navigateTo(`/form/${props.name?.toLowerCase().replace(' ', '')}`)}>Register Now</div>
         </div>
     );
 }

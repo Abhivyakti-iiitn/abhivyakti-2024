@@ -51,8 +51,8 @@ function MainPage() {
       <Header />
       <h2 className="Events__heading">Events</h2>
       <div className="EventCards">
-        {events.map((event) => (
-          <EventCard
+        {events.map((event, ind) => (
+          ind <= 4 && <EventCard
             exploreAllEvents={false}
             imgSrc={`./assets/${event.name.replace(" ", "-")}.jpg`}
             name={event.name.replace(" ", "-")}

@@ -170,4 +170,7 @@ canvas {
   .main__header .mid h1 .year{
     font-size: 3.6rem;
   }
+  .main__header .top .left ul{
+    padding-left: 10px;
+  }
 }

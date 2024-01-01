@@ -11,7 +11,7 @@ function Header(props) {
 
     return (
         <>
-            <div className={`event_header ${props.event.name.toLowerCase().replace(' ', '')}`} >
+            <div className={`event_header ${props.raw?.toLowerCase().replace(' ', '')}`} >
                 <div div className='top' >
                     <div className="left">
                         <ul>
@@ -34,8 +34,8 @@ function Header(props) {
                 <div className="mid">
                     <div className="mid_left">
 
-                        <h1 className={`${props.event.name?.length > 15 ? "longhname":"shorthname"}`}>{props.event.name} <br></br></h1>
-                        <h2>{props.event.tagline}</h2>
+                        <h1 className={`${props.name?.length > 15 ? "longhname":"shorthname"}`}>{props.name} <br></br></h1>
+                        <h2>{props.tagline}</h2>
                     </div>
                     <div className="mid_right">
                         <h4>Brought to you by</h4>

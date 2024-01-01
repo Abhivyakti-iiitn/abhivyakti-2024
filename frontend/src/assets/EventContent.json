@@ -131,7 +131,7 @@
     "fees": "15 Rs",
     "pool": "100 Cr"
   },
-  "roadToRedCarpet": {
+  "roadtoredcarpet": {
     "name": "Road to Red Carpet",
     "tagline": "",
     "details": "Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
@@ -178,7 +178,7 @@
       "Emphasize fair play, respect, and sportsmanship among participants.",
       "Reiterate the importance of maintaining a professional and respectful demeanour."
     ],
-    "regulations": "",
+    "regulations":[],
     "registrationDate": "N/A",
     "Team": "N/A",
     "pool": "Rs. 25000",
@@ -188,7 +188,7 @@
     "addPrize": "",
     "contact": ""
   },
-  "rythmRumble": {
+  "rythmrumble": {
     "name": "Rythm Rumble",
     "tagline": "",
     "details": "Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
@@ -243,7 +243,7 @@
       "The performance can be an extension of their round 1 performance.",
       "Props are allowed in this round."
     ],
-    "regulations": "",
+    "regulations": [],
     "registrationDate": "N/A",
     "Team": "N/A",
     "pool": "Rs. 25000",
@@ -252,7 +252,7 @@
     ],
     "addPrize": ""
   },
-  "praanaant": {
+  "praanant": {
     "name": "Praanant",
     "tagline": "Nukkad Natak/Street Play",
     "details": "In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges 'Praanaant'—a street play experience where the 'Strive for Stardom' meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— 'Praanaant' is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
@@ -415,7 +415,7 @@
       ""
     ]
   },
-  "kaviSammelan": {
+  "kavisammelan": {
     "name": "Kavi Sammelan",
     "tagline": "Poetry Competition",
     "details": "If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
@@ -546,7 +546,7 @@
     "name": "Groove Genesis",
     "tagline": "Instrumental",
     "clubname": "Crescendo - Music Club",
-    "description": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
+    "details": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
     "timeline": [
       {
         "head": [
@@ -590,7 +590,7 @@
   "rhymeriot": {
     "name": "Rhyme Riot",
     "tagline": "Battle of bands",
-    "description": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
+    "details": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
     "timeline": [
       {
         "head": [
@@ -633,7 +633,7 @@
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
     "clubname": "Crescendo - Music Club",
-    "description": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
+    "details": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
     "timeline": [
       {
         "head": [
@@ -670,11 +670,11 @@
       ""
     ]
   },
-  "AdMads": {
+  "admads": {
     "name": "Ad Mads",
     "tagline": "",
     "clubname": "",
-    "description": "This high-energy event is your chance to transform concepts into captivating commercials. Whether you're a seasoned advertiser or a rookie with a flair for storytelling, this competition welcomes all. This event promises a platform for budding advertisers to shine.",
+    "details": "This high-energy event is your chance to transform concepts into captivating commercials. Whether you're a seasoned advertiser or a rookie with a flair for storytelling, this competition welcomes all. This event promises a platform for budding advertisers to shine.",
     "timeline": [
       {
         "head": [
@@ -718,7 +718,7 @@
       "Reiterate the importance of maintaining a professional and respectful demeanour.",
       "Encourage participants to provide feedback on the event to help improve future editions."
     ],
-    "regulations": "",
+    "regulations": [],
     "registrationDate": "",
     "Team": "5-7 members",
     "pool": "Rs. 15,000",
@@ -730,11 +730,11 @@
       ""
     ]
   },
-  "Bahumukhi": {
+  "bahumukhi": {
     "name": "Bahumukhi",
     "tagline": "",
     "clubname": "Estoria - Drama and poetry Club",
-    "description": "If you have the spirit of a performer burning within you, if you've dreamed of the grand stage as your canvas, then 'Bahumukhi' is your platform to shine. Get ready to mesmerize the audience with your solo act, to captivate their hearts, and unveil the true essence of your character. In this competition, you are the star, the director, and the storyteller all in one, and the stage is your domain. As the name 'Bahumukhi' suggests, you'll be the one portraying multiple role, showcasing your versatility and depth as an actor.'Bahumukhi' isn't just about an act; it's a journey, a climb from obscurity to the dazzling limelight.",
+    "details": "If you have the spirit of a performer burning within you, if you've dreamed of the grand stage as your canvas, then 'Bahumukhi' is your platform to shine. Get ready to mesmerize the audience with your solo act, to captivate their hearts, and unveil the true essence of your character. In this competition, you are the star, the director, and the storyteller all in one, and the stage is your domain. As the name 'Bahumukhi' suggests, you'll be the one portraying multiple role, showcasing your versatility and depth as an actor.'Bahumukhi' isn't just about an act; it's a journey, a climb from obscurity to the dazzling limelight.",
     "timeline": [
       {
         "head": [
@@ -801,11 +801,11 @@
       ""
     ]
   },
-  "Andhakaar": {
+  "andhakaar": {
     "name": "Andhakaar",
     "tagline": "Stage Play",
     "clubname": "Estoria - Drama and poetry club",
-    "description": "In the depths of obscurity, hidden in the shadows, a talent emerged—a story of relentless 'Strive for Stardom'. Welcome to 'Andhkaar', a stage play drama competition that immerses you in a world of darkness, where struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime intertwine.Witness the rise from darkness to dazzling limelight, for this is where stars are born. Come, and let the spotlight shine on 'Andhkaar'.",
+    "details": "In the depths of obscurity, hidden in the shadows, a talent emerged—a story of relentless 'Strive for Stardom'. Welcome to 'Andhkaar', a stage play drama competition that immerses you in a world of darkness, where struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime intertwine.Witness the rise from darkness to dazzling limelight, for this is where stars are born. Come, and let the spotlight shine on 'Andhkaar'.",
     "timeline": [
       {
         "head": [
@@ -872,11 +872,11 @@
       ""
     ]
   },
-  "Bronx Battleground": {
+  "bronxbattleground": {
     "name": "Bronx Battleground",
     "tagline": "",
     "clubname": "",
-    "description": "Get ready to be enthralled at Abhivyakti, IIITN's cultural fest, with our Group Dance Competition! Witness mesmerising performances in a variety of dance styles, as talented teams compete for the coveted title of Dance Champions. With live music, esteemed judges, and an electric atmosphere, this event promises to be a celebration of rhythm and artistry that you won't want to miss. Mark your calendars and join us for a night of unforgettable dance performances.",
+    "details": "Get ready to be enthralled at Abhivyakti, IIITN's cultural fest, with our Group Dance Competition! Witness mesmerising performances in a variety of dance styles, as talented teams compete for the coveted title of Dance Champions. With live music, esteemed judges, and an electric atmosphere, this event promises to be a celebration of rhythm and artistry that you won't want to miss. Mark your calendars and join us for a night of unforgettable dance performances.",
     "timeline": [
       {
         "head": [
@@ -914,7 +914,7 @@
       "The decision of the judges will be final.",
       "Violation of any above rule can lead to disqualification."
     ],
-    "regulations": "",
+    "regulations": [],
     "registrationDate": "",
     "Team": "5-10 members",
     "pool": "",
@@ -926,11 +926,11 @@
       ""
     ]
   },
-  "Dastaan-e-Chhota Parda": {
+  "dastaan-e-chhotaparda": {
     "name": "Dastaan-e-Chhota Parda",
     "tagline": "Short film making",
     "clubname": "",
-    "description": "Prepare for cinematic enchantment at Abhivyakti, IIITN's cultural fest! Embark on a storytelling adventure with our Short-film Making competition. Dive into the realm of visual narratives, craft emotions in every frame, and ignite your journey in the film industry. Your cinematic dreams are just a competition away, so seize the opportunity to make them a reality!",
+    "details": "Prepare for cinematic enchantment at Abhivyakti, IIITN's cultural fest! Embark on a storytelling adventure with our Short-film Making competition. Dive into the realm of visual narratives, craft emotions in every frame, and ignite your journey in the film industry. Your cinematic dreams are just a competition away, so seize the opportunity to make them a reality!",
     "timeline": [
       {
         "head": [
@@ -959,7 +959,7 @@
       "Originality of the story and concept will be verified.",
       "Dialogues and Storyline is welcomed, but essence of dance should not be missed."
     ],
-    "regulations": " 1. Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.\n 2. Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing.",
+    "regulations": [  "Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.", "Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing."],
     "registrationDate": "",
     "Team": "",
     "pool": "",

@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import questionsData from '../../assets/questionData.json';
 import "../../newscss/form.scss";
 
+
 const Form = () => {
     const [formData, setFormData] = useState({});
     const [answers, setAnswers] = useState({});

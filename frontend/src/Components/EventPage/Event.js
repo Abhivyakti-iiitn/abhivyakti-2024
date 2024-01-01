@@ -47,19 +47,19 @@ function Event() {
 
 
     const params = useParams();
-    console.log("ADS", params.eventname);
+    // console.log("ADS", params.eventname);
     // console.log(content);
     return (
         <div className='container'>
-            <Header event={content[params.eventname.toLowerCase()]} />
+            <Header name={content[params.eventname.toLowerCase()].name} tagline={content[params.eventname.toLowerCase()].tagline} raw ={params.eventname} />
             {/* <Head/>
             <Name/>
             <Club/>
             <Timeline/>
             <Faq/> */}
             <EventContent content={content[params.eventname.toLowerCase()]} />
-            <Prize />
-            <Faq />
+            <Prize name = {content[params.eventname.toLowerCase()].name}  />
+            <Faq  />
             <Contact />
 
             <Footer />

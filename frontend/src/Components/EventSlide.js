@@ -5,6 +5,7 @@ import beatsmithshowdownImgSrc from '../assets/EventPageAsst/beatboxshowdown.png
 import munImg from '../assets/EventPageAsst/munmainbg.png';
 import rhymeriotImg from '../assets/EventPageAsst/rhymeriotbg.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import defaultImg from '../assets/EventImages/a.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const eventImages = {
@@ -17,7 +18,7 @@ const eventImages = {
 
 const EventSlide = (props) => {
     const nav = useNavigate();
-    const imgSrc = eventImages[props.event.name] || '';
+    const imgSrc = eventImages[props.event.name] || defaultImg;
 
     const contentStyle = {
         backgroundImage: `url(${imgSrc})`,
@@ -36,10 +37,10 @@ const EventSlide = (props) => {
                     <div className='EventSlide__text'>
                         <div className={`EventSlide__name ${props.event.name?.length > 15 ? "longcardename":"shortcardename"}`}>{props.event.name}</div>
                         <div className='EventSlide__desc'>Description</div>
-                        <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
+                        <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name.toLowerCase().replaceAll(' ', '')}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
                     </div>
                     <div className='EventSlide__btn'>
-                        <button className='EventRegBtn'>
+                        <button className='EventRegBtn' onClick={()=>nav(`/form/${props.event.name}`)}>
                             Register
                         </button>
                     </div>

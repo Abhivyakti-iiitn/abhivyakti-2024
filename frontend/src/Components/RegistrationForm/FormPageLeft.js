@@ -3,7 +3,7 @@ import EventContent from "../../assets/EventContent.json";
 import logo from "../../assets/sponsors/sponsor1.svg";
 import "../../newscss/formPageLeft.scss"
 
-const FormPageLeft = () => {
+const FormPageLeft = (props) => {
   let roundRegex = /^[rR]ound [1-9]\d*/;
 
   let rules = EventContent.showstopper.rules;
@@ -13,12 +13,12 @@ const FormPageLeft = () => {
       <img src={logo}></img>
       <div className='formContent'>
         <div className='title'>
-          <h1>{EventContent.showstopper.name}</h1>
+          <h1>{props.name}</h1>
         </div>
         <div className='rules'>
           <div>
             <ul>
-              {rules.map((rule, index) => (
+              {props.rules?.map((rule, index) => (
 
                 roundRegex.test(rule) ? <h3>{rule}</h3> : <li key={index}>{rule}</li>
               ))}
@@ -26,7 +26,7 @@ const FormPageLeft = () => {
           </div>
           <div>
             <ul>
-              {regulations.map((regulation, index) => (
+              {props.regulations?.map((regulation, index) => (
                 roundRegex.test(regulation) ? <h3>{regulation}</h3> : <li key={index}>{regulation}</li>
               ))}
             </ul>
