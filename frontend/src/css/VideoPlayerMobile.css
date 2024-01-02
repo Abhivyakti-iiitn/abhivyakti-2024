@@ -1,0 +1,14 @@
+/* src/css/VideoPlayerMobile.css */
+
+.video-player-mobile {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35vw;
+  }
+  
+  .video-player-mobile video {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  

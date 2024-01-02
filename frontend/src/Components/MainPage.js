@@ -10,6 +10,8 @@ import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
 import events from "../assets/EventDetails.json"
+import VideoPlayerDesktop from './VideoPlayerDesktop';
+import VideoPlayerMobile from './VideoPlayerMobile';
 // const events = [
 //   { name: "showstopper", tagline: "event a" },
 //   { name: "beatsmithshowdown", tagline: "event b" },
@@ -32,11 +34,19 @@ function animateEventCards() {
   hiddenCards.forEach((el) => observer.observe(el));
 }
 
+const isMobileDevice = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+};
+
 function MainPage() {
+
+  const isMobile = isMobileDevice();
 
   const navigateTo = useNavigate()
 
   const [isLoggedin, setisLoggedin] = useState(false)
+
+  
 
   useEffect(() => {
     animateEventCards();
@@ -49,6 +59,15 @@ function MainPage() {
     <div className="App">
       {/* <FirefliesAnimation /> */}
       <Header />
+
+      <div>
+      {isMobile ? (
+        <VideoPlayerMobile videoSource={process.env.PUBLIC_URL + '/sample.mp4'} />
+      ) : (
+        <VideoPlayerDesktop videoSource={process.env.PUBLIC_URL + '/sample.mp4'} />
+      )}
+    </div>
+
       <h2 className="Events__heading">Events</h2>
       <div className="EventCards">
         {events.map((event, ind) => (

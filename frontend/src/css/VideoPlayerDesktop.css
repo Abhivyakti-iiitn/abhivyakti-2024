@@ -1,0 +1,14 @@
+.video-player {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 10vw;
+  background-color: aqua;
+}
+
+.video-player video {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
