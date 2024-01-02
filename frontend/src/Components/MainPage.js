@@ -62,9 +62,9 @@ function MainPage() {
 
       <div>
       {isMobile ? (
-        <VideoPlayerMobile videoSource={process.env.PUBLIC_URL + '/sample.mp4'} />
+        <VideoPlayerMobile videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
       ) : (
-        <VideoPlayerDesktop videoSource={process.env.PUBLIC_URL + '/sample.mp4'} />
+        <VideoPlayerDesktop videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
       )}
     </div>
 
