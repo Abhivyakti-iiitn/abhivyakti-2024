@@ -201,6 +201,13 @@
   gap: 5px;
   flex-wrap: wrap;
 }
+.event_header .mid .mid_right p span {
+  text-align: center;
+  font-size: larger;
+}
+.event_header .mid .mid_right p span img {
+  width: 100px;
+}
 @media (max-width: 1000px) {
   .event_header .mid .mid_right {
     margin-right: 5%;
@@ -260,5 +267,5 @@
   height: 100px;
   position: relative;
   transform: translateY(-40%);
-  z-index: 1001;
+  z-index: 100;
 }

@@ -2,6 +2,7 @@
   "showstopper": {
     "name": "showstopper",
     "tagline": "A Solo Dance Competition",
+    "clubName":"Estória",
     "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
     "timeline": [
       {
@@ -51,12 +52,11 @@
     ],
     "registrationDate": "15/1/24",
     "Team": "4",
-    "fees": "10 Rs",
-    "pool": "69 Cr",
+    "fees": "₹ 99",
+    "pool": "₹ 15,000",
     "prize": [
-      "first",
-      "second",
-      "third"
+      "₹ 9,000",
+      "₹ 6,000"
     ],
     "addPrize": ""
   },

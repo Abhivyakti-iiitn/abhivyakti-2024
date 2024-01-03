@@ -1,14 +1,9 @@
 import '../../css/event.css';
 import { useEffect } from 'react';
-import Head from './Head'
-import Name from './Name'
-import Club from './Club'
-import Timeline from './Timeline'
 import Faq from './Faq'
 import EventContent from './EventContent';
 import Prize from './Prize';
 import Contact from './Contact';
-import FAQ from './Faq';
 import content from '../../assets/EventContent.json';
 import Header from './Header';
 import { useParams } from "react-router-dom";
@@ -22,14 +17,14 @@ function Event() {
         let header = document.querySelector(".event_header");
         let header2 = document.querySelector(".sticky_header");
         let comp = document.querySelector(".EventContent");
-        let leftcomp = document.querySelector(".sticky-content");
+        // let leftcomp = document.querySelector(".sticky-content");
         let cont = document.querySelector(".container");
-        if (cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100) && !header2.classList.contains('shown') && cont.scrollTop < header.clientHeight + comp.clientHeight - 450) {
+        if ((cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100)) && (!header2.classList.contains('shown')) && (cont.scrollTop < header.clientHeight + comp.clientHeight - 450)) {
 
             // console.log(header.clientHeight - (header.clientHeight * 20 / 100))
             // console.log(header.classList)
             header2.classList.add("shown");
-        } else if (cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100) && header2.classList.contains('shown') || cont.scrollTop > header.clientHeight + comp.clientHeight - 450 && header2.classList.contains('shown')) {
+        } else if (((cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100)) && (header2.classList.contains('shown'))) || ((cont.scrollTop > header.clientHeight + comp.clientHeight - 450) && (header2.classList.contains('shown')))) {
 
             header2.classList.remove("shown");
         }
@@ -49,22 +44,23 @@ function Event() {
 
     const params = useParams();
     // console.log("ADS", params.eventname);
-    // console.log(content);
-
-
+    
+    
     let obj = content[params.eventname.toLowerCase()];
     return (
         <div className='container'>
-            <Header name={obj.name} tagline={obj.tagline} raw={params.eventname} />
+            <Header name={obj.name} tagline={obj.tagline} raw={params.eventname} clubName = {obj.clubName ? obj.clubName : "null"} />
             {/* <Head/>
             <Name/>
             <Club/>
             <Timeline/>
             <Faq/> */}
             <EventContent content={obj} />
-            <Prize name={params.eventname} prize = {obj.prize} addPrize = {obj.addPrize} />
+            <div className="blur_portion">
+            </div>
+            <Prize name={params.eventname} prize = {obj.prize} addPrize = {obj.addPrize}  />
             <Faq />
-            <Contact />
+            <Contact clubName = {obj.clubName ? obj.clubName : "null"}/>
 
             <Footer />
 

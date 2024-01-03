@@ -1,3 +1,6 @@
+.prize_pool{
+    margin-top: -100px;
+}
 .prize{
     text-align: center;
     background: linear-gradient(to bottom, #F9DAA8, #BC615E);

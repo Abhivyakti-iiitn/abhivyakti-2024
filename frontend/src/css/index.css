@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   background-color: black;
   padding-bottom: 7.84vw;
+  scroll-behavior: smooth;
 }
 .App .EventCards {
   display: flex;
