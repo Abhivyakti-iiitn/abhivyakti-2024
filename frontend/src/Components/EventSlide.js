@@ -19,25 +19,26 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import defaultImg from '../assets/EventImages/a.jpg';
 import { useNavigate } from 'react-router-dom';
 
+
 const eventImages = {
     showstopper: showstopperImgSrc,
     starpod: starpodImgSrc,
     beatsmithshowdown: beatsmithshowdownImgSrc,
-    mun:munImg,
+    mun: munImg,
     rhymeriot: rhymeriotImg,
-    kavisammelan : kavisammelan,
-    admads : admads,
-    dastaanechhotaparda:dastaanechhotaparda,
-    andhakaar : andhakaar,
+    kavisammelan: kavisammelan,
+    admads: admads,
+    dastaanechhotaparda: dastaanechhotaparda,
+    andhakaar: andhakaar,
     bahumukhi: bahumukhi,
     groovegenesis: groovegenesis,
-    bronxbattleground:bronxbattleground,
-    roadtoredcarpet:roadtoredcarpet,
-    stellarsingoff:stellarsingoff,
-    praanant:praanant,
-    rythmrumble:rythmrumble
+    bronxbattleground: bronxbattleground,
+    roadtoredcarpet: roadtoredcarpet,
+    stellarsingoff: stellarsingoff,
+    praanant: praanant,
+    rythmrumble: rythmrumble
 
-    
+
 };
 
 const EventSlide = (props) => {
@@ -50,26 +51,28 @@ const EventSlide = (props) => {
     };
 
     return (
-        <div className='EventSlide'>
-            <div className='EventSlide__Img'>
-                <img className='EventImage' src={imgSrc} />
-            </div>
-            <div className= {`EventSlide__Content ${props.event.name.toLowerCase().replaceAll(' ', '')}`} style={contentStyle}>
-                <div className="blur">
+        <>
+            <div className='EventSlide'>
+                <div className='EventSlide__Img'>
+                    <img className='EventImage' src={imgSrc} />
+                </div>
+                <div className={`EventSlide__Content ${props.event.name.toLowerCase().replaceAll(' ', '')}`} style={contentStyle}>
+                    <div className="blur">
 
-                    <div className='EventSlide__text'>
-                        <div className={`EventSlide__name ${props.event.name?.length > 15 ? "longcardename":"shortcardename"}`}>{props.event.name}</div>
-                        <div className='EventSlide__desc'>Description</div>
-                        <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name.toLowerCase().replaceAll(' ', '')}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
-                    </div>
-                    <div className='EventSlide__btn'>
-                        <button className='EventRegBtn' onClick={()=>nav(`/form/${props.event.name}`)}>
-                            Register
-                        </button>
+                        <div className='EventSlide__text'>
+                            <div className={`EventSlide__name ${props.event.name?.length > 15 ? "longcardename" : "shortcardename"}`}>{props.event.name}</div>
+                            <div className='EventSlide__desc'>Description</div>
+                            <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name.toLowerCase().replaceAll(' ', '')}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
+                        </div>
+                        <div className='EventSlide__btn'>
+                            <button className='EventRegBtn' onClick={() => nav(`/form/${props.event.name}`)}>
+                                Register
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

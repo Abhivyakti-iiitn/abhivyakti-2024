@@ -6,6 +6,7 @@ import LogoComponent from './LogoComponent';
 import StickyHeader from './StickyHeader';
 import Footer from './Footer';
 
+
 const MenuItems = [
   {
     name: "All Events",
@@ -67,10 +68,34 @@ const Menu = (props) => {
   };
 
   let scrollVal = 0;
-  const fx = (e) =>{
+  const fx = (e) => {
+
+    let curr = document.querySelector('.AllEvents').scrollTop;
+
+    if (curr > scrollVal) {
+      scrollVal = curr;
+      if (document.querySelector('.AllEvents').scrollTop > 100) {
+
+        document.querySelector('.pro_sticky_header').classList.add('hideBar')
+      }
+    } else {
+      scrollVal = curr;
+      document.querySelector('.pro_sticky_header').classList.remove('hideBar')
+    }
+
+  }
+  const fx2 = (e) => {
+
+    // let curr = document.querySelector('.AllEvents').getBoundingClientRect();
+    let x = e.clientX;
+    let y = e.clientY;
+
+    // console.log(document.querySelector('.pro_sticky_header').clientHeight)
     
-    let curr = document.scrollTop;
-    console.log(e)
+    if(y <= document.querySelector('.pro_sticky_header').clientHeight && document.querySelector('.pro_sticky_header').classList.contains('hideBar'))
+    {
+      document.querySelector('.pro_sticky_header').classList.remove('hideBar');
+    }
 
   }
 
@@ -81,7 +106,8 @@ const Menu = (props) => {
     setSelectedItem(initialItem);
     document.querySelector('.AllEvents__heading').scrollIntoView(0);
 
-    document.querySelector('body').addEventListener("scroll", fx);
+    document.querySelector('.AllEvents').addEventListener("scroll", fx);
+    document.querySelector('.AllEvents').addEventListener("mousemove", fx2);
   }, []);
 
   const renderItems = items.map((item) => (
@@ -123,8 +149,8 @@ const AllEvents = () => {
 
   return (
     <>
-      <StickyHeader type="2" />
       <div className='AllEvents'>
+        <StickyHeader type="2" />
         <div className='AllEvents__heading'>
           <fieldset className='AllEventsFS'>
             <legend className='AllEventsL'>
@@ -146,9 +172,9 @@ const AllEvents = () => {
               <EventSlide event={event} />
             </div>
           ))}
+          <Footer />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

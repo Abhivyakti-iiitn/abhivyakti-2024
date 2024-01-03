@@ -4,6 +4,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .AllEvents > * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;

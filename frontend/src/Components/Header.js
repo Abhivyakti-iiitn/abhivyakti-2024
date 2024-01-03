@@ -156,7 +156,7 @@ function Header() {
                             {!isLoggedin && <li onClick={()=>nav('/login')}>Login</li>}
                            {isLoggedin && <li onClick={()=>nav('/profile')}>Profile</li>}
                             <li>ABOUT</li>
-                            <li>EVENTS</li>
+                            <li onClick={()=>nav('/allevents')}>EVENTS</li>
                             <li>TEAM</li>
                             <li>CONTACT</li>
                         </ul>

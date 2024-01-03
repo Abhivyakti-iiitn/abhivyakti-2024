@@ -178,6 +178,7 @@
   width: 100%;
   background-size: 100% 30rem;
   z-index: 3;
+  transition: all 0.3s ease-in;
 }
 .pro_sticky_header .top {
   display: flex;
@@ -223,4 +224,8 @@
 .pro_sticky_header .top .right ul li:hover {
   color: brown;
   cursor: pointer;
+}
+
+.hideBar {
+  transform: translateY(-100%);
 }
