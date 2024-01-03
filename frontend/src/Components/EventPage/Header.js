@@ -24,11 +24,13 @@ function Header(props) {
                     </div>
                     <div className="right">
                         <ul>
-                            <li>RULES</li>
-                            <li>FAQs</li>
-                            <li>TEAM</li>
+                            <li onClick={()=>document.querySelector('.EventDetailsSection').scrollIntoView(1)}>DETAILS</li>
+                            <li onClick={()=>document.querySelector('.roundsAndTimline').scrollIntoView(1)}>TIMELINE</li>
+                            <li onClick={()=>document.querySelector('.rulesAndRegulation').scrollIntoView(1)}>RULES</li>
+                            <li onClick={()=>document.querySelector('.prize').scrollIntoView(1)}>PRIZES</li>
+                            <li onClick={()=>document.querySelector('.faq-container').scrollIntoView(1)}>FAQs</li>
                             <li>EVENTS</li>
-                            <li>CONTACT</li>
+                            <li onClick={()=>document.querySelector('.contact').scrollIntoView(1)}>CONTACT</li>
                         </ul>
                     </div>
                 </div >

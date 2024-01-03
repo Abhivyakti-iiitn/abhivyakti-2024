@@ -86,6 +86,7 @@
         width: 100%;
         color: white;
         justify-content: space-between;
+        z-index: 101;
 
         .left ul {
             display: flex;
@@ -126,12 +127,14 @@
 
             margin-top: 5%;
             margin-right: 5%;
+            z-index: 101;
 
             ul {
                 list-style: none;
                 text-align: right;
                 line-height: 3rem;
                 font-size: 1.5rem;
+                z-index: 101;
 
 
                 li:hover {
@@ -142,6 +145,7 @@
                 li {
                     transition: all 0.3s ease-in-out;
                     font-family: 'Crimson Pro', Courier, monospace;
+                    z-index: 101;
                 }
 
             }
@@ -167,6 +171,10 @@
                 font-size: 9vw;
                 text-align: center;
             }
+        }
+
+        .mid_left{
+            margin-top: -10%;
         }
 
         .longhname {
@@ -240,7 +248,7 @@
 .sticky_header {
     opacity: 0%;
     height: 10%;
-    z-index: 1001;
+    z-index: 100;
     width: 100%;
     position: fixed;
     top: 0%;

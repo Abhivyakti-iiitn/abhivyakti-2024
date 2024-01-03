@@ -160,7 +160,7 @@ function Header() {
                         <ul>
                             {!isLoggedin && <li onClick={() => nav('/login')}>Login</li>}
                             {isLoggedin && <li onClick={() => nav('/profile')}>Profile</li>}
-                            <li onClick={() => document.querySelector('.container__about-us').scrollIntoView(1)}> ABOUT</li>
+                            <li onClick={() => document.querySelector('.horizontalScroll').scrollIntoView(1)}> ABOUT</li>
                             <li onClick={() => nav('/allevents')}>EVENTS</li>
                             <li>TEAM</li>
                             <li onClick={() => document.querySelector('.footer').scrollIntoView(0)}>CONTACT</li>
