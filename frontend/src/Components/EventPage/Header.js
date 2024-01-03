@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "../../css/Eventheader.css"
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
+import estória from "../../assets/Clubs Logo/estoria logo(chest left).png"
 import LogoComponent from '../LogoComponent';
 
+const logoData = {
+    estória:estória
+}
 function Header(props) {
     // console.log("sad", props.event)
     const navigateTo = useNavigate();
@@ -29,7 +33,7 @@ function Header(props) {
                             <li onClick={()=>document.querySelector('.rulesAndRegulation').scrollIntoView(1)}>RULES</li>
                             <li onClick={()=>document.querySelector('.prize').scrollIntoView(1)}>PRIZES</li>
                             <li onClick={()=>document.querySelector('.faq-container').scrollIntoView(1)}>FAQs</li>
-                            <li>EVENTS</li>
+                            <li onClick={()=>navigateTo('/allevents')}>EVENTS</li>
                             <li onClick={()=>document.querySelector('.contact').scrollIntoView(1)}>CONTACT</li>
                         </ul>
                     </div>
@@ -42,8 +46,8 @@ function Header(props) {
                     </div>
                     <div className="mid_right">
                         <h4>Brought to you by</h4>
-                        <p><span><img src={logo} alt="clublogo" srcset="" /><br />
-                            club Name</span></p>
+                        <p><span><img src={logoData.estória} alt="clublogo" srcset="" /><br />
+                            {props.clubName}</span></p>
                         <h4>sponsored by</h4>
                         <p><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /></p>
                     </div>

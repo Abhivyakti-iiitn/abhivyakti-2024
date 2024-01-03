@@ -27,6 +27,7 @@
     align-items: center;
     text-align: center;
     padding: 2px;
+    
 }
 
 .rules {
@@ -39,13 +40,31 @@
     width: 100%;
     font-size: 1.5rem;
     font-family: "Crimson Pro";
+    -webkit-text-fill-color: #0000;
+    background: linear-gradient(180deg,#f9daa8,#bc615e);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .rules {
     div ul {
         text-align: left;
+        list-style: none;
+
+        li {
+
+            font-size: 1.2rem;
+        }
+
+        li::before {
+
+            content: "• ";
+
+        }
+
     }
-    div{
+
+    div {
         width: 100%;
     }
 

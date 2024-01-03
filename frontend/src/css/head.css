@@ -1,5 +1,6 @@
 *{
     font-family:"Crimson Pro";
+    scroll-behavior: smooth;
 }
 h1, h2{
     font-family: "Carta Marina W00 Regular";

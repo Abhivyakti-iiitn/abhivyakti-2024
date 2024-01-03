@@ -1,8 +1,11 @@
 import React from 'react';
 import '../../css/contact.css';
 import Arr from '../../assets/EventPageAsst/arrow.png';
+import clubDetails from "../../assets/clubdata.json";
 
-function Contact() {
+function Contact(props) {
+
+    console.log(props.clubName.toLowerCase());
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,22 +34,22 @@ function Contact() {
                     <div className='box_3'>
                         <div>
                             <div className='title1'>CLUB HEAD</div>
-                            <div className='contact_info'>Rahul Gandhi</div>
-                            <div>+91 9969496900</div>
-                            <div>bt69@iiitn.ac.in</div>
+                            <div className='contact_info'>{clubDetails[props.clubName.toLowerCase()]?.clubHead}</div>
+                            <div>{clubDetails[props.clubName.toLowerCase()]?.contactLead}</div>
+                            <div><a style={{color:'brown', textDecorationLine:'none'}} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdLead}</a></div>
                         </div>
                         <div>
-                            <div className='title1 title2'>CONTACT 2</div>
-                            <div className='contact_info'>Rahul Gandhi</div>
-                            <div>+91 9969496900</div>
-                            <div>bt69@iiitn.ac.in</div>
+                            <div className='title1 title2'>CLUB CO-LEAD</div>
+                            <div className='contact_info'>{clubDetails[props.clubName.toLowerCase()]?.clubCoLead}</div>
+                            <div>{clubDetails[props.clubName.toLowerCase()]?.contactCoLead}</div>
+                            <div><a style={{color:'brown', textDecorationLine:'none'}} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}</a></div>
                         </div>
                     </div>
                     <div className='other_contact'>
-                        <div className='title1 title3'>ANY OTHER CONTACT</div>
-                        <div className='contact_info'>Rahul Gandhi</div>
-                        <div>+91 9969496900</div>
-                        <div>bt69@iiitn.ac.in</div>
+                        <div className='title1 title3'>CULTURAL COORDINATOR </div>
+                        <div className='contact_info'>Divyanshu Singh</div>
+                        <div>+917234032401</div>
+                        <div><a style={{color:'brown', textDecorationLine:'none'}} href="mailto:bt21cse162@iiitn.ac.in">bt21cse162@iiitn.ac.in</a></div>
                     </div>
                 </div>
 
