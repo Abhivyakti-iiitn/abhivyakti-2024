@@ -46,6 +46,9 @@ function Header(props) {
                     </div>
                 </div>
             </div >
+            <div className="blur_portion">
+                
+            </div>
         </>
     )
 }

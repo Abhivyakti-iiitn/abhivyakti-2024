@@ -11,6 +11,7 @@
   /* height: 100vh; */
   position: relative;
   padding-top: 2%;
+  margin-top: -80px;
 }
 
 .EventContent_content {
@@ -29,7 +30,9 @@
 
 .EventRules {
   margin-bottom: 1rem;
+  
 }
+
 
 .paddingLeft {
   padding-left: 2rem
@@ -350,4 +353,8 @@ button:hover {
 
 .info >*{
   font-family: 'Crimson Pro', Courier, monospace;
+}
+
+.lststylenone{
+  list-style: none;
 }

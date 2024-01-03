@@ -22,13 +22,14 @@ function Event() {
         let header = document.querySelector(".event_header");
         let header2 = document.querySelector(".sticky_header");
         let comp = document.querySelector(".EventContent");
+        let leftcomp = document.querySelector(".sticky-content");
         let cont = document.querySelector(".container");
-        if (cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100) && !header2.classList.contains('shown') && cont.scrollTop < header.clientHeight + comp.clientHeight) {
+        if (cont.scrollTop > header.clientHeight - (header.clientHeight * 20 / 100) && !header2.classList.contains('shown') && cont.scrollTop < header.clientHeight + comp.clientHeight - 450) {
 
             // console.log(header.clientHeight - (header.clientHeight * 20 / 100))
             // console.log(header.classList)
             header2.classList.add("shown");
-        } else if (cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100) && header2.classList.contains('shown') || cont.scrollTop > header.clientHeight + comp.clientHeight && header2.classList.contains('shown')) {
+        } else if (cont.scrollTop < header.clientHeight - (header.clientHeight * 20 / 100) && header2.classList.contains('shown') || cont.scrollTop > header.clientHeight + comp.clientHeight - 450 && header2.classList.contains('shown')) {
 
             header2.classList.remove("shown");
         }
@@ -49,17 +50,20 @@ function Event() {
     const params = useParams();
     // console.log("ADS", params.eventname);
     // console.log(content);
+
+
+    let obj = content[params.eventname.toLowerCase()];
     return (
         <div className='container'>
-            <Header name={content[params.eventname.toLowerCase()].name} tagline={content[params.eventname.toLowerCase()].tagline} raw ={params.eventname} />
+            <Header name={obj.name} tagline={obj.tagline} raw={params.eventname} />
             {/* <Head/>
             <Name/>
             <Club/>
             <Timeline/>
             <Faq/> */}
-            <EventContent content={content[params.eventname.toLowerCase()]} />
-            <Prize name = {content[params.eventname.toLowerCase()].name}  />
-            <Faq  />
+            <EventContent content={obj} />
+            <Prize name={params.eventname} prize = {obj.prize} addPrize = {obj.addPrize} />
+            <Faq />
             <Contact />
 
             <Footer />

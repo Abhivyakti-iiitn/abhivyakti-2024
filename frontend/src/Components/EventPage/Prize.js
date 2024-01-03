@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import '../../css/prize.css';
 
 function Prize(props) {
-    console.log(props.name)
+    console.log(props)
     const navigateTo = useNavigate();
     return (
         <div className='prize_pool'>
@@ -16,20 +16,20 @@ function Prize(props) {
             <div className='prize_amount'>
                 <div>
                     <div>Second Prize</div>
-                    <div>23 Cr</div>
+                    <div>{props.prize?.length == 1 ? props.prize[0]:"23 Cr"}</div>
                 </div>
                 <div>
                     <div>First Prize</div>
-                    <div>28 Cr</div>
+                    <div>{props.prize?.length == 2 ? props.prize[1]:"28 Cr"}</div>
                 </div>
                 <div>
                     <div>Third Prize</div>
-                    <div>18 Cr</div>
+                    <div>{props.prize?.length == 3 ? props.prize[2]:"18 Cr"}</div>
                 </div>
             </div>
             <div className='add_prize'>
                 <div>Additional Prizes</div>
-                <div>T-shirts/ Goodies /Swag pack/ Certificates.</div>
+                <div>{props.addPrize?.length !== 0 ? props.addPrize : "T-shirts/ Goodies /Swag pack/ Certificates."}</div>
             </div>
             <div className='register_btn' onClick={()=>navigateTo(`/form/${props.name?.toLowerCase().replace(' ', '')}`)}>Register Now</div>
         </div>

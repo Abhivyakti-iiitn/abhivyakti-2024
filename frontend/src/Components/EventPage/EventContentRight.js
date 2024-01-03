@@ -5,6 +5,7 @@ import Head from './Head'
 
 const EventContentRight = (props) => {
   let roundRegex = /^[rR]ound [1-9]\d*/;
+  let roundRegex2 = /^[1-9]\d*\./;
   const [alreadyGlowing, setAlreadyGlowing] = useState(false);
   const [glowIndex, setGlowIndex] = useState(-1);
 
@@ -108,10 +109,10 @@ const EventContentRight = (props) => {
               ))}
             </ul>
           </div>
-          <div>
+          <div className='EventRegulations'>
             <ul>
               {props.regulations.map((regulation, index) => (
-               roundRegex.test(regulation) ? <h3>{regulation}</h3> : <li key={index}>{regulation}</li>
+               roundRegex.test(regulation) ? <h3>{regulation}</h3> : <li className={`${roundRegex2.test(regulation)? 'lststylenone':''}`} key={index}>{regulation}</li>
               ))}
             </ul>
           </div>

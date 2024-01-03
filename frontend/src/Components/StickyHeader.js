@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom';
 function StickyHeader(props) {
     const navigateTo = useNavigate();
     return (
-        <div className={`pro_sticky_header`} style={{height:`${props.type == 1 ? "" : "15vh"}`}} >
+        <div className={`pro_sticky_header`} style={{height:`${props.type == 1 ? "" :""}`}} >
             <div div className='top' >
                 <div className="left" style={{justifyItems:"center", display:"flex"}}>
                     <ul>
@@ -24,11 +24,7 @@ function StickyHeader(props) {
 
                     </ul> :
                         <ul>
-                            <li >DETAILS</li>
-                            <li >TIMELINE</li>
-                            <li >RULES</li>
-                            <li >PRIZES</li>
-                            <li >FAQS</li>
+                            
                         </ul>}
                 </div>
             </div >

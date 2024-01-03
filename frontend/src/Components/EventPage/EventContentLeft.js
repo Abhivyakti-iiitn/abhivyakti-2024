@@ -1,12 +1,15 @@
-import React from 'react';
+import React,{useEffect}  from 'react';
 import deadline from "../../assets/EventImages/deadline.svg";
 import teamSize from "../../assets/EventImages/Group.svg";
 import fees from "../../assets/EventImages/fees.svg";
 import prize from "../../assets/EventImages/prize.svg";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 const EventContentLeft = (props) => {
+  const params = useParams();
 
   const navigateTo = useNavigate()
+  
+  
   return (
     <div className='EventContent-left sticktoleft'>
       <div className='sticky-content'>
@@ -36,7 +39,7 @@ const EventContentLeft = (props) => {
           </div>
         </div>
       </div>
-        <button className='register-button' onClick={()=>navigateTo('/form')}>
+        <button className='register-button' onClick={()=>navigateTo(`/form/${params.eventname?.toLowerCase().replace(' ', '')}`)}>
           Register Now
         </button>
     </div>

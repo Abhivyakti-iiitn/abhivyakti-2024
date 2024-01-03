@@ -20,7 +20,7 @@
       }
     ],
     "rules": [
-      "round 1",
+      "Round 1",
       "Ensure your pre-recorded music is in .mp3 format and adhere to time limits, as violations may lead to penalties.",
       "Participants have to submit a video of them performing for 1-1.5 minutes. They have to submit the drive link of the video at the time of registration along with the form.",
       "No props are allowed in this round.",
@@ -178,7 +178,7 @@
       "Emphasize fair play, respect, and sportsmanship among participants.",
       "Reiterate the importance of maintaining a professional and respectful demeanour."
     ],
-    "regulations":[],
+    "regulations": [],
     "registrationDate": "N/A",
     "Team": "N/A",
     "pool": "Rs. 25000",
@@ -529,8 +529,7 @@
       "The judges' collective scores across these categories will determine the final outcome of the competition.",
       "Winners get a chance to grab a direct spot in Beatsmith Showdown finale in the main fest which will be a 1v1 eliminator."
     ],
-    "regulations": [
-    ],
+    "regulations": [],
     "registrationDate": "10/12/23",
     "Team": "Solo",
     "pool": "Rs. 20000",
@@ -629,7 +628,7 @@
       ""
     ]
   },
-  "stellarsingOff": {
+  "stellarsing-off": {
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
     "clubname": "Crescendo - Music Club",
@@ -658,7 +657,9 @@
       "The judges' collective scores across these categories will determine the final outcome of the competition.",
       "Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
     ],
-    "regulations": "Any misconduct, obscenity, or foul language can leadto on-the-spot disqualification.",
+    "regulations": [
+      "Any misconduct, obscenity, or foul language can leadto on-the-spot disqualification."
+    ],
     "registrationDate": "10/12/23",
     "Team": "Solo",
     "pool": "Rs. 20000",
@@ -787,8 +788,41 @@
       "The judges' decisions will be final in all cases."
     ],
     "regulations": [
-      "Round 1\n 1. Acting Quality\n 2. Script and Story\n 3. Characterization\n 4. Originality and Creativity\n 5. Pacing and Timing\n 6. Relevance to Theme\n 7. Overall Impact\n 8. Execution of Challenging Scenes\n 9. Adherence to Rules and Time Limit\n 10. Originality of Interpretation\n 11. Clarity of Message\n 12. Costume / Dressing\n 13. Dialogue delivery\n 14. Expressions\n 15. Body language",
-      "Round 2\n 1. Acting Quality\n 2. Script and Story\n 3. Characterization\n 4. Audience Engagement\n 5. Audience Response\n 6. Originality and Creativity\n 7. Pacing and Timing\n 8. Relevance to Theme\n 9. Overall Impact\n 10. Execution of Challenging Scenes\n 11. Adherence to Rules and Time Limit\n 12. Originality of Interpretation\n 13. Sound effects\n 14. Clarity of Message\n 15. Costume / Dressing\n 16. Dialogue delivery\n 17. Expressions\n 18. Body language"
+      "Round 1",
+      "1. Acting Quality",
+      "2. Script and Story",
+      "3. Characterization",
+      "4. Originality and Creativity",
+      "5. Pacing and Timing",
+      "6. Relevance to Theme",
+      "7. Overall Impact",
+      "8. Execution of Challenging Scenes",
+      "9. Adherence to Rules and Time Limit",
+      "10. Originality of Interpretation",
+      "11. Clarity of Message",
+      "12. Costume / Dressing",
+      "13. Dialogue delivery",
+      "14. Expressions",
+      "15. Body language",
+      "Round 2",
+      "1. Acting Quality",
+      "2. Script and Story",
+      "3. Characterization",
+      "4. Audience Engagement",
+      "5. Audience Response",
+      "6. Originality and Creativity",
+      "7. Pacing and Timing",
+      "8. Relevance to Theme",
+      "9. Overall Impact",
+      "10. Execution of Challenging Scenes",
+      "11. Adherence to Rules and Time Limit",
+      "12. Originality of Interpretation",
+      "13. Sound effects",
+      "14. Clarity of Message",
+      "15. Costume / Dressing",
+      "16. Dialogue delivery",
+      "17. Expressions",
+      "18. Body language"
     ],
     "registrationDate": "10/12/23 - 1/2/24",
     "Team": "",
@@ -959,7 +993,10 @@
       "Originality of the story and concept will be verified.",
       "Dialogues and Storyline is welcomed, but essence of dance should not be missed."
     ],
-    "regulations": [  "Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.", "Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing."],
+    "regulations": [
+      "Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.",
+      "Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing."
+    ],
     "registrationDate": "",
     "Team": "",
     "pool": "",
