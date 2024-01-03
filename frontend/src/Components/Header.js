@@ -1,5 +1,5 @@
-import React, { useEffect, useState} from 'react'
-import {useNavigate} from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
 import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
@@ -8,9 +8,9 @@ import LogoComponent from './LogoComponent';
 function Header() {
     const nav = useNavigate();
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-  
-   const [isLoggedin, setisLoggedin] = useState(false)
-   const particleCount = 50;
+
+    const [isLoggedin, setisLoggedin] = useState(false)
+    const particleCount = 50;
 
     //mounting the fire particle effect.
     useEffect(() => {
@@ -51,7 +51,7 @@ function Header() {
                 //this is supposed to slowly fade the particles as they rise to top.
                 //but it's doesn't seem to be working
                 const distanceRatio = (this.y / canvas.height);
-                this.opacity = Math.max(0, distanceRatio );
+                this.opacity = Math.max(0, distanceRatio);
 
                 if (this.x < 0 || this.x > canvas.width) {
                     this.speedX = -this.speedX;
@@ -114,17 +114,22 @@ function Header() {
         if (localStorage.getItem("usrName")) {
             setisLoggedin(true);
         }
+
+
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-
 
     }, []);
 
 
 
-  
-//end of the useEffect hook
+
+    //end of the useEffect hook
+
+    const Scrolling = () => {
+        // window.scrollTo(0,document.querySelector('.video-player').clientHeight);
+    }
 
     return (
         <>
@@ -135,16 +140,16 @@ function Header() {
 
                 {/* the background image rendered as SVG so that I can animate it */}
                 <div className='svgContainer'>
-                <Svg />
+                    <Svg />
                 </div>
-                
+
                 {/* ignore this :- <img id="mysvg" className="svg-background" src="./bgimg.svg" alt="Animated SVG"></img> */}
 
 
                 <div div className='top' >
                     <div className="left">
                         <ul>
-                        <LogoComponent/>
+                            <LogoComponent />
                             <li><div></div></li>
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-linkedin"></i></li>
@@ -153,12 +158,12 @@ function Header() {
                     </div>
                     <div className="right">
                         <ul>
-                            {!isLoggedin && <li onClick={()=>nav('/login')}>Login</li>}
-                           {isLoggedin && <li onClick={()=>nav('/profile')}>Profile</li>}
-                            <li>ABOUT</li>
-                            <li onClick={()=>nav('/allevents')}>EVENTS</li>
+                            {!isLoggedin && <li onClick={() => nav('/login')}>Login</li>}
+                            {isLoggedin && <li onClick={() => nav('/profile')}>Profile</li>}
+                            <li onClick={() => document.querySelector('.container__about-us').scrollIntoView(1)}> ABOUT</li>
+                            <li onClick={() => nav('/allevents')}>EVENTS</li>
                             <li>TEAM</li>
-                            <li>CONTACT</li>
+                            <li onClick={() => document.querySelector('.footer').scrollIntoView(0)}>CONTACT</li>
                         </ul>
                     </div>
                 </div >

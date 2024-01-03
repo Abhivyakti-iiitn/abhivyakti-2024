@@ -7,8 +7,8 @@ import '../scss/AboutUs.scss';
 
 const AboutUs = () => {
   return (
-    <div className="container__about-us">
-      <div className="about__content">
+    <div className="container__about-us" id='aboutus' >
+      <div className="about__content" >
         <h2 className='About__heading'>About</h2>
         <p>{data.aboutUs.text}</p>
       </div>

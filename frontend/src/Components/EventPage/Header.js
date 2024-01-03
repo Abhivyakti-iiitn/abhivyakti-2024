@@ -24,9 +24,10 @@ function Header(props) {
                     </div>
                     <div className="right">
                         <ul>
-                            <li>ABOUT</li>
-                            <li>EVENTS</li>
+                            <li>RULES</li>
+                            <li>FAQs</li>
                             <li>TEAM</li>
+                            <li>EVENTS</li>
                             <li>CONTACT</li>
                         </ul>
                     </div>
