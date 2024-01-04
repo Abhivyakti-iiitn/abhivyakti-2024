@@ -58,8 +58,8 @@ function EventCards(props) {
     else {
         return (
             <div className='EventCard explore'>
-                <div className='explore__text' onClick={() => nav('/allevents')}>
-                    Explore all events <i class="fas fa-arrow-right southeast"></i>
+                <div className='explore__text' onClick={()=>nav('/allevents')}>
+                    Explore all events <i className="fas fa-arrow-right southeast"></i>
                 </div>
             </div>
         )

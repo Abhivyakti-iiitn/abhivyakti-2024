@@ -3,27 +3,33 @@ import "../../css/Eventheader.css"
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 import estória from "../../assets/Clubs Logo/estoria logo(chest left).png"
+import crescendo from '../../assets/Clubs Logo/crescendo-logo--01 (3).png'
+import orator from '../../assets/Clubs Logo/orator logo.png';
+import probe from '../../assets/Clubs Logo/probe.png'
 import LogoComponent from '../LogoComponent';
 
 const logoData = {
-    estória:estória
+    estória:estória,
+    crescendo:crescendo,
+    orator:orator,
+    probe:probe,
 }
 function Header(props) {
     // console.log("sad", props.event)
     const navigateTo = useNavigate();
-
+    const logoImg = logoData[props.clubName.toLowerCase().replace(' ', '').replace('-', '')];
 
     return (
         <>
-            <div className={`event_header ${props.raw?.toLowerCase().replace(' ', '')}`} >
+            <div className={`event_header ${props.raw?.toLowerCase().replace(' ', '').split('(')[0]}`} >
                 <div div className='top' >
                     <div className="left">
                         <ul>
                             <LogoComponent />
                             <li><div></div></li>
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-linkedin"></i></li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i className="fa-brands fa-instagram"></i></li>
+                            <li><i className="fa-brands fa-linkedin"></i></li>
+                            <li><i className="fa-brands fa-facebook"></i></li>
                         </ul>
                     </div>
                     <div className="right">
@@ -46,10 +52,10 @@ function Header(props) {
                     </div>
                     <div className="mid_right">
                         <h4>Brought to you by</h4>
-                        <p><span><img src={logoData.estória} alt="clublogo" srcset="" /><br />
+                        <p><span><img src={logoImg} alt="clublogo" srcSet="" /><br />
                             {props.clubName}</span></p>
                         <h4>sponsored by</h4>
-                        <p><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /><img src={logo} alt="clublogo" srcset="" /></p>
+                        <p><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /></p>
                     </div>
                 </div>
             </div >

@@ -7,12 +7,13 @@ import { useParams } from "react-router-dom";
 import content from "../../assets/EventContent.json";
 const FormPage = () => {
   const params = useParams();
+  const evtName = params.eventname.toLowerCase().replace('-', '').replace(/ /g, '');
   return (
     <div>
     <div className='FormPage'>
-        <FormPageLeft name = {content[params.eventname].name} rules={content[params.eventname].rules} regulations={content[params.eventname].regulations} />
+        <FormPageLeft name = {content[evtName].name} rules={content[evtName].rules} regulations={content[evtName].regulations} />
         <div className='lineVer'></div>
-        <Form name={params.eventname}   />
+        <Form name={evtName}   />
     </div>
     <Footer />
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import eventsArray from "../assets/EventDetails.json";
+import eventsObj from "../assets/EventContent.json";
 import '../css/AllEvents.css';
 import EventSlide from './EventSlide';
 import LogoComponent from './LogoComponent';
@@ -28,6 +28,7 @@ const MenuItem = (props) => {
 
   return (
     <div
+      key={item.slug}
       className={`EventTypeBtns-item ${selected ? "EventTypeBtns-item--selected" : ""}`}
       data-slug={item.slug}
       onClick={() => {
@@ -110,8 +111,9 @@ const Menu = (props) => {
     document.querySelector('.AllEvents').addEventListener("mousemove", fx2);
   }, []);
 
-  const renderItems = items.map((item) => (
+  const renderItems = items.map((item, id) => (
     <MenuItem
+      key={id}
       item={item}
       selected={selectedItem && selectedItem.slug === item.slug}
       onItemSelect={selectItem}
@@ -137,7 +139,8 @@ const Menu = (props) => {
 const AllEvents = () => {
 
   const [eventType, setEventType] = useState('');
-
+  
+  const eventsArray = Object.values(eventsObj);
   const filteredEvents = eventType === "Solo" ? eventsArray.filter(event => event.Team === "Solo") : eventsArray.filter(event => event.Team !== "Solo");
   const events = eventType ? filteredEvents : eventsArray;
 
@@ -169,7 +172,7 @@ const AllEvents = () => {
         <div className='EventSlides'>
           {events.map((event) => (
             <div key={event.id}>
-              <EventSlide event={event} />
+              <EventSlide key={event.id} event={event} />
             </div>
           ))}
           <Footer />

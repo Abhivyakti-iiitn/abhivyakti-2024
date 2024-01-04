@@ -24,7 +24,7 @@ const eventImages = {
     showstopper: showstopperImgSrc,
     starpod: starpodImgSrc,
     beatsmithshowdown: beatsmithshowdownImgSrc,
-    mun: munImg,
+    modelunitednations: munImg,
     rhymeriot: rhymeriotImg,
     kavisammelan: kavisammelan,
     admads: admads,
@@ -43,7 +43,7 @@ const eventImages = {
 
 const EventSlide = (props) => {
     const nav = useNavigate();
-    const imgSrc = eventImages[props.event.name.toLowerCase().replaceAll(' ', '').replaceAll('-', '')] || defaultImg;
+    const imgSrc = eventImages[props.event.name.toLowerCase().replaceAll(' ', '').replaceAll('-', '').split('(')[0]] || defaultImg;
 
     const contentStyle = {
         width: '100%',

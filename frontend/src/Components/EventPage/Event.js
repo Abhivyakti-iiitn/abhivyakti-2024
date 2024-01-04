@@ -47,6 +47,9 @@ function Event() {
     
     
     let obj = content[params.eventname.toLowerCase()];
+    if(params.eventname === "modelunitednations(mun)") {
+        obj = content["mun"]
+    }
     return (
         <div className='container'>
             <Header name={obj.name} tagline={obj.tagline} raw={params.eventname} clubName = {obj.clubName ? obj.clubName : "null"} />

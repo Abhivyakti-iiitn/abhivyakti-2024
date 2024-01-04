@@ -20,7 +20,7 @@ const FormPageLeft = (props) => {
             <ul>
               {props.rules?.map((rule, index) => (
 
-                roundRegex.test(rule) ? <h3>{rule}</h3> : <li key={index}>{rule}</li>
+                roundRegex.test(rule) ? <h3 key={index}>{rule}</h3> : <li key={index}>{rule}</li>
               ))}
             </ul>
           </div>
