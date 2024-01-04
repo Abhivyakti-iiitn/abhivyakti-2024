@@ -2,7 +2,7 @@
   "showstopper": {
     "name": "showstopper",
     "tagline": "A Solo Dance Competition",
-    "clubName":"Estória",
+    "clubName":"D-Taraxia",
     "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
     "timeline": [
       {
@@ -63,7 +63,7 @@
   "starpod": {
     "name": "starpod",
     "tagline": "Stand up comedy competition",
-    "clubName": null,
+    "clubName": "Estória",
     "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. 'Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
     "timeline": [
       {
@@ -423,7 +423,7 @@
   "kavisammelan": {
     "name": "Kavi Sammelan",
     "tagline": "Poetry Competition",
-    "clubName":null,
+    "clubName":"Estória",
     "details": "If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
     "timeline": [
       {
@@ -508,7 +508,7 @@
   "beatsmithshowdown": {
     "name": "Beatsmith Showdown",
     "tagline": "A Beatboxing Competition",
-    "clubName":null,
+    "clubName":"Crescendo",
     "details": "Calling all aspiring beatboxers! Showcase your rhythmic prowess and original vocal beats in our exciting beatboxing competition and be recognized for your unique talent and creativity.",
     "timeline": [
       {
@@ -550,7 +550,6 @@
     "name": "Groove Genesis",
     "tagline": "Instrumental",
     "clubName":"Crescendo",
-    "clubname": "Crescendo - Music Club",
     "details": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
     "timeline": [
       {
@@ -640,7 +639,6 @@
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
     "clubName":"Crescendo",
-    "clubname": "Crescendo - Music Club",
     "details": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
     "timeline": [
       {
@@ -977,7 +975,7 @@
   "dastaan-e-chhotaparda": {
     "name": "Dastaan-e-Chhota Parda",
     "tagline": "Short film making",
-    "clubname": "",
+    "clubName":"Estória",
     "details": "Prepare for cinematic enchantment at Abhivyakti, IIITN's cultural fest! Embark on a storytelling adventure with our Short-film Making competition. Dive into the realm of visual narratives, craft emotions in every frame, and ignite your journey in the film industry. Your cinematic dreams are just a competition away, so seize the opportunity to make them a reality!",
     "timeline": [
       {
