@@ -56,7 +56,7 @@ const EventSlide = (props) => {
                 <div className='EventSlide__Img'>
                     <img className='EventImage' src={imgSrc} />
                 </div>
-                <div className={`EventSlide__Content ${props.event.name.toLowerCase().replaceAll(' ', '')}`} style={contentStyle}>
+                <div className={`EventSlide__Content ${props.event.name.toLowerCase().replaceAll(' ', '').replaceAll('(mun)','')}`} style={contentStyle}>
                     <div className="blur">
 
                         <div className='EventSlide__text'>
@@ -65,7 +65,7 @@ const EventSlide = (props) => {
                             <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name.toLowerCase().replaceAll(' ', '')}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
                         </div>
                         <div className='EventSlide__btn'>
-                            <button className='EventRegBtn' onClick={() => nav(`/form/${props.event.name}`)}>
+                            <button className='EventRegBtn' onClick={() => nav(`/form/${props.event.name.toLowerCase().replaceAll(' ', '')}`)}>
                                 Register
                             </button>
                         </div>

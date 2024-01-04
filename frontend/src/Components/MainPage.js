@@ -9,7 +9,7 @@ import Event from "./EventPage/Event";
 import HorizontalScrolling from "./HorizontalScrolling";
 import Sponsors from "./Sponsors"; // Import the Sponsors component
 import Footer from "./Footer"
-import events from "../assets/EventDetails.json"
+import events from "../assets/EventContent.json"
 import VideoPlayerDesktop from './VideoPlayerDesktop';
 import VideoPlayerMobile from './VideoPlayerMobile';
 // const events = [
@@ -39,6 +39,8 @@ const isMobileDevice = () => {
 };
 
 function MainPage() {
+
+  console.log(events)
 
   const isMobile = isMobileDevice();
 
@@ -71,11 +73,20 @@ function MainPage() {
 
       <h2 className="Events__heading">Events</h2>
       <div className="EventCards">
-        {events.map((event, ind) => (
+        {/* {events.map((event, ind) => (
           ind <= 4 && <EventCard
             exploreAllEvents={false}
             imgSrc={`./assets/${event.name.replace(" ", "-")}.jpg`}
             name={event.name.replace(" ", "-")}
+            desc={event.tagline}
+            key={event.name.replace(" ", "-")}
+          />
+        ))} */}
+        {Object.values(events).map((event, ind) => (
+          ind <= 4 && <EventCard
+            exploreAllEvents={false}
+            imgSrc={`./assets/${event.name.toLowerCase().replaceAll(' ','')}.jpg`}
+            name={event.name}
             desc={event.tagline}
             key={event.name.replace(" ", "-")}
           />

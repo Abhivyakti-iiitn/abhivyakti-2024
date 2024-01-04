@@ -2,16 +2,19 @@ import React, { useState } from 'react'
 // import imgSrc from '../assets/EventImages/a.jpg';
 import showstopperImg from '../assets/EventPageAsst/showstopper.png';
 import starpodImg from '../assets/EventPageAsst/starpod.png';
-import beatsmithshowdownImg from '../assets/EventPageAsst/beatboxshowdown.png';
-import munImg from '../assets/EventPageAsst/munmain.png';
+import praanant from '../assets/EventPageAsst/praanant.png';
+import rythmrumle from '../assets/EventPageAsst/RHYTHM RUMBLE.png';
 import rhymeriotImg from '../assets/EventPageAsst/rhymeriot.png';
+import beatsmithshowdown from '../assets/EventPageAsst/beatboxshowdown.png';
+import mun from '../assets/EventPageAsst/munmain.png';
+import roadtoredcarpet from '../assets/EventPageAsst/Road to red carpet.png'
 import defaultImg from '../assets/EventImages/a.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function EventCards(props) {
     const nav = useNavigate();
     const [hovered, setHovered] = useState(false);
-    let cleanedName = props.name?.toLowerCase();
+    let cleanedName = props.name?.toLowerCase().replaceAll(' ','');
     let imgSrc;
 
     switch (cleanedName) {
@@ -21,14 +24,23 @@ function EventCards(props) {
         case 'starpod':
             imgSrc = starpodImg;
             break;
-        case 'beatsmithshowdown':
-            imgSrc = beatsmithshowdownImg;
+        case 'rythmrumble':
+            imgSrc = rythmrumle;
             break;
-        case 'mun':
-            imgSrc = munImg;
+        case 'roadtoredcarpet':
+            imgSrc = roadtoredcarpet;
+            break;
+        case 'praanant':
+            imgSrc = praanant;
             break;
         case 'rhymeriot':
             imgSrc = rhymeriotImg;
+            break;
+        case 'mun':
+            imgSrc = mun;
+            break;
+        case 'beatsmithshowdown':
+            imgSrc = beatsmithshowdown;
             break;
         default:
             imgSrc = defaultImg; // Set a default value or handle the case where no match is found
