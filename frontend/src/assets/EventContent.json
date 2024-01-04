@@ -52,85 +52,13 @@
     ],
     "registrationDate": "15/1/24",
     "Team": "Solo",
-    "fees": "₹ 00",
+    "fees": "₹ 100",
     "pool": "₹ 15,000",
     "prize": [
       "₹ 9,000",
       "₹ 6,000"
     ],
     "addPrize": ""
-  },
-  "starpod": {
-    "name": "starpod",
-    "tagline": "Stand up comedy competition",
-    "clubName": "Estória",
-    "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. 'Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
-    "timeline": [
-      {
-        "head": [
-          "Round 1 (Eliminator) | 10/12/23",
-          "Round 2 (at IIITN Campus) | 1/02/24 | Time-12:00 AM",
-          "Round 1 Result | 04/02/24 | Time-12:00 AM",
-          "Round 2 (Finals) | 23/02/24 | Time-4:30 PM"
-        ],
-        "date": [
-          "10/12/23",
-          "1/02/24",
-          "04/02/24",
-          "23/02/24"
-        ],
-        "content": [
-          "In this preliminary round, comedians will submit their recorded stand-up performances online. This serves as the eliminator, where your comedic creativity and talent will shine through the screen. Ensure that your submission embodies the theme and adheres to the rules, as it will determine your journey to the exciting final round. Get ready to bring the laughter to life in your quest for stardom at \"Star-Pod.\"",
-          "The final round is where the magic happens, an in-person gathering of comedic talents. Selected comedians will take the stage, delivering their unique stand-up routines before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your comedic expression to new heights, leave the audience in splits, and compete for top honors in the realm of comedy at \"Star-Pod.\"",
-          "",
-          ""
-        ]
-      }
-    ],
-    "rules": [
-      "Comedy acts should be performed in Hindi, English, or a bilingual format.",
-      "If selected for the final round, the same routine performed in the preliminary round may be delivered with slight alterations if desired.",
-      "The use of any audio devices, except for the venue's sound system, is strictly prohibited.",
-      "Comedians should adhere to the specified time limits for both preliminary and final rounds.",
-      "Multiple comedians from the same institution are welcome to participate.",
-      "Each comedian will perform individually.",
-      "Please provide the name of the comedian.",
-      "Routines should be performed live and not pre-recorded.",
-      "The judges' decisions will be final in all cases.",
-      "Plagiarism is strongly discouraged. Any act found replicating material without proper consent will result in disqualification.",
-      "Following the Genre somewhere in the Performance - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is must. Also, the theme, - “The Strive for Stardom”, must be considered while performing."
-    ],
-    "regulations": [
-      "Round 1",
-      "Originality and Creativity",
-      "Humor Relevance",
-      "Consistency",
-      "Stage Presence",
-      "Timing and Pacing",
-      "Expressiveness",
-      "Language and Clarity",
-      "Appropriateness",
-      "Impact",
-      "Adherence to Rules",
-      "Round 2",
-      "Originality and Creativity",
-      "Humor Relevance",
-      "Consistency",
-      "Stage Presence",
-      "Timing and Pacing",
-      "Expressiveness",
-      "Interaction and Involvement",
-      "Language and Clarity",
-      "Appropriateness",
-      "Impact",
-      "Adherence to Rules",
-      "Audience Engagement",
-      "Audience Response"
-    ],
-    "registrationDate": "20/2/24",
-    "Team": "5",
-    "fees": "₹ 15",
-    "pool": "₹ 10000"
   },
   "roadtoredcarpet": {
     "name": "Road to Red Carpet",
@@ -187,7 +115,7 @@
     "prize": [
       "₹ 25,000"
     ],
-    "fees":"₹ 100/person",
+    "fees":"₹ 1000",
     "addPrize": "",
     "contact": ""
   },
@@ -255,7 +183,7 @@
       "₹ 11,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 0",
+    "fees":"₹ 300",
     "addPrize": ""
   },
   "praanant": {
@@ -370,7 +298,7 @@
       "₹ 13,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 0",
+    "fees":"₹ 500",
     "addPrize": "",
     "contact": [
       ""
@@ -418,139 +346,11 @@
     "Team": "5-20",
     "pool": "₹ 70,000",
     "prize": ["₹ 70,000"],
-    "fees": "₹ 700/person",
+    "fees": "₹ 750",
     "addPrize": "",
     "contact": [
       ""
     ]
-  },
-  "kavisammelan": {
-    "name": "Kavi Sammelan",
-    "tagline": "Poetry Competition",
-    "clubName":"Estória",
-    "details": "If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
-    "timeline": [
-      {
-        "head": [
-          "Registration open | 10th Dec 2023",
-          "Registration closes | 1st Feb 2024 | Time-12:00 AM",
-          "Round 1 (Eliminator) Result | 4th Feb 2024 | Time-12:00AM",
-          "Round 2(Finals) | 23rd Feb 2024 | Time-12:30AM"
-        ],
-        "date": [
-          "10/12/23",
-          "1/2/24",
-          "4/2/24",
-          "23/2/24"
-        ],
-        "content": [
-          "",
-          "",
-          "In this preliminary round, poets will submit their recorded performances online. This serves as the eliminator, where your poetic creativity and talent will shine through the screen. Ensure that your submission encapsulates the theme and adheres to the rules, as it will determine your journey to the thrilling final round.",
-          "The final round is where the magic happens, an offline gathering of poetic souls. Selected poets will step onto the stage, bringing their unique verses to life before an enthusiastic live audience. This is your moment to shine, the opportunity to elevate your poetic expression to new heights, leave an indelible mark, and compete for top honors in the realm of poetry."
-        ]
-      }
-    ],
-    "rules": [
-      "Round 1 (Eliminator):-",
-      "Poet must submit a video enactment of an original poem.",
-      "Along with the video submission, the poem must be provided with proper credit.",
-      "Time Limit - The Video file should be 3-5 minutes long. Not following the time Constraints will result in Negative Marking.",
-      "Please ensure that your video file entries are named as follows: Abhivyakti2K23-24_Kavisammelan_(Participant Name)_(College Name).",
-      "The subject of your email should follow the same format for the name of the video file entry.",
-      "Participants are required to submit their video entry or video entry link via email.",
-      "Kindly confirm that the drive link in your email has access “Open to all” to view the video.",
-      "Last Date of Prelim Submission is - 31st Jan 2024.",
-      "Ensure that your performance video has clear visuals and audio. Any discrepancies in quality may impact the judging process, and changes cannot be made after submission.",
-      "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
-      "The Poem must flow to the theme, specifically - 'The Strive for Stardom'.",
-      "A team can have 4 non-performing/supporting individuals in the team: 1 backstage/props/instrument managers, 3 Instrument players.",
-      "Round 2 (at IIITN Campus): -",
-      "Time Limit - The Performance should be 6-10 minutes long, from Entry to Complete Exit. There will be negative marking if teams exceed the performance time.",
-      "Teams should maintain decency and decorum in the behavior, attire, and performance.",
-      "All participants shall be required to carry their Institute's ID Cards which they will be required to present at the registration desk before the commencement of the event.",
-      "Follow the poem in the Genre - struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime, mystery is a must.",
-      "The Poem must flow to the theme, specifically - 'The Strive for Stardom'."
-    ],
-    "regulations": [
-      "Round 1:",
-      "Relevance to Theme",
-      "Creativity and Originality",
-      "Emotional Impact",
-      "Delivery and Diction",
-      "Expression and Emotion",
-      "Stage Presence",
-      "Imagery and Metaphor",
-      "Structure and Flow",
-      "Language and Rhythm",
-      "Overall Artistic Expression",
-      "Adherence to Rules",
-      "Round 2:",
-      "Relevance to Theme",
-      "Creativity and Originality",
-      "Emotional Impact",
-      "Delivery and Diction",
-      "Expression and Emotion",
-      "Stage Presence",
-      "Imagery and Metaphor",
-      "Structure and Flow",
-      "Language and Rhythm",
-      "Overall Artistic Expression",
-      "Adherence to Rules",
-      "Audience Engagement",
-      "Audience Response"
-    ],
-    "registrationDate": "10/12/23",
-    "Team": "5-20",
-    "pool": "₹ 20,000",
-    "prize": [],
-    "fees":"₹ 0",
-    "addPrize": "",
-    "contact": [
-      ""
-    ]
-  },
-  "beatsmithshowdown": {
-    "name": "Beatsmith Showdown",
-    "tagline": "A Beatboxing Competition",
-    "clubName":"Crescendo",
-    "details": "Calling all aspiring beatboxers! Showcase your rhythmic prowess and original vocal beats in our exciting beatboxing competition and be recognized for your unique talent and creativity.",
-    "timeline": [
-      {
-        "head": [
-          "Round 1",
-          "Round 2"
-        ],
-        "date": [
-          "16/1/24",
-          "24/1/24"
-        ],
-        "content": [
-          "huh",
-          "Dani G. German"
-        ]
-      }
-    ],
-    "rules": [
-      "It is a solo beatboxing competition.",
-      "Time limit for the performance will be 2 minutes, exceeding which by 20s will lead to disqualification.",
-      "Use of musical instruments will lead to disqualification.",
-      "Judging criteria includes:\nTechnical skills (40 points)\nCreativity and originality (30 points)\nPerformance and stage presence (30 points).",
-      "The judges' collective scores across these categories will determine the final outcome of the competition.",
-      "Winners get a chance to grab a direct spot in Beatsmith Showdown finale in the main fest which will be a 1v1 eliminator."
-    ],
-    "regulations": [],
-    "registrationDate": "10/12/23",
-    "Team": "Solo",
-    "pool": "₹ 20,000",
-    "prize": [
-      ""
-    ],
-    "addPrize": "",
-    "contact": [
-      ""
-    ],
-    "fees":"₹ 0"
   },
   "groovegenesis": {
     "name": "Groove Genesis",
@@ -568,8 +368,8 @@
           "23/1/24"
         ],
         "content": [
-          "chipi chipi",
-          "chapa chapa"
+          "",
+          ""
         ]
       }
     ],
@@ -597,7 +397,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "rhymeriot": {
     "name": "Rhyme Riot",
@@ -615,8 +415,8 @@
           "23/1/24"
         ],
         "content": [
-          "dubi dubi",
-          "daba daba"
+          "",
+          ""
         ]
       }
     ],
@@ -641,7 +441,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 300"
   },
   "stellarsing-off": {
     "name": "Stellar Sing-Off",
@@ -686,7 +486,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "admads": {
     "name": "Ad Mads",
@@ -749,7 +549,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹100/Person"
+    "fees":"₹ 800"
   },
   "bahumukhi": {
     "name": "Bahumukhi",
@@ -855,7 +655,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "andhakaar": {
     "name": "Andhakaar",
@@ -928,7 +728,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 500"
   },
   "bronxbattleground": {
     "name": "Bronx Battleground",
@@ -983,55 +783,6 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 500/Team"
-  },
-  "dastaan-e-chhotaparda": {
-    "name": "Dastaan-e-Chhota Parda",
-    "tagline": "Short film making",
-    "clubName":"Estória",
-    "details": "Prepare for cinematic enchantment at Abhivyakti, IIITN's cultural fest! Embark on a storytelling adventure with our Short-film Making competition. Dive into the realm of visual narratives, craft emotions in every frame, and ignite your journey in the film industry. Your cinematic dreams are just a competition away, so seize the opportunity to make them a reality!",
-    "timeline": [
-      {
-        "head": [
-          "Competition Details:"
-        ],
-        "date": [
-          ""
-        ],
-        "content": [
-          "The first 10 teams to register will be eligible for evaluation, with each institute or university allowed one submission.",
-          "To participate, ensure the legitimacy and authenticity of each team member from your college.",
-          "This competition is all about producing a captivating 6-minute film, with a minimum of 4 minutes dedicated to dance.",
-          "There are no restrictions on song choices, but your film should seamlessly align with the fest's "
-        ]
-      }
-    ],
-    "rules": [
-      "Final submissions must be in .mp4 format, with strict adherence to time limits to avoid penalties.",
-      "The judges' decisions are final, and any violations of the rules can result in disqualification.",
-      "First 10 teams registering will be eligible for evaluation. ",
-      "And each Institute or University is allowed to have 1 submission.",
-      "The legitimacy and authenticity of each participant from team should be sent through an attachment letter from college attesting the participant to be a student of the respective college along with College-IDs.",
-      "This competition is about shooting a film of about 6mins which must include dance for minimum 4mins.",
-      "The film should be coherent with the theme of the Fest.",
-      "Song choice is not restricted",
-      "Originality of the story and concept will be verified.",
-      "Dialogues and Storyline is welcomed, but essence of dance should not be missed."
-    ],
-    "regulations": [
-      "Originality in storytelling is crucial, and while dialogues and storylines are welcomed, the essence of dance should remain at the forefront.",
-      "Your film will be judged on various criteria, including choreography,\n 3. technique\n 4. creativity\n 5. energy\n 6. costumes\n 7. overall impact\n 8. cinematography\n 9. video editing\n 10. audio editing."
-    ],
-    "registrationDate": "",
-    "Team": "",
-    "fees":"₹ 00",
-    "pool": "",
-    "prize": [
-      "The winning team will receive a cash prize and the honor of having their final submission showcased at the fest and collaboratively featured on the official Instagram handle of D-Taraxia."
-    ],
-    "addPrize": "",
-    "contact": [
-      ""
-    ]
+    "fees":"₹ 500"
   }
 }
