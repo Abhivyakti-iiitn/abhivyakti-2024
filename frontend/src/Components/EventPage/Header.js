@@ -5,7 +5,8 @@ import logo from "../../assets/EventPageAsst/logoPlaceHolder.svg"
 import estória from "../../assets/Clubs Logo/estoria logo(chest left).png"
 import crescendo from '../../assets/Clubs Logo/crescendo-logo--01 (3).png'
 import orator from '../../assets/Clubs Logo/orator logo.png';
-import probe from '../../assets/Clubs Logo/probe.png'
+import probe from '../../assets/Clubs Logo/probe.png';
+import dtaraxia from '../../assets/Clubs Logo/dtaraxia.png';
 import LogoComponent from '../LogoComponent';
 
 const logoData = {
@@ -13,6 +14,7 @@ const logoData = {
     crescendo:crescendo,
     orator:orator,
     probe:probe,
+    dtaraxia: dtaraxia,
 }
 function Header(props) {
     // console.log("sad", props.event)
@@ -54,8 +56,8 @@ function Header(props) {
                         <h4>Brought to you by</h4>
                         <p><span><img src={logoImg} alt="clublogo" srcSet="" /><br />
                             {props.clubName}</span></p>
-                        <h4>sponsored by</h4>
-                        <p><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /></p>
+                        <h4 style={{display:'none'}}>sponsored by</h4>
+                        <p style={{display:'none'}}><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /><img src={logoImg} alt="clublogo" srcSet="" /></p>
                     </div>
                 </div>
             </div >
