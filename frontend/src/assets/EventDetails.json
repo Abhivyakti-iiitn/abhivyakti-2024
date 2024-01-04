@@ -14,8 +14,8 @@
     "regulations": "chipi chipi chapa chapa dubi dubi daba daba magico ni dubi dubi boom boom boom boom",
     "registrationDate": "15/1/24",
     "Team": "Solo",
-    "fees": "10 Rs",
-    "pool": "69 Cr"
+    "fees": "Rs 0",
+    "pool": "Rs 15,000"
   },
   {
     "name": "starpod",
@@ -32,8 +32,8 @@
     "regulations": "twinkle twinkle little star, dance with grace from afar",
     "registrationDate": "20/2/24",
     "Team": "5",
-    "fees": "15 Rs",
-    "pool": "100 Cr"
+    "fees": "",
+    "pool": ""
   },
   {
     "name": "beatsmithShowdown",
@@ -50,11 +50,11 @@
     "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
     "registrationDate": "10/3/24",
     "Team": "Solo",
-    "fees": "20 Rs",
-    "pool": "50 Cr"
+    "fees": "",
+    "pool": ""
   },
   {
-    "name": "mun",
+    "name": "MUN",
     "tagline": "tagline,tagline,tagline",
     "details": "Get ready for a musical showdown where every beat is a powerful note in the symphony of rhythm, where the stage is your battlefield of sound, and where you craft not just music, but an unforgettable experience. Don't miss this opportunity to showcase your beats and be part of the electrifying atmosphere of the \"Beatsmith Showdown.\"",
     "timeline": [
@@ -68,8 +68,8 @@
     "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
     "registrationDate": "10/3/24",
     "Team": "Solo",
-    "fees": "20 Rs",
-    "pool": "50 Cr"
+    "fees": "Rs 700",
+    "pool": "Rs 70,000"
   },
   {
     "name": "rhymeriot",
@@ -86,8 +86,8 @@
     "regulations": "Bang those drums, hit those keys, let the beats flow with ease.",
     "registrationDate": "10/3/24",
     "Team": "Solo",
-    "fees": "20 Rs",
-    "pool": "50 Cr"
+    "fees": "Rs 0",
+    "pool": "Rs 20,000"
   },
   {
     "name": "Road to Red Carpet",
@@ -139,9 +139,10 @@
     "regulations": "",
     "registrationDate": "N/A",
     "Team": "N/A",
-    "pool": "Rs. 25000",
+    "fees":"Rs 100",
+    "pool": "Rs. 25,000",
     "prize": [
-      ""
+      "Rs 25,000"
     ],
     "addPrize": "",
     "contact": ""
@@ -204,9 +205,10 @@
     "regulations": "",
     "registrationDate": "N/A",
     "Team": "N/A",
-    "pool": "Rs. 25000",
+    "pool": "Rs 18,000",
     "prize": [
-      ""
+      "Rs 11,000",
+      "Rs 7,000"
     ],
     "addPrize": ""
   },
@@ -316,9 +318,10 @@
     ],
     "registrationDate": "10/12/23",
     "Team": "5-20",
-    "pool": "Rs. 20000",
+    "pool": "Rs 20000",
     "prize": [
-      ""
+      "Rs 13,000",
+      "Rs 7,000"
     ],
     "addPrize": "",
     "contact": [
@@ -376,9 +379,11 @@
     "regulations": "",
     "registrationDate": "",
     "Team": "5-7 members",
-    "pool": "Rs. 15,000",
+    "pool": "Rs 15,000",
     "prize": [
-      ""
+      "Rs 8,000",
+      "Rs 5,000",
+      "Rs 2,000"
     ],
     "addPrize": "",
     "contact": [
@@ -447,9 +452,10 @@
     ],
     "registrationDate": "10/12/23 - 1/2/24",
     "Team": "",
-    "pool": "",
+    "pool": "Rs 10,000",
     "prize": [
-      ""
+      "Rs 7,000",
+      "Rs 3,000"
     ],
     "addPrize": "",
     "contact": [
@@ -518,9 +524,10 @@
     ],
     "registrationDate": "",
     "Team": "",
-    "pool": "",
+    "pool": "Rs 25,000",
     "prize": [
-      ""
+      "Rs 15,000",
+      "Rs 10,000"
     ],
     "addPrize": "",
     "contact": [
@@ -572,9 +579,9 @@
     "regulations": "",
     "registrationDate": "",
     "Team": "5-10 members",
-    "pool": "",
+    "pool": "Rs 10,000",
     "prize": [
-      ""
+      "Rs 10,000"
     ],
     "addPrize": "",
     "contact": [
@@ -662,9 +669,10 @@
     ],
     "registrationDate": "10/12/23",
     "Team": "5",
-    "pool": "Rs. 20000",
+    "pool": "Rs 12,000",
     "prize": [
-      ""
+      "Rs 8,000",
+      "Rs 4,000"
     ],
     "addPrize": "",
     "contact": [
@@ -762,6 +770,15 @@
     "tagline": "Solo singing",
     "clubname": "Crescendo - Music Club",
     "details": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
-    "Team": "5-20"
+    "Team": "5-20",
+    "pool": "Rs 12,000",
+    "prize": [
+      "Rs 8,000",
+      "Rs 4,000"
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ]
   }
 ]
