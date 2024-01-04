@@ -46,13 +46,13 @@ function Event() {
     // console.log("ADS", params.eventname);
     
     
-    let obj = content[params.eventname.toLowerCase()];
-    if(params.eventname === "modelunitednations(mun)") {
-        obj = content["mun"]
-    }
+    let obj = content[params.eventname.toLowerCase().split('(')[0]];
+    // if(params.eventname === "modelunitednations(mun)") {
+    //     obj = content["mun"]
+    // }
     return (
         <div className='container'>
-            <Header name={obj.name} tagline={obj.tagline} raw={params.eventname} clubName = {obj.clubName ? obj.clubName : "null"} />
+            <Header name={obj.name.toLowerCase()} tagline={obj.tagline} raw={params.eventname.split('(')[0]} clubName = {obj.clubName ? obj.clubName : "null"} />
             {/* <Head/>
             <Name/>
             <Club/>
