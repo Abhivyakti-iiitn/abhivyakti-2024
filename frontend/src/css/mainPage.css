@@ -8,7 +8,10 @@
   flex-direction: column;
   display: flex;
   overflow: hidden;
+  z-index: 2;
 }
+
+
 
 .main__header .top {
   display: flex;
@@ -27,7 +30,8 @@
   list-style: none;
   align-items: center;
 }
-.main__header .top .left ul li{
+
+.main__header .top .left ul li {
   transition: all 0.3s ease-in-out;
 }
 
@@ -46,7 +50,7 @@
 .main__header .top .left ul li:hover {
   cursor: pointer;
   color: brown;
-  
+
 }
 
 .main__header .top .right ul li {
@@ -88,6 +92,7 @@
   font-weight: bolder;
   color: rgba(128, 128, 128, 0.46);
 }
+
 .main__header .mid h1 .year {
   font-size: 4rem;
   font-family: "Carta Marina W00 Regular";
@@ -112,6 +117,7 @@
   transform: translate(-50%, -50%);
 
 }
+
 
 /* svg formating css */
 .svg-background {
@@ -143,34 +149,36 @@ canvas {
   z-index: 2;
 }
 
-.left {
+.leftAnimation {
   opacity: 0;
   animation: leftHud 2s forwards 1.5s;
 }
 
-.right {
+.rightAnimation {
   opacity: 0;
   animation: rightHud 2s forwards 1.5s;
 }
 
-.mid {
+.midAnimation {
   opacity: 0;
   animation: midHud 2s forwards 1.5s;
 }
 
-.explore .explore__text:hover{
-   cursor: pointer;
-   color: brown;
+.explore .explore__text:hover {
+  cursor: pointer;
+  color: brown;
 }
 
-@media screen and (max-width: 450px){
-  .main__header .mid h1{
+@media screen and (max-width: 450px) {
+  .main__header .mid h1 {
     font-size: 3.6rem;
   }
-  .main__header .mid h1 .year{
+
+  .main__header .mid h1 .year {
     font-size: 3.6rem;
   }
-  .main__header .top .left ul{
+
+  .main__header .top .left ul {
     padding-left: 10px;
   }
 }

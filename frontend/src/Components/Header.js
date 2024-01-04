@@ -7,6 +7,8 @@ import LogoComponent from './LogoComponent';
 
 function Header() {
     const nav = useNavigate();
+
+    const [animate, setAnimate] = useState(true);
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
 
     const [isLoggedin, setisLoggedin] = useState(false)
@@ -23,6 +25,18 @@ function Header() {
         function isMobile() {
             return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         }
+        const isFirstLoad = sessionStorage.getItem("firstLoadDone") === "true";
+
+        if (!isFirstLoad) {
+            setTimeout(() => {
+                sessionStorage.setItem("firstLoadDone", "true");
+                console.log("first load");
+            }, 3000);
+        } else {
+            setAnimate(false);
+            console.log("not first load");
+        }
+
 
         class Particle {
             constructor() {
@@ -140,6 +154,7 @@ function Header() {
 
                 {/* the background image rendered as SVG so that I can animate it */}
                 <div className='svgContainer'>
+
                     <Svg />
                 </div>
 
@@ -147,7 +162,7 @@ function Header() {
 
 
                 <div div className='top' >
-                    <div className="left">
+                    <div className={animate ? "left leftAnimation" : "left"}>
                         <ul>
                             <LogoComponent />
                             <li><div></div></li>
@@ -156,7 +171,7 @@ function Header() {
                             <li><i class="fa-brands fa-facebook"></i></li>
                         </ul>
                     </div>
-                    <div className="right">
+                    <div className={animate ? "right rightAnimation" : "right"}>
                         <ul>
                             {!isLoggedin && <li onClick={() => nav('/login')}>Login</li>}
                             {isLoggedin && <li onClick={() => nav('/profile')}>Profile</li>}
@@ -167,7 +182,7 @@ function Header() {
                         </ul>
                     </div>
                 </div >
-                <div className="mid">
+                <div className={animate ? "mid midAnimation" : "mid"}>
                     <h1>ABHIVYAKTI <br></br><div className='year'> 2024</div></h1>
                     <h2>Strive For Stardom</h2>
                 </div>
