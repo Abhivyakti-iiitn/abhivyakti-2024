@@ -151,9 +151,9 @@ function Header() {
                         <ul>
                             <LogoComponent />
                             <li><div></div></li>
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-linkedin"></i></li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i className="fa-brands fa-instagram"></i></li>
+                            <li><i className="fa-brands fa-linkedin"></i></li>
+                            <li><i className="fa-brands fa-facebook"></i></li>
                         </ul>
                     </div>
                     <div className="right">

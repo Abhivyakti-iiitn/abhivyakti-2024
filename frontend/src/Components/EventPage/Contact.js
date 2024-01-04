@@ -5,8 +5,6 @@ import clubDetails from "../../assets/clubdata.json";
 
 function Contact(props) {
 
-    console.log(props.clubName.toLowerCase());
-
     const handleSubmit = (e) => {
         e.preventDefault();
 

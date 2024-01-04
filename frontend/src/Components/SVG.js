@@ -33,7 +33,7 @@ const Svg = () => {
         <>
             <div>
                 <svg id="mysvg" className="svg-background backdrop" viewBox="0 0 1920 1278" fill="none" >
-                    <g id="Background" clip-path="url(#clip0_66_28)">
+                    <g id="Background" clipPath="url(#clip0_66_28)">
                         <rect id="bg" x="-181" width="2281.9" height="1278" fill="url(#pattern0)" />
                     </g>
                     <defs>

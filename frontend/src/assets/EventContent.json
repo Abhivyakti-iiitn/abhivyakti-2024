@@ -51,8 +51,8 @@
       "Overall Impact"
     ],
     "registrationDate": "15/1/24",
-    "Team": "4",
-    "fees": "₹ 99",
+    "Team": "Solo",
+    "fees": "₹ 100",
     "pool": "₹ 15,000",
     "prize": [
       "₹ 9,000",
@@ -63,6 +63,7 @@
   "starpod": {
     "name": "starpod",
     "tagline": "Stand up comedy competition",
+    "clubName": null,
     "details": "Welcome to 'Star-Pod,' a stand-up comedy event where humor and the pursuit of artistic recognition intertwine. If you have a comedic story to share that delves into life's amusing experiences, then 'Star-Pod' is your ideal platform for comedic expression. Prepare to be captivated by laughter-filled routines, clever wit, and the pursuit of comedic brilliance. 'Star-Pod' is a journey into the heart of humor, where laughter is as enlightening as it is entertaining, echoing the ascent of comedic stars.",
     "timeline": [
       {
@@ -134,6 +135,7 @@
   "roadtoredcarpet": {
     "name": "Road to Red Carpet",
     "tagline": "",
+    "clubName":"Probe",
     "details": "Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
     "timeline": [
       {
@@ -180,10 +182,10 @@
     ],
     "regulations": [],
     "registrationDate": "N/A",
-    "Team": "N/A",
+    "Team": "Solo",
     "pool": "Rs. 25000",
     "prize": [
-      ""
+      "25000"
     ],
     "addPrize": "",
     "contact": ""
@@ -191,6 +193,7 @@
   "rythmrumble": {
     "name": "Rythm Rumble",
     "tagline": "",
+    "clubName":"D-Taraxia",
     "details": "Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
     "timeline": [
       {
@@ -246,15 +249,17 @@
     "regulations": [],
     "registrationDate": "N/A",
     "Team": "N/A",
-    "pool": "Rs. 25000",
+    "pool": "Rs. 18000",
     "prize": [
-      ""
+      "11000",
+      "7000"
     ],
     "addPrize": ""
   },
   "praanant": {
     "name": "Praanant",
     "tagline": "Nukkad Natak/Street Play",
+    "clubName":"Estória",
     "details": "In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges 'Praanaant'—a street play experience where the 'Strive for Stardom' meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— 'Praanaant' is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
     "timeline": [
       {
@@ -360,7 +365,8 @@
     "Team": "5-20",
     "pool": "Rs. 20000",
     "prize": [
-      ""
+      "13000",
+      "7000"
     ],
     "addPrize": "",
     "contact": [
@@ -370,6 +376,7 @@
   "mun": {
     "name": "Model United Nations (MUN)",
     "tagline": "",
+    "clubName":"Orator",
     "details": [
       "MUN is an academic simulation of the United Nations wherein students as delegates step into the shoes of ambassadors from UN member states to debate current international issues on the organization's agenda.",
       "COMMITTEES",
@@ -406,10 +413,8 @@
     ],
     "registrationDate": "10/12/23",
     "Team": "5-20",
-    "pool": "Rs. 20000",
-    "prize": [
-      ""
-    ],
+    "pool": "Rs. 70000",
+    "prize": [],
     "addPrize": "",
     "contact": [
       ""
@@ -418,6 +423,7 @@
   "kavisammelan": {
     "name": "Kavi Sammelan",
     "tagline": "Poetry Competition",
+    "clubName":null,
     "details": "If you have a poem to share that delves into the hidden corners of the human experience, then 'Kavisammelan' is your ideal platform for poetic expression. Prepare to be enchanted by the heartfelt verses, the rhythm of emotions, and the vivid imagery that paints the lives of our poets in both light and shadow.'Kavisammelan' is not just a gathering; it's a descent into the wellspring of human feelings, where the darkness is as illuminating as the light, and a climb towards the dazzling heights of artistic recognition.",
     "timeline": [
       {
@@ -493,9 +499,7 @@
     "registrationDate": "10/12/23",
     "Team": "5-20",
     "pool": "Rs. 20000",
-    "prize": [
-      ""
-    ],
+    "prize": [],
     "addPrize": "",
     "contact": [
       ""
@@ -504,6 +508,7 @@
   "beatsmithshowdown": {
     "name": "Beatsmith Showdown",
     "tagline": "A Beatboxing Competition",
+    "clubName":null,
     "details": "Calling all aspiring beatboxers! Showcase your rhythmic prowess and original vocal beats in our exciting beatboxing competition and be recognized for your unique talent and creativity.",
     "timeline": [
       {
@@ -544,6 +549,7 @@
   "groovegenesis": {
     "name": "Groove Genesis",
     "tagline": "Instrumental",
+    "clubName":"Crescendo",
     "clubname": "Crescendo - Music Club",
     "details": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
     "timeline": [
@@ -577,9 +583,10 @@
     ],
     "registrationDate": "10/12/23",
     "Team": "5",
-    "pool": "Rs. 20000",
+    "pool": "Rs. 12000",
     "prize": [
-      ""
+      "8000",
+      "4000"
     ],
     "addPrize": "",
     "contact": [
@@ -589,6 +596,7 @@
   "rhymeriot": {
     "name": "Rhyme Riot",
     "tagline": "Battle of bands",
+    "clubName":"Crescendo",
     "details": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
     "timeline": [
       {
@@ -621,7 +629,7 @@
     "Team": "Solo",
     "pool": "Rs. 20000",
     "prize": [
-      ""
+      "20000"
     ],
     "addPrize": "",
     "contact": [
@@ -631,6 +639,7 @@
   "stellarsing-off": {
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
+    "clubName":"Crescendo",
     "clubname": "Crescendo - Music Club",
     "details": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
     "timeline": [
@@ -662,9 +671,10 @@
     ],
     "registrationDate": "10/12/23",
     "Team": "Solo",
-    "pool": "Rs. 20000",
+    "pool": "Rs. 12000",
     "prize": [
-      ""
+      "8000",
+      "4000"
     ],
     "addPrize": "",
     "contact": [
@@ -674,7 +684,7 @@
   "admads": {
     "name": "Ad Mads",
     "tagline": "",
-    "clubname": "",
+    "clubName": "Probe",
     "details": "This high-energy event is your chance to transform concepts into captivating commercials. Whether you're a seasoned advertiser or a rookie with a flair for storytelling, this competition welcomes all. This event promises a platform for budding advertisers to shine.",
     "timeline": [
       {
@@ -724,7 +734,9 @@
     "Team": "5-7 members",
     "pool": "Rs. 15,000",
     "prize": [
-      ""
+      "8000",
+      "5000",
+      "2000"
     ],
     "addPrize": "",
     "contact": [
@@ -734,7 +746,7 @@
   "bahumukhi": {
     "name": "Bahumukhi",
     "tagline": "",
-    "clubname": "Estoria - Drama and poetry Club",
+    "clubName": "Estória",
     "details": "If you have the spirit of a performer burning within you, if you've dreamed of the grand stage as your canvas, then 'Bahumukhi' is your platform to shine. Get ready to mesmerize the audience with your solo act, to captivate their hearts, and unveil the true essence of your character. In this competition, you are the star, the director, and the storyteller all in one, and the stage is your domain. As the name 'Bahumukhi' suggests, you'll be the one portraying multiple role, showcasing your versatility and depth as an actor.'Bahumukhi' isn't just about an act; it's a journey, a climb from obscurity to the dazzling limelight.",
     "timeline": [
       {
@@ -826,9 +838,10 @@
     ],
     "registrationDate": "10/12/23 - 1/2/24",
     "Team": "",
-    "pool": "",
+    "pool": "10000",
     "prize": [
-      ""
+      "7000",
+      "3000"
     ],
     "addPrize": "",
     "contact": [
@@ -838,7 +851,7 @@
   "andhakaar": {
     "name": "Andhakaar",
     "tagline": "Stage Play",
-    "clubname": "Estoria - Drama and poetry club",
+    "clubName": "Estória",
     "details": "In the depths of obscurity, hidden in the shadows, a talent emerged—a story of relentless 'Strive for Stardom'. Welcome to 'Andhkaar', a stage play drama competition that immerses you in a world of darkness, where struggles, hard work, depression, dark romance, mysteries, conspiracies, thrill, and crime intertwine.Witness the rise from darkness to dazzling limelight, for this is where stars are born. Come, and let the spotlight shine on 'Andhkaar'.",
     "timeline": [
       {
@@ -897,9 +910,10 @@
     ],
     "registrationDate": "",
     "Team": "",
-    "pool": "",
+    "pool": "25000",
     "prize": [
-      ""
+      "15000",
+      "10000"
     ],
     "addPrize": "",
     "contact": [
@@ -909,7 +923,7 @@
   "bronxbattleground": {
     "name": "Bronx Battleground",
     "tagline": "",
-    "clubname": "",
+    "clubName": "D-Taraxia",
     "details": "Get ready to be enthralled at Abhivyakti, IIITN's cultural fest, with our Group Dance Competition! Witness mesmerising performances in a variety of dance styles, as talented teams compete for the coveted title of Dance Champions. With live music, esteemed judges, and an electric atmosphere, this event promises to be a celebration of rhythm and artistry that you won't want to miss. Mark your calendars and join us for a night of unforgettable dance performances.",
     "timeline": [
       {
@@ -951,9 +965,9 @@
     "regulations": [],
     "registrationDate": "",
     "Team": "5-10 members",
-    "pool": "",
+    "pool": "10000",
     "prize": [
-      ""
+      "10000"
     ],
     "addPrize": "",
     "contact": [

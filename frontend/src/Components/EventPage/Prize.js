@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import '../../css/prize.css';
 
 function Prize(props) {
-    console.log(props)
     const navigateTo = useNavigate();
     return (
         <div className='prize_pool'>
