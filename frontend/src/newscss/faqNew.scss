@@ -1,0 +1,61 @@
+@import '_variables.scss';
+
+.faq-container {
+    .faq-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-category {
+        width: 100%;
+    }
+
+    .faq-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            cursor: pointer;
+
+            &:hover {
+                color: $text-color-gradient-2;
+            }
+        }
+    }
+
+    .faq-categoryName {
+        justify-self: flex-start;
+        font-family: $font-family;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        cursor: default;
+    }
+
+    .faq-sections {
+        width: max-content;
+    }
+
+    .faq-section {
+        padding-right: 1rem;
+    }
+
+    .faq-categorycontainer {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        
+        i {
+            margin-left: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $text-color-gradient-2;
+            }
+        }
+    }
+}

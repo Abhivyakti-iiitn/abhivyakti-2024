@@ -1,0 +1,47 @@
+.faq-container .faq-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.faq-container .faq-category {
+  width: 100%;
+}
+.faq-container .faq-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-container .faq-item i {
+  cursor: pointer;
+}
+.faq-container .faq-item i:hover {
+  color: #bc615e;
+}
+.faq-container .faq-categoryName {
+  justify-self: flex-start;
+  font-family: "Carta Marina W00 Regular";
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  cursor: default;
+}
+.faq-container .faq-sections {
+  width: max-content;
+}
+.faq-container .faq-section {
+  padding-right: 1rem;
+}
+.faq-container .faq-categorycontainer {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.faq-container .faq-categorycontainer i {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.faq-container .faq-categorycontainer i:hover {
+  color: #bc615e;
+}
