@@ -29,25 +29,25 @@ function Contact(props) {
             <img src={Arr} className='arrow'></img>
             <div className='box_1'>
                 <div className='box_2'>
-                    <div className='box_3'>
+                    {clubDetails[props.clubName.toLowerCase()] && <div className='box_3'>
                         <div>
                             <div className='title1'>CLUB HEAD</div>
                             <div className='contact_info'>{clubDetails[props.clubName.toLowerCase()]?.clubHead}</div>
                             <div>{clubDetails[props.clubName.toLowerCase()]?.contactLead}</div>
-                            <div><a style={{color:'brown', textDecorationLine:'none'}} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdLead}</a></div>
+                            <div><a style={{ color: 'brown', textDecorationLine: 'none' }} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdLead}</a></div>
                         </div>
                         <div>
-                            <div className='title1 title2'>CLUB CO-LEAD</div>
-                            <div className='contact_info'>{clubDetails[props.clubName.toLowerCase()]?.clubCoLead}</div>
-                            <div>{clubDetails[props.clubName.toLowerCase()]?.contactCoLead}</div>
-                            <div><a style={{color:'brown', textDecorationLine:'none'}} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}</a></div>
+                            {clubDetails[props.clubName.toLowerCase()]?.clubCoLead !== "" && <><div className='title1 title2'>CLUB CO-LEAD</div>
+                                <div className='contact_info'>{clubDetails[props.clubName.toLowerCase()]?.clubCoLead}</div>
+                                <div>{clubDetails[props.clubName.toLowerCase()]?.contactCoLead}</div>
+                                <div><a style={{ color: 'brown', textDecorationLine: 'none' }} href={`mailto:${clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}`}>{clubDetails[props.clubName.toLowerCase()]?.emailIdCoLead}</a></div></>}
                         </div>
-                    </div>
+                    </div>}
                     <div className='other_contact'>
                         <div className='title1 title3'>CULTURAL COORDINATOR </div>
                         <div className='contact_info'>Divyanshu Singh</div>
                         <div>+917234032401</div>
-                        <div><a style={{color:'brown', textDecorationLine:'none'}} href="mailto:bt21cse162@iiitn.ac.in">bt21cse162@iiitn.ac.in</a></div>
+                        <div><a style={{ color: 'brown', textDecorationLine: 'none' }} href="mailto:bt21cse162@iiitn.ac.in">bt21cse162@iiitn.ac.in</a></div>
                     </div>
                 </div>
 

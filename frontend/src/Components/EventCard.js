@@ -50,7 +50,7 @@ function EventCards(props) {
 
     if (!props.exploreAllEvents) {
         return (
-            <div id={props.id} className='EventCard hiddenCard' onClick={() => { nav(`/event/${props.name}`) }}>
+            <div id={props.id} className='EventCard hiddenCard' onClick={() => { nav(`/event/${props.name.toLowerCase().replaceAll(' ', '')}`) }}>
                 <div className='event-container' >
 
                     <div className='event__img-container' >
