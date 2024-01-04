@@ -1,11 +1,47 @@
 {
-    "estória" : {
-        "name" : "Estória (Drama and Poetry Club)",
-        "clubHead" : "Sameer Jain",
-        "contactLead" : "+919340402207",
-        "emailIdLead" : "bt22ece044@iiitn.ac.in",
-        "clubCoLead" : "Dhruv Mundada",
-        "contactCoLead" : "+919850251104",
-        "emailIdCoLead" : "bt22cse077@iiitn.ac.in"
+    "estória": {
+        "name": "Estória (Drama and Poetry Club)",
+        "clubHead": "Sameer Jain",
+        "contactLead": "+919340402207",
+        "emailIdLead": "bt22ece044@iiitn.ac.in",
+        "clubCoLead": "Dhruv Mundada",
+        "contactCoLead": "+919850251104",
+        "emailIdCoLead": "bt22cse077@iiitn.ac.in"
+    },
+    "crescendo": {
+        "name": "Crescendo (Music Club)",
+        "clubHead": "Vaibhav Jaiswal",
+        "contactLead": "9752010916",
+        "emailIdLead": "bt22csh018@iiitn.ac.in",
+        "clubCoLead": "Harsh Jaiswal",
+        "contactCoLead": "9764268681",
+        "emailIdCoLead": "bt22csh013@iiitn.ac.in"
+    },
+    "probe": {
+        "name": "Probe (Photography and Social Media Club)",
+        "clubHead": "Anuj Jain",
+        "contactLead": "7694844014",
+        "emailIdLead": "bt22eci010@iiitn.ac.in",
+        "clubCoLead": "Vinay Badlani",
+        "contactCoLead": "8435232987",
+        "emailIdCoLead": "bt22cse162@iiitn.ac.in"
+    },
+    "dtaraxia": {
+        "name": "D-Taraxia (Dance Club)",
+        "clubHead": "Atharva Wadekar",
+        "contactLead": "7506103104",
+        "emailIdLead": "bt22csh063@iiitn.ac.in",
+        "clubCoLead": "Dikshita Sakhare",
+        "contactCoLead": "9766721638",
+        "emailIdCoLead": "bt22ece030@iiitn.ac.in"
+    },
+    "orator": {
+        "name": "Orator (Public Speaking and Debate Club)",
+        "clubHead": "Harsh Suhan",
+        "contactLead": "8356950713",
+        "emailIdLead": "bt22csa034@iiitn.ac.in",
+        "clubCoLead": "",
+        "contactCoLead": "",
+        "emailIdCoLead": ""
     }
 }
