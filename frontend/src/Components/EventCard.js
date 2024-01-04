@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import imgSrc from '../assets/EventImages/a.jpg';
 import showstopperImg from '../assets/EventPageAsst/showstopper.png';
 import starpodImg from '../assets/EventPageAsst/starpod.png';
@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 function EventCards(props) {
     const nav = useNavigate();
-
+    const [hovered, setHovered] = useState(false);
     let cleanedName = props.name?.toLowerCase();
     let imgSrc;
 
@@ -39,11 +39,13 @@ function EventCards(props) {
     if (!props.exploreAllEvents) {
         return (
             <div id={props.id} className='EventCard hiddenCard' onClick={() => { nav(`/event/${props.name}`) }}>
-                <div className='event-container'>
-                    {/* style={{ backgroundImage: `url("${imgSrc}")`, backgroundRepeat: 'no-repead' }} */}
+                <div className='event-container' >
+
                     <div className='event__img-container' >
-                        <img src={imgSrc} className='event__img' alt='event_image' ></img>
+                        <img src={imgSrc} className='event__img' alt='event_image' onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}></img>
+
                     </div>
+                    <img src={imgSrc} className='event__img_ambience' alt='event_image' style={{ opacity: hovered ? 1 : 0 }} ></img>
                     <div className='event__content'>
                         <div className='event__name'>{props.name}</div>
                         <div className='event__desc'>{props.desc}</div>

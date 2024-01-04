@@ -1,7 +1,7 @@
 // src/Components/MainPage.js
 import React, { useEffect, useState } from "react";
 import "../css/index.css";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import FirefliesAnimation from "./FirefliesAnimation";
 import EventCard from "./EventCard";
 import Header from "./Header";
@@ -46,7 +46,7 @@ function MainPage() {
 
   const [isLoggedin, setisLoggedin] = useState(false)
 
-  
+
 
   useEffect(() => {
     animateEventCards();
@@ -59,14 +59,15 @@ function MainPage() {
     <div className="App">
       {/* <FirefliesAnimation /> */}
       <Header />
-
+      <div className="blur_portion"></div>
       <div>
-      {isMobile ? (
-        <VideoPlayerMobile videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
-      ) : (
-        <VideoPlayerDesktop videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
-      )}
-    </div>
+        {isMobile ? (
+          <VideoPlayerMobile videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
+        ) : (
+          <VideoPlayerDesktop videoSource={process.env.PUBLIC_URL + '/intro.mp4'} />
+        )}
+      </div>
+
 
       <h2 className="Events__heading">Events</h2>
       <div className="EventCards">
