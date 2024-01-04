@@ -83,9 +83,9 @@ function Contact(props) {
                 <form className='box_4' ref={form} onSubmit={handleSubmit}>
                     {isSending && <div className='loader'><MailLoader /></div>}
 
-                    <input type='text' placeholder='Name' name='from_name' className='input_tag tag1'></input><br></br>
-                    <input type='' placeholder='phone no./email address' name='email_phone' className='input_tag tag2'></input><br></br>
-                    <textarea type='text' multiple placeholder='ask your Queries' name='message' className='input_tag tag3'></textarea>
+                    <input type='text' required placeholder='Name' name='from_name' className='input_tag tag1'></input><br></br>
+                    <input type='text' required placeholder='phone no./email address' name='email_phone' className='input_tag tag2'></input><br></br>
+                    <textarea type='text' required multiple placeholder='ask your Queries' name='message' className='input_tag tag3'></textarea>
                     <button type='submit' className={'contactSubmitBtn'} disabled={isSending}>Submit</button>
 
                 </form>
