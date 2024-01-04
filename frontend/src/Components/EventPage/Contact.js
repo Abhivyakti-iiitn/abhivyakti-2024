@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../../css/contact.css';
 import Arr from '../../assets/EventPageAsst/arrow.png';
 import clubDetails from "../../assets/clubdata.json";
+import emailjs from '@emailjs/browser';
+import MailLoader from '../Loader';
 
 function Contact(props) {
 
-    const handleSubmit = (e) => {
+    const [isSending, setisSending] = useState(false)
+
+    const form = useRef(null);
+
+    useEffect(() => {
+        emailjs.init("JOzFmAVAKi2Qo2yGB");
+    }, [])
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setisSending(true);
+
+        // console.log(form.current.message.value)
+
+
+        await emailjs.sendForm("service_hu6aba2", "template_batddsm", form.current)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                form.current.from_name.value = "";
+                form.current.email_phone.value = "";
+                form.current.message.value = "";
+
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+
+
+        setisSending(false);
 
     }
     const contactBtnStyles = {
@@ -22,6 +51,7 @@ function Contact(props) {
         cursor: 'pointer',
         borderRadius: '10px'
     };
+
     return (
         <div>
             <div className='or'>or</div>
@@ -50,12 +80,14 @@ function Contact(props) {
                         <div><a style={{ color: 'brown', textDecorationLine: 'none' }} href="mailto:bt21cse162@iiitn.ac.in">bt21cse162@iiitn.ac.in</a></div>
                     </div>
                 </div>
+                <form className='box_4' ref={form} onSubmit={handleSubmit}>
+                    {isSending && <div className='loader'><MailLoader /></div>}
 
-                <form className='box_4' onSubmit={handleSubmit}>
-                    <input type='text' placeholder='Name' className='input_tag tag1'></input><br></br>
-                    <input type='' placeholder='phone no./email address' className='input_tag tag2'></input><br></br>
-                    <input type='text' placeholder='ask your Queries' className='input_tag tag3'></input>
-                    <button type='submit' className={'contactSubmitBtn'} >Submit</button>
+                    <input type='text' placeholder='Name' name='from_name' className='input_tag tag1'></input><br></br>
+                    <input type='' placeholder='phone no./email address' name='email_phone' className='input_tag tag2'></input><br></br>
+                    <textarea type='text' multiple placeholder='ask your Queries' name='message' className='input_tag tag3'></textarea>
+                    <button type='submit' className={'contactSubmitBtn'} disabled={isSending}>Submit</button>
+
                 </form>
 
             </div>

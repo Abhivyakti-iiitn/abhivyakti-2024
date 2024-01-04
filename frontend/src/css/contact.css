@@ -38,6 +38,7 @@
 
 .box_4 {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
@@ -61,8 +62,17 @@
 }
 
 .tag3 {
+    box-sizing: border-box;
+    width: 59.65vh;
     height: 150px;
     position: relative;
+    padding-right: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* max-width: 350px; */
+}
+::-webkit-scrollbar {
+   display: none;
 }
 
 .tag3::placeholder {
@@ -138,6 +148,10 @@ textarea {
     .contactSubmitBtn {
 
         width: 52vw;
+    }
+
+    .tag3{
+        width: 54vw;
     }
 
 
