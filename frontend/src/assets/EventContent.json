@@ -2,7 +2,7 @@
   "showstopper": {
     "name": "showstopper",
     "tagline": "A Solo Dance Competition",
-    "clubName":"D-Taraxia",
+    "clubName": "D-Taraxia",
     "details": "Join us for a dance journey where every step is a brushstroke on the canvas of your soul, where the stage is your sanctuary of expression, and where you dance not just with your body, but with your heart and spirit. Don't miss this opportunity to shine and be part of the vibrant cultural tapestry of \"Abhivyakti.\"",
     "timeline": [
       {
@@ -63,7 +63,7 @@
   "roadtoredcarpet": {
     "name": "Road to Red Carpet",
     "tagline": "",
-    "clubName":"Probe",
+    "clubName": "Probe",
     "details": "Embark on a cinematic journey like never before in our film-making competition.Whether you're a seasoned director or a budding filmmaker, this is your chance to showcase your cinematic prowess.With a red carpet premiere and expert judges, this event promises an immersive experience.",
     "timeline": [
       {
@@ -115,14 +115,14 @@
     "prize": [
       "₹ 25,000"
     ],
-    "fees":"₹ 1000",
+    "fees": "₹ 1000",
     "addPrize": "",
     "contact": ""
   },
   "rythmrumble": {
     "name": "Rythm Rumble",
     "tagline": "",
-    "clubName":"D-Taraxia",
+    "clubName": "D-Taraxia",
     "details": "Get ready to witness a mesmerizing display of synchronized talent at Abhivyakti, the cultural fest of IIITN! Our Duet Dance Competition promises to be a spectacular showcase of grace, rhythm, and creativity, as teams come together to tell stories through the art of dance.. Join us for an evening of captivating performances that celebrate the harmony of movement and expression, only at Abhivyakti in IIITN.",
     "timeline": [
       {
@@ -183,13 +183,13 @@
       "₹ 11,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 300",
+    "fees": "₹ 300",
     "addPrize": ""
   },
   "praanant": {
     "name": "Praanant",
     "tagline": "Nukkad Natak/Street Play",
-    "clubName":"Estória",
+    "clubName": "Estória",
     "details": "In the heart of the city's chaos, where shadows dance and neon lights reveal untold tales, emerges 'Praanaant'—a street play experience where the 'Strive for Stardom' meets the gritty streets. If your script dives into raw, unfiltered human emotions—the struggles, resilience, and highs and lows— 'Praanaant' is your stage. Brace for explosive performances, unconventional storytelling, and a rollercoaster through life's complexities. This event defies street play conventions, plunging into vivid street chaos, celebrating the relentless pursuit of the limelight amid shadows.",
     "timeline": [
       {
@@ -298,16 +298,60 @@
       "₹ 13,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 500",
+    "fees": "₹ 500",
     "addPrize": "",
     "contact": [
       ""
     ]
   },
+  "rhymeriot": {
+    "name": "Rhyme Riot",
+    "tagline": "Battle of bands",
+    "clubName": "Crescendo",
+    "details": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
+    "timeline": [
+      {
+        "head": [
+          "Round 1",
+          "Round 2"
+        ],
+        "date": [
+          "16/1/24",
+          "23/1/24"
+        ],
+        "content": [
+          "",
+          ""
+        ]
+      }
+    ],
+    "rules": [
+      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
+      "Exceeding the time limit by 60 seconds will lead to disqualification.",
+      "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
+      "Judging criteria includes: \nVocal and Instrumental Excellence (40 points) \nPerformance and Expression (30 points) \nOverall Presentation (30 points)",
+      "The judges' collective scores across these categories will determine the final outcome of the competition.",
+      "Winners get a chance to grab a direct spot in Abhivyakti's finale in the main fest."
+    ],
+    "regulations": [
+      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+    ],
+    "registrationDate": "10/12/23",
+    "Team": "Solo",
+    "pool": "₹ 20,000",
+    "prize": [
+      "₹ 20,000"
+    ],
+    "addPrize": "",
+    "contact": [
+      ""
+    ],
+    "fees": "₹ 300"
+  },
   "modelunitednations": {
     "name": "Model United Nations (MUN)",
     "tagline": "",
-    "clubName":"Orator",
+    "clubName": "Orator",
     "details": [
       "MUN is an academic simulation of the United Nations wherein students as delegates step into the shoes of ambassadors from UN member states to debate current international issues on the organization's agenda.",
       "COMMITTEES",
@@ -345,7 +389,9 @@
     "registrationDate": "10/12/23",
     "Team": "5-20",
     "pool": "₹ 70,000",
-    "prize": ["₹ 70,000"],
+    "prize": [
+      "₹ 70,000"
+    ],
     "fees": "₹ 750",
     "addPrize": "",
     "contact": [
@@ -355,7 +401,7 @@
   "groovegenesis": {
     "name": "Groove Genesis",
     "tagline": "Instrumental",
-    "clubName":"Crescendo",
+    "clubName": "Crescendo",
     "details": "Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts.",
     "timeline": [
       {
@@ -397,56 +443,12 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 100"
-  },
-  "rhymeriot": {
-    "name": "Rhyme Riot",
-    "tagline": "Battle of bands",
-    "clubName":"Crescendo",
-    "details": "Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?",
-    "timeline": [
-      {
-        "head": [
-          "Round 1",
-          "Round 2"
-        ],
-        "date": [
-          "16/1/24",
-          "23/1/24"
-        ],
-        "content": [
-          "",
-          ""
-        ]
-      }
-    ],
-    "rules": [
-      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
-      "Exceeding the time limit by 60 seconds will lead to disqualification.",
-      "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
-      "Judging criteria includes: \nVocal and Instrumental Excellence (40 points) \nPerformance and Expression (30 points) \nOverall Presentation (30 points)",
-      "The judges' collective scores across these categories will determine the final outcome of the competition.",
-      "Winners get a chance to grab a direct spot in Abhivyakti's finale in the main fest."
-    ],
-    "regulations": [
-      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
-    ],
-    "registrationDate": "10/12/23",
-    "Team": "Solo",
-    "pool": "₹ 20,000",
-    "prize": [
-      "₹ 20,000"
-    ],
-    "addPrize": "",
-    "contact": [
-      ""
-    ],
-    "fees":"₹ 300"
+    "fees": "₹ 100"
   },
   "stellarsing-off": {
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
-    "clubName":"Crescendo",
+    "clubName": "Crescendo",
     "details": "Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver.",
     "timeline": [
       {
@@ -486,7 +488,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 100"
+    "fees": "₹ 100"
   },
   "admads": {
     "name": "Ad Mads",
@@ -549,7 +551,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 800"
+    "fees": "₹ 800"
   },
   "bahumukhi": {
     "name": "Bahumukhi",
@@ -655,7 +657,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 100"
+    "fees": "₹ 100"
   },
   "andhakaar": {
     "name": "Andhakaar",
@@ -728,7 +730,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 500"
+    "fees": "₹ 500"
   },
   "bronxbattleground": {
     "name": "Bronx Battleground",
@@ -783,6 +785,6 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 500"
+    "fees": "₹ 500"
   }
 }
