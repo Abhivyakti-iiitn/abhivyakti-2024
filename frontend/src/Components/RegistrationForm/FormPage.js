@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import content from "../../assets/EventContent.json";
 const FormPage = () => {
   const params = useParams();
-  const evtName = params.eventname.toLowerCase().replace('-', '').replace(/ /g, '').split('(')[0];
+  const evtName = params.eventname.toLowerCase().replace(/ /g, '').split('(')[0];
   return (
     <div>
     <div className='FormPage'>

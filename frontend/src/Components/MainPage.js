@@ -40,7 +40,7 @@ const isMobileDevice = () => {
 
 function MainPage() {
 
-  console.log(events)
+  // console.log(events)
 
   const isMobile = isMobileDevice();
 
