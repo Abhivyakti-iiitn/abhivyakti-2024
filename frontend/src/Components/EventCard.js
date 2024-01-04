@@ -40,8 +40,9 @@ function EventCards(props) {
         return (
             <div id={props.id} className='EventCard hiddenCard' onClick={() => { nav(`/event/${props.name}`) }}>
                 <div className='event-container'>
-                    <div className='event__img-container'>
-                        <img src={imgSrc} className='event__img' alt='event_image'></img>
+                    {/* style={{ backgroundImage: `url("${imgSrc}")`, backgroundRepeat: 'no-repead' }} */}
+                    <div className='event__img-container' >
+                        <img src={imgSrc} className='event__img' alt='event_image' ></img>
                     </div>
                     <div className='event__content'>
                         <div className='event__name'>{props.name}</div>

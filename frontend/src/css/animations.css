@@ -1,15 +1,17 @@
 #sky {
-  
-  animation:   lightAnimation 10s linear infinite;
+  animation: skyAnimation 8s linear infinite, lightAnimation 10s linear infinite;
 
 }
 
 
 #bg {
+  animation: bgAnimation 8s linear infinite, lightAnimation 10s linear infinite;
   z-index: 2;
-  /* animation: scaleAnimation 4s linear infinite; */
 }
 
+#character {
+  animation: characterAnimation 8s linear infinite, characterLightAnimation 10s linear infinite;
+}
 
 #tie {
   transform-origin: 809px 832px;
@@ -55,83 +57,6 @@
   animation: strikeAnimation 10s linear infinite;
 }
 
-
-.backdrop{
-  filter: brightness(0.8) contrast(1.25);
-  animation: scaleBackAnimation 1.5s linear, svgContainerAnimation 1.5s forwards 1.5s;
-}
-
-.characterbox{
-  filter: brightness(1.75) contrast(1.25);
-  opacity: 0;
-  animation: scaleCharAnimation 1s forwards 0.75s, svgContainerAnimation 1.5s forwards 1.5s;
-
-}
-@keyframes leftHud {
-  0%{
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes rightHud {
-  0%{
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-
-@keyframes midHud {
-  0%{
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes svgContainerAnimation {
-  0%{
-    transform: translateY(0%);
-  }
-  100%{
-    transform: translateY(-15%)
-  }
-}
-@keyframes scaleBackAnimation {
-  0%{
-    scale: 3;
-  }
-
-
-  100%{
-    scale:1;
-  }
-  
-}
-
-@keyframes scaleCharAnimation {
-  0%{
-    opacity: 0;
-    scale: 6;
-  }
-
-
-  100%{
-    opacity: 1;
-    scale:1;
-  }
-  
-}
-
 @keyframes characterLightAnimation {
   0% {}
 
@@ -139,11 +64,19 @@
     filter: brightness(1) contrast(1);
   }
 
-  48% {
+  47% {
     filter: brightness(0.8) contrast(5);
   }
 
+  48% {
+    filter: brightness(1) contrast(1);
+  }
+
   50% {
+    filter: brightness(0.8) contrast(5);
+  }
+
+  51% {
     filter: brightness(1) contrast(1);
   }
 
@@ -151,15 +84,7 @@
     filter: brightness(0.8) contrast(5);
   }
 
-  54% {
-    filter: brightness(1) contrast(1);
-  }
-
-  55% {
-    filter: brightness(0.8) contrast(5);
-  }
-
-  65% {
+  60% {
     filter: brightness(1) contrast(1);
   }
 
@@ -175,11 +100,19 @@
     filter: brightness(1) contrast(1);
   }
 
-  48% {
+  47% {
     filter: brightness(3) contrast(2);
   }
 
+  48% {
+    filter: brightness(1) contrast(1);
+  }
+
   50% {
+    filter: brightness(3) contrast(2);
+  }
+
+  51% {
     filter: brightness(1) contrast(1);
   }
 
@@ -187,15 +120,7 @@
     filter: brightness(3) contrast(2);
   }
 
-  54% {
-    filter: brightness(1) contrast(1);
-  }
-
-  55% {
-    filter: brightness(3) contrast(2);
-  }
-
-  65% {
+  60% {
     filter: brightness(1) contrast(1);
   }
 
@@ -213,11 +138,19 @@
     opacity: 0;
   }
 
-  48% {
+  47% {
     opacity: 1;
   }
 
+  48% {
+    opacity: 0;
+  }
+
   50% {
+    opacity: 1;
+  }
+
+  51% {
     opacity: 0;
   }
 
@@ -225,15 +158,7 @@
     opacity: 1;
   }
 
-  54% {
-    opacity: 0;
-  }
-
-  55% {
-    opacity: 1;
-  }
-
-  65% {
+  60% {
     opacity: 0;
   }
 
@@ -445,5 +370,42 @@
 
   100% {
     filter: brightness(0.75);
+  }
+}
+
+
+@keyframes leftHud {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rightHud {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes midHud {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
