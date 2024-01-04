@@ -52,7 +52,7 @@
     ],
     "registrationDate": "15/1/24",
     "Team": "Solo",
-    "fees": "₹ 00",
+    "fees": "₹ 100",
     "pool": "₹ 15,000",
     "prize": [
       "₹ 9,000",
@@ -187,7 +187,7 @@
     "prize": [
       "₹ 25,000"
     ],
-    "fees":"₹ 100/person",
+    "fees":"₹ 1000",
     "addPrize": "",
     "contact": ""
   },
@@ -255,7 +255,7 @@
       "₹ 11,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 0",
+    "fees":"₹ 300",
     "addPrize": ""
   },
   "praanant": {
@@ -370,7 +370,7 @@
       "₹ 13,000",
       "₹ 7,000"
     ],
-    "fees":"₹ 0",
+    "fees":"₹ 500",
     "addPrize": "",
     "contact": [
       ""
@@ -418,7 +418,7 @@
     "Team": "5-20",
     "pool": "₹ 70,000",
     "prize": ["₹ 70,000"],
-    "fees": "₹ 700/person",
+    "fees": "₹ 750",
     "addPrize": "",
     "contact": [
       ""
@@ -568,8 +568,8 @@
           "23/1/24"
         ],
         "content": [
-          "chipi chipi",
-          "chapa chapa"
+          "",
+          ""
         ]
       }
     ],
@@ -597,7 +597,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "rhymeriot": {
     "name": "Rhyme Riot",
@@ -615,8 +615,8 @@
           "23/1/24"
         ],
         "content": [
-          "dubi dubi",
-          "daba daba"
+          "",
+          ""
         ]
       }
     ],
@@ -641,7 +641,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 300"
   },
   "stellarsing-off": {
     "name": "Stellar Sing-Off",
@@ -686,7 +686,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "admads": {
     "name": "Ad Mads",
@@ -749,7 +749,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹100/Person"
+    "fees":"₹ 800"
   },
   "bahumukhi": {
     "name": "Bahumukhi",
@@ -855,7 +855,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 100"
   },
   "andhakaar": {
     "name": "Andhakaar",
@@ -928,7 +928,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 00"
+    "fees":"₹ 500"
   },
   "bronxbattleground": {
     "name": "Bronx Battleground",
@@ -983,7 +983,7 @@
     "contact": [
       ""
     ],
-    "fees":"₹ 500/Team"
+    "fees":"₹ 500"
   },
   "dastaan-e-chhotaparda": {
     "name": "Dastaan-e-Chhota Parda",
