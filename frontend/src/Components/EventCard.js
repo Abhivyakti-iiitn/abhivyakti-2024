@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 // import imgSrc from '../assets/EventImages/a.jpg';
 import showstopperImg from '../assets/EventPageAsst/showstopper.png';
-import starpodImg from '../assets/EventPageAsst/starpod.png';
+import stellarsingoff from '../assets/EventPageAsst/Steller singOff.png';
 import praanant from '../assets/EventPageAsst/praanant.png';
 import rythmrumle from '../assets/EventPageAsst/RHYTHM RUMBLE.png';
-import rhymeriotImg from '../assets/EventPageAsst/rhymeriot.png';
+import rhymeriotImg from '../assets/EventPageAsst/rhymeriotbg.png';
 import beatsmithshowdown from '../assets/EventPageAsst/beatboxshowdown.png';
+import bronxbattleground from '../assets/EventPageAsst/Bronx Battleground.png';
 import mun from '../assets/EventPageAsst/munmain.png';
 import roadtoredcarpet from '../assets/EventPageAsst/Road to red carpet.png'
 import defaultImg from '../assets/EventImages/a.jpg';
@@ -21,8 +22,8 @@ function EventCards(props) {
         case 'showstopper':
             imgSrc = showstopperImg;
             break;
-        case 'starpod':
-            imgSrc = starpodImg;
+        case 'stellarsing-off':
+            imgSrc = stellarsingoff;
             break;
         case 'rythmrumble':
             imgSrc = rythmrumle;
@@ -41,6 +42,9 @@ function EventCards(props) {
             break;
         case 'beatsmithshowdown':
             imgSrc = beatsmithshowdown;
+            break;
+        case 'bronxbattleground':
+            imgSrc = bronxbattleground;
             break;
         default:
             imgSrc = defaultImg; // Set a default value or handle the case where no match is found
