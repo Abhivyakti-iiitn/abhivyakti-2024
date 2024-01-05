@@ -9,13 +9,16 @@ const FormPage = () => {
   const params = useParams();
   const evtName = params.eventname.toLowerCase().replace(/ /g, '').split('(')[0];
   return (
-    <div>
-    <div className='FormPage'>
-        <FormPageLeft name = {content[evtName].name} rules={content[evtName].rules} regulations={content[evtName].regulations} />
-        <div className='lineVer'></div>
-        <Form name={evtName}   />
-    </div>
-    <Footer />
+    <div className='formparent'>
+      <div className='FormPage'>
+        <div className='innerForm'>
+
+          <FormPageLeft name={content[evtName].name} rules={content[evtName].rules} regulations={content[evtName].regulations} />
+          <div className='lineVer'></div>
+          <Form name={evtName} />
+        </div>
+        <Footer />
+      </div>
     </div>
   )
 }

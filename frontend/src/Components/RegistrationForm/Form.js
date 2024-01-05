@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import questionsData from '../../assets/questionData.json';
+// import questionsData from '../../assets/questionData.json';
 import { Mun, Admads, Roadtoredcarpet } from ".";
 import ShowStopper from './ShowStopper';
 import BronxBattleground from "./BronxBattleground";
@@ -18,34 +18,26 @@ const selector = (eventName) => {
   switch (eventName) {
     case "modelunitednations":
       return <Mun />;
-      break;
     case "roadtoredcarpet":
       return <Roadtoredcarpet />;
-      break;
     case "admads":
       return <Admads />;
-      break;
     case "showstopper":
       return <ShowStopper />
-      break;
     case "bronxbattleground":
       return <BronxBattleground />
-      break;
     case "rythmrumble":
       return <RythmRumble />
-      break;
     case "groovegenesis":
       return <Groovegenesis />
-      break;
     case "stellarsing-off":
       return <Stellarsingoff />
-      break;
     case "rhymeriot":
       return <Rhymeriot />
-      break;
     default:
       break;
   }
+  
 }
 
 const Form = (props) => {

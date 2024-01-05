@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
-import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
+// import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from './LogoComponent';
 
 function Header() {
@@ -141,9 +141,6 @@ function Header() {
 
     //end of the useEffect hook
 
-    const Scrolling = () => {
-        // window.scrollTo(0,document.querySelector('.video-player').clientHeight);
-    }
 
     return (
         <>

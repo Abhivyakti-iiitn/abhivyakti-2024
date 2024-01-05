@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import eventsObj from "../assets/EventContent.json";
 import '../css/AllEvents.css';
 import EventSlide from './EventSlide';
-import LogoComponent from './LogoComponent';
+// import LogoComponent from './LogoComponent';
 import StickyHeader from './StickyHeader';
 import Footer from './Footer';
 
@@ -88,7 +88,7 @@ const Menu = (props) => {
   const fx2 = (e) => {
 
     // let curr = document.querySelector('.AllEvents').getBoundingClientRect();
-    let x = e.clientX;
+    // let x = e.clientX;
     let y = e.clientY;
 
     // console.log(document.querySelector('.pro_sticky_header').clientHeight)

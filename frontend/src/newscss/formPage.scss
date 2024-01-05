@@ -1,10 +1,30 @@
 .FormPage {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-color: #0F0001;
-    flex-direction: row;
     overflow-x: hidden;
-
+}
+.innerForm{
+    display: flex;  
     @media (max-width:1000px) {
         flex-direction: column;
+    }
+}
+
+.lineVer {
+    width: 0px;
+    border: 2px solid red;
+    border-right: 2px solid;
+    border-image: linear-gradient(to right, #F9DAA8, #BC615E);
+    border-image-slice: 1;
+    align-self: center;
+    height: 95%;
+
+    @media (max-width:1000px) {
+        width: 90%;
+        align-self: center;
+        height: 0px;
+        margin-top:-10% ;
     }
 }

@@ -20,7 +20,7 @@ function StickyHeader(props) {
         } else return <ul></ul>
     }
     return (
-        <div className={`pro_sticky_header`} style={{ height: `${props.type == 1 ? "" : ""}` }} >
+        <div className={`pro_sticky_header`} style={{ height: `${props.type === 1 ? "" : ""}` }} >
             <div div className='top' >
                 <div className="left" style={{ justifyItems: "center", display: "flex" }}>
                     <ul>
