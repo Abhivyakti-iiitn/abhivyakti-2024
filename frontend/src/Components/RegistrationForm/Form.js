@@ -1,9 +1,12 @@
 import React, { useState, useRef } from 'react';
 import questionsData from '../../assets/questionData.json';
-import {Mun, Admads, Roadtoredcarpet} from ".";
+import { Mun, Admads, Roadtoredcarpet } from ".";
 import ShowStopper from './ShowStopper';
 import BronxBattleground from "./BronxBattleground";
 import RythmRumble from './RythmRumble';
+import Groovegenesis from './GrooveGenesis';
+import Stellarsingoff from './StellarSingOff';
+import Rhymeriot from './Rhymeriot';
 import "../../newscss/form.scss";
 import "../../css/tooltip.css";
 
@@ -14,23 +17,32 @@ const selector = (eventName) => {
   // console.log(organizations)
   switch (eventName) {
     case "modelunitednations":
-      return <Mun/>;
+      return <Mun />;
       break;
     case "roadtoredcarpet":
-      return <Roadtoredcarpet/>;
+      return <Roadtoredcarpet />;
       break;
     case "admads":
-      return <Admads/>;
+      return <Admads />;
       break;
     case "showstopper":
       return <ShowStopper />
-      break;  
+      break;
     case "bronxbattleground":
       return <BronxBattleground />
       break;
-      case "rythmrumble":
-        return <RythmRumble />
-        break;  
+    case "rythmrumble":
+      return <RythmRumble />
+      break;
+    case "groovegenesis":
+      return <Groovegenesis />
+      break;
+    case "stellarsingoff":
+      return <Stellarsingoff />
+      break;
+    case "rhymeriot":
+      return <Rhymeriot />
+      break;
     default:
       break;
   }
