@@ -36,6 +36,10 @@
         justify-content: space-between;
         margin-bottom: 5px;
     }
+    .withtooltip{
+        display: flex;
+        justify-content: space-between;
+    }
     
     // font-size: larger;
     @media (max-width:650px) {

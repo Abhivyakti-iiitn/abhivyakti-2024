@@ -72,7 +72,7 @@ const selector = (eventName) => {
         </div>
         {/* Short Video */}
         <div className='infoDiv'>
-          <label>Short Video <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+          <label className='withtooltip'>Short Video <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
           <input type="url" name="vid_link" required placeholder="paste video link here" className="input" />
         </div>
       </>
@@ -102,7 +102,7 @@ const selector = (eventName) => {
         </div>
         {/* Short Video */}
         <div className='infoDiv'>
-          <label>Short Video <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+          <label className='withtooltip'>Short Video <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
           <input type="url" name="vid_link" required placeholder="paste video link here" className="input" />
         </div>
       </>
