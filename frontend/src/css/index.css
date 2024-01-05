@@ -197,3 +197,11 @@ body {
     height: 85.97vw;
   }
 }
+
+.temp{
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: wheat;
+
+}

@@ -1,11 +1,11 @@
 // src/assets/data.js
 import aboutUs from "./AboutUs/about-us.svg";
-import pastGlimpses1 from "./PastGlimpsesImages/about-us.svg";
-import pastGlimpses2 from "./PastGlimpsesImages/about-us.svg";
-import pastGlimpses3 from "./PastGlimpsesImages/about-us.svg";
-import pastGlimpses4 from "./PastGlimpsesImages/about-us.svg";
-import pastGlimpses5 from "./PastGlimpsesImages/about-us.svg";
-import pastGlimpses6 from "./PastGlimpsesImages/about-us.svg";
+import pastGlimpses1 from "./PastGlimpsesImages/1.jpg";
+import pastGlimpses2 from "./PastGlimpsesImages/2.jpg";
+import pastGlimpses3 from "./PastGlimpsesImages/3.jpg";
+import pastGlimpses4 from "./PastGlimpsesImages/4.jpg";
+import pastGlimpses5 from "./PastGlimpsesImages/5.jpg";
+import pastGlimpses6 from "./PastGlimpsesImages/6.jpg";
 import speaker1 from "./speakers/speaker1.svg";
 import sponsor1 from "./sponsors/sponsor1.svg";
 import sponsor2 from "./sponsors/sponsor2.svg";

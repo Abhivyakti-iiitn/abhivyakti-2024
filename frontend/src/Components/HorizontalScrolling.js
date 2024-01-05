@@ -24,7 +24,7 @@ const HorizontalScrolling = () => {
           <motion.div style={{ x }} className="motion-div">
             <AboutUs />
             <PastGlimpses />
-            <Speakers />
+            {/* <Speakers /> */}
           </motion.div>
         </div>
       </div>
@@ -32,7 +32,7 @@ const HorizontalScrolling = () => {
       <div className="vertical-scrolling">
       <AboutUs />
       <PastGlimpses />
-      <Speakers />
+      {/* <Speakers /> */}
       </div>
 </>
   );
