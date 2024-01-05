@@ -177,7 +177,7 @@ function Header() {
                             {isLoggedin && <li onClick={() => nav('/profile')}>Profile</li>}
                             <li onClick={() => document.querySelector('.horizontalScroll').scrollIntoView(1)}> ABOUT</li>
                             <li onClick={() => nav('/allevents')}>EVENTS</li>
-                            <li>TEAM</li>
+                            <li onClick={()=> nav('/teams')}>TEAM</li>
                             <li onClick={() => document.querySelector('.footer').scrollIntoView(0)}>CONTACT</li>
                         </ul>
                     </div>

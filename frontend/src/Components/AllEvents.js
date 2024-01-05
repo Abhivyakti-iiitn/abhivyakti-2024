@@ -153,7 +153,7 @@ const AllEvents = () => {
   return (
     <>
       <div className='AllEvents'>
-        <StickyHeader type="2" />
+        <StickyHeader type={3} />
         <div className='AllEvents__heading'>
           <fieldset className='AllEventsFS'>
             <legend className='AllEventsL'>

@@ -1,0 +1,97 @@
+
+{
+    "secretaries": [
+        {
+            "name": "Name",
+            "position": "Secretary"
+        },
+        {
+            "name": "Name",
+            "position": "Secretary"
+        },
+        {
+            "name": "Name",
+            "position": "Secretary"
+        },
+        {
+            "name": "Name",
+            "position": "Secretary"
+        }
+    ],
+    "coordinators": [
+        {
+            "name": "Name",
+            "position": "coordinators"
+        },
+        {
+            "name": "Name",
+            "position": "coordinators"
+        },
+        {
+            "name": "Name",
+            "position": "coordinators"
+        },
+        {
+            "name": "Name",
+            "position": "coordinators"
+        }
+    ],
+    "teams": [
+        {
+            "team": "Web Development",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Design",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Corporate",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Management",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Marketing",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Hospitality",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "Content",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        },
+        {
+            "team": "PR",
+            "nameLead": "Lead Name",
+            "nameLead2": "Lead Name1",
+            "nameCoLead1": "Co Lead Name",
+            "nameCoLead2": "Co Lead Name2"
+        }
+    ]
+}
