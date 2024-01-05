@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import questionsData from '../../assets/questionData.json';
 import {Mun, Admads, Roadtoredcarpet} from ".";
+import ShowStopper from './ShowStopper';
+import BronxBattleground from "./BronxBattleground";
+import RythmRumble from './RythmRumble';
 import "../../newscss/form.scss";
 import "../../css/tooltip.css";
 
@@ -19,6 +22,15 @@ const selector = (eventName) => {
     case "admads":
       return <Admads/>;
       break;
+    case "showstopper":
+      return <ShowStopper />
+      break;  
+    case "bronxbattleground":
+      return <BronxBattleground />
+      break;
+      case "rythmrumble":
+        return <RythmRumble />
+        break;  
     default:
       break;
   }
