@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cadenceclash() {
+function Groovegenesis() {
     let yesno = [
         "Yes", "No"
     ]
@@ -71,4 +71,4 @@ function Cadenceclash() {
     )
 }
 
-export default Cadenceclash
+export default Groovegenesis

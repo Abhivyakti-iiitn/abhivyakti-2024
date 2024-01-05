@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Stardomserenade() {
+function Stellarsingoff() {
     let yesno = [
         "Yes", "No"
     ]
@@ -65,4 +65,4 @@ function Stardomserenade() {
     )
 }
 
-export default Stardomserenade
+export default Stellarsingoff
