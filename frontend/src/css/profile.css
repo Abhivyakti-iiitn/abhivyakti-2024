@@ -5,16 +5,20 @@
   width: 100%;
   border-top: 2px solid #E1AE90;
 }
+
 .horizontal-line1 {
   width: 35%;
 }
+
 .profile_heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0vh;
+  margin-bottom: 12vh;
 }
-.profile{
+
+.profile,
+.tag {
   text-align: center;
   background: linear-gradient(to bottom, #F9DAA8, #BC615E);
   -webkit-text-fill-color: transparent;
@@ -23,187 +27,142 @@
   font-size: 40px;
   font-weight: 400;
 }
+
+.tag {
+  font-size: 25px;
+}
+
+.all_events {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 10vh 0vh 10vh;
+  justify-content: space-between;
+}
+
+.head1 {
+  width: 35vw;
+}
+
+.head2 {
+  width: 65vw;
+}
+
+.events_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub_events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizontal-line2 {
+  margin: auto 3vh auto 3vh;
+}
+
+.hl2 {
+  margin-right: -10vh;
+}
+
+.user_details {
+  height: 80vh;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+  margin-right: 3vh;
+  margin-top: 3vh;
+}
+
+.event_details {
+  height: 80vh;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+  margin-top: 3vh;
+}
+
+.profile_detail {
+  margin: 13vh 0vh 0vh 3vh;
+}
+
+.registered_events {
+  white-space: nowrap;
+}
+
+.d1 {
+  margin-bottom: 3vh;
+}
+
+.eventCard {
+  height: 50%;
+  width: fit-content;
+  background-color: purple;
+  margin: 13vh 0vh 0vh 5vh;
+  border-radius: 10px;
+  border: 2px solid #F9DAA8;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url("../assets/EventPageAsst/showstopperblur2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.evnt_name {
+  z-index: 10;
+  text-align: center;
+  font-size: 24px;
+}
+
+.evnt_detail {
+  margin-left: 1vh;
+  font-size: 10px;
+}
+
+.evnt_reg,
+.reg_name {
+  margin-left: 1vh;
+}
+
+.reg_detail {
+  margin-top: 17vh;
+}
+
+.event_detail {
+  margin-top: 7vh;
+}
+
 .profile_page {
   background-color: #0F0001;
-  padding-bottom: 0%;
+  padding-bottom: 10%;
   overflow-x: hidden;
 }
-.user_details_head,.registered_events,.registered_events2{
-  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 25px;
-  font-weight: 400;
-}
-.registered_events{
-  margin-top: 6vh;
-  margin-bottom: 2vh;
-}
-.main_container{
-  margin-left: 2%;
-  margin-right: 2%;
-  color: white;
-}
-.mob_no{
-  margin-left: 10vh;
-}
-.user_box{
-  background-color: #2E2E2E;
-  border-radius: 10px;
-  padding: 2vh;
-  margin-top: 1vh;
-  display: flex;
-  flex-direction: row;
-}
-.profile_pic{
-  height: 5%;
-  width: 5%;
-  border-radius: 50%;
-  margin-right: 4vh;
-}
-.user_details{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 65%;
-  margin-right: 2vh;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 20px;
-}
-.user_info{
-  margin-bottom: 1vh;
-}
-.card{
-  display: flex;
-  flex-direction: row;
-  background-color:#241E1E;
-  border-radius: 15px;
-  margin-bottom: 3vh;
-}
-.events_box{
-  background-color: #2E2E2E;
-  padding: 3vh 2vh 0.1vh 2vh;
-  border-radius: 10px;
-}
-.event_pic{
-  height: 20vh;
-  width: auto;
-  border-radius: 15px 0px 0px 15px;
-}
-.evt_name{
-  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 30px;
-}
-.evt_detail{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 2vh;
-  margin-bottom: 1vh;
-  width: 90%;
-}
-.user_name{
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 1vh
-}
-.det{
-  font-weight: 100;
-  margin-bottom: 1vh;
-  white-space: nowrap;
-}
-.evt_sub{
-  margin-top: auto;
-  margin-bottom: auto;
-  white-space: nowrap;
-}
-.learn{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.rgharr{
-  height: 1vh;
-  width: auto;
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-.lrnmr{
-  float: right;
-}
 
-.close_btn{
-  text-align: center;
-  font-size: 16px;
-  border: 2px solid ;
-  width: fit-content;
-  padding: 0vh 1vh 0vh 1vh;
-  cursor: pointer;
-  border-radius: 40px;
-  margin-left: 1vh;
-  border-image: linear-gradient(to bottom, #F9DAA8, #BC615E) 1;
-}
-
-
-.main_container2{
-  display: none;
-}
-.ush2{
-  margin-bottom: 3vh;
-}
-.registered_events2{
-  margin-top: 2.5vh;
-  margin-bottom: 1.5vh;
-}
-.main_container2{
-  margin-left: 2vh;
-  margin-right: 2vh;
-  color: white;
-}
-.profile_pic2{
-  height: 20%;
-  width: 20%;
-  border-radius: 50%;
-  margin-right: 4vh;
-}
-.events_box2{
-  background-color: #2E2E2E;
-  padding: 1vh 1vh 1vh 1vh;
-  border-radius: 10px;
-  font-size: 15px;
-}
-.event_pic2{
-  height:13vh;
-  width: 10vh;
-  margin-bottom: 1vh;
-  border-radius: 15px 0px 0px 15px;
-}
-.evt_name2{
-  background: linear-gradient(to bottom, #F9DAA8, #BC615E);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 23px;
-  margin-right: 0.5vh;
-}
-.evt_detail2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 1vh;
-  width: 90%;
-}
-@media screen and (max-width: 1100px) {
-  .main_container{
-    display: none;
+@media screen and (max-width: 768px) {
+  .all_events {
+    flex-direction: column;
   }
-  .main_container2{
-    display: block;
+  .head1,
+  .head2 {
+    width: 100%;
+  }
+  .infobox {
+    height: auto;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+  .hl2,
+  .user_details {
+    margin-right: 0vh;
+    margin-bottom: 5vh;
+  }
+  .eventCard {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5vh auto 0vh auto;
   }
 }
 .pro_sticky_header {

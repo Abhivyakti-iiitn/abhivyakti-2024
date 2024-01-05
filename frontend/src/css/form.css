@@ -22,11 +22,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 450px;
   background-color: #323232;
   opacity: 60%;
   border: none;
   border-radius: 12px;
   padding: 8px;
+}
+.infoDiv .info_heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 @media (max-width: 650px) {
   .infoDiv {
