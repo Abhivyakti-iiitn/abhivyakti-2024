@@ -37,7 +37,7 @@ const selector = (eventName) => {
     case "groovegenesis":
       return <Groovegenesis />
       break;
-    case "stellarsingoff":
+    case "stellarsing-off":
       return <Stellarsingoff />
       break;
     case "rhymeriot":
