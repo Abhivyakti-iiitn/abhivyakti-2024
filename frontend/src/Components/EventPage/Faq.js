@@ -32,7 +32,7 @@ const Faq = () => {
                 <div className="line"></div>
             </div>
             <div className='faq-main'>
-                {activeSection!==null ?
+                {activeSection !== null ?
                     (Object.keys(faqData).map((category, categoryIndex) => {
                         if (categoryIndex === activeSection) {
                             return (
@@ -65,12 +65,12 @@ const Faq = () => {
                         <div className='faq-sections'>
                             {Object.keys(faqData).map((category, categoryIndex) => (
                                 <div key={categoryIndex} className='faq-item faq-section' onClick={() => toggleSection(categoryIndex)}>
-                                    <h2 key={categoryIndex} 
+                                    <h2
                                         className='faq-categoryHeading faq-question faq-header'
                                     >
                                         {category}
                                     </h2>
-                                    <i key={categoryIndex} className='fas fa-arrow-right'></i>
+                                    <i className='fas fa-arrow-right'></i>
                                 </div>
                             ))}
                         </div>

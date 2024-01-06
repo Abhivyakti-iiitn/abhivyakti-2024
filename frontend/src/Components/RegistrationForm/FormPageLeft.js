@@ -1,14 +1,14 @@
 import React from 'react';
-import EventContent from "../../assets/EventContent.json";
-import logo from "../../assets/sponsors/sponsor1.svg";
+// import EventContent from "../../assets/EventContent.json";
+// import logo from "../../assets/sponsors/sponsor1.svg";
 import "../../newscss/formPageLeft.scss"
 import LogoComponent from '../LogoComponent';
 
 const FormPageLeft = (props) => {
   let roundRegex = /^[rR]ound [1-9]\d*/;
 
-  let rules = EventContent.showstopper.rules;
-  let regulations = EventContent.showstopper.regulations;
+  // let rules = EventContent.showstopper.rules;
+  // let regulations = EventContent.showstopper.regulations;
   return (
     <div className='main'>
       <LogoComponent/>

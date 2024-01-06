@@ -1,10 +1,10 @@
 // components/Footer.js
 import React from 'react';
 import '../css/Footer.css';
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
-  const navigateTo = useNavigate();
+  // const navigateTo = useNavigate();
   return (
     <div className="footer">
 
@@ -30,13 +30,13 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <p>Stay connected on social media for updates and highlights!</p>
           <div className="social-icons">
-            <Link to="https://www.facebook.com/examplefest" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook-square"></i>
+            <Link to="https://www.linkedin.com/in/abhivyakti-iiitn/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-linkedin"></i>
             </Link>
-            <Link to="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
+            {/* <Link to="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-twitter-square"></i>
-            </Link>
-            <Link to="https://www.instagram.com/examplefest" target="_blank" rel="noopener noreferrer">
+            </Link> */}
+            <Link to="https://www.instagram.com/abhivyakti_iiitn/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram-square"></i>
             </Link>
           </div>

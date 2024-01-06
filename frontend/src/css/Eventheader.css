@@ -116,7 +116,7 @@
 .event_header .top .right ul {
   list-style: none;
   text-align: right;
-  line-height: 3rem;
+  line-height: 2rem;
   font-size: 1.5rem;
   z-index: 101;
 }
@@ -149,9 +149,6 @@
     font-size: 9vw;
     text-align: center;
   }
-}
-.event_header .mid .mid_left {
-  margin-top: -10%;
 }
 .event_header .mid .longhname {
   font-size: 4rem;

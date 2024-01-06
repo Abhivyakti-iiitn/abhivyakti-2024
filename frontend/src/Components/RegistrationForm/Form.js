@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 // import questionsData from '../../assets/questionData.json';
 import { Mun, Admads, Roadtoredcarpet } from ".";
 import ShowStopper from './ShowStopper';
@@ -76,7 +76,7 @@ const Form = (props) => {
 
 
   return (
-    <div className={`formDiv ${strArray.includes(props.name)? "" : "fixheight"}`}>
+    <div className={`formDiv ${strArray.includes(props.name) ? "" : "fixheight"}`}>
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit} ref={formRef} className='form'>
         {selector(props.name)}

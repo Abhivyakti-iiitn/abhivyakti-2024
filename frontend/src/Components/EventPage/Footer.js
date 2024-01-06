@@ -39,15 +39,15 @@ const Footer = () => {
                     <h3>Follow Us</h3>
                     <p>Stay connected on social media for updates and highlights!</p>
                     <div className="social-icons">
-                        <a href="https://www.facebook.com/examplefest" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://www.linkedin.com/in/abhivyakti-iiitn/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </Link>
+                        {/* <Link to="https://twitter.com/examplefest" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-twitter-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/examplefest" target="_blank" rel="noopener noreferrer">
+                        </Link> */}
+                        <Link to="https://www.instagram.com/abhivyakti_iiitn/?igsh=MTQ2cnZqdnd2dnhwdg%3D%3D" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-instagram-square"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

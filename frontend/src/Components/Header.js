@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
 // import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
@@ -163,9 +163,9 @@ function Header() {
                         <ul>
                             <LogoComponent />
                             <li><div></div></li>
-                            <li><i className="fa-brands fa-instagram"></i></li>
-                            <li><i className="fa-brands fa-linkedin"></i></li>
-                            <li><i className="fa-brands fa-facebook"></i></li>
+                            <li onClick={() => window.open("https://www.instagram.com/abhivyakti_iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-instagram"></i></li>
+                            <li onClick={() => window.open("https://www.linkedin.com/in/abhivyakti-iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-linkedin"></i></li>
+                            {/* <li><i className="fa-brands fa-facebook"></i></li> */}
                         </ul>
                     </div>
                     <div className={animate ? "right rightAnimation" : "right"}>
@@ -174,7 +174,7 @@ function Header() {
                             {isLoggedin && <li onClick={() => nav('/profile')}>Profile</li>}
                             <li onClick={() => document.querySelector('.horizontalScroll').scrollIntoView(1)}> ABOUT</li>
                             <li onClick={() => nav('/allevents')}>EVENTS</li>
-                            <li onClick={()=> nav('/teams')}>TEAM</li>
+                            <li onClick={() => nav('/teams')}>TEAM</li>
                             <li onClick={() => document.querySelector('.footer').scrollIntoView(0)}>CONTACT</li>
                         </ul>
                     </div>

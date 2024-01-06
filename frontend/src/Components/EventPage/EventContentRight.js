@@ -4,6 +4,7 @@ import Faq from './Faq'
 import Head from './Head'
 
 const EventContentRight = (props) => {
+
   let roundRegex = /^[rR]ound [1-9]\d*/;
   let roundRegex2 = /^[1-9]\d*\./;
   const [alreadyGlowing, setAlreadyGlowing] = useState(false);
