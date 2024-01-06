@@ -55,6 +55,7 @@ function MainPage() {
     if (localStorage.getItem("usrName")) {
       // setisLoggedin(true);
     }
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -85,7 +86,7 @@ function MainPage() {
         {Object.values(events).map((event, ind) => (
           ind <= 4 && <EventCard
             exploreAllEvents={false}
-            imgSrc={`./assets/${event.name.toLowerCase().replaceAll(' ','')}.jpg`}
+            imgSrc={`./assets/${event.name.toLowerCase().replaceAll(' ', '')}.jpg`}
             name={event.name}
             desc={event.tagline}
             key={event.name.replace(" ", "-")}
@@ -98,10 +99,10 @@ function MainPage() {
       </div>
       {/* <Sponsors /> */}
       <div className='temp'>
-      <h3> More Content Comming soon ...</h3>
-      <p>stay tuned</p>
+        <h3> More Content Comming soon ...</h3>
+        <p>stay tuned</p>
       </div>
-      
+
       <Footer />
     </div>
   );

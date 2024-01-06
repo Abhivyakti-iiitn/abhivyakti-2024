@@ -26,9 +26,8 @@ function StickyHeader(props) {
                     <ul>
                         <LogoComponent />
                         <li><div></div></li>
-                        <li><i className="fa-brands fa-instagram"></i></li>
-                        <li><i className="fa-brands fa-linkedin"></i></li>
-                        <li><i className="fa-brands fa-facebook"></i></li>
+                        <li onClick={()=>window.open("https://www.instagram.com/abhivyakti_iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-instagram"></i></li>
+                            <li onClick={()=>window.open("https://www.linkedin.com/in/abhivyakti-iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-linkedin"></i></li>
                     </ul>
                 </div>
                 <div className="right">

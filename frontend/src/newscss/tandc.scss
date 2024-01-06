@@ -7,6 +7,13 @@
     align-items: center;
     padding-bottom: 2%;
 
+     .liner h1{
+       font-size: 3rem;
+       @media (max-width:'550px') {
+        font-size: 2rem;
+       }
+    }
+
     span{
         color: rgb(31, 1, 1);
         font-size: large;

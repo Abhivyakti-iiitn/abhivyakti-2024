@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../css/tandc.css';
 import tcdata from '../assets/tandc.json';
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,11 @@ import Footer from './Footer';
 function TandC() {
 
     const nav = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
+    
     return (
         <>
 
