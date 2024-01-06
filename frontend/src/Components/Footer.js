@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>Email: abhivyakti@iiitn.ac.in</p>
-          <p>Phone: +91 9969696969</p>
+          <p>Phone: +91 7058449059</p>
         </div>
 
         <div className="footer-section">

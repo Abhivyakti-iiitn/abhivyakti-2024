@@ -18,6 +18,7 @@ const SignUpPage = () => {
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
         document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
+        document.querySelector(".SignUp").scrollTo(0,0);
     }, [])
 
     const handleNameChange = (e) => {

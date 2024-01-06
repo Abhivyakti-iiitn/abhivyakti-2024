@@ -22,12 +22,6 @@
   width: 10%;
   cursor: pointer;
 }
-@media (max-width: 650px) {
-  .LoginClubLogo {
-    width: 10%;
-  }
-}
-
 .bgImageLogin {
   width: 50%;
   background: url("../assets/MainPage/HeaderImg.png");
@@ -155,4 +149,13 @@
 .GoogleSignIn {
   margin: 0.75rem 0;
   width: 100%;
+}
+
+.logoLogin {
+  margin: 2%;
+}
+@media (max-width: 450px) {
+  .logoLogin img {
+    width: 20%;
+  }
 }

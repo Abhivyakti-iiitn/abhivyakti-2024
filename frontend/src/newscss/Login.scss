@@ -26,7 +26,7 @@
     cursor: pointer;
 
     @media (max-width:650px) {
-        width: 10%;
+        // width: 10%;
     }
 }
 
@@ -158,4 +158,14 @@
 .GoogleSignIn {
     margin: 0.75rem 0;
     width: 100%;
+}
+
+.logoLogin{
+    margin: 2%;
+
+    img{
+        @media (max-width:'450px') {
+            width: 20%;
+        }
+    }
 }

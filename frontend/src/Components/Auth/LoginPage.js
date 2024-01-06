@@ -26,7 +26,7 @@ const LoginPage = () => {
         if (localStorage.getItem("usrName")) {
             // navigateTo("/");
         }
-
+        document.querySelector(".Login").scrollTo(0,0);
     }, [])
 
     const handleNameChange = (e) => {
