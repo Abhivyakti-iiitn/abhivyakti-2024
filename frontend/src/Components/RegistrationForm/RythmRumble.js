@@ -30,7 +30,7 @@ const RythmRumble = () => {
       </div>
       {/*Audio Link*/}
       <div className='infoDiv'>
-        <label className='withtooltip'>Audio Track<i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+        <label className='withtooltip'>Audio Track<i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the audio to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
         <input type="url" name="aud_link" required placeholder="paste audio link here" className="input" />
       </div>
       {/* Short Video */}

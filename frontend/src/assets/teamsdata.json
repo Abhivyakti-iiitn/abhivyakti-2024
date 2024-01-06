@@ -1,97 +1,106 @@
-
 {
     "secretaries": [
         {
-            "name": "Name",
-            "position": "Secretary"
+            "position": "General Secretary",
+            "name": "Rohan Udhwani"
         },
         {
-            "name": "Name",
-            "position": "Secretary"
+            "position": "Joint Secretary",
+            "name": "Aman Kumar Sahu"
         },
         {
-            "name": "Name",
-            "position": "Secretary"
+            "position": "Cultural Secretary",
+            "name": "Sahil Ballewar"
         },
         {
-            "name": "Name",
-            "position": "Secretary"
+            "position": "Technical Secretary",
+            "name": "Kumar Rishav"
         }
     ],
     "coordinators": [
         {
-            "name": "Name",
-            "position": "coordinators"
+            "name": "Divyanshu Singh",
+            "position": "Cultural Coordinator"
         },
         {
-            "name": "Name",
-            "position": "coordinators"
-        },
-        {
-            "name": "Name",
-            "position": "coordinators"
-        },
-        {
-            "name": "Name",
-            "position": "coordinators"
+            "name": "Harsh Patwar",
+            "position": "Discipline Coordinator"
         }
     ],
-    "teams": [
-        {
-            "team": "Web Development",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+    "teams": {
+        "Web Development": {
+            "Lead": ["Kumar Rishav"],
+            "Co-Lead": [
+                "Adhiraj Singh",
+                "Deep Shashank Tripathi"
+            ]
         },
-        {
-            "team": "Design",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Design": {
+            "Lead": [
+                "Shubhendu Kumar",
+                "Sahil Mandi"
+            ],
+            "Co-Lead": [
+                "Kaustubh Shinde",
+                "Radhika Patil"
+            ]
         },
-        {
-            "team": "Corporate",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Corporate Relations": {
+            "Lead": ["Harsh Bajaj"],
+            "Co-Lead": ["Nishchint Kamat"]
         },
-        {
-            "team": "Management",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Event Management": {
+            "Lead": [
+                "Suyash Mahajan",
+                "Tanmay Rokde"
+            ],
+            "Co-Lead": [
+                "Arnav Patil",
+                "Srishanth Vadthya"
+            ]
         },
-        {
-            "team": "Marketing",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Marketing": {
+            "Lead": [
+                "Padilam Yeshwant Kankati",
+                "Sankeerth"
+            ],
+            "Co-Lead": [
+                "Aryman Sharma",
+                "Vedant Raulkar"
+            ]
         },
-        {
-            "team": "Hospitality",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Hospitality": {
+            "Lead": ["Pranav Chandak"],
+            "Co-Lead": [
+                "Anirudh Verma",
+                "Neil Dedhia"
+            ]
         },
-        {
-            "team": "Content",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Content": {
+            "Lead": ["Shivansh Nagar"],
+            "Co-Lead": [
+                "Hemant Patil",
+                "Ojasvi Thakre"
+            ]
         },
-        {
-            "team": "PR",
-            "nameLead": "Lead Name",
-            "nameLead2": "Lead Name1",
-            "nameCoLead1": "Co Lead Name",
-            "nameCoLead2": "Co Lead Name2"
+        "Public Relations": {
+            "Lead": ["Mayur Agrawal"],
+            "Co-Lead": ["Hardik Deore"]
+        },
+        "Photography & Videography": {
+            "Lead": [
+                "Anuj Jain",
+                "Shrived Tadas"
+            ],
+            "Co-Lead": ["Kartik Nagpure"]
+        },
+        "Media": {
+            "Lead": ["Vinay Badlani"],
+            "Co-Lead": ["Akshit Gangwar"]
+        },
+        "Decor": {
+            "Lead": ["Aditi"],
+            "Co-Lead": []
         }
-    ]
+    }
 }

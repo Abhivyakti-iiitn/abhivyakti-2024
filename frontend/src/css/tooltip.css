@@ -17,9 +17,16 @@
   padding: 5px 0;
   border-radius: 6px;
   font-size: 1rem;
+  overflow-x: visible;
+  overflow-wrap: break-word;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+}
+@media (max-width: 430px) {
+  .tooltip .tooltiptext {
+    transform: translateX(-40px);
+  }
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

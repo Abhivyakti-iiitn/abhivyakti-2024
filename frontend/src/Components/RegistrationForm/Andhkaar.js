@@ -24,13 +24,13 @@ function Andhkaar() {
             {/* Video Submission*/}
             <div className='infoDiv'>
                 <label className='withtooltip'>Video Submission<i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-                <input type="url" name="vid_link" required placeholder="Add File" className="input" />
+                <input type="url" name="vid_link" required placeholder="paste file link" className="input" />
             </div>
 
             {/* Script Submission*/}
             <div className='infoDiv'>
                 <label className='withtooltip'>Script Submission<i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the script to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-                <input type="url" name="script_link" required placeholder="Add File" className="input" />
+                <input type="url" name="script_link" required placeholder="paste file link" className="input" />
             </div>
         </>
     )

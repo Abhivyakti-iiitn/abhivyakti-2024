@@ -56,7 +56,8 @@
   font-size: larger;
 }
 
-.infoDiv input::placeholder, .infoDiv textarea::placeholder {
+.infoDiv input::placeholder,
+.infoDiv textarea::placeholder {
   color: #ABAFB1;
 }
 
@@ -64,6 +65,10 @@
   color: white;
 }
 
+.formDiv {
+  position: sticky;
+  top: 0%;
+}
 .formDiv h1 {
   width: 100%;
   text-align: center;
@@ -80,7 +85,8 @@
 
 .form button {
   background-color: black;
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
   border: 2px solid;
   border-radius: 10px;
   border-image: linear-gradient(to right, #F9DAA8, #BC615E);
@@ -102,4 +108,13 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.fixheight {
+  height: 100vh;
+}
+@media (max-width: 1000px) {
+  .fixheight {
+    height: auto;
+  }
 }

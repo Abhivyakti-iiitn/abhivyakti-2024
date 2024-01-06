@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 // import questionsData from '../../assets/questionData.json';
 import { Mun, Admads, Roadtoredcarpet } from ".";
 import ShowStopper from './ShowStopper';
@@ -46,7 +46,7 @@ const selector = (eventName) => {
     default:
       break;
   }
-  
+
 }
 
 const Form = (props) => {
@@ -71,9 +71,12 @@ const Form = (props) => {
     console.log(formRef.current.organizations?.value)
   };
 
+  let strArray = ["stellarsing-off", "rhymeriot", "groovegenesis"];
+
+
 
   return (
-    <div className='formDiv'>
+    <div className={`formDiv ${strArray.includes(props.name)? "" : "fixheight"}`}>
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit} ref={formRef} className='form'>
         {selector(props.name)}

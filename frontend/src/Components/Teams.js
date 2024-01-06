@@ -77,33 +77,32 @@ function Teams() {
                 <h1>Teams</h1>
                 <div className="line"></div>
             </div>
-            <div className="orgteamcat" style={{paddingBottom:'3rem'}}>
-                {teams.map((el, ind) => {
+            <div className="orgteamcat" style={{ paddingBottom: '3rem' }}>
+                {Object.keys(teams).map((key, ind) => {
                     return <div key={ind} className="org_content">
-                        <h3>{el.team.toUpperCase()}</h3>
+                        <h3>{key.toUpperCase()}</h3>
                         <div className="lineteams"></div>
                         <div className="team_content">
-                            <div className="team_item">
-                                <h3>{el.nameLead}</h3>
-                                <h5>Lead</h5>
-                            </div>
-                            {el.nameLead2 !== "" && <div className="team_item">
-                                <h3>{el.nameLead2}</h3>
-                                <h5>Lead</h5>
-                            </div>}
-                            {el.clubCoLead1 !== "" && <div className="team_item">
-                                <h3>{el.nameCoLead1}</h3>
-                                <h5>Co-Lead</h5>
-                            </div>}
-                            {el.clubCoLead2 !== "" && <div className="team_item">
-                                <h3>{el.nameCoLead2}</h3>
-                                <h5>Co-Lead</h5>
-                            </div>}
+                            {/* {console.log(teams[key])} */}
+                            {teams[key].Lead.map((name) =>
+                                <div key={name} className="team_item">
+                                    <h3>{name}</h3>
+                                    <h5>Lead</h5>
+                                </div>
+
+                            )}
+                            {teams[key]["Co-Lead"].map((name) =>
+                                <div key={name} className="team_item">
+                                    <h3>{name}</h3>
+                                    <h5>Co-Lead</h5>
+                                </div>
+                            )}
+                            
                         </div>
                     </div>
                 })}
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

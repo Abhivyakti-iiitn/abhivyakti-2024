@@ -1,7 +1,7 @@
 import React from 'react';
 
 const faqData = {
-  campusRelatedQueries: [
+  "Campus Related Queries": [
     {
       question: "Will the college provide accommodation? If yes, what are the charges for the same?",
       answer: "Yes, our college offers accommodation options for students for events that last long for more than a day. Charges will be conveyed to the participants via mail prior to the event."
@@ -15,7 +15,7 @@ const faqData = {
       answer: "Yes, all the basic facilities such as sanitation, food stalls, and emergency medical supplies/ambulance will be available for the attendees to avail."
     }
   ],
-  generalQueries: [
+  "General Queries": [
     {
       question: "How to register for the fest?",
       answer: "Registration for the fest can be done through the website."
@@ -29,7 +29,7 @@ const faqData = {
       answer: "All the participants and college students around the globe are welcome to our fest to witness the greatness of the cultural medley."
     }
   ],
-  competitionRelatedQueries: [
+  "Competition Related Queries": [
     {
       question: "Who can participate?",
       answer: "Anyone currently studying in college/university is wholeheartedly welcome to participate in the fest."
@@ -43,7 +43,7 @@ const faqData = {
       answer: "No, only the team leader needs to register for the group event."
     }
   ],
-  travelRelatedQueries: [
+  "Travel Related Queries": [
     {
       question: "How to reach IIIT Nagpur?",
       answer: "A Google map link has been provided below to help you navigate to our campus.\nhttps://goo.gl/maps/W5CWKc1od26a9fPcA"
@@ -61,7 +61,7 @@ const faqData = {
       answer: "No, cars are not allowed inside the campus. However, proper parking space will be provided outside the campus."
     }
   ],
-  extraQueries: [
+  "Extra Queries": [
     {
       question: "What are the general guidelines for Abhivyakti?",
       answer: "All the participants are requested to maintain a decent standard of conduct and behaviour.\nAny discrepancies or offences to the code of conduct can lead to serious consequential actions taken against the parties involved.\nThe participants are requested to follow the dress code for the Events as far as possible.\nYour attire/costumes must be decent.\nIn case of any confusion, doubts or issues, you are free to contact the organizing team."

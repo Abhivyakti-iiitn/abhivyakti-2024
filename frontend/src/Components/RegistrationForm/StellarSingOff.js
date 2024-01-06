@@ -58,8 +58,8 @@ function Stellarsingoff() {
 
             {/* Backtrack Submission (if used) */}
             <div className='infoDiv'>
-                <label className='withtooltip'>Backtrack Submission (if used) <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-                <input type="url" name="vid_link" placeholder="paste video link here" className="input" />
+                <label className='withtooltip'>Backtrack Submission (if used) <i class="fa-solid fa-circle-info tooltip"> <span class="tooltiptext">Upload the audio to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+                <input type="url" name="aud_link" placeholder="paste audio link here" className="input" />
             </div>
         </>
     )

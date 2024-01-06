@@ -269,10 +269,11 @@ button:hover {
 
   .EventContent-right {
     margin-left: 10%;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     /* padding-left: 20px; */
     padding-right: 10%;
     width: 90%;
+    margin-top: -10px;
   }
 
   /* .EventContent-left::before {
