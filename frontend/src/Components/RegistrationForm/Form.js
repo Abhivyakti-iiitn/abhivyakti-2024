@@ -9,6 +9,9 @@ import Stellarsingoff from './StellarSingOff';
 import Rhymeriot from './Rhymeriot';
 import "../../newscss/form.scss";
 import "../../css/tooltip.css";
+import Praanaant from './Praanaant';
+import Andhkaar from './Andhkaar';
+import Bahumukhi from './Bahumukhi';
 
 
 
@@ -34,6 +37,12 @@ const selector = (eventName) => {
       return <Stellarsingoff />
     case "rhymeriot":
       return <Rhymeriot />
+    case "praanant":
+      return <Praanaant />
+    case "andhakaar":
+      return <Andhkaar />
+    case "bahumukhi":
+      return <Bahumukhi />
     default:
       break;
   }
