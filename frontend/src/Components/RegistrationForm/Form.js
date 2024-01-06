@@ -37,9 +37,9 @@ const selector = (eventName) => {
       return <Stellarsingoff />
     case "rhymeriot":
       return <Rhymeriot />
-    case "praanaant":
+    case "praanant":
       return <Praanaant />
-    case "andhkaar":
+    case "andhakaar":
       return <Andhkaar />
     case "bahumukhi":
       return <Bahumukhi />
