@@ -102,7 +102,15 @@
       "The decision of the judges will be final.",
       "Violation of any above rule can lead to disqualification."
     ],
-    "regulations": [],
+    "regulations": [
+      "Originality of the story and concept will be verified.",
+      "Dialogues and Storyline is welcomed, but essence of dance should not be missed.",
+      "One person can stay a member of only one team.",
+      "Pre- recorded music must be brought by the teams in .mp3 format.",
+      "Time limits must be taken care of, if not can lead to heavy penalties.",
+      "The decision of the judges will be final.",
+      "Violation of any above rule can lead to disqualification."
+    ],
     "registrationDate": "10/02/24",
     "Team": "Upto 10 members",
     "pool": "₹ 10,000",
@@ -241,16 +249,16 @@
     "timeline": [
       {
         "head": [
-          "Round 1",
-          "Round 2"
+          "Preliminary Round | 16/1/24",
+          "Final Round | 23/1/24"
         ],
         "date": [
           "16/1/24",
           "23/1/24"
         ],
         "content": [
-          "",
-          ""
+          "Bands are required to can perform any number of songs (in Hindi, English or both) within a time limit of 7 minutes. showcasing their musical skills and interpretation of a specified theme or concept. The deadline for online submissions will be communicated. From the received entries, the top-performing bands will be selected to advance to the final showdown.",
+          "The chosen bands will have the exciting opportunity to demonstrate their musical prowess at the venue, providing a stage to highlight and celebrate their creative abilities in the realm of battle of the bands. Each band will have the challenge of delivering a dynamic performance, offering a unique opportunity to showcase their musicality, stage presence, and cohesion in the context of a spirited battle of the bands competition."
         ]
       }
     ],
@@ -285,16 +293,16 @@
     "timeline": [
       {
         "head": [
-          "Round 1",
-          "Round 2"
+          "Preliminary Round | 5/1/24",
+          "Final Round | 24/1/24"
         ],
         "date": [
           "15/1/24",
           "24/1/24"
         ],
         "content": [
-          "magico ni",
-          "magic pony"
+          "Participants are required to submit a video showcasing their solo singing performance based on a specified theme or concept. The deadline for online entries will be communicated in due course. From the received entries, outstanding individuals will be selected to progress to the final round.",
+          "on the stage at the IIIT Nagpur campus, providing a platform to spotlight and celebrate their creative abilities in the realm of solo singing. Each participant will choose a song for the final performance, offering a distinctive opportunity to demonstrate their storytelling and vocal expertise in the context of a solo singing competition."
         ]
       }
     ],
@@ -370,7 +378,14 @@
       "Reiterate the importance of maintaining a professional and respectful demeanour.",
       "Encourage participants to provide feedback on the event to help improve future editions."
     ],
-    "regulations": [],
+    "regulations": [
+      "Advertisements can be created in English, Hindi, or a bilingual format.",
+      "Prohibited items include the use of fluids, flames, heavy or sharp objects that may pose a risk. This includes any flammable substances, sharp objects, candles, matches, lighters, or potentially harmful items during on-stage performances. Violation of these rules will result in penalties or immediate disqualification, based on the severity of the breach.",
+      "Strict adherence to the provided time limit for both online and offline rounds is mandatory.",
+      "The advertisement must be original. Inappropriate content, religious insensitivity, and vulgarity/obscenity will not be tolerated.",
+      "Pre-recorded dialogues or sound effects are not allowed.",
+      "The judge's decision will be final in all cases."
+    ],
     "registrationDate": "10/02/24",
     "Team": "5-7 members",
     "pool": "₹ 15,000",
@@ -412,7 +427,7 @@
           "15/02/24"
         ],
         "content": [
-          "",
+          "Advertisements can be created in English, Hindi, or a bilingual format.Prohibited items include the use of fluids, flames, heavy or sharp objects that may pose a risk. This includes any flammable substances, sharp objects, candles, matches, lighters, or potentially harmful items during on-stage performances. Violation of these rules will result in penalties or immediate disqualification, based on the severity of the breach.Strict adherence to the provided time limit for both online and offline rounds is mandatory.The advertisement must be original. Inappropriate content, religious insensitivity, and vulgarity/obscenity will not be tolerated.Pre-recorded dialogues or sound effects are not allowed.The judge's decision will be final in all cases.",
           ""
         ]
       }
@@ -443,16 +458,16 @@
     "timeline": [
       {
         "head": [
-          "Round 1",
-          "Round 2"
+          "Prelimminary Round | 5/1/24",
+          "Final Round | 23/01/24"
         ],
         "date": [
           "15/1/24",
           "23/1/24"
         ],
         "content": [
-          "",
-          ""
+          "Participants are required to submit a video showcasing their instrumental performance based on a specified theme or concept. The deadline for online entries will be communicated. From the received entries, the top instrumentalists will be selected to advance to the final round.",
+          "The chosen instrumentalists will have the exclusive opportunity to demonstrate their musical prowess at the venue, providing a stage to highlight and celebrate their creative abilities in the realm of instrumental music. Each participant will be tasked with delivering a captivating performance, offering a unique opportunity to showcase their technical skills, interpretation, and musical expression in the context of an instrumental competition."
         ]
       }
     ],
@@ -776,7 +791,16 @@
       "The performance can be an extension of their round 1 performance.",
       "Props are allowed in this round."
     ],
-    "regulations": [],
+    "regulations": [
+      "The choreography should be original, and teams should refrain from replicating dance routines without the choreographer's consent, as plagiarism will result in elimination.",
+      "Costumes and attire should be tasteful and appropriate for a family-friendly audience. Any attire deemed offensive or inappropriate may lead to penalties or disqualification.",
+      "Teams must adhere to stage dimensions and configuration provided by the organizers to ensure a fair and safe performance environment.",
+      "Any technical requirements, such as special lighting or sound effects, must be communicated in advance and approved by the organizers to avoid disruptions during the performance.",
+      "Teams are responsible for their own props, and any props used must be safe, non-hazardous, and approved by the organizers.",
+      "Performers should conduct themselves professionally and respectfully backstage, promoting a positive and inclusive atmosphere throughout the competition.",
+      "The competition organizers reserve the right to disqualify any team displaying unsportsmanlike conduct or violating the spirit of fair competition.",
+      "Teams must be ready for their performance at the designated time. Late arrivals may result in time deductions or disqualification."      
+    ],
     "registrationDate": "10/02/24",
     "Team": "Upto 10",
     "pool": "₹ 18,000",
