@@ -47,7 +47,7 @@ const SignUpPage = () => {
         e.preventDefault();
         try{
           setLoading(true);
-          const res = await fetch('localhost:5000/api/sign-up',{
+          const res = await fetch('http://localhost:5000/api/sign-up',{
             method: 'POST',
             headers:{
               'Content-Type': 'application/json',
