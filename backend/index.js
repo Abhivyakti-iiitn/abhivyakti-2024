@@ -1,28 +1,35 @@
 import express from 'express';
-import cors from 'cors';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose'
-import apis from './routes/apis.js';
-// import { configDotenv } from 'dotenv';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import userRouter from './routes/user.route.js';
+import authRouter from './routes/auth.route.js';
+dotenv.config();
 
-
+mongoose.connect(process.env.MONGO).then(()=>{
+    console.log('MongoDB Connected');
+    }).catch((err)=>{
+        console.error(err);
+    });
 
 const app = express();
 
-// app.use(configDotenv())
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
+app.use(express.json());
 
-app.use('/api', apis);
+app.listen(3000,()=>{
+        console.log("Server is running on port 3000");
+    }
+);
 
-const CONNECTION_URI = process.env.CONNECTION_URI || 
-'mongodb+srv://Shashank:RQ9Pj8W.rmkb3!$@saitma.hqkmz6j.mongodb.net/abhivyakti2024?retryWrites=true&w=majority';
-const PORT = process.env.PORT || 5000;
+app.use("/api/user",userRouter);
+app.use('/api/auth',authRouter);
 
-mongoose.connect(CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(app.listen(PORT, () => console.log(`Server is running on port : ${PORT}`)))
-    .catch((error) => console.log(error.message));
-
-// mongoose.set('useFindAndModify', false);
+app.use((err,req,res,next)=>{
+    const statusCode = err.statusCode || 500;
+    const message = err.message || "Internal Server Error";
+    return res.status(statusCode).json({
+        success:false,
+        statusCode,
+        message,
+    });
+});
 
