@@ -16,7 +16,8 @@ app.use(cors());
 
 
 app.use('/posts', postRoutes);
-const CONNECTION_URI = process.env.CONNECTION_URI + 'mongodb+srv://SnapMemo:SnapMemo123@rapid-project-cluster.oova2ap.mongodb.net/SnapMemo?retryWrites=true&w=majority';
+const CONNECTION_URI = process.env.CONNECTION_URI || 
+'mongodb+srv://Shashank:RQ9Pj8W.rmkb3!$@saitma.hqkmz6j.mongodb.net/abhivyakti2024?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
