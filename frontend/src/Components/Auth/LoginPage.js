@@ -9,18 +9,18 @@ import LogoComponent from '../../assets/LogoComponent.js';
 const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const LoginPage = () => {
-    const [userName, setUserName] = useState('');
-    const [userEmail, setUserEmail] = useState('');
-    const [userPassword, setUserPassword] = useState('');
+    // const [userName, setUserName] = useState('');
+    // const [userEmail, setUserEmail] = useState('');
+    // const [userPassword, setUserPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     // const [isLogin, setisLogin] = useState(false);
 
-    const navigateTo = useNavigate();
+    // const navigateTo = useNavigate();
 
-    const handleSubmit = () => {
-        localStorage.setItem("usrName", "demoUser");
-        navigateTo('/');
-    }
+    // const handleSubmit = () => {
+    //     localStorage.setItem("usrName", "demoUser");
+    //     navigateTo('/');
+    // }
 
     useEffect(() => {
         if (localStorage.getItem("usrName")) {
@@ -29,16 +29,16 @@ const LoginPage = () => {
         window.scrollTo(0,0);
     }, [])
 
-    const handleNameChange = (e) => {
-        e.preventDefault();
-        setUserName(e.target.value);
-    }
-    const handleEmailChange = (e) => {
-        setUserEmail(e.target.value);
-    }
-    const handlePasswordChange = (e) => {
-        setUserPassword(e.target.value);
-    }
+    // const handleNameChange = (e) => {
+    //     e.preventDefault();
+    //     setUserName(e.target.value);
+    // }
+    // const handleEmailChange = (e) => {
+    //     setUserEmail(e.target.value);
+    // }
+    // const handlePasswordChange = (e) => {
+    //     setUserPassword(e.target.value);
+    // }
 
     return (
         <>
