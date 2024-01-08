@@ -69,6 +69,7 @@ const LoginPage = () => {
 
         if (data.success === false) {
             setError(data.message);
+            console.log(error.message);
         } else {
             setError(null);
             navigate('/');
@@ -77,6 +78,7 @@ const LoginPage = () => {
         setLoading(false);
         } catch (error) {
         setError(error.message);
+        console.log(error.message);
         setLoading(false);
      }
      };
