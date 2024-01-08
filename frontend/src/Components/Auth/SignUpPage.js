@@ -41,7 +41,7 @@ const SignUpPage = () => {
             [e.target.id]: e.target.value
         });
     };
-    console.log(formData);
+    // console.log(formData);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -67,6 +67,7 @@ const SignUpPage = () => {
         catch(error){
             setLoading(false);
             setError(error.message);
+            console.log(error.message);
         }
       };
 
