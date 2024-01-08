@@ -39,7 +39,47 @@ const LoginPage = () => {
     // const handlePasswordChange = (e) => {
     //     setUserPassword(e.target.value);
     // }
+    
+    const [formData, setFormData] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
+    const handleChange = (e) => {
+        setFormData({
+        ...formData,
+        [e.target.id]: e.target.value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+     e.preventDefault();
+        try {
+        setLoading(true);
+
+        const res = await fetch('http://localhost:5000/api/sign-in', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await res.json();
+
+        if (data.success === false) {
+            setError(data.message);
+        } else {
+            setError(null);
+            navigate('/');
+        }
+
+        setLoading(false);
+        } catch (error) {
+        setError(error.message);
+        setLoading(false);
+     }
+     };
     return (
         <>
             <div className='LoginSignUp Login'>
@@ -63,8 +103,10 @@ const LoginPage = () => {
                                         className='loginInput'
                                         name='emailForm'
                                         placeholder='bt22cse@iiitn.ac.in'
-                                        value={userEmail}
-                                        onChange={handleEmailChange}
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        id='email'
+                                        onChange={handleChange}
                                     />
                                 </div>
 
@@ -78,8 +120,10 @@ const LoginPage = () => {
                                             name='passwordForm'
                                             type={`${showPassword ? 'text' : 'password'}`}
                                             placeholder='Enter Your Password'
-                                            value={userPassword}
-                                            onChange={handlePasswordChange}
+                                            // value={userPassword}
+                                            // onChange={handlePasswordChange}
+                                            id='password'
+                                            onChange={handleChange}
                                         />
                                         {(showPassword ?
                                             <VisibilityOffOutlinedIcon
@@ -95,15 +139,16 @@ const LoginPage = () => {
                                     </div>
                                 </div>
 
-                                <button className='submitButton' type='submit' >
+                                {/* <button className='submitButton' type='submit' >
                                     Login
-                                </button>
+                                </button> */}
+                                <button disabled={loading} className='submitButton' type="submit">{loading ? 'loading...' : 'Log In'}</button>
                             </form>
                             <div className='SignUpToLogin'>
                                 <span>
                                     First Time Here?
                                 </span>
-                                <span className='linkToLogin' onClick={() => { navigateTo(`/signup`) }}>
+                                <span className='linkToLogin' onClick={() => { navigate(`/signup`) }}>
                                     Sign Up
                                 </span>
                             </div>
