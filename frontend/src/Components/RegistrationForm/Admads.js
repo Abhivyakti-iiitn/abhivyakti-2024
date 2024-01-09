@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const url = process.env.REACT_APP_HOST || "http://localhost:8080"
+
 const Admads = () => {
   const [formData, setFormData] = useState({
     teamName: '',
@@ -29,13 +31,17 @@ const Admads = () => {
       vid_link: '',
       payment_link:''
     });
-    const response = await fetch('http://localhost:8080/admads', {
+    const response = await fetch(`${url}/api/admads`, {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
         'Content-Type': 'application/json'
       }
     });
+
+    const data = await response.json();
+
+    console.log(data);
     // Handle the response as needed
   };
 
@@ -70,7 +76,7 @@ const Admads = () => {
         {/* Payment link*/}
         <div className='infoDiv'>
           <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.vid_link} className="input" onChange={handleChange} />
+          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.payment_link} className="input" onChange={handleChange} />
         </div>
         <button type="submit" onClick={handleSubmit}>Continue</button>
       </form>

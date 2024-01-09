@@ -15,6 +15,9 @@ export const createadmads = async (req, res) =>{
     user.vid_link = data.vid_link;
     user.payment_link=data.payment_link;
 
+
+    console.log(req.body)
+
      
     
     await user.save();

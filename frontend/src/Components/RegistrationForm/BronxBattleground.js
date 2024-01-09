@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+const url = process.env.REACT_APP_HOST || "http://localhost:8080"
 const BronxBattleground = () => {
   const [formData, setFormData] = useState({
     teamName: '',

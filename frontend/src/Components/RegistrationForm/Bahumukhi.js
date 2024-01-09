@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+const url = process.env.REACT_APP_HOST || "http://localhost:8080"
 const Bahumukhi = () => {
   const [formData, setFormData] = useState({
     participantName: "",
@@ -27,7 +28,7 @@ const Bahumukhi = () => {
       vid_link: "",
       payment_link:''
     });
-    const response = await fetch("http://localhost:8080/bahumukhi", {
+    const response = await fetch(`${url}/bahumukhi`, {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {

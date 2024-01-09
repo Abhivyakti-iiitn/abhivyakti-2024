@@ -11,12 +11,7 @@ import { getBahumukhi, createBahumukhi } from "../controllers/Bahumukhi.js";
 import { getAndhakaar, createAndhakaar } from "../controllers/Andhakaar.js";
 import { getroadtoredcarpet, createroadtoredcarpet } from "../controllers/roadtoredcarpet.js";
 import { getrythmrumble, createrythmrumble } from "../controllers/rythmrumble.js";
-import cors from 'cors';
-import path from 'path';
-import bodyParser from 'body-parser';
-import mongoose from "mongoose";
-import { getPosts, createPosts } from "../controllers/posts.js";
-import {signin,signup, fetchUser} from "../controllers/auth.controller.js";  
+import { signin, signup, fetchUser } from "../controllers/auth.controller.js";
 
 const router = Express.Router();
 
@@ -24,8 +19,8 @@ router.get('/', (req, res) => {
     res.json({ status: 'ok', msg: "welcome to abhvyakti api" });
 });
 router.get('/fetch-user', fetchUser);
-router.post('/sign-in',signin);
-router.post('/sign-up',signup);
+router.post('/sign-in', signin);
+router.post('/sign-up', signup);
 
 //For Showstopper
 // router.get('/showstopper', getShowStopper);
@@ -76,3 +71,4 @@ router.post('/roadtoredcarpet', createroadtoredcarpet);
 // router.get('/rythmrumble', getrythmrumble);
 router.post('/rythmrumble', createrythmrumble);
 
+export default router;
