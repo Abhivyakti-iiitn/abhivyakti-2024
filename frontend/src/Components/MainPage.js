@@ -56,6 +56,7 @@ function MainPage() {
   useEffect(() => {
     animateEventCards();
     if (window.localStorage.getItem("access_token") && context.userData) {
+      // toast.success("Welcome Back!");
       setisLoggedin(true);
     } else if (window.localStorage.getItem("access_token" && !context.userData)){
       const data = context.fetchUser(window.localStorage.getItem("access_token"));

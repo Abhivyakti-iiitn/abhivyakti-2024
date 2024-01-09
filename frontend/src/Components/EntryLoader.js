@@ -20,6 +20,7 @@ function EntryLoader(props) {
 
                 const data = context.fetchUser(window.localStorage.getItem("access_token")).then((el)=>{
                     suc = el.success;
+                    context.setuserData(el.findUser);
                 })
                 
             } catch (err) {

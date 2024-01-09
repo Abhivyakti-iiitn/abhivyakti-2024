@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Students.css';
 import data from "../assets/teamsdata.json";
 import clubs from "../assets/clubdata.json";
+import Footer from './Footer';
 
 const Students = () => {
     const teams = data.teams;
@@ -67,6 +68,7 @@ const Students = () => {
                     </div>
                 </div>
             </div>
+            {/* <Footer/> */}
         </div>
     )
 }
