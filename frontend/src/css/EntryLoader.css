@@ -19,28 +19,39 @@
   justify-content: center;
 }
 .entry_loader_img {
-  background-image: url("../assets/Loaderasst/Property 1=Variant2.svg");
   width: 110px;
   height: 110px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  animation: changeVariants 3s ease-in-out infinite, spin 3s ease-in-out alternate infinite;
+  animation: changeVariants 4s ease-in-out infinite, spin 4s ease-in-out infinite;
 }
 
 @keyframes changeVariants {
   0% {
     background-image: url("../assets/Loaderasst/Property 1=Variant2.svg");
   }
-  25% {
+  13% {
     background-image: url("../assets/Loaderasst/Property 1=Variant3.svg");
   }
-  50% {
+  26% {
     background-image: url("../assets/Loaderasst/Property 1=Variant4.svg");
   }
-  75% {
-    background-image: url("../assets/Loaderasst/Property 1=Variant5.svg");
+  39% {
+    background-image: url("../assets/Loaderasst/Property 1=Variant5.png");
+  }
+  52% {
+    background-image: url("../assets/Loaderasst/Property 1=Variant5.png");
+  }
+  65% {
+    background-image: url("../assets/Loaderasst/Property 1=Variant4.svg");
+  }
+  78% {
+    background-image: url("../assets/Loaderasst/Property 1=Variant3.svg");
+  }
+  91% {
+    background-image: url("../assets/Loaderasst/Property 1=Variant2.svg");
   }
   100% {
     background-image: url("../assets/Loaderasst/Property1Default.svg");
