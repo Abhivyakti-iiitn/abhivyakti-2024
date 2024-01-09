@@ -3,7 +3,10 @@ import NewContext from './NewContext'
 
 const DataContext = (props) => {
     const [userData, setuserData] = useState(null);
-    const url = process.env.HOST || 'http://localhost:5000';
+    const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
+
+    console.log(url)
+
 
     const fetchUser = async (access_token) => {
 

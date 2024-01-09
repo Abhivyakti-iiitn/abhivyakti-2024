@@ -7,7 +7,7 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 
-const url = process.env.HOST || 'http://localhost:5000'
+const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 
 const SignUpPage = () => {
     // const [userName, setUserName] = useState('');

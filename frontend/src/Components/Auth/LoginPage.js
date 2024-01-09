@@ -7,7 +7,7 @@ import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 import NewContext from '../../context/NewContext.js';
 
-const url = process.env.HOST || 'http://localhost:5000'
+const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 
 // const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 

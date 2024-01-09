@@ -73,7 +73,6 @@ export const fetchUser = async (req, res, next) => {
 
         const findUser = await User.findOne({ _id: id.id });
 
-        console.log(findUser)
 
         if (!findUser) {
             next(errorHandler(401, 'Not Found Credentials!'));
