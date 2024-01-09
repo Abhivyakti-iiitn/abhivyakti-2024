@@ -52,8 +52,8 @@ function MainPage() {
 
   useEffect(() => {
     animateEventCards();
-    if (localStorage.getItem("usrName")) {
-      // setisLoggedin(true);
+    if (!localStorage.getItem("access_token")) {
+      setisLoggedin(false);
     }
     window.scrollTo(0, 0);
   }, []);
@@ -61,7 +61,7 @@ function MainPage() {
   return (
     <div className="App">
       {/* <FirefliesAnimation /> */}
-      <Header />
+      <Header isLoggedin={isLoggedin} setisLoggedin={setisLoggedin} />
       <div className="blur_portion"></div>
       <div>
         {isMobile ? (
