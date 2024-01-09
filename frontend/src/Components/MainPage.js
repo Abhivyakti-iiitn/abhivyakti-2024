@@ -12,6 +12,7 @@ import events from "../assets/EventContent.json"
 import VideoPlayerDesktop from './VideoPlayerDesktop';
 import VideoPlayerMobile from './VideoPlayerMobile';
 import NewContext from "../context/NewContext";
+import { toast } from 'react-toastify';
 
 // const events = [
 //   { name: "showstopper", tagline: "event a" },
@@ -56,7 +57,7 @@ function MainPage() {
     animateEventCards();
     if (window.localStorage.getItem("access_token") && context.userData) {
       setisLoggedin(true);
-    } else if (window.localStorage.getItem("access_token")){
+    } else if (window.localStorage.getItem("access_token" && !context.userData)){
       const data = context.fetchUser(window.localStorage.getItem("access_token"));
       if (data.success) {
         setisLoggedin(true);

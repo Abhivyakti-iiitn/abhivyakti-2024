@@ -6,12 +6,16 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 import NewContext from '../../context/NewContext.js';
+import { ToastContainer, toast } from 'react-toastify';
 
-const url = process.env.HOST || 'http://localhost:5000'
+
+const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 
 // const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const LoginPage = () => {
+
+   
     const context = useContext(NewContext);
     // const [userName, setUserName] = useState('');
     // const [userEmail, setUserEmail] = useState('');
@@ -74,10 +78,14 @@ const LoginPage = () => {
             if (data.success === false) {
                 setError(data.msg);
                 // console.log(error.message);
+                toast.error(data.msg);
+
+                
                 console.log(data)
             } else {
                 setError(null);
-
+                toast.success("Successfully Loggedin!");
+                
                 window.localStorage.setItem("access_token", data.access_token);
                 console.log(data)
                 context.setuserData(data.rest);
