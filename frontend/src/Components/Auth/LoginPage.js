@@ -7,6 +7,8 @@ import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 import NewContext from '../../context/NewContext.js';
 
+const url = process.env.HOST || 'http://localhost:5000'
+
 // const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const LoginPage = () => {
@@ -59,7 +61,7 @@ const LoginPage = () => {
         try {
             setLoading(true);
 
-            const res = await fetch('http://localhost:5000/api/sign-in', {
+            const res = await fetch(`${url}/api/sign-in`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -7,6 +7,8 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 
+const url = process.env.HOST || 'http://localhost:5000'
+
 const SignUpPage = () => {
     // const [userName, setUserName] = useState('');
     // const [userEmail, setUserEmail] = useState('');
@@ -50,7 +52,7 @@ const SignUpPage = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const res = await fetch('http://localhost:5000/api/sign-up', {
+            const res = await fetch(`${url}/api/sign-up`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
