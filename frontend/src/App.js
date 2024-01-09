@@ -14,6 +14,8 @@ import AllEvents from "./Components/AllEvents";
 import TandC from "./Components/TandC";
 import Teams from "./Components/Teams";
 import EntryLoader from "./Components/EntryLoader";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -39,6 +41,7 @@ function App() {
 
   return (
     <div className="PApp">
+      
       <Routes>
         <Route path="/" element={<EntryLoader msg={message}/>}></Route>
         <Route path="/home" element={<MainPage />}></Route>
@@ -51,6 +54,7 @@ function App() {
         <Route path="/termsandconditions" element={<TandC />}></Route>
         <Route path="/teams" element={<Teams />}></Route>
       </Routes>
+      <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark"/>
     </div>
   );
 }

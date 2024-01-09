@@ -6,6 +6,9 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
+import {  toast } from 'react-toastify';
+
+
 
 const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 
@@ -62,14 +65,17 @@ const SignUpPage = () => {
             const data = await res.json();
             if (data.success === false) {
                 setLoading(false);
-                setError(data.message);
-                console.log(data)
+                
+                // console.log(data)
+                toast.error(data.msg);
+              
                 return;
             }
             setLoading(false);
             setError(null);
 
             console.log(data)
+            toast.success("Account Created!");
 
             navigate('/login');
 

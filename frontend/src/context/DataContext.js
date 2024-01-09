@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import NewContext from './NewContext'
+import { toast } from 'react-toastify';
+
+
 
 const DataContext = (props) => {
     const [userData, setuserData] = useState(null);
     const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 
-    console.log(url)
+    // console.log(url)
 
 
     const fetchUser = async (access_token) => {
