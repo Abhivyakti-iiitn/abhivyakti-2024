@@ -36,12 +36,12 @@ function Profile() {
                         <img className='profile_pic' src='https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/L161.png.transform/cc-width-720-height-540/image.png' alt=''></img>
                         <div className='user_details'>
                             <div>
-                                <div className='user_info user_name'>{context.userData.username}</div>
-                                <div>{context.userData.email}</div>
+                                <div className='user_info user_name'>{context.userData?.username}</div>
+                                <div>{context.userData?.email}</div>
                             </div>
                             <div className='mob_no'>
-                                <div className='user_info'>{context.userData.phone ? context.userData.phone : "98753243470"}</div>
-                                <div>{context.userData.college ? context.userData.college : "Indian Institute of Information Technology, Nagpur"}</div>
+                                <div className='user_info'>{context.userData?.phone ? context.userData.phone : "98753243470"}</div>
+                                <div>{context.userData?.college ? context.userData.college : "Indian Institute of Information Technology, Nagpur"}</div>
                             </div>
                         </div>
                     </div>

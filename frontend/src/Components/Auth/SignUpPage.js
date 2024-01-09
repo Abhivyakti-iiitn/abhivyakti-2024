@@ -20,7 +20,7 @@ const SignUpPage = () => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
         document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
         window.scrollTo(0, 0);
-        if (!localStorage.getItem("access_token")) {
+        if (localStorage.getItem("access_token")) {
             navigate("/");
         }
     }, [])
@@ -120,6 +120,34 @@ const SignUpPage = () => {
                                         // onChange={handleEmailChange}
                                         onChange={handleChange}
                                         id='email'
+                                    />
+                                </div>
+                                <div className='loginInputs'>
+                                    <label htmlFor='phoneForm' className='loginLabel'>
+                                        Phone No.
+                                    </label>
+                                    <input
+                                        className='loginInput'
+                                        type='number'
+                                        name='phoneForm'
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        onChange={handleChange}
+                                        id='phone'
+                                    />
+                                </div>
+                                <div className='loginInputs'>
+                                    <label htmlFor='collegeForm' className='loginLabel'>
+                                        College/School Name
+                                    </label>
+                                    <input
+                                        className='loginInput'
+                                        name='collegeForm'
+                                        placeholder='college'
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        onChange={handleChange}
+                                        id='college'
                                     />
                                 </div>
 
