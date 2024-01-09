@@ -12,7 +12,7 @@ export const createmun = async (req, res) =>{
     user.teamLeadName = data.teamLeadName;
     user.organizations = data.organizations;
     user.accommodationRequired = data.accommodationRequired;
-
+    user.payment_link=data.payment_link;
      
     
     await user.save();

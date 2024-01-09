@@ -11,7 +11,8 @@ const Groovegenesis = () => {
     yesno: "",
     instrumentsNameBacktrack: "",
     vid_link: "",
-    aud_link: ""
+    aud_link: "",
+    payment_link:''
   });
 
   const yesnoOptions = ["Yes", "No"];
@@ -37,7 +38,8 @@ const Groovegenesis = () => {
       yesno: "",
       instrumentsNameBacktrack: "",
       vid_link: "",
-      aud_link: ""
+      aud_link: "",
+      payment_link:''
     });
     const response = await fetch("http://localhost:8080/groovegenesis", {
       method: 'POST',
@@ -103,6 +105,11 @@ const Groovegenesis = () => {
         <div className='infoDiv'>
           <label className='withtooltip' htmlFor='aud_link'>Backtrack Submission (if used) <i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the audio to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
           <input type="url" id='aud_link' name="aud_link" placeholder="paste audio link here" value={formData.aud_link} className="input" onChange={handleChange} />
+        </div>
+        {/* Payment link*/}
+        <div className='infoDiv'>
+          <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.vid_link} className="input" onChange={handleChange} />
         </div>
         <button type="submit" onClick={handleSubmit}>Continue</button>
       </form>

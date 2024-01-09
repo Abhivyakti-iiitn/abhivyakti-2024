@@ -5,7 +5,8 @@ const PraanantSchema = mongoose.Schema({
     teamLeadName: String,
     instituteName: String,
     script_link: String,
-    vid_link: String
+    vid_link: String,
+    payment_link:String
 });
 
 const Praanant = mongoose.model('Praanant', PraanantSchema);

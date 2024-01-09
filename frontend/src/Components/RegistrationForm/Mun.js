@@ -5,7 +5,8 @@ const Mun = () => {
     contact_phone: '',
     teamLeadName: '',
     organizations: '',
-    accommodationRequired: ''
+    accommodationRequired: '',
+    payment_link:''
   });
 
   const organizations = [
@@ -32,7 +33,8 @@ const Mun = () => {
       contact_phone: '',
       teamLeadName: '',
       organizations: '',
-      accommodationRequired: ''
+      accommodationRequired: '',
+      payment_link:''
     });
     console.log(formData);
     const response = await fetch('http://localhost:8080/mun', {
@@ -71,6 +73,11 @@ const Mun = () => {
           {yesno.map((option, ind) => {
             return <label htmlFor={ind} key={option}><input type="radio" name="accommodationRequired" value={option} className="input" onChange={handleChange} />{option}</label>
           })}
+        </div>
+        {/* Payment link*/}
+        <div className='infoDiv'>
+          <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.vid_link} className="input" onChange={handleChange} />
         </div>
         <button type="submit" onClick={handleSubmit}>Continue</button>
       </form>

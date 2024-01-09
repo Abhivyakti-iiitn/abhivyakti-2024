@@ -5,7 +5,8 @@ const AdmadsSchema = mongoose.Schema({
     clgName: String,
     teamLeadName: String,
     contact_phone: String,
-    vid_link: String
+    vid_link: String,
+    payment_link:String
 });
 
 const Admads = mongoose.model('Admads', AdmadsSchema);

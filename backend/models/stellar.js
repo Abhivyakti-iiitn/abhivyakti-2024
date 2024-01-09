@@ -10,6 +10,7 @@ const StellarSingOffSchema = mongoose.Schema({
     instrumentsName: String,
     vid_link: String,
     aud_link: String,
+    payment_link:String
 });
 
 const StellarSingOff = mongoose.model('StellarSingOff', StellarSingOffSchema);

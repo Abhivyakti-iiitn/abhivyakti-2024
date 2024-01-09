@@ -5,7 +5,8 @@ const Bahumukhi = () => {
     participantName: "",
     instituteName: "",
     script_link: "",
-    vid_link: ""
+    vid_link: "",
+    payment_link:''
   });
 
   const handleChange = (e) => {
@@ -23,7 +24,8 @@ const Bahumukhi = () => {
       participantName: "",
       instituteName: "",
       script_link: "",
-      vid_link: ""
+      vid_link: "",
+      payment_link:''
     });
     const response = await fetch("http://localhost:8080/bahumukhi", {
       method: 'POST',
@@ -57,6 +59,11 @@ const Bahumukhi = () => {
         <div className='infoDiv'>
           <label className='withtooltip' htmlFor='vid_link'>Video Submission<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
           <input type="url" id='vid_link' name="vid_link" required placeholder="paste file link" value={formData.vid_link} className="input" onChange={handleChange} />
+        </div>
+        {/* Payment link*/}
+        <div className='infoDiv'>
+          <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
+          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.vid_link} className="input" onChange={handleChange} />
         </div>
         <button type="submit" onClick={handleSubmit}>Continue</button>
       </form>

@@ -6,7 +6,8 @@ const BronxBattlegroundSchema = mongoose.Schema({
     leadEmail: String,
     contact_phone: String,
     aud_link: String,
-    vid_link: String
+    vid_link: String,
+    payment_link:String
 });
 
 const BronxBattleground = mongoose.model('BronxBattleground', BronxBattlegroundSchema);

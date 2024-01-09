@@ -18,7 +18,7 @@ export const createGroovegenesis = async (req, res) =>{
     user.instrumentsNameBacktrack = data.instrumentsNameBacktrack;
     user.vid_link = data.vid_link;
     user.aud_link = data.aud_link;
-
+    user.payment_link=data.payment_link;
      
     
     await user.save();

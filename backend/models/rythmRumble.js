@@ -7,7 +7,8 @@ const RythmRumbleSchema = mongoose.Schema({
     contact_phone: String,
     clgName: String,
     aud_link: String,
-    vid_link: String
+    vid_link: String,
+    payment_link:String
 });
 
 const RythmRumble = mongoose.model('RythmRumble', RythmRumbleSchema);

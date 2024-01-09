@@ -13,6 +13,7 @@ export const createadmads = async (req, res) =>{
     user.teamLeadName = data.teamLeadName;
     user.contact_phone = data.contact_phone;
     user.vid_link = data.vid_link;
+    user.payment_link=data.payment_link;
 
      
     

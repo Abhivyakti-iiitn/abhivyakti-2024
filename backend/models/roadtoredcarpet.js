@@ -5,7 +5,8 @@ const RoadtoredcarpetSchema = mongoose.Schema({
     clgName: String,
     teamLeadName: String,
     contact_phone: String,
-    vid_link: String
+    vid_link: String,
+    payment_link:String
 });
 
 const Roadtoredcarpet = mongoose.model('Roadtoredcarpet', RoadtoredcarpetSchema);

@@ -5,7 +5,8 @@ const AndhkaarSchema = mongoose.Schema({
     teamLeadName: String,
     instituteName: String,
     vid_link: String,
-    script_link: String
+    script_link: String,
+    payment_link:String
 });
 
 const Andhkaar = mongoose.model('Andhkaar', AndhkaarSchema);

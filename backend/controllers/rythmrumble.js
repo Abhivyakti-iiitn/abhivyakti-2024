@@ -15,7 +15,7 @@ export const createrythmrumble = async (req, res) =>{
     user.clgName = data.clgName;
     user.aud_link = data.aud_link;
     user.vid_link = data.vid_link;
-
+    user.payment_link=data.payment_link;
 
      
     

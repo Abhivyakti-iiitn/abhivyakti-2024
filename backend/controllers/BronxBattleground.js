@@ -15,7 +15,7 @@ export const createBronxBattleground = async (req, res) =>{
     user.contact_phone=data.contact_phone;
     user.aud_link=data.aud_link;
     user.vid_link=data.vid_link;
-     
+    user.payment_link=data.payment_link;
     await user.save();
     
     

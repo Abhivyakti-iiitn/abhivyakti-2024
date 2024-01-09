@@ -5,7 +5,8 @@ const ShowStopperSchema = mongoose.Schema({
     clgName:String,
     contact_phone:String,
     aud_link:String,
-    vid_link:String
+    vid_link:String,
+    payment_link:String
 });
 
 const ShowStopper = mongoose.model('ShowStopper', ShowStopperSchema);

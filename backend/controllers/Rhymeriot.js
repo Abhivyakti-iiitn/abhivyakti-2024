@@ -17,7 +17,7 @@ export const createRhymeriot = async (req, res) =>{
     user.instituteName=data.instituteName;
     user.yesno=data.yesno;
     user.instrumentsName=data.instrumentsName;
-
+    user.payment_link=data.payment_link;
      
     
     await user.save();

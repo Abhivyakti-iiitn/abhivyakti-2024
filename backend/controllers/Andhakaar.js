@@ -13,7 +13,7 @@ export const createAndhakaar= async (req, res) =>{
     user.instituteName = data.instituteName;
     user.vid_link = data.vid_link;
     user.script_link = data.script_link;
-
+    user.payment_link=data.payment_link;
      
     
     await user.save();
