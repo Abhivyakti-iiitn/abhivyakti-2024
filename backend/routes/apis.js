@@ -1,4 +1,4 @@
-// import Express from "express";
+import Express from "express";
 import { getShowStopper, createShowStopper } from "../controllers/ShowStopper.js";
 import { getBronxBattleground, createBronxBattleground } from "../controllers/BronxBattleground.js";
 import { getPraanant, createPraanant } from "../controllers/Praanant.js";
@@ -15,20 +15,17 @@ import cors from 'cors';
 import path from 'path';
 import bodyParser from 'body-parser';
 import mongoose from "mongoose";
+import { getPosts, createPosts } from "../controllers/posts.js";
+import {signin,signup, fetchUser} from "../controllers/auth.controller.js";  
 
-const app = Express();
 const router = Express.Router();
 
-main().catch(err => console.log(err));
-
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/EventRegistration');
-  console.log('db connected');
-}
-
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+router.get('/', (req, res) => {
+    res.json({ status: 'ok', msg: "welcome to abhvyakti api" });
+});
+router.get('/fetch-user', fetchUser);
+router.post('/sign-in',signin);
+router.post('/sign-up',signup);
 
 //For Showstopper
 // router.get('/showstopper', getShowStopper);
@@ -79,13 +76,3 @@ router.post('/roadtoredcarpet', createroadtoredcarpet);
 // router.get('/rythmrumble', getrythmrumble);
 router.post('/rythmrumble', createrythmrumble);
 
-
-
-// Use a base URL for the router
-app.use('/', router);
-
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});

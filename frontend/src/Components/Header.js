@@ -5,13 +5,14 @@ import Svg from './SVG';
 // import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from './LogoComponent';
 
-function Header() {
+function Header(props) {
     const nav = useNavigate();
 
     const [animate, setAnimate] = useState(true);
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
 
-    const [isLoggedin, setisLoggedin] = useState(false)
+    const isLoggedin = props.isLoggedin;
+    const setisLoggedin = props.setisLoggedin;
     const particleCount = 50;
 
     //mounting the fire particle effect.
@@ -124,10 +125,6 @@ function Header() {
         window.addEventListener('resize', handleResize);
 
         animate();
-
-        if (localStorage.getItem("usrName")) {
-            setisLoggedin(true);
-        }
 
 
         return () => {
