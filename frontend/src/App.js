@@ -13,6 +13,7 @@ import Profile from "./Components/Profile";
 import AllEvents from "./Components/AllEvents";
 import TandC from "./Components/TandC";
 import Teams from "./Components/Teams";
+import EntryLoader from "./Components/EntryLoader";
 
 
 // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -34,11 +35,13 @@ import Teams from "./Components/Teams";
 function App() {
 
   // setTimeout(animateEventCards, 0);
+  let message = "Loading..."
 
   return (
     <div className="PApp">
       <Routes>
-        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/" element={<EntryLoader msg={message}/>}></Route>
+        <Route path="/home" element={<MainPage />}></Route>
         <Route path="/event/:eventname" element={<Event />}></Route>
         <Route path="/form/:eventname" element={<FormPage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
