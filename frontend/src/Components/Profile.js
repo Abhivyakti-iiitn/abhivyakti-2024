@@ -11,7 +11,7 @@ function Profile() {
     const navigateTo = useNavigate();
     const handleSignout = () => {
         localStorage.removeItem("usrName");
-        navigateTo('/');
+        navigateTo('/home');
     }
     useEffect(() => {
         document.querySelector(".profile_heading").scrollIntoView(0);

@@ -1,0 +1,52 @@
+.entry_loader {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_txt{
+        color: white;
+        margin-top: 10px;
+        font-size: x-large;
+        padding-left: 10%;
+    }
+    &_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &_img{
+        background-image: url("../assets/Loaderasst/Property\ 1=Variant2.svg");
+        width: 110px;
+        height: 110px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        animation: changeVariants 3s ease-in-out infinite, spin 3s ease-in-out alternate infinite ;
+
+    }
+}
+
+@keyframes changeVariants {
+    0%{background-image:url('../assets/Loaderasst/Property\ 1=Variant2.svg');
+    }
+    25%{background-image:url('../assets/Loaderasst/Property\ 1=Variant3.svg');
+    }
+    50%{background-image:url('../assets/Loaderasst/Property\ 1=Variant4.svg');
+    }
+    75%{background-image:url('../assets/Loaderasst/Property\ 1=Variant5.svg');
+    }
+    100%{background-image:url('../assets/Loaderasst/Property1Default.svg');
+    }
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotateY(360deg); 
+        transform:rotateY(360deg); 
+    } 
+}
