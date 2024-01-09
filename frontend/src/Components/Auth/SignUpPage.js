@@ -8,29 +8,76 @@ import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
 
 const SignUpPage = () => {
-    const [userName, setUserName] = useState('');
-    const [userEmail, setUserEmail] = useState('');
-    const [userPassword, setUserPassword] = useState('');
+    // const [userName, setUserName] = useState('');
+    // const [userEmail, setUserEmail] = useState('');
+    // const [userPassword, setUserPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-
-    const navigateTo = useNavigate();
+    
+    // const navigateTo = useNavigate();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const footerHeight = document.querySelector('.footer').offsetHeight;
         document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
+        if (localStorage.getItem("access_token")) {
+            navigate("/");
+        }
     }, [])
 
-    const handleNameChange = (e) => {
+    // const handleNameChange = (e) => {
+    //     e.preventDefault();
+    //     setUserName(e.target.value);
+    // }
+    // const handleEmailChange = (e) => {
+    //     setUserEmail(e.target.value);
+    // }
+    // const handlePasswordChange = (e) => {
+    //     setUserPassword(e.target.value);
+    // }
+    const [formData, setFormData] = useState({});
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        });
+    };
+    // console.log(formData);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setUserName(e.target.value);
-    }
-    const handleEmailChange = (e) => {
-        setUserEmail(e.target.value);
-    }
-    const handlePasswordChange = (e) => {
-        setUserPassword(e.target.value);
-    }
+        try {
+            setLoading(true);
+            const res = await fetch('http://localhost:5000/api/sign-up', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            if (data.success === false) {
+                setLoading(false);
+                setError(data.message);
+                console.log(data)
+                return;
+            }
+            setLoading(false);
+            setError(null);
+
+            console.log(data)
+
+            navigate('/login');
+
+        }
+        catch (error) {
+            setLoading(false);
+            setError(error.message);
+            console.log(error.message);
+        }
+    };
 
     return (
         <>
@@ -45,7 +92,7 @@ const SignUpPage = () => {
                     <div className='LoginSignUpForm'>
                         <div className='SignupFormArea'>
                             <h1 className='signUpHeading'>Create an account</h1>
-                            <form className='SignupForm'>
+                            <form className='SignupForm' onSubmit={handleSubmit}>
                                 <div className='loginInputs'>
                                     <label htmlFor='nameForm' className='loginLabel'>
                                         Full Name
@@ -54,8 +101,10 @@ const SignUpPage = () => {
                                         className='loginInput'
                                         name='nameForm'
                                         placeholder='Enter Your Name'
-                                        value={userName}
-                                        onChange={handleNameChange}
+                                        // value={userName}
+                                        // onChange={handleNameChange}
+                                        id='username'
+                                        onChange={handleChange}
                                     />
                                 </div>
 
@@ -67,8 +116,38 @@ const SignUpPage = () => {
                                         className='loginInput'
                                         name='emailForm'
                                         placeholder='bt22cse@iiitn.ac.in'
-                                        value={userEmail}
-                                        onChange={handleEmailChange}
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        onChange={handleChange}
+                                        id='email'
+                                    />
+                                </div>
+                                <div className='loginInputs'>
+                                    <label htmlFor='phoneForm' className='loginLabel'>
+                                        Phone No.
+                                    </label>
+                                    <input
+                                        className='loginInput'
+                                        type='number'
+                                        name='phoneForm'
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        onChange={handleChange}
+                                        id='phone'
+                                    />
+                                </div>
+                                <div className='loginInputs'>
+                                    <label htmlFor='collegeForm' className='loginLabel'>
+                                        College/School Name
+                                    </label>
+                                    <input
+                                        className='loginInput'
+                                        name='collegeForm'
+                                        placeholder='college'
+                                        // value={userEmail}
+                                        // onChange={handleEmailChange}
+                                        onChange={handleChange}
+                                        id='college'
                                     />
                                 </div>
 
@@ -82,8 +161,10 @@ const SignUpPage = () => {
                                             name='passwordForm'
                                             type={`${showPassword ? 'text' : 'password'}`}
                                             placeholder='Enter Your Password'
-                                            value={userPassword}
-                                            onChange={handlePasswordChange}
+                                            // value={userPassword}
+                                            // onChange={handlePasswordChange}
+                                            onChange={handleChange}
+                                            id='password'
                                         />
                                         {(showPassword ?
                                             <VisibilityOffOutlinedIcon
@@ -99,15 +180,16 @@ const SignUpPage = () => {
                                     </div>
                                 </div>
 
-                                <button className='submitButton' type='submit' >
+                                {/* <button className='submitButton' type='submit' >
                                     Create account
-                                </button>
+                                </button> */}
+                                <button disabled={loading} className='submitButton' type='submit'>{loading ? 'loading...' : 'Create account'}</button>
                             </form>
                             <div className='SignUpToLogin'>
                                 <span>
                                     Already have an account?
                                 </span>
-                                <span className='linkToLogin' onClick={() => { navigateTo(`/login`) }}>
+                                <span className='linkToLogin' onClick={() => { navigate(`/login`) }}>
                                     Log In
                                 </span>
                             </div>
@@ -115,7 +197,7 @@ const SignUpPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
