@@ -14,6 +14,7 @@ import AllEvents from "./Components/AllEvents";
 import TandC from "./Components/TandC";
 import Teams from "./Components/Teams";
 import EntryLoader from "./Components/EntryLoader";
+import Students from "./Components/Students";
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/allevents" element={<AllEvents />}></Route>
         <Route path="/termsandconditions" element={<TandC />}></Route>
         <Route path="/teams" element={<Teams />}></Route>
+        <Route path="/students" element={<Students />}></Route>
       </Routes>
       <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark"/>
     </div>
