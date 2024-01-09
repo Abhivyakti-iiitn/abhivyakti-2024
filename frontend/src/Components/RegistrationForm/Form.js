@@ -80,7 +80,7 @@ const Form = (props) => {
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit} ref={formRef} className='form'>
         {selector(props.name)}
-        
+        <button type="submit">Continue</button>
       </form>
     </div>
   );
