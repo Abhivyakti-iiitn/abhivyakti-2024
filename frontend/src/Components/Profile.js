@@ -13,7 +13,8 @@ function Profile() {
     const navigateTo = useNavigate();
     const context = useContext(NewContext);
     const handleSignout = () => {
-        localStorage.removeItem("access_token");
+        window.localStorage.removeItem("access_token");
+        context.setuserData(null);
         navigateTo('/login');
     }
     useEffect(() => {

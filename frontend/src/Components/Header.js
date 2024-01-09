@@ -126,10 +126,6 @@ function Header(props) {
 
         animate();
 
-        if (localStorage.getItem("usrName")) {
-            setisLoggedin(true);
-        }
-
 
         return () => {
             window.removeEventListener('resize', handleResize);

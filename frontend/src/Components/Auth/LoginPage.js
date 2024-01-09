@@ -26,7 +26,7 @@ const LoginPage = () => {
 
     useEffect(() => {
         if (localStorage.getItem("access_token")) {
-            navigate("/");
+            navigate("/home");
         }
         window.scrollTo(0, 0);
     }, [])
@@ -79,7 +79,7 @@ const LoginPage = () => {
                 window.localStorage.setItem("access_token", data.access_token);
                 console.log(data)
                 context.setuserData(data.rest);
-                navigate('/');
+                navigate('/home');
             }
 
             setLoading(false);

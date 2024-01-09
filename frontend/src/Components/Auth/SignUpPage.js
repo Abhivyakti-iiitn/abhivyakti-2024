@@ -21,7 +21,7 @@ const SignUpPage = () => {
         document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
         window.scrollTo(0, 0);
         if (localStorage.getItem("access_token")) {
-            navigate("/");
+            navigate("/home");
         }
     }, [])
 
