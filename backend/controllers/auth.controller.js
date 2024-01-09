@@ -60,3 +60,31 @@ export const signin = async (req, res, next) => {
         res.status(500).json({ error, success: false });
     }
 };
+
+
+export const fetchUser = async (req, res, next) => {
+
+    try {
+
+        let access_token = req.headers.access_token;
+
+        const id = jwt.verify(access_token, JWT_SECRET);
+
+
+        const findUser = await User.findOne({ _id: id.id });
+
+        console.log(findUser)
+
+        if (!findUser) {
+            next(errorHandler(401, 'Not Found Credentials!'));
+            res.status(401).json({ msg: "User Not Found!", success: false });
+            return;
+        }
+
+        res.status(200).json({ findUser, success: true });
+    }
+    catch (error) {
+        next(error);
+        res.status(500).json({ error, success: false });
+    }
+};
