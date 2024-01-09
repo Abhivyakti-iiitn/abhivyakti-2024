@@ -14,6 +14,7 @@ import AllEvents from "./Components/AllEvents";
 import TandC from "./Components/TandC";
 import Teams from "./Components/Teams";
 import EntryLoader from "./Components/EntryLoader";
+import Students from "./Components/Students";
 
 
 // const events = [{ name: 'a', desc: "event a" }, { name: 'b', desc: 'event b' }, { name: 'c', desc: 'event c' }, { name: 'd', desc: 'event d' }, { name: 'e f', desc: 'event e f' }];
@@ -50,6 +51,7 @@ function App() {
         <Route path="/allevents" element={<AllEvents />}></Route>
         <Route path="/termsandconditions" element={<TandC />}></Route>
         <Route path="/teams" element={<Teams />}></Route>
+        <Route path="/students" element={<Students />}></Route>
       </Routes>
     </div>
   );
