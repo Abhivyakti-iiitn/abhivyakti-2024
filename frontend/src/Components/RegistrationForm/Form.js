@@ -25,6 +25,7 @@ const Form = (props) => {
   const navigateTo = useNavigate();
   const [open, setOpen] = useState(false);
 
+  const [underProcess, setunderProcess] = useState(false)
   const context = useContext(NewContext);
 
   const onOpenModal = () => setOpen(true);
@@ -55,6 +56,8 @@ const Form = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setunderProcess(true)
+
     const data = await context.Register(props.name, formData, context.userData?.username, context.userData?.email, window.localStorage.getItem("access_token"));
 
     if(data.success)
@@ -63,11 +66,14 @@ const Form = (props) => {
       navigateTo("/home");
     }else{
       toast.error("Application Failed!");
+      toast.error(data.msg);
     }
     // console.log('Form Data:', formData);
     // console.log('Answers:', answers);
     // You can handle form submission logic here
     // console.log(formRef.current.organizations?.value)
+
+    setunderProcess(false)
 
 
   };
@@ -81,29 +87,29 @@ const Form = (props) => {
     // console.log(organizations)
     switch (eventName) {
       case "modelunitednations":
-        return <Mun onOpenModal={onOpenModal} onCloseModal={onCloseModal} />;
+        return <Mun onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "roadtoredcarpet":
-        return <Roadtoredcarpet onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Roadtoredcarpet onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "admads":
-        return <Admads onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Admads onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "showstopper":
-        return <ShowStopper onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <ShowStopper onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "bronxbattleground":
-        return <BronxBattleground onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <BronxBattleground onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "rythmrumble":
-        return <RythmRumble onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <RythmRumble onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "groovegenesis":
-        return <Groovegenesis onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Groovegenesis onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData} />;
       case "stellarsing-off":
-        return <Stellarsingoff onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Stellarsingoff onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange}  formData = {formData}/>;
       case "rhymeriot":
-        return <Rhymeriot onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Rhymeriot onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "praanant":
-        return <Praanaant onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Praanaant onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "andhakaar":
-        return <Andhkaar onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
+        return <Andhkaar onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       case "bahumukhi":
-        return <Bahumukhi onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange}/>;
+        return <Bahumukhi onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData = {formData}/>;
       default:
         break;
     }
@@ -117,7 +123,7 @@ const Form = (props) => {
       <div ref={formRef} className='form'>
         {selector(props.name)}
       </div>
-      <Modal open={open} onClose={onCloseModal} handleChange={handleChange} formData={formData} handleSubmit={handleSubmit} center/>
+      <Modal open={open} onClose={onCloseModal} handleChange={handleChange}  handleSubmit={handleSubmit} underProcess= {underProcess} center/>
     </div>
   );
 };

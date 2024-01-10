@@ -41,6 +41,10 @@ import { toast } from 'react-toastify';
 const DataContext = (props) => {
     const [userData, setuserData] = useState(null);
     const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
+    const [isloggedIn, setisloggedIn] = useState(false)
+
+    const logIn = () =>{setisloggedIn(true)};
+    const logOut = () =>{setisloggedIn(false)};
 
 
     // console.log(url)
@@ -51,7 +55,7 @@ const DataContext = (props) => {
         // let rest_link = selector(event_name);
         const response = await fetch(`${url}/api/${event_name}`, {
             method: 'POST',
-            body: JSON.stringify({formData, regby : name, rebyEmail:email}),
+            body: JSON.stringify({formData, regBy : name, rebyEmail:email}),
             headers: {
                 'Content-Type': 'application/json',
                 'access_token': access_token
@@ -81,7 +85,7 @@ const DataContext = (props) => {
     }
     //    const [isLoggedin, setisLoggedin] = useState(false);
     return (
-        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register }}>
+        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut }}>
             {props.children}
         </NewContext.Provider>
     )
