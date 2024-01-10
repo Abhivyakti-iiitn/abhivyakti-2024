@@ -1,28 +1,40 @@
 import RythmRumble from "../models/rythmRumble.js";
 
-export const getrythmrumble = async (req,res) =>{
+export const getrythmrumble = async (req, res) => {
     const docs = await RythmRumble.find({});
     console.log("hii get");
-    res.json(docs)
+    res.json(docs);
 }
-export const createrythmrumble = async (req, res) =>{
-    let user = new RythmRumble();
-    let data=req.body;
-    user.teamName = data.teamName;
-    user.teamLeadName = data.teamLeadName;
-    user.leadEmail = data.leadEmail;
-    user.contact_phone = data.contact_phone;
-    user.clgName = data.clgName;
-    user.aud_link = data.aud_link;
-    user.vid_link = data.vid_link;
-    user.payment_link=data.payment_link;
 
-     
-    
-    await user.save();
-    console.log("hi post");
-       
-    
+export const createrythmrumble = async (req, res) => {
+    try {
+        let user = new RythmRumble();
+        let data = req.body;
+        let id = req.user.id;
 
+        let entry = await RythmRumble.findOne({ UserId: id });
 
+        if (entry) {
+            res.status(401).json({ success: false, msg: "You have Already Registered for this Event" });
+            return;
+        }
+
+        user.teamName = data.teamName;
+        user.teamLeadName = data.teamLeadName;
+        user.leadEmail = data.leadEmail;
+        user.contact_phone = data.contact_phone;
+        user.clgName = data.clgName;
+        user.aud_link = data.aud_link;
+        user.vid_link = data.vid_link;
+        user.payment_link = data.payment_link;
+
+        await user.save();
+        console.log("hi post");
+
+        res.status(200).json({ success: true, user });
+
+    } catch (err) {
+        res.status(403).json({ success: false, err: err.message, yay: "Asda" });
+        return;
+    }
 }
