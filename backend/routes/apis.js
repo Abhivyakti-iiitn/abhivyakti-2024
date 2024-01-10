@@ -25,24 +25,24 @@ router.post('/sign-up', signup);
 
 //For Showstopper
 // router.get('/showstopper', getShowStopper);
-router.post('/showstopper', createShowStopper);
+router.post('/showstopper',GetUser, createShowStopper);
 
 //For Bronx Battleground
 // router.get('/bronxbattleground', getBronxBattleground);
-router.post('/bronxbattleground', createBronxBattleground);
+router.post('/bronxbattleground',GetUser, createBronxBattleground);
 
 
 //For Praanant
 // router.get('/praanant', getPraanant);
-router.post('/praanant', createPraanant);
+router.post('/praanant',GetUser, createPraanant);
 
 //For Rhyme Riot
 // router.get('/rhymeriot', getRhymeriot);
-router.post('/rhymeriot', createRhymeriot);
+router.post('/rhymeriot',GetUser, createRhymeriot);
 
 //For Stellar Sing-Off
 // router.get('/stellarsingoff', getStellarsignoff);
-router.post('/stellarsingoff', createStellarsignoff);
+router.post('/stellarsingoff',GetUser, createStellarsignoff);
 
 //For Ad Mads
 // router.get('/admads', getadmads);
@@ -50,26 +50,26 @@ router.post('/admads',GetUser, createadmads);
 
 //For Model United Nations (MUN)
 // router.get('/mun', getmun);
-router.post('/mun', createmun);
+router.post('/mun',GetUser, createmun);
 
 //For Groove Genesis
 // router.get('/groovegenesis', getGroovegenesis);
-router.post('/groovegenesis', createGroovegenesis);
+router.post('/groovegenesis',GetUser, createGroovegenesis);
 
 //For Bahumukhi
 // router.get('/bahumukhi', getBahumukhi);
-router.post('/bahumukhi', createBahumukhi);
+router.post('/bahumukhi',GetUser, createBahumukhi);
 
 //For Andhakaar
 // router.get('/andhakaar', getAndhakaar);
-router.post('/andhakaar', createAndhakaar);
+router.post('/andhakaar',GetUser, createAndhakaar);
 
 //For Road to Red Carpet
 // router.get('/roadtoredcarpet', getroadtoredcarpet);
-router.post('/roadtoredcarpet', createroadtoredcarpet);
+router.post('/roadtoredcarpet',GetUser, createroadtoredcarpet);
 
 //For Rythm Rumble
 // router.get('/rythmrumble', getrythmrumble);
-router.post('/rythmrumble', createrythmrumble);
+router.post('/rythmrumble',GetUser, createrythmrumble);
 
 export default router;

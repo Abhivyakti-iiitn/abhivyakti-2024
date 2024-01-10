@@ -1,6 +1,16 @@
 import mongoose from "mongoose";
 
 const ShowStopperSchema = mongoose.Schema({
+    user:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'user',
+    },
+    date: {
+        type: Date,
+        default: Date.now,
+    },
+    regBy:String,
+    regbyEmail:String,
     name:String,
     clgName:String,
     contact_phone:String,

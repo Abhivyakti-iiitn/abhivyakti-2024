@@ -13,6 +13,13 @@ export const createadmads = async (req, res) => {
         let user = new Admads();
         let data = req.body.formData;
         let id = req.user.id;
+
+        let entry = await Admads.findOne({UserId:id});
+        if(entry){
+            res.status(401).json({success:false,msg:"You have Already Registered for this Event"});
+            return;
+        }
+
         user.teamName = data.teamName;
         user.clgName = data.clgName;
         user.teamLeadName = data.teamLeadName;
@@ -22,7 +29,7 @@ export const createadmads = async (req, res) => {
 
         await user.save();
 
-        console.log(req.body)
+       
 
         res.status(200).json({ success: true, user });
 

@@ -1,6 +1,16 @@
 import mongoose from "mongoose";
 
 const PraanantSchema = mongoose.Schema({
+    user:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'user',
+    },
+    date: {
+        type: Date,
+        default: Date.now,
+    },
+    regBy:String,
+    regbyEmail:String,
     teamName: String,
     teamLeadName: String,
     instituteName: String,
