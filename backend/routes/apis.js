@@ -13,6 +13,7 @@ import { getAndhakaar, createAndhakaar } from "../controllers/Andhakaar.js";
 import { getroadtoredcarpet, createroadtoredcarpet } from "../controllers/roadtoredcarpet.js";
 import { getrythmrumble, createrythmrumble } from "../controllers/rythmrumble.js";
 import { signin, signup, fetchUser } from "../controllers/auth.controller.js";
+import { order,validate } from "../controllers/razorpay.js";
 
 const router = Express.Router();
 
@@ -22,6 +23,10 @@ router.get('/', (req, res) => {
 router.get('/fetch-user', fetchUser);
 router.post('/sign-in', signin);
 router.post('/sign-up', signup);
+
+//payment gateway
+router.post("/order",order);
+router.post("/order/validate",validate);
 
 //For Showstopper
 // router.get('/showstopper', getShowStopper);
