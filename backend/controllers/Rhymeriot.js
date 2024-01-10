@@ -1,4 +1,4 @@
-import Rhymeriot from "../models/Rhymeriot.js";
+import Rhymeriot from "../models/rhymeRiot.js";
 
 export const getRhymeriot = async (req, res) => {
     const docs = await Rhymeriot.find({});
@@ -8,16 +8,19 @@ export const getRhymeriot = async (req, res) => {
 export const createRhymeriot = async (req, res) => {
     try {
         let user = new Rhymeriot();
-        let data = req.body;
+        let data = req.body.formData;
         let id = req.user.id;
 
-        let entry = await Rhymeriot.findOne({ UserId: id });
+        let entry = await Rhymeriot.findOne({ userId: id });
 
         if (entry) {
             res.status(401).json({ success: false, msg: "You have Already Registered for this Event" });
             return;
         }
 
+        user.userId = id;
+        user.regBy = req.regBy;
+        user.regbyEmail = req.reqbyEmail;
         user.bandName = data.bandName;
         user.leaderName = data.leaderName;
         user.contact_phone = data.contact_phone;

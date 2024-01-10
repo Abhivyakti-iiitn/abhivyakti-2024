@@ -8,16 +8,19 @@ export const getmun = async (req, res) => {
 export const createmun = async (req, res) => {
     try {
         let user = new Mun();
-        let data = req.body;
+        let data = req.body.formData;
         let id = req.user.id;
 
-        let entry = await Mun.findOne({ UserId: id });
+        let entry = await Mun.findOne({ userId: id });
 
         if (entry) {
             res.status(401).json({ success: false, msg: "You have Already Registered for this Event" });
             return;
         }
 
+        user.userId = id;
+        user.regBy = req.regBy;
+        user.regbyEmail = req.reqbyEmail;
         user.contact_phone = data.contact_phone;
         user.teamLeadName = data.teamLeadName;
         user.organizations = data.organizations;

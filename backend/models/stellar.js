@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 const StellarSingOffSchema = mongoose.Schema({
-    user:{
+    userId:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:'user',
+        ref:'users',
     },
     date: {
         type: Date,

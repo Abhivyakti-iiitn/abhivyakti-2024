@@ -42,7 +42,7 @@ router.post('/rhymeriot',GetUser, createRhymeriot);
 
 //For Stellar Sing-Off
 // router.get('/stellarsingoff', getStellarsignoff);
-router.post('/stellarsingoff',GetUser, createStellarsignoff);
+router.post('/stellarsing-off',GetUser, createStellarsignoff);
 
 //For Ad Mads
 // router.get('/admads', getadmads);
@@ -50,7 +50,7 @@ router.post('/admads',GetUser, createadmads);
 
 //For Model United Nations (MUN)
 // router.get('/mun', getmun);
-router.post('/mun',GetUser, createmun);
+router.post('/modelunitednations',GetUser, createmun);
 
 //For Groove Genesis
 // router.get('/groovegenesis', getGroovegenesis);

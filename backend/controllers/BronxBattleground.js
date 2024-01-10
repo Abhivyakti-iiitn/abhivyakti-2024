@@ -8,16 +8,19 @@ export const getBronxBattleground = async (req, res) => {
 export const createBronxBattleground = async (req, res) => {
     try {
         let user = new BronxBattleground();
-        let data = req.body;
+        let data = req.body.formData;
         let id = req.user.id;
 
-        let entry = await BronxBattleground.findOne({ UserId: id });
+        let entry = await BronxBattleground.findOne({ userId: id });
 
         if (entry) {
             res.status(401).json({ success: false, msg: "You have Already Registered for this Event" });
             return;
         }
 
+        user.userId = id;
+        user.regBy = req.regBy;
+        user.regbyEmail = req.reqbyEmail;
         user.teamName = data.teamName;
         user.teamLeadName = data.teamLeadName;
         user.leadEmail = data.leadEmail;

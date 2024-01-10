@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 const AdmadsSchema = mongoose.Schema({
-    user:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'user',
+    userId:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'users',
     },
     date: {
         type: Date,

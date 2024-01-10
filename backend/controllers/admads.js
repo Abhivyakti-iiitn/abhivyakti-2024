@@ -14,12 +14,15 @@ export const createadmads = async (req, res) => {
         let data = req.body.formData;
         let id = req.user.id;
 
-        let entry = await Admads.findOne({UserId:id});
+        let entry = await Admads.findOne({userId:id});
         if(entry){
             res.status(401).json({success:false,msg:"You have Already Registered for this Event"});
             return;
         }
 
+        user.userId = id;
+        user.regBy = req.regBy;
+        user.regbyEmail = req.reqbyEmail;
         user.teamName = data.teamName;
         user.clgName = data.clgName;
         user.teamLeadName = data.teamLeadName;
