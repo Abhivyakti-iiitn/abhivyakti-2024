@@ -1,4 +1,5 @@
 import Razorpay from "razorpay";
+import crypto from 'crypto';
 
 export const order = async (req,res) => {
     try {
@@ -21,7 +22,7 @@ export const order = async (req,res) => {
     }
   };
 
-  export const validate = async (res,req) => {
+  export const validate = async (req,res) => {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
     req.body;
 
