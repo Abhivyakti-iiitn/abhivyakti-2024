@@ -6,10 +6,9 @@ import { toast } from 'react-toastify';
 
 const url = process.env.REACT_APP_HOST || "http://localhost:8080"
 
-const Admads = ({formData, setFormData, onCloseModal, onOpenModal, handleChange}) => {
+const Admads = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange }) => {
 
   const context = useContext(NewContext);
- 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,7 +17,7 @@ const Admads = ({formData, setFormData, onCloseModal, onOpenModal, handleChange}
 
   return (
     <>
-      <form onSubmit={handleSubmit}  className="form">
+      <form onSubmit={handleSubmit} className="form">
         <div className='infoDiv'>
           {/* Team Name */}
           <label htmlFor='teamName'>Team Name</label>
@@ -37,7 +36,7 @@ const Admads = ({formData, setFormData, onCloseModal, onOpenModal, handleChange}
         {/* Contact Details of Leader (WhatsApp No.) */}
         <div className='infoDiv'>
           <label htmlFor='contact_phone'>Contact Details of Leader (WhatsApp No.)</label>
-          <input type="number" id='contact_phone'  name="contact_phone" required placeholder="WhatsApp Number" value={formData?.contact_phone} className="input" onChange={handleChange} />
+          <input type="number" id='contact_phone' name="contact_phone" required placeholder="WhatsApp Number" value={formData?.contact_phone} className="input" onChange={handleChange} />
         </div>
         {/* Short Video */}
         <div className='infoDiv'>
@@ -49,8 +48,8 @@ const Admads = ({formData, setFormData, onCloseModal, onOpenModal, handleChange}
           <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
           <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.payment_link} className="input" onChange={handleChange} />
         </div> */}
-        
-        <button type="submit" >Continue</button>
+
+        <button type="submit">Continue</button>
       </form>
     </>
   );

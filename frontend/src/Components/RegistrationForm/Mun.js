@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import NewContext from '../../context/NewContext';
+import { toast } from 'react-toastify';
 
-const Mun = () => {
-  const [formData, setFormData] = useState({
-    contact_phone: '',
-    teamLeadName: '',
-    organizations: '',
-    accommodationRequired: '',
-    payment_link:''
-  });
+const Mun = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange }) => {
+
+  const context = useContext(NewContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onOpenModal()
+  };
 
   const organizations = [
     "UNHRC(United Nations Human Rights Council)",
@@ -18,47 +22,18 @@ const Mun = () => {
 
   const yesno = ["Yes", "No"];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // Reset the form data
-    setFormData({
-      contact_phone: '',
-      teamLeadName: '',
-      organizations: '',
-      accommodationRequired: '',
-      payment_link:''
-    });
-    console.log(formData);
-    const response = await fetch('http://localhost:8080/mun', {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    // Handle the response as needed
-  };
-
   return (
     <>
-      <form method='POST' className="form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <div className='infoDiv'>
           {/* WhatsApp Number */}
           <label htmlFor='contact_phone'>WhatsApp Number</label>
-          <input type="number" id='contact_phone' name="contact_phone" required placeholder="WhatsApp Number" value={formData.contact_phone} className="input" onChange={handleChange} />
+          <input type="number" id='contact_phone' name="contact_phone" required placeholder="WhatsApp Number" value={formData?.contact_phone} className="input" onChange={handleChange} />
         </div>
         {/* School/College Name */}
         <div className='infoDiv'>
           <label htmlFor='teamLeadName'>School/College name</label>
-          <input type="text" id='teamLeadName' name="teamLeadName" required placeholder="Team Lead" value={formData.teamLeadName} className="input" onChange={handleChange} />
+          <input type="text" id='teamLeadName' name="teamLeadName" required placeholder="Team Lead" value={formData?.teamLeadName} className="input" onChange={handleChange} />
         </div>
         {/* Committee Selection */}
         <div className='infoDiv'>
@@ -75,11 +50,11 @@ const Mun = () => {
           })}
         </div>
         {/* Payment link*/}
-        <div className='infoDiv'>
+        {/* <div className='infoDiv'>
           <label className='withtooltip' htmlFor='payment_link'>Payment Link<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the Payment proof to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData.vid_link} className="input" onChange={handleChange} />
-        </div>
-        <button type="submit" onClick={handleSubmit}>Continue</button>
+          <input type="url" id='payment_link' name="payment_link" required placeholder="paste link here" value={formData?.vid_link} className="input" onChange={handleChange} />
+        </div> */}
+        <button type="submit">Continue</button>
       </form>
     </>
   );
