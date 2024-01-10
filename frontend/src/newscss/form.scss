@@ -58,6 +58,17 @@
     border: none;
     border-radius: 12px;
     font-size: larger;
+    background-color: transparent;
+    outline: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-internal-autofill-selected {
+        background-color: transparent !important;
+        outline: none !important;
+        color: #ABAFB1 !important;
+    }
 }
 
 .infoDiv {
@@ -77,12 +88,13 @@
 .formDiv {
     position: sticky;
     top: 0%;
+
     h1 {
         width: 100%;
         text-align: center;
         font-size: xx-large;
     }
-    
+
 }
 
 .questionDiv {
@@ -126,9 +138,10 @@
     }
 }
 
-.fixheight{
+.fixheight {
     height: 100vh;
+
     @media (max-width:1000px) {
-        height: auto ;
+        height: auto;
     }
 }

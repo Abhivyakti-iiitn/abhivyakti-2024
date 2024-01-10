@@ -54,6 +54,13 @@
   border: none;
   border-radius: 12px;
   font-size: larger;
+  background-color: transparent;
+  outline: none;
+}
+.input:-webkit-autofill, .input:-webkit-autofill:hover, .input:-webkit-autofill:focus, .input:-internal-autofill-selected {
+  background-color: transparent !important;
+  outline: none !important;
+  color: #ABAFB1 !important;
 }
 
 .infoDiv input::placeholder,
