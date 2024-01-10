@@ -83,27 +83,27 @@ const Form = (props) => {
       case "modelunitednations":
         return <Mun onOpenModal={onOpenModal} onCloseModal={onCloseModal} />;
       case "roadtoredcarpet":
-        return <Roadtoredcarpet />;
+        return <Roadtoredcarpet onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "admads":
         return <Admads onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "showstopper":
-        return <ShowStopper />
+        return <ShowStopper onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "bronxbattleground":
-        return <BronxBattleground />
+        return <BronxBattleground onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "rythmrumble":
-        return <RythmRumble />
+        return <RythmRumble onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "groovegenesis":
-        return <Groovegenesis />
+        return <Groovegenesis onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "stellarsing-off":
-        return <Stellarsingoff />
+        return <Stellarsingoff onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "rhymeriot":
-        return <Rhymeriot />
+        return <Rhymeriot onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "praanant":
-        return <Praanaant />
+        return <Praanaant onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "andhakaar":
-        return <Andhkaar />
+        return <Andhkaar onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} />;
       case "bahumukhi":
-        return <Bahumukhi />
+        return <Bahumukhi onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange}/>;
       default:
         break;
     }
