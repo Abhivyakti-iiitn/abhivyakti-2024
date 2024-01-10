@@ -15,7 +15,7 @@
         padding: 20px;
         width: inherit;
     }
-    
+
     legend {
         font: 32pt/0 $font-family;
         margin: auto;
@@ -62,6 +62,23 @@
                 // border: 2px solid blue;
                 text-align: center;
                 font-size: x-large;
+
+                &:hover {
+                    & i {
+                        opacity: 1;
+                    }
+                }
+
+                i {
+                    cursor: pointer;
+                    opacity: 0;
+                    color: #fff;
+                    margin-left: 0.25rem;
+
+                    &:hover {
+                        color: rgb(0, 0, 255);
+                    }
+                }
 
                 h5 {
                     margin-top: -20px;
