@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useContext, useState} from 'react'
 import FormPageLeft from './FormPageLeft'
 import Form from './Form'
 import "../../newscss/formPage.scss"
 import Footer from "../Footer"
 import { useParams } from "react-router-dom";
 import content from "../../assets/EventContent.json";
+
 const FormPage = () => {
   const params = useParams();
   const evtName = params.eventname.toLowerCase().replace(/ /g, '').split('(')[0];

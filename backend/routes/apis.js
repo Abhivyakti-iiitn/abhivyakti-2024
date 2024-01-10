@@ -1,4 +1,5 @@
 import Express from "express";
+import {GetUser} from "../middlewares/getuser.js"
 import { getShowStopper, createShowStopper } from "../controllers/ShowStopper.js";
 import { getBronxBattleground, createBronxBattleground } from "../controllers/BronxBattleground.js";
 import { getPraanant, createPraanant } from "../controllers/Praanant.js";
@@ -45,7 +46,7 @@ router.post('/stellarsingoff', createStellarsignoff);
 
 //For Ad Mads
 // router.get('/admads', getadmads);
-router.post('/admads', createadmads);
+router.post('/admads',GetUser, createadmads);
 
 //For Model United Nations (MUN)
 // router.get('/mun', getmun);
