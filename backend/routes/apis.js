@@ -13,6 +13,7 @@ import { getAndhakaar, createAndhakaar } from "../controllers/Andhakaar.js";
 import { getroadtoredcarpet, createroadtoredcarpet } from "../controllers/roadtoredcarpet.js";
 import { getrythmrumble, createrythmrumble } from "../controllers/rythmrumble.js";
 import { signin, signup, fetchUser } from "../controllers/auth.controller.js";
+import { fetchEventData } from "../controllers/eventFetch.js";
 
 const router = Express.Router();
 
@@ -20,6 +21,7 @@ router.get('/', (req, res) => {
     res.json({ status: 'ok', msg: "welcome to abhvyakti api" });
 });
 router.get('/fetch-user', fetchUser);
+router.get('/fetch-event-data',GetUser, fetchEventData);
 router.post('/sign-in', signin);
 router.post('/sign-up', signup);
 

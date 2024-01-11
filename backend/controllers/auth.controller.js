@@ -89,3 +89,4 @@ export const fetchUser = async (req, res, next) => {
         res.status(500).json({ error, success: false });
     }
 };
+
