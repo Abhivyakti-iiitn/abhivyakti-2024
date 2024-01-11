@@ -33,6 +33,8 @@
   border: none;
   border-radius: 12px;
   padding: 8px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
 }
 .infoDiv .info_heading {
   display: flex;
@@ -42,6 +44,25 @@
 .infoDiv .withtooltip {
   display: flex;
   justify-content: space-between;
+}
+.infoDiv input::-webkit-outer-spin-button,
+.infoDiv input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.infoDiv input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.infoDiv input:-webkit-autofill,
+.infoDiv input:-webkit-autofill:hover,
+.infoDiv input:-webkit-autofill:focus,
+.infoDiv input:-internal-autofill-selected {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  color: #ABAFB1 !important;
 }
 @media (max-width: 650px) {
   .infoDiv {
@@ -54,6 +75,8 @@
   border: none;
   border-radius: 12px;
   font-size: larger;
+  background-color: transparent;
+  outline: none;
 }
 
 .infoDiv input::placeholder,

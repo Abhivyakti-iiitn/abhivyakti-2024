@@ -39,3 +39,21 @@ export const createPraanant = async (req, res) => {
         return;
     }
 }
+
+export const checkRegistration = async (req, res) => {
+    try {
+        const userId = req.user.id; // Assuming you have middleware to extract user ID from the request
+
+        // Check if the user is already registered for the event
+        const existingRegistration = await Praanant.findOne({ userId });
+
+        if (existingRegistration) {
+            return res.status(200).json({ success: true, message: "User is already registered for Admads" });
+        } else {
+            return res.status(200).json({ success: false, message: "User is not registered for Admads" });
+        }
+    } catch (error) {
+        console.error("Error checking registration:", error);
+        return res.status(500).json({ success: false, error: "Internal Server Error" });
+    }
+};
