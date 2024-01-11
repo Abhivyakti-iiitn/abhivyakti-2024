@@ -3,14 +3,17 @@ import '../css/Students.css';
 import data from "../assets/teamsdata.json";
 import clubs from "../assets/clubdata.json";
 import Footer from './Footer';
+import StickyHeader from './StickyHeader';
 
 const Students = () => {
     const teams = data.teams;
     return (
+        <>
+        <StickyHeader />
         <div className='Students'>
             <fieldset>
                 <legend>
-                    Website Contibutors
+                    Website Contributors
                 </legend>
             </fieldset>
 
@@ -100,6 +103,8 @@ const Students = () => {
             </div>
             {/* <Footer/> */}
         </div>
+        <Footer />
+        </>
     )
 }
 
