@@ -4,6 +4,8 @@ import "../css/EntryLoader.css";
 import NewContext from '../context/NewContext';
 import { toast } from 'react-toastify';
 
+const customId = "entryToast"
+
 
 
 function EntryLoader(props) {
@@ -30,7 +32,9 @@ function EntryLoader(props) {
         }
         setTimeout(() => {
             if (suc){
-        //    toast.success("Welcome Back!");
+           toast.success("Welcome Back!",{
+            toastId:customId
+           });
 
             }
             navigateTo('/home');

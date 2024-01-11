@@ -55,7 +55,7 @@ const DataContext = (props) => {
         // let rest_link = selector(event_name);
         const response = await fetch(`${url}/api/${event_name}`, {
             method: 'POST',
-            body: JSON.stringify({formData, regBy : name, rebyEmail:email}),
+            body: JSON.stringify({formData, regBy : name, regbyEmail:email}),
             headers: {
                 'Content-Type': 'application/json',
                 'access_token': access_token

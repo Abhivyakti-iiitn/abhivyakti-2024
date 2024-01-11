@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
 // import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from './LogoComponent';
+import NewContext from '../context/NewContext';
+import {toast} from "react-toastify";
 
 function Header(props) {
     const nav = useNavigate();
 
+    const context = useContext(NewContext);
+
     const [animate, setAnimate] = useState(true);
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-
-    const isLoggedin = props.isLoggedin;
-    const setisLoggedin = props.setisLoggedin;
+    const [isLoggedin, setisLoggedin] = useState(false)
     const particleCount = 50;
 
     //mounting the fire particle effect.
@@ -126,6 +128,15 @@ function Header(props) {
 
         animate();
 
+        if (context.userData) {
+            setisLoggedin(true);
+        } else if (window.localStorage.getItem("access_token") && !context.userData) {
+            const data = context.fetchUser(window.localStorage.getItem("access_token"));
+            if (data.success) {
+                setisLoggedin(true);
+                toast.success("Welcome Back!");
+            }
+        }
 
         return () => {
             window.removeEventListener('resize', handleResize);
