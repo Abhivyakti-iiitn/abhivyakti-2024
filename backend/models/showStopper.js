@@ -16,7 +16,10 @@ const ShowStopperSchema = mongoose.Schema({
     contact_phone:String,
     aud_link:String,
     vid_link:String,
-    payment_link:String
+    payment_link:String,
+    msg:String,
+    payment_id:String,
+    order_id:String
 });
 
 const ShowStopper = mongoose.model('ShowStopper', ShowStopperSchema);

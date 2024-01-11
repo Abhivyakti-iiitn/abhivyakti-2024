@@ -27,6 +27,9 @@ export const createAndhakaar = async (req, res) => {
         user.vid_link = data.vid_link;
         user.script_link = data.script_link;
         user.payment_link = data.payment_link;
+        user.msg = data.msg;
+        user.payment_id = data.payment_id;
+        user.order_id = data.order_id;
 
         await user.save();
 

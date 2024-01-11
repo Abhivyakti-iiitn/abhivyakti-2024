@@ -17,6 +17,10 @@ const AdmadsSchema = mongoose.Schema({
     contact_phone: String,
     vid_link: String,
     payment_link:String,
+    msg:String,
+    payment_id:String,
+    order_id:String
+
 });
 
 const Admads = mongoose.model('Admads', AdmadsSchema);

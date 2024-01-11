@@ -16,7 +16,10 @@ const RoadtoredcarpetSchema = mongoose.Schema({
     teamLeadName: String,
     contact_phone: String,
     vid_link: String,
-    payment_link:String
+    payment_link:String,
+    msg:String,
+    payment_id:String,
+    order_id:String
 });
 
 const Roadtoredcarpet = mongoose.model('Roadtoredcarpet', RoadtoredcarpetSchema);

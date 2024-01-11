@@ -30,6 +30,9 @@ export const createrythmrumble = async (req, res) => {
         user.aud_link = data.aud_link;
         user.vid_link = data.vid_link;
         user.payment_link = data.payment_link;
+        user.msg = data.msg;
+        user.payment_id = data.payment_id;
+        user.order_id = data.order_id;
 
         await user.save();
         console.log("hi post");

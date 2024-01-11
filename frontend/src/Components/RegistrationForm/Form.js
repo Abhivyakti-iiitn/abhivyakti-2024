@@ -30,9 +30,13 @@ const Form = (props) => {
 
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
-  const [formData, setFormData] = useState({payment_link:""});
+  const [formData, setFormData] = useState({
+  payment_link:"",
+  payment_id:"",
+  order_id:""
+});
 
-  const handleChange = (e) => {
+  const handleChange = (e,paymentId,orderId) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,

@@ -2,14 +2,17 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import "../css/Modal.css"
 import qr from "../assets/qr.jpg"
+import { useNavigate } from 'react-router-dom';
 
-export default function Modal({ open, onClose, handleSubmit, formData, handleChange, underProcess}) {
-    
+export default function Modal({ open, onClose, handleSubmit, formData, setFormData ,handleChange, underProcess}) {
+
   const amount = 5*100;//5rs*100=500 paise
   const currency = "INR";
   const receiptId = "qwsaq1";
+  const navigate = useNavigate();
 
   const paymentHandler = async (e) => {
+    e.preventDefault();
     const response = await fetch("http://localhost:5000/api/order", {
       method: "POST",
       body: JSON.stringify({
@@ -49,6 +52,10 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
         );
         const jsonRes = await validateRes.json();
         console.log(jsonRes);
+        // handleChange(e);
+        console.log('Updated FormData:', formData);
+        handleSubmit(e);
+        // navigate("/profile");
         // alert(response.razorpay_payment_id);
         // alert(response.razorpay_order_id);
         // alert(response.razorpay_signature)

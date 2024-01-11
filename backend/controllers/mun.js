@@ -26,6 +26,9 @@ export const createmun = async (req, res) => {
         user.organizations = data.organizations;
         user.accommodationRequired = data.accommodationRequired;
         user.payment_link = data.payment_link;
+        user.msg = data.msg;
+        user.payment_id = data.payment_id;
+        user.order_id = data.order_id;
 
         await user.save();
 
