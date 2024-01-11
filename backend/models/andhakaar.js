@@ -16,7 +16,10 @@ const AndhkaarSchema = mongoose.Schema({
     instituteName: String,
     vid_link: String,
     script_link: String,
-    payment_link:String
+    payment_link:String,
+    msg:String,
+    payment_id:String,
+    order_id:String
 });
 
 const Andhkaar = mongoose.model('Andhkaar', AndhkaarSchema);

@@ -5,14 +5,25 @@ import qr from "../assets/qr.jpg";
 import { useParams } from 'react-router-dom';
 import evtCont from '../assets/EventContent.json';
 
-export default function Modal({ open, onClose, handleSubmit, formData, handleChange, underProcess }) {
+import { useEffect } from 'react';
+import img from "../assets/EventPageAsst/Glow-icon.svg"
 
-    const amount = 5 * 100;//5rs*100=500 paise
+export default function Modal({ open, onClose, handleSubmit, formData, setFormData,handleChange, underProcess }) {
+    const { eventname } = useParams();
+    console.log(formData);
+    const data=evtCont[eventname];
+    const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
+    const feesString = data.fees.replace(/[₹,]/g, ''); // Remove commas and ₹ symbol
+    const fees = parseInt(feesString); // Convert to integer
+    const amount = fees * 100; // Calculate amount
+    // const amount = 5 * 100;//5rs*100=500 paise
     const currency = "INR";
     const receiptId = "qwsaq1";
 
     const paymentHandler = async (e) => {
-        const response = await fetch("http://localhost:5000/api/order", {
+    try{
+        e.preventDefault();
+        const response = await fetch(`${url}/api/order`, {
             method: "POST",
             body: JSON.stringify({
                 amount,
@@ -31,8 +42,8 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
             amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             currency,
             name: "Abhivyakti", //your business name
-            description: "Test Transaction",
-            image: "https://example.com/your_logo",
+            description: {eventname},
+            image: {img},
             order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             handler: async function (response) {
                 const body = {
@@ -40,7 +51,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
                 };
 
                 const validateRes = await fetch(
-                    "http://localhost:5000/api/order/validate",
+                    `${url}/api/order/validate`,
                     {
                         method: "POST",
                         body: JSON.stringify(body),
@@ -51,18 +62,31 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
                 );
                 const jsonRes = await validateRes.json();
                 console.log(jsonRes);
+                const paymentId = jsonRes.paymentId;
+                const orderId = jsonRes.orderId;
+                console.log(paymentId);
+                console.log(orderId);
+                // await setFormData({
+                //     payment_id : paymentId,
+                //     order_id: orderId,
+                // });
+                // await new Promise(resolve => setTimeout(resolve, 3000));
+                formData.payment_id = paymentId;
+                formData.order_id = orderId;
+                console.log(formData);
+                handleSubmit(e);
                 // alert(response.razorpay_payment_id);
                 // alert(response.razorpay_order_id);
                 // alert(response.razorpay_signature)
             },
             prefill: {
                 //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-                name: "Web Dev Matrix", //your customer's name
-                email: "webdevmatrix@example.com",
-                contact: "9000000000", //Provide the customer's phone number for better conversion rates
+                name: formData.regBy || formData.teamName, //your customer's name
+                email: formData.regbyEmail,
+                contact: formData.contact_phone, //Provide the customer's phone number for better conversion rates
             },
             notes: {
-                address: "Razorpay Corporate Office",
+                address: formData.clgName,
             },
             theme: {
                 color: "#3399cc",
@@ -80,14 +104,17 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
         });
         rzp1.open();
         e.preventDefault();
+    }
+    catch(error){
+        console.log(error);
+    }
+
     };
 
     if (!open) return null
 
-    const { eventname } = useParams();
 
     // Now, paramName will contain the value of the "admads" parameter from the URL
-    const data=evtCont[eventname];
     return ReactDom.createPortal(
         <>
             <div className='Modal__overlay' />

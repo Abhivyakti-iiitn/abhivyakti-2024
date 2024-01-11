@@ -29,6 +29,9 @@ export const createadmads = async (req, res) => {
         user.contact_phone = data.contact_phone;
         user.vid_link = data.vid_link;
         user.payment_link = data.payment_link;
+        user.msg = data.msg;
+        user.payment_id = data.payment_id;
+        user.order_id = data.order_id;
 
         await user.save();
 

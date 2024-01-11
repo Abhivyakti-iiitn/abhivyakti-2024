@@ -15,7 +15,10 @@ const BahumukhiSchema = mongoose.Schema({
     instituteName: String,
     script_link: String,
     vid_link: String,
-    payment_link:String
+    payment_link:String,
+    msg:String,
+    payment_id:String,
+    order_id:String
 });
 
 const Bahumukhi = mongoose.model('Bahumukhi', BahumukhiSchema);
