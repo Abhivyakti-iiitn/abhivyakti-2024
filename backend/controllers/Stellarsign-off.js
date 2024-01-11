@@ -21,8 +21,8 @@ export const createStellarsignoff = async (req, res) => {
         console.log(entry)
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.participantName = data.participantName;
         user.contact_phone = data.contact_phone;
         user.Email = data.Email;

@@ -20,8 +20,8 @@ export const createrythmrumble = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.teamName = data.teamName;
         user.teamLeadName = data.teamLeadName;
         user.leadEmail = data.leadEmail;

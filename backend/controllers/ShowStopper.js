@@ -19,8 +19,8 @@ export const createShowStopper = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.name = data.name;
         user.clgName = data.clgName;
         user.contact_phone = data.contact_phone;

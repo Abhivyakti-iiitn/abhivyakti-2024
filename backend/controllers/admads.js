@@ -21,8 +21,8 @@ export const createadmads = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.teamName = data.teamName;
         user.clgName = data.clgName;
         user.teamLeadName = data.teamLeadName;

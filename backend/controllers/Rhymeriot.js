@@ -19,8 +19,8 @@ export const createRhymeriot = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.bandName = data.bandName;
         user.leaderName = data.leaderName;
         user.contact_phone = data.contact_phone;

@@ -19,8 +19,8 @@ export const createBahumukhi = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.participantName = data.participantName;
         user.instituteName = data.instituteName;
         user.script_link = data.script_link;
