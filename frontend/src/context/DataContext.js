@@ -55,7 +55,7 @@ const DataContext = (props) => {
         // let rest_link = selector(event_name);
         const response = await fetch(`${url}/api/${event_name}`, {
             method: 'POST',
-            body: JSON.stringify({formData, regBy : name, regbyEmail:email}),
+            body: JSON.stringify({formData, regBy : name, rebyEmail:email}),
             headers: {
                 'Content-Type': 'application/json',
                 'access_token': access_token
@@ -101,12 +101,31 @@ const DataContext = (props) => {
         });
 
         const data = await res.json();
-        
+
         return data
     }
     //    const [isLoggedin, setisLoggedin] = useState(false);
+    const checkRegistrationStatus = async (event_name, access_token) => {
+        try {
+            const response = await fetch(`${url}/api/${event_name}/check-registration`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'access_token': access_token
+                }
+            });
+
+            const data = await response.json();
+
+            return data.success; // Return true if the user is already registered, false otherwise
+        } catch (error) {
+            console.error(`Error checking registration status for ${event_name}:`, error);
+            // Handle error - you might want to show an error toast or handle it in another way
+            return false;
+        }
+    }
     return (
-        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut, fetchEventData }}>
+        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut, fetchEventData, checkRegistrationStatus:checkRegistrationStatus }}>
             {props.children}
         </NewContext.Provider>
     )
