@@ -34,7 +34,7 @@ const Form = (props) => {
   payment_link:"",
   payment_id:"",
   order_id:""
-});
+  });
 
   const handleChange = (e,paymentId,orderId) => {
     const { name, value } = e.target;
@@ -127,7 +127,7 @@ const Form = (props) => {
       <div ref={formRef} className='form'>
         {selector(props.name)}
       </div>
-      <Modal open={open} onClose={onCloseModal} handleChange={handleChange}  handleSubmit={handleSubmit} underProcess= {underProcess} center/>
+      <Modal open={open} onClose={onCloseModal} handleChange={handleChange}  handleSubmit={handleSubmit} underProcess= {underProcess} setFormData={setFormData} formData={formData} center/>
     </div>
   );
 };
