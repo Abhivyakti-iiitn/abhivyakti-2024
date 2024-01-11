@@ -69,6 +69,27 @@ const DataContext = (props) => {
 
     }
 
+    const fetchEventData = async (access_token) => {
+
+       
+
+        // let rest_link = selector(event_name);
+        const response = await fetch(`${url}/api/fetch-event-data`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'access_token': access_token
+            }
+        });
+
+        const data = await response.json();
+        
+
+        return data;
+
+
+    }
+
     const fetchUser = async (access_token) => {
 
         const res = await fetch(`${url}/api/fetch-user`, {
@@ -80,12 +101,12 @@ const DataContext = (props) => {
         });
 
         const data = await res.json();
-
+        
         return data
     }
     //    const [isLoggedin, setisLoggedin] = useState(false);
     return (
-        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut }}>
+        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut, fetchEventData }}>
             {props.children}
         </NewContext.Provider>
     )
