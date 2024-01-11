@@ -14,6 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #FFF;
+  color: #fff;
   padding: 0rem 2.25rem;
   padding-bottom: 1.5rem;
   z-index: 1000;
@@ -35,27 +36,21 @@
   font-family: sans-serif;
   align-self: flex-end;
 }
-.Modal__text {
-  color: #fff;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-size: 1.35rem;
+.Modal__heading {
+  font-family: "Carta Marina W00 Regular";
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  margin-bottom: 0.25rem;
 }
-.Modal__qr {
-  width: 15rem;
-  margin-bottom: 0.3rem;
+.Modal__tagline {
+  font-family: "Carta Marina W00 Regular";
+  color: #7e7e7e;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
 }
-.Modal .infoDiv {
-  margin: 1.35rem 0;
-  width: calc(100% - 16px);
-}
-.Modal .infoDiv .withtooltip {
-  color: #5E6366;
-}
-.Modal .infoDiv input {
-  padding: 0.35rem 0;
-  outline: none;
-  background-color: transparent;
+.Modal__fees {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .Modal__submit {
   border: 2px solid;
