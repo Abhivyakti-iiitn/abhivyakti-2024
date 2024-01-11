@@ -93,9 +93,21 @@ function Profile() {
     }
 
     useEffect(() => {
+        console.log("ahskhd")
         document.querySelector(".profile_heading").scrollIntoView(0);
+        
+        if(!window.localStorage.getItem("access_token"))
+        {
+            navigateTo('/login');
+            return;
+        }
+        else if (!context.userData && window.localStorage.getItem("access_token")) {
+            const data = context.fetchUser(window.localStorage.getItem("access_token"));
+            data.then(res => {
+                context.userData = res.findUser;
+            });
+        }
         fetchEvent();
-
     }, [])
 
     return (

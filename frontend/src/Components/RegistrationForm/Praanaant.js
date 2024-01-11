@@ -13,7 +13,7 @@ const Praanaant = ({ formData, setFormData, onCloseModal, onOpenModal, handleCha
     try {
       const isRegistered = await context.checkRegistrationStatus('praanant', window.localStorage.getItem("access_token"));
 
-      if (isRegistered) toast.error('You are already registered for this event.');
+      if (isRegistered) toast.error('You have already registered for this event.');
       else onOpenModal();
   } catch (error) {
       console.error('Error checking registration status:', error);

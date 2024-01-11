@@ -7,6 +7,8 @@ import LogoComponent from './LogoComponent';
 import NewContext from '../context/NewContext';
 import { toast } from "react-toastify";
 
+const toastId = "wlcmtst";
+
 function Header(props) {
     const nav = useNavigate();
 
@@ -137,7 +139,9 @@ function Header(props) {
                 context.userData = res.findUser;
                 if (res.success) {
                     setisLoggedin(true);
-                    toast.success("Welcome Back!");
+                    toast.success("Welcome Back!", {
+                        toastId: toastId
+                    });
                 }
             });
         }
