@@ -9,6 +9,7 @@ import img from "../assets/EventPageAsst/Glow-icon.svg"
 
 export default function Modal({ open, onClose, handleSubmit, formData, setFormData,handleChange, underProcess }) {
     const { eventname } = useParams();
+    console.log(formData);
     const data=evtCont[eventname];
     const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
     const feesString = data.fees.replace(/[₹,]/g, ''); // Remove commas and ₹ symbol
@@ -41,7 +42,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
             currency,
             name: "Abhivyakti", //your business name
             description: {eventname},
-            image: "",
+            image: {img},
             order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             handler: async function (response) {
                 const body = {
@@ -79,12 +80,12 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
             },
             prefill: {
                 //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-                name: "Web Dev Matrix", //your customer's name
-                email: "webdevmatrix@example.com",
-                contact: "9000000000", //Provide the customer's phone number for better conversion rates
+                name: formData.regBy || formData.teamName, //your customer's name
+                email: formData.regbyEmail,
+                contact: formData.contact_phone, //Provide the customer's phone number for better conversion rates
             },
             notes: {
-                address: "Razorpay Corporate Office",
+                address: formData.clgName,
             },
             theme: {
                 color: "#3399cc",
