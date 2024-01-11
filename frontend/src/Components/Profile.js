@@ -101,8 +101,8 @@ function Profile() {
 
     return (
         <>
-            <StickyHeader type={1} handleSignout={handleSignout} />
             <div className='profile_page'>
+                <StickyHeader type={1} handleSignout={handleSignout} />
                 <div className='profile_heading'>
                     <div class="horizontal-line1"></div>
                     <h1 className='profile'>PROFILE</h1>
