@@ -4,6 +4,7 @@ import "../css/Modal.css"
 import qr from "../assets/qr.jpg";
 import { useParams } from 'react-router-dom';
 import evtCont from '../assets/EventContent.json';
+
 import { useEffect } from 'react';
 import img from "../assets/EventPageAsst/Glow-icon.svg"
 
@@ -107,9 +108,11 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
     catch(error){
         console.log(error);
     }
+
     };
 
     if (!open) return null
+
 
     // Now, paramName will contain the value of the "admads" parameter from the URL
     return ReactDom.createPortal(
