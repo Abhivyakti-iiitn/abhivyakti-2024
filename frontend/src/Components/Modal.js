@@ -10,6 +10,7 @@ import img from "../assets/EventPageAsst/Glow-icon.svg"
 export default function Modal({ open, onClose, handleSubmit, formData, setFormData,handleChange, underProcess }) {
     const { eventname } = useParams();
     const data=evtCont[eventname];
+    const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
     const feesString = data.fees.replace(/[₹,]/g, ''); // Remove commas and ₹ symbol
     const fees = parseInt(feesString); // Convert to integer
     const amount = fees * 100; // Calculate amount
@@ -20,7 +21,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
     const paymentHandler = async (e) => {
     try{
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/order", {
+        const response = await fetch(`${url}/api/order`, {
             method: "POST",
             body: JSON.stringify({
                 amount,
@@ -48,7 +49,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
                 };
 
                 const validateRes = await fetch(
-                    "http://localhost:5000/api/order/validate",
+                    `${url}/api/order/validate`,
                     {
                         method: "POST",
                         body: JSON.stringify(body),
