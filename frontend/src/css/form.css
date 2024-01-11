@@ -52,6 +52,7 @@
 }
 .infoDiv input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 .infoDiv input:-webkit-autofill,
 .infoDiv input:-webkit-autofill:hover,
