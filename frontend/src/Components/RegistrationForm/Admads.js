@@ -1,17 +1,26 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import NewContext from '../../context/NewContext';
 import { toast } from 'react-toastify';
 
-const url = process.env.REACT_APP_HOST || "http://localhost:8080"
+const url = process.env.REACT_APP_HOST || "http://localhost:5000";
 
 const Admads = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange }) => {
-
   const context = useContext(NewContext);
 
-  const handleSubmit = (e) => {
+  // Admads component
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onOpenModal()
+    try {
+      const isRegistered = await context.checkRegistrationStatus('admads', window.localStorage.getItem("access_token"));
+
+      if (isRegistered) toast.error('You have already registered for this event.');
+      else onOpenModal();
+  } catch (error) {
+      console.error('Error checking registration status:', error);
+  }
   };
+
 
   return (
     <>

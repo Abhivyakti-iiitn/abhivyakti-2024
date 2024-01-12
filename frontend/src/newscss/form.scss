@@ -47,6 +47,30 @@
         justify-content: space-between;
     }
 
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-internal-autofill-selected {
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        background-color: transparent !important;
+        outline: none !important;
+        color: #ABAFB1 !important;
+    }
+
     // font-size: larger;
     @media (max-width:650px) {
         width: 80%;

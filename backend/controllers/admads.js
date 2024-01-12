@@ -21,8 +21,8 @@ export const createadmads = async (req, res) => {
         }
 
         user.userId = id;
-        user.regBy = req.regBy;
-        user.regbyEmail = req.reqbyEmail;
+        user.regBy = req.body.regBy;
+        user.regbyEmail = req.body.regbyEmail;
         user.teamName = data.teamName;
         user.clgName = data.clgName;
         user.teamLeadName = data.teamLeadName;
@@ -48,3 +48,18 @@ export const createadmads = async (req, res) => {
 
 
 }
+export const checkRegistration = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const existingRegistration = await Admads.findOne({ userId });
+
+        if (existingRegistration) {
+            return res.status(200).json({ success: true, message: "User is already registered for Admads" });
+        } else {
+            return res.status(200).json({ success: false, message: "User is not registered for Admads" });
+        }
+    } catch (error) {
+        console.error("Error checking registration:", error);
+        return res.status(500).json({ success: false, error: "Internal Server Error" });
+    }
+};

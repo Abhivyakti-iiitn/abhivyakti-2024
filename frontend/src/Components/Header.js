@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "../css/mainPage.css"
 import Svg from './SVG';
 // import logo from "../assets/EventPageAsst/logoPlaceHolder.svg"
 import LogoComponent from './LogoComponent';
+import NewContext from '../context/NewContext';
+import { toast } from "react-toastify";
+
+const toastId = "wlcmtst";
 
 function Header(props) {
     const nav = useNavigate();
 
+    const context = useContext(NewContext);
+
     const [animate, setAnimate] = useState(true);
     //Variable to control fire spark particles number. Don't increase it too much. Might crash your browser.
-
-    const isLoggedin = props.isLoggedin;
-    const setisLoggedin = props.setisLoggedin;
+    const [isLoggedin, setisLoggedin] = useState(false)
     const particleCount = 50;
 
     //mounting the fire particle effect.
@@ -126,11 +130,30 @@ function Header(props) {
 
         animate();
 
+        if (window.localStorage.getItem("access_token") && context.userData) {
+            // toast.success("Welcome Back!");
+            setisLoggedin(true);
+        } else if (window.localStorage.getItem("access_token") && !context.userData) {
+            const data = context.fetchUser(window.localStorage.getItem("access_token"));
+            data.then(res => {
+                context.userData = res.findUser;
+                if (res.success) {
+                    setisLoggedin(true);
+                    toast.success("Welcome Back!", {
+                        toastId: toastId
+                    });
+                }
+            }).catch(error=> {
+                toast.info("You can browse the site but wont be able to register !", {
+                    toastId:"info1",
+                    delay:"3000"
+                })
+            })
+        }
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-
     }, []);
 
 

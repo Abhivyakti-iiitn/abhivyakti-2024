@@ -69,9 +69,12 @@ const DataContext = (props) => {
 
     }
 
-    const fetchUser = async (access_token) => {
+    const fetchEventData = async (access_token) => {
 
-        const res = await fetch(`${url}/api/fetch-user`, {
+       
+
+        // let rest_link = selector(event_name);
+        const response = await fetch(`${url}/api/fetch-event-data`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -79,13 +82,57 @@ const DataContext = (props) => {
             }
         });
 
-        const data = await res.json();
+        const data = await response.json();
+        
 
-        return data
+        return data;
+
+
+    }
+
+    const fetchUser = async (access_token) => {
+
+        try{
+
+            const res = await fetch(`${url}/api/fetch-user`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'access_token': access_token
+                }
+            });
+            
+            const data = await res.json();
+            
+            return data
+        }catch (error)
+        {
+            console.log(error);
+            throw Error(error);
+        }
     }
     //    const [isLoggedin, setisLoggedin] = useState(false);
+    const checkRegistrationStatus = async (event_name, access_token) => {
+        try {
+            const response = await fetch(`${url}/api/${event_name}/check-registration`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'access_token': access_token
+                }
+            });
+
+            const data = await response.json();
+
+            return data.success; // Return true if the user is already registered, false otherwise
+        } catch (error) {
+            console.error(`Error checking registration status for ${event_name}:`, error);
+            // Handle error - you might want to show an error toast or handle it in another way
+            return false;
+        }
+    }
     return (
-        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut }}>
+        <NewContext.Provider value={{ userData: userData, setuserData: setuserData, fetchUser: fetchUser, Register:Register, isloggedIn:isloggedIn, logIn:logIn, logOut:logOut, fetchEventData, checkRegistrationStatus:checkRegistrationStatus }}>
             {props.children}
         </NewContext.Provider>
     )

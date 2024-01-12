@@ -1,18 +1,74 @@
 import Express from "express";
 import {GetUser} from "../middlewares/getuser.js"
-import { getShowStopper, createShowStopper } from "../controllers/ShowStopper.js";
-import { getBronxBattleground, createBronxBattleground } from "../controllers/BronxBattleground.js";
-import { getPraanant, createPraanant } from "../controllers/Praanant.js";
-import { getRhymeriot, createRhymeriot } from "../controllers/Rhymeriot.js";
-import { getStellarsignoff, createStellarsignoff } from "../controllers/Stellarsign-off.js";
-import { getadmads, createadmads } from "../controllers/admads.js";
-import { getmun, createmun } from "../controllers/mun.js";
-import { getGroovegenesis, createGroovegenesis } from "../controllers/Groovegenesis.js";
-import { getBahumukhi, createBahumukhi } from "../controllers/Bahumukhi.js";
-import { getAndhakaar, createAndhakaar } from "../controllers/Andhakaar.js";
-import { getroadtoredcarpet, createroadtoredcarpet } from "../controllers/roadtoredcarpet.js";
-import { getrythmrumble, createrythmrumble } from "../controllers/rythmrumble.js";
+// ... (previous imports)
+
+import {
+    getShowStopper,
+    createShowStopper,
+    checkRegistration as checkShowstopperRegistration,
+} from "../controllers/ShowStopper.js";
+
+import {
+    getBronxBattleground,
+    createBronxBattleground,
+    checkRegistration as checkBronxBattlegroundRegistration,
+} from "../controllers/BronxBattleground.js";
+
+import {
+    getPraanant,
+    createPraanant,
+    checkRegistration as checkPraanantRegistration,
+} from "../controllers/Praanant.js";
+
+import {
+    getRhymeriot,
+    createRhymeriot,
+    checkRegistration as checkRhymeriotRegistration,
+} from "../controllers/Rhymeriot.js";
+
+import {
+    getStellarsignoff,
+    createStellarsignoff,
+    checkRegistration as checkStellarsignoffRegistration,
+} from "../controllers/Stellarsign-off.js";
+
+import {
+    getGroovegenesis,
+    createGroovegenesis,
+    checkRegistration as checkGroovegenesisRegistration,
+} from "../controllers/Groovegenesis.js";
+
+import {
+    getBahumukhi,
+    createBahumukhi,
+    checkRegistration as checkBahumukhiRegistration,
+} from "../controllers/Bahumukhi.js";
+
+import {
+    getAndhakaar,
+    createAndhakaar,
+    checkRegistration as checkAndhakaarRegistration,
+} from "../controllers/Andhakaar.js";
+
+import {
+    getroadtoredcarpet,
+    createroadtoredcarpet,
+    checkRegistration as checkRoadtoredcarpetRegistration,
+} from "../controllers/roadtoredcarpet.js";
+
+import {
+    getrythmrumble,
+    createrythmrumble,
+    checkRegistration as checkRythmRumbleRegistration,
+} from "../controllers/rythmrumble.js";
+import {
+    getmun,
+    createmun,
+    checkRegistration as checkMUNRegistration,
+} from "../controllers/mun.js";
+import { getadmads, createadmads, checkRegistration as checkAdmadsRegistration } from "../controllers/admads.js";
 import { signin, signup, fetchUser } from "../controllers/auth.controller.js";
+import { fetchEventData } from "../controllers/eventFetch.js";
 import { order,validate } from "../controllers/razorpay.js";
 
 const router = Express.Router();
@@ -21,8 +77,23 @@ router.get('/', (req, res) => {
     res.json({ status: 'ok', msg: "welcome to abhvyakti api" });
 });
 router.get('/fetch-user', fetchUser);
+router.get('/fetch-event-data',GetUser, fetchEventData);
 router.post('/sign-in', signin);
 router.post('/sign-up', signup);
+
+router.get('/showstopper/check-registration', GetUser, checkShowstopperRegistration);
+router.get('/bronxbattleground/check-registration', GetUser, checkBronxBattlegroundRegistration);
+router.get('/praanant/check-registration', GetUser, checkPraanantRegistration);
+router.get('/admads/check-registration', GetUser, checkAdmadsRegistration);
+router.get('/rhymeriot/check-registration', GetUser, checkRhymeriotRegistration);
+router.get('/stellarsing-off/check-registration', GetUser, checkStellarsignoffRegistration);
+router.get('/groovegenesis/check-registration', GetUser, checkGroovegenesisRegistration);
+router.get('/bahumukhi/check-registration', GetUser, checkBahumukhiRegistration);
+router.get('/andhakaar/check-registration', GetUser, checkAndhakaarRegistration);
+router.get('/roadtoredcarpet/check-registration', GetUser, checkRoadtoredcarpetRegistration);
+router.get('/rythmrumble/check-registration', GetUser, checkRythmRumbleRegistration);
+router.get('/modelunitednations/check-registration', GetUser, checkMUNRegistration);
+router.get('/admads/check-registration', GetUser, checkAdmadsRegistration);
 
 //payment gateway
 router.post("/order",order);

@@ -8,9 +8,16 @@ const BronxBattleground = ({ formData, setFormData, onCloseModal, onOpenModal, h
 
   const context = useContext(NewContext);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onOpenModal()
+    try {
+      const isRegistered = await context.checkRegistrationStatus('bronxbattleground', window.localStorage.getItem("access_token"));
+
+      if (isRegistered) toast.error('You have already registered for this event.');
+      else onOpenModal();
+  } catch (error) {
+      console.error('Error checking registration status:', error);
+  }
   };
   
   return (

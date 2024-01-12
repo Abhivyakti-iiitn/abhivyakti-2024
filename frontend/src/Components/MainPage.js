@@ -49,28 +49,18 @@ function MainPage() {
   const isMobile = isMobileDevice();
 
 
-  const [isLoggedin, setisLoggedin] = useState(false)
-
 
 
   useEffect(() => {
     animateEventCards();
-    if (window.localStorage.getItem("access_token") && context.userData) {
-      // toast.success("Welcome Back!");
-      setisLoggedin(true);
-    } else if (window.localStorage.getItem("access_token" && !context.userData)){
-      const data = context.fetchUser(window.localStorage.getItem("access_token"));
-      if (data.success) {
-        setisLoggedin(true);
-      }
-    }
+
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="App">
       {/* <FirefliesAnimation /> */}
-      <Header isLoggedin={isLoggedin} setisLoggedin={setisLoggedin} />
+      <Header />
       <div className="blur_portion"></div>
       <div>
         {isMobile ? (
