@@ -56,22 +56,25 @@ const Form = (props) => {
 
   useEffect(() => {
 
-    if(!window.localStorage.getItem("access_token"))
-    {
-        toast.error("You have to log in first before you can register for an event. !!", {
-          toastId:"loginfirst"
-        })
-        
-        setTimeout(() => {
-            navigateTo("/signup")
-        }, 1000);
+    if (!window.localStorage.getItem("access_token")) {
+      toast.error("You have to log in first before you can register for an event. !!", {
+        toastId: "loginfirst"
+      })
+
+      setTimeout(() => {
+        navigateTo("/signup")
+      }, 1000);
 
     }
     else if (!context.userData && window.localStorage.getItem("access_token")) {
       const data = context.fetchUser(window.localStorage.getItem("access_token"));
       data.then(res => {
         context.userData = res.findUser;
-      });
+      }).catch(error => {
+        toast.info("backend error ! Failed to fetch user data !", {
+          toastId: "info2",
+        })
+      })
     }
   }, []);
 

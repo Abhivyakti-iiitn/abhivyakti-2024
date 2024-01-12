@@ -92,17 +92,24 @@ const DataContext = (props) => {
 
     const fetchUser = async (access_token) => {
 
-        const res = await fetch(`${url}/api/fetch-user`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'access_token': access_token
-            }
-        });
+        try{
 
-        const data = await res.json();
-
-        return data
+            const res = await fetch(`${url}/api/fetch-user`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'access_token': access_token
+                }
+            });
+            
+            const data = await res.json();
+            
+            return data
+        }catch (error)
+        {
+            console.log(error);
+            throw Error(error);
+        }
     }
     //    const [isLoggedin, setisLoggedin] = useState(false);
     const checkRegistrationStatus = async (event_name, access_token) => {

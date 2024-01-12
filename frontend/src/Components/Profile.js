@@ -105,7 +105,11 @@ function Profile() {
             const data = context.fetchUser(window.localStorage.getItem("access_token"));
             data.then(res => {
                 context.userData = res.findUser;
-            });
+            }).catch(error=> {
+                toast.info("backend error !", {
+                    toastId:"info1",
+                })
+            })
         }
         fetchEvent();
     }, [])

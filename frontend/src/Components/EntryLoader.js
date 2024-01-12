@@ -16,29 +16,47 @@ function EntryLoader(props) {
     useEffect(() => {
 
         let suc = false;
-        
+
         if (window.localStorage.getItem("access_token")) {
             try {
 
-                const data = context.fetchUser(window.localStorage.getItem("access_token")).then((el)=>{
+                const data = context.fetchUser(window.localStorage.getItem("access_token")).then((el) => {
                     suc = el.success;
                     context.setuserData(el.findUser);
+                    setTimeout(() => {
+                        if (suc) {
+                            toast.success("Welcome Back!", {
+                                toastId: customId
+                            });
+
+                        }
+                        navigateTo('/home');
+                    }, 4000);
+                    console.log(el);
+                }).catch((error) => {
+                    setTimeout(() => {
+                        toast.error("Issue with the backend! Registraion wont work. ", {
+                            toastId: 'backenderror'
+                        })
+                        navigateTo('/home');
+                    }, 4000);
                 })
-                
+
             } catch (err) {
                 navigateTo('/home');
-                console.log(err);
             }
-        }
-        setTimeout(() => {
-            if (suc){
-           toast.success("Welcome Back!",{
-            toastId:customId
-           });
+        } else {
 
-            }
-            navigateTo('/home');
-        }, 4000);
+            setTimeout(() => {
+                if (suc) {
+                    toast.success("Welcome Back!", {
+                        toastId: customId
+                    });
+
+                }
+                navigateTo('/home');
+            }, 4000);
+        }
     }, [])
 
     return (

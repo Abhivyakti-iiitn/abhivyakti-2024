@@ -143,7 +143,12 @@ function Header(props) {
                         toastId: toastId
                     });
                 }
-            });
+            }).catch(error=> {
+                toast.info("You can browse the site but wont be able to register !", {
+                    toastId:"info1",
+                    delay:"3000"
+                })
+            })
         }
 
         return () => {
