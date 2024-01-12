@@ -1,3 +1,10 @@
+.profile_page {
+  min-height: 100vh;
+  background-color: #0F0001;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .horizontal-line1,
 .horizontal-line2 {
   margin-top: auto;

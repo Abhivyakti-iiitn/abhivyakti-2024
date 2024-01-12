@@ -86,17 +86,27 @@
   .footer-section {
     min-width: 100vw;
     padding-left: 0;
+    text-align: center;
   }
   .footer-section h3 {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
   .footer-section li {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
   .footer-section p {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
   .footer-section .social-icons {
-    padding-left: 1rem;
+    justify-content:space-evenly;
+  }
+  .footer-section .social-icons a {
+    margin: 0.5em; 
+  }
+  .footer .footer-content .footer-section h3 {
+    font-size: 30px;
   }
 }
