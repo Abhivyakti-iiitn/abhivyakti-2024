@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 
 export default function Modal({ open, onClose, handleSubmit, formData, setFormData,handleChange, underProcess }) {
     const { eventname } = useParams();
-    console.log(formData);
     const data=evtCont[eventname];
     const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
     const feesString = data.fees.replace(/[₹, ]/g, ''); // Remove commas and ₹ symbol
