@@ -1,0 +1,80 @@
+.Students {
+  color: #fff;
+  min-height: 100vh;
+  background: var(--Background, radial-gradient(100% 100% at 50% 0%, rgba(161, 10, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #0F0001);
+  overflow: auto;
+}
+.Students fieldset {
+  margin-top: 2rem;
+  border: 2px solid transparent;
+  border-top-color: #bc615e;
+  box-sizing: border-box;
+  grid-area: 1/1;
+  padding: 20px;
+  width: inherit;
+}
+.Students legend {
+  font: 32pt/0 "Carta Marina W00 Regular";
+  margin: auto;
+  padding: 0 24px;
+}
+
+.orgteamcat {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.orgteamcat .org_content {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  font-size: larger;
+  align-items: center;
+}
+.orgteamcat .org_content .lineteams {
+  width: 100%;
+  transform: translateY(-20px);
+  height: 0px;
+  border-top: 2px solid rgba(255, 255, 255, 0.188);
+}
+@media (max-width: 450px) {
+  .orgteamcat .org_content .lineteams {
+    width: 80%;
+  }
+}
+.orgteamcat .org_content .team_content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.orgteamcat .org_content .team_content .team_item {
+  width: max-content;
+  padding: 0px 2rem;
+  text-align: center;
+  font-size: x-large;
+}
+.orgteamcat .org_content .team_content .team_item:hover i {
+  opacity: 1;
+}
+.orgteamcat .org_content .team_content .team_item i {
+  cursor: pointer;
+  opacity: 0;
+  color: #fff;
+  margin-left: 0.25rem;
+}
+.orgteamcat .org_content .team_content .team_item i:hover {
+  color: rgb(0, 0, 255);
+}
+.orgteamcat .org_content .team_content .team_item h5 {
+  margin-top: -20px;
+  color: rgba(240, 248, 255, 0.596);
+}
+.orgteamcat .org_content .team_content .team_item img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}

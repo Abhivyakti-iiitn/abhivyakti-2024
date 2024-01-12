@@ -1,3 +1,10 @@
+.profile_page {
+  min-height: 100vh;
+  background-color: #0F0001;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .horizontal-line1,
 .horizontal-line2 {
   margin-top: auto;
@@ -86,6 +93,7 @@
   background-color: #2E2E2E;
   padding: 3vh 2vh 0.1vh 2vh;
   border-radius: 10px;
+  margin-bottom: 5vh;
 }
 .event_pic{
   height: 20vh;
@@ -176,6 +184,7 @@
   padding: 1vh 1vh 1vh 1vh;
   border-radius: 10px;
   font-size: 15px;
+  margin-bottom: 8vh;
 }
 .event_pic2{
   height:13vh;

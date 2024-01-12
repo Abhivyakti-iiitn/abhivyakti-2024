@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import '../../css/Login.css';
 import { useNavigate } from 'react-router-dom';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import Footer from '../Footer';
 import LogoComponent from '../../assets/LogoComponent.js';
+import NewContext from '../../context/NewContext.js';
+import { ToastContainer, toast } from 'react-toastify';
 
-const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
+
+const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
+// const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const LoginPage = () => {
+
+   
+    const context = useContext(NewContext);
     // const [userName, setUserName] = useState('');
     // const [userEmail, setUserEmail] = useState('');
     // const [userPassword, setUserPassword] = useState('');
@@ -23,10 +30,10 @@ const LoginPage = () => {
     // }
 
     useEffect(() => {
-        if (localStorage.getItem("usrName")) {
-            // navigateTo("/");
+        if (localStorage.getItem("access_token")) {
+            navigate("/home");
         }
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     }, [])
 
     // const handleNameChange = (e) => {
@@ -39,7 +46,7 @@ const LoginPage = () => {
     // const handlePasswordChange = (e) => {
     //     setUserPassword(e.target.value);
     // }
-    
+
     const [formData, setFormData] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -47,41 +54,50 @@ const LoginPage = () => {
 
     const handleChange = (e) => {
         setFormData({
-        ...formData,
-        [e.target.id]: e.target.value,
+            ...formData,
+            [e.target.id]: e.target.value,
         });
     };
 
     const handleSubmit = async (e) => {
-     e.preventDefault();
+        e.preventDefault();
         try {
-        setLoading(true);
+            setLoading(true);
 
-        const res = await fetch('http://localhost:5000/api/sign-in', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
+            const res = await fetch(`${url}/api/sign-in`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        const data = await res.json();
+            const data = await res.json();
 
-        if (data.success === false) {
-            setError(data.message);
-            console.log(error.message);
-        } else {
-            setError(null);
-            navigate('/');
-        }
+            if (data.success === false) {
+                setError(data.msg);
+                // console.log(error.message);
+                toast.error(data.msg);
 
-        setLoading(false);
+                
+                console.log(data)
+            } else {
+                setError(null);
+                toast.success("Successfully Loggedin!");
+                
+                window.localStorage.setItem("access_token", data.access_token);
+                console.log(data)
+                context.setuserData(data.rest);
+                navigate('/home');
+            }
+
+            setLoading(false);
         } catch (error) {
-        setError(error.message);
-        console.log(error.message);
-        setLoading(false);
-     }
-     };
+            setError(error.message);
+            console.log(error.message);
+            setLoading(false);
+        }
+    };
     return (
         <>
             <div className='LoginSignUp Login'>

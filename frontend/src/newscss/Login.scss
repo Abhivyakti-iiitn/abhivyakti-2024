@@ -112,6 +112,15 @@
     border-radius: 5px;
     padding: 0.75rem;
     margin: 0.2rem 0;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-internal-autofill-selected {
+        background-color: transparent !important;
+        outline: none !important;
+        color: #ABAFB1 !important;
+    }
 }
 
 .submitButton {
