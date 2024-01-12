@@ -1,24 +1,21 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import "../css/Modal.css"
-import qr from "../assets/qr.jpg";
 import { useParams } from 'react-router-dom';
 import evtCont from '../assets/EventContent.json';
-
-import { useEffect } from 'react';
 import img from "../assets/EventPageAsst/Glow-icon.svg"
+import { toast } from 'react-toastify';
 
 export default function Modal({ open, onClose, handleSubmit, formData, setFormData,handleChange, underProcess }) {
     const { eventname } = useParams();
-    console.log(formData);
     const data=evtCont[eventname];
     const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
-    const feesString = data.fees.replace(/[₹,]/g, ''); // Remove commas and ₹ symbol
+    const feesString = data.fees.replace(/[₹, ]/g, ''); // Remove commas and ₹ symbol
     const fees = parseInt(feesString); // Convert to integer
-    const amount = fees * 100; // Calculate amount
-    // const amount = 5 * 100;//5rs*100=500 paise
+    const amount = fees * 100; // Calculate amount 5rs*100=500 paise
     const currency = "INR";
-    const receiptId = "qwsaq1";
+    const receiptId =`qwsaq-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+    ;
 
     const paymentHandler = async (e) => {
     try{
@@ -34,11 +31,15 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
                 "Content-Type": "application/json",
             },
         });
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+        }
+
         const order = await response.json();
-        console.log(order);
 
         var options = {
-            key: "rzp_test_5XRHZaDoFP0ylr", // Enter the Key ID generated from the Dashboard
+            key: process.env.RAZORPAY_KEY_ID || "rzp_test_5XRHZaDoFP0ylr", // Enter the Key ID generated from the Dashboard
             amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             currency,
             name: "Abhivyakti", //your business name
@@ -61,20 +62,18 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
                     }
                 );
                 const jsonRes = await validateRes.json();
-                console.log(jsonRes);
                 const paymentId = jsonRes.paymentId;
                 const orderId = jsonRes.orderId;
-                console.log(paymentId);
-                console.log(orderId);
-                // await setFormData({
-                //     payment_id : paymentId,
-                //     order_id: orderId,
-                // });
-                // await new Promise(resolve => setTimeout(resolve, 3000));
                 formData.payment_id = paymentId;
                 formData.order_id = orderId;
-                console.log(formData);
-                handleSubmit(e);
+                
+                if(jsonRes.msg === "success"){
+                    toast.success("Payment Successful!!");
+                    handleSubmit(e);
+                }    
+                else{
+                    toast.error("Payment Failure!!")
+                }
                 // alert(response.razorpay_payment_id);
                 // alert(response.razorpay_order_id);
                 // alert(response.razorpay_signature)
@@ -86,7 +85,8 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
                 contact: formData.contact_phone, //Provide the customer's phone number for better conversion rates
             },
             notes: {
-                address: formData.clgName,
+                address: "Indian Institue Of Information Technology,Nagpur",
+                eventname:{eventname}
             },
             theme: {
                 color: "#3399cc",
@@ -94,13 +94,13 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
         };
         var rzp1 = new window.Razorpay(options);
         rzp1.on("payment.failed", function (response) {
-            alert(response.error.code);
-            alert(response.error.description);
-            alert(response.error.source);
-            alert(response.error.step);
-            alert(response.error.reason);
-            alert(response.error.metadata.order_id);
-            alert(response.error.metadata.payment_id);
+            toast.error(response.error.code);
+            toast.error(response.error.description);
+            toast.error(response.error.source);
+            toast.error(response.error.step);
+            toast.error(response.error.reason);
+            toast.error(response.error.metadata.order_id);
+            toast.error(response.error.metadata.payment_id);
         });
         rzp1.open();
         e.preventDefault();
@@ -108,13 +108,10 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
     catch(error){
         console.log(error);
     }
-
     };
 
     if (!open) return null
 
-
-    // Now, paramName will contain the value of the "admads" parameter from the URL
     return ReactDom.createPortal(
         <>
             <div className='Modal__overlay' />
