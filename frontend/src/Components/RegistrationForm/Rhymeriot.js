@@ -1,6 +1,4 @@
 import React, { useState, useContext } from 'react';
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
 import NewContext from '../../context/NewContext';
 import { toast } from 'react-toastify';
 
