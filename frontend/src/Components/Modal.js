@@ -87,6 +87,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, setFormDa
             },
             notes: {
                 address: "Indian Institue Of Information Technology,Nagpur",
+                eventname:{eventname}
             },
             theme: {
                 color: "#3399cc",
