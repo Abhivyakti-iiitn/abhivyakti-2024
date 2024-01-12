@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/mailLoader.css"
 
+
 function MailLoader() {
     return (
         <div class="spinner">

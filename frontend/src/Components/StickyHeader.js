@@ -8,7 +8,7 @@ function StickyHeader(props) {
     const innerComp = (type) => {
         if (type === 1) {
             return <ul>
-                <li onClick={() => navigateTo('/')}>HOME</li>
+                <li onClick={() => navigateTo('/home')}>HOME</li>
                 <li onClick={props.handleSignout}>SIGN OUT</li>
             </ul>
         } else if (type === 2) {
@@ -24,7 +24,7 @@ function StickyHeader(props) {
             <div div className='top' >
                 <div className="left" style={{ justifyItems: "center", display: "flex" }}>
                     <ul>
-                        <LogoComponent />
+                        <LogoComponent  />
                         <li><div></div></li>
                         <li onClick={()=>window.open("https://www.instagram.com/abhivyakti_iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-instagram"></i></li>
                             <li onClick={()=>window.open("https://www.linkedin.com/in/abhivyakti-iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-linkedin"></i></li>

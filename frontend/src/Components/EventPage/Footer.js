@@ -56,7 +56,7 @@ const Footer = () => {
                 <p>&copy; 2024 Abhivyakti@IITN. All rights reserved.</p>
                 <p>
                     Developed and Managed by
-                    <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                    <a href="/students" target="_blank" rel="noopener noreferrer">
                         __students
                     </a>
                 </p>

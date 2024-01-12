@@ -1,7 +1,6 @@
 // src/Components/MainPage.js
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "../css/index.css";
-import { useNavigate } from "react-router-dom"
 import FirefliesAnimation from "./FirefliesAnimation";
 import EventCard from "./EventCard";
 import Header from "./Header";
@@ -12,6 +11,9 @@ import Footer from "./Footer"
 import events from "../assets/EventContent.json"
 import VideoPlayerDesktop from './VideoPlayerDesktop';
 import VideoPlayerMobile from './VideoPlayerMobile';
+import NewContext from "../context/NewContext";
+import { toast } from 'react-toastify';
+
 // const events = [
 //   { name: "showstopper", tagline: "event a" },
 //   { name: "beatsmithshowdown", tagline: "event b" },
@@ -40,21 +42,18 @@ const isMobileDevice = () => {
 
 function MainPage() {
 
+  const context = useContext(NewContext);
+
   // console.log(events)
 
   const isMobile = isMobileDevice();
 
-  const navigateTo = useNavigate()
-
-  const [isLoggedin, setisLoggedin] = useState(false)
 
 
 
   useEffect(() => {
     animateEventCards();
-    if (localStorage.getItem("usrName")) {
-      // setisLoggedin(true);
-    }
+
     window.scrollTo(0, 0);
   }, []);
 
