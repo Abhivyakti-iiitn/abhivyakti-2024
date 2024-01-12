@@ -1,7 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import '../css/profile.css';
 import Footer from './Footer';
-import profilepic from "../assets/ProfilePage/profilepic.png"
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import LogoComponent from './LogoComponent';
@@ -94,16 +93,27 @@ function Profile() {
     }
 
     useEffect(() => {
+        console.log("ahskhd")
         document.querySelector(".profile_heading").scrollIntoView(0);
+        
+        if(!window.localStorage.getItem("access_token"))
+        {
+            navigateTo('/login');
+            return;
+        }
+        else if (!context.userData && window.localStorage.getItem("access_token")) {
+            const data = context.fetchUser(window.localStorage.getItem("access_token"));
+            data.then(res => {
+                context.userData = res.findUser;
+            });
+        }
         fetchEvent();
-
     }, [])
 
     return (
         <>
             <StickyHeader type={1} handleSignout={handleSignout} />
             <div className='profile_page'>
-
                 <div className='profile_heading'>
                     <div class="horizontal-line1"></div>
                     <h1 className='profile'>PROFILE</h1>
@@ -113,7 +123,7 @@ function Profile() {
                 <div className='main_container'>
                     <div className="user_details_head">DETAILS</div>
                     <div className='user_box'>
-                        <img className='profile_pic' src={profilepic} alt=''></img>
+                        <img className='profile_pic' src='https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/L161.png.transform/cc-width-720-height-540/image.png' alt=''></img>
                         <div className='user_details'>
                             <div>
                                 <div className='user_info user_name'>{context.userData?.username}</div>
@@ -157,7 +167,7 @@ function Profile() {
                 <div className='main_container2'>
                     <div className="user_details_head ush2">DETAILS</div>
                     <div className='user_box2'>
-                        <img alt='' className='profile_pic2' src={profilepic}></img>
+                        <img alt='' className='profile_pic2' src='https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/L161.png.transform/cc-width-720-height-540/image.png'></img>
                         <div className='user_details2'>
                             <div className='user_name'>{context.userData?.username}</div>
                             <div className='det'>{context.userData?.college}</div>

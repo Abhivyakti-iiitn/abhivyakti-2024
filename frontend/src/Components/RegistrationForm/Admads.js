@@ -14,20 +14,13 @@ const Admads = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange
     try {
       const isRegistered = await context.checkRegistrationStatus('admads', window.localStorage.getItem("access_token"));
 
-      if (isRegistered) toast.error('You are already registered for this event.');
+      if (isRegistered) toast.error('You have already registered for this event.');
       else onOpenModal();
   } catch (error) {
       console.error('Error checking registration status:', error);
   }
   };
 
-
-  useEffect(() => {
-    const data = context.fetchUser(window.localStorage.getItem("access_token"));
-    data.then(res => {
-      context.userData = res.findUser;
-    });
-  })
 
   return (
     <>
