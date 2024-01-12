@@ -80,15 +80,13 @@
 }
 
 @media (max-width: 767px) {
-  * {
-    text-align: center;
-  }
   .footer-content {
     flex-direction: column;
   }
   .footer-section {
     min-width: 100vw;
     padding-left: 0;
+    text-align: center;
   }
   .footer-section h3 {
     padding-left: 1rem;
