@@ -190,7 +190,7 @@ function Profile() {
                             return eventData[el] && <div className='card'>
                                 <div ><img alt='' src={pickImage(el.toLowerCase())} className='event_pic2'></img></div>
                                 <div className='evt_detail2'>
-                                    <div><span className='evt_name2'>{eventContent[el.toLowerCase()]?.name}</span><span className='evt_sub'>{"(" + eventContent[el.toLowerCase()]?.tagline + ")"}</span></div>
+                                    <div className='heading22'><span className='evt_name2'>{eventContent[el.toLowerCase()]?.name}</span><span className='evt_sub'>{"(" + eventContent[el.toLowerCase()]?.tagline + ")"}</span></div>
                                     <div>{istTime} </div>
                                     <div>{"By: " + eventData[el]?.regBy} </div>
                                     {eventData[el]?.teamName && <div>{"Team Name: " + eventData[el]?.teamName}</div>}
