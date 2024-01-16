@@ -32,7 +32,6 @@ function EntryLoader(props) {
                         }
                         navigateTo('/home');
                     }, 4000);
-                    console.log(el);
                 }).catch((error) => {
                     setTimeout(() => {
                         toast.error("Issue with the backend! Registraion wont work. ", {

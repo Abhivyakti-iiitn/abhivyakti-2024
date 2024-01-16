@@ -127,6 +127,7 @@ const DataContext = (props) => {
             return data.success; // Return true if the user is already registered, false otherwise
         } catch (error) {
             console.error(`Error checking registration status for ${event_name}:`, error);
+            toast.error(`Error checking registration status for ${event_name}:`);
             // Handle error - you might want to show an error toast or handle it in another way
             return false;
         }
