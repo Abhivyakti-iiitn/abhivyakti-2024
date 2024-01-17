@@ -9,7 +9,7 @@ import NewContext from '../../context/NewContext.js';
 import { ToastContainer, toast } from 'react-toastify';
 
 
-const url = process.env.REACT_APP_HOST || 'http://localhost:5000';
+const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
 // const clientId = "604869602001-rhi20onl03rdgur9vj6gghc64bt905is.apps.googleusercontent.com";
 
 const LoginPage = () => {
