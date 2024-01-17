@@ -98,7 +98,8 @@ function Profile() {
     }
 
     useEffect(() => {
-        console.log("ahskhd")
+        if(loading === false) {
+            console.log("ahskhd")
         document.querySelector(".profile_heading").scrollIntoView(0);
         
         if(!window.localStorage.getItem("access_token"))
@@ -116,6 +117,10 @@ function Profile() {
                 })
             })
         }
+        }
+    }, [loading])
+
+    useEffect(() => {
         fetchEvent();
     }, [])
 
