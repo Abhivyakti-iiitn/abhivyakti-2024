@@ -55,7 +55,7 @@ const Stellarsingoff = ({ formData, setFormData, onCloseModal, onOpenModal, hand
           <label className='info_heading' htmlFor='yesno'>Will you be having accompanist?</label>
           {yesnoOptions.map((option, ind) => (
             <label htmlFor={ind} key={option}>
-              <input type="radio" name="yesno" id='yesno' value={option} className="input" onChange={handleChange} checked={formData?.yesno === option} />
+              <input type="radio" name="yesno" required id='yesno' value={option} className="input" onChange={handleChange} checked={formData?.yesno === option} />
               {option}
             </label>
           ))}
