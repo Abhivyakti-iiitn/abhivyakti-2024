@@ -57,7 +57,7 @@ const Groovegenesis = ({ formData, setFormData, onCloseModal, onOpenModal, handl
         <div className='infoDiv'>
           <label className='info_heading' htmlFor='yesno'>Will you be having backtrack?</label>
           {yesnoOptions.map((option, ind) => {
-            return <label htmlFor={ind} key={option}><input type="radio" name="yesno" value={option} className="input" onChange={handleChange} />{option}</label>
+            return <label htmlFor={ind} key={option}><input type="radio" name="yesno" required value={option} className="input" onChange={handleChange} />{option}</label>
           })}
         </div>
         {/* List of Instruments used in backtrack */}

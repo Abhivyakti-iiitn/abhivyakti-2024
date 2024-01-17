@@ -10,7 +10,7 @@ import {  toast } from 'react-toastify';
 
 
 
-const url = process.env.REACT_APP_HOST || 'https://abhivyakti-2024-m1j7.vercel.app';
+const url = process.env.REACT_APP_HOST || 'http://localhost:5000';
 
 const SignUpPage = () => {
     // const [userName, setUserName] = useState('');

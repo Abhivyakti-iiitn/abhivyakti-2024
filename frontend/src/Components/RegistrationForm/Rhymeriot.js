@@ -53,7 +53,7 @@ const Rhymeriot = ({ formData, setFormData, onCloseModal, onOpenModal, handleCha
         <label className='info_heading' htmlFor='yesno'>Will you be needing Drumkit?</label>
         {yesnoOptions.map((option, ind) => (
           <label htmlFor={ind} key={option}>
-            <input type="radio" name="yesno" value={option} className="input" onChange={handleChange} checked={formData?.yesno === option} />
+            <input type="radio" name="yesno" value={option} className="input" required onChange={handleChange} checked={formData?.yesno === option} />
             {option}
           </label>
         ))}
