@@ -20,6 +20,7 @@ import bahumukhi from '../assets/EventPageAsst/BAHUMUKHI (Monoact).png';
 import groovegenesis from '../assets/EventPageAsst/Groove Genesis(Instrumental).png'
 import mun from '../assets/EventPageAsst/munmain.png';
 import roadtoredcarpet from '../assets/EventPageAsst/Road to red carpet.png';
+import admads from '../assets/EventPageAsst/AD Mad.png';
 import defaultImg from '../assets/EventImages/a.jpg';
 import profilepic from "../assets/ProfilePage/profilepic.png"
 import Loader from '../Components/Loader';
@@ -42,6 +43,9 @@ function Profile() {
         switch (name) {
             case 'showstopper':
                 imgSrc = showstopperImg;
+                break;
+            case 'admads':
+                imgSrc = admads;
                 break;
             case 'andhakaar':
                 imgSrc = andhakaar;
@@ -98,25 +102,24 @@ function Profile() {
     }
 
     useEffect(() => {
-        if(loading === false) {
-            console.log("ahskhd")
-        document.querySelector(".profile_heading").scrollIntoView(0);
-        
-        if(!window.localStorage.getItem("access_token"))
-        {
-            navigateTo('/login');
-            return;
-        }
-        else if (!context.userData && window.localStorage.getItem("access_token")) {
-            const data = context.fetchUser(window.localStorage.getItem("access_token"));
-            data.then(res => {
-                context.userData = res.findUser;
-            }).catch(error=> {
-                toast.info("backend error !", {
-                    toastId:"info1",
+        if (loading === false) {
+            // console.log("ahskhd")
+            document.querySelector(".profile_heading").scrollIntoView(0);
+
+            if (!window.localStorage.getItem("access_token")) {
+                navigateTo('/login');
+                return;
+            }
+            else if (!context.userData && window.localStorage.getItem("access_token")) {
+                const data = context.fetchUser(window.localStorage.getItem("access_token"));
+                data.then(res => {
+                    context.userData = res.findUser;
+                }).catch(error => {
+                    toast.info("backend error !", {
+                        toastId: "info1",
+                    })
                 })
-            })
-        }
+            }
         }
     }, [loading])
 
@@ -125,9 +128,7 @@ function Profile() {
     }, [])
 
     return (
-        loading?(
-            <Loader />
-        ):(
+
         <>
             <StickyHeader type={1} handleSignout={handleSignout} />
             <div className='profile_page'>
@@ -154,7 +155,7 @@ function Profile() {
                     </div>
                     <div className='registered_events'>REGISTERED EVENTS</div>
                     <div className='events_box'>
-                        {eventData && Object.keys(eventData).map(el => {
+                        {loading ? <Loader/> : eventData && Object.keys(eventData).map(el => {
 
                             let date = new Date(eventData[el]?.date);
                             let istTime = date.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
@@ -194,7 +195,7 @@ function Profile() {
                     </div>
                     <div className='registered_events2'>REGISTERED EVENTS</div>
                     <div className='events_box2'>
-                        {eventData && Object.keys(eventData).map(el => {
+                        {loading ? <Loader/> : eventData && Object.keys(eventData).map(el => {
 
                             let date = new Date(eventData[el]?.date);
                             let istTime = date.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
@@ -219,7 +220,7 @@ function Profile() {
             </div>
             <Footer />
         </>
-    )
+
     )
 }
 export default Profile;
