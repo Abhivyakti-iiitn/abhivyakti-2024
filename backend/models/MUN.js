@@ -15,7 +15,10 @@ const MunSchema = mongoose.Schema({
     teamLeadName: String,
     organizations: String,
     accommodationRequired: String,
-    payment_link:String
+    payment_link:{
+        type:String,
+        required : true
+    }
 });
 
 const Mun = mongoose.model('Mun', MunSchema);

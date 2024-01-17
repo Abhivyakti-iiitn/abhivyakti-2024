@@ -16,7 +16,10 @@ const AdmadsSchema = mongoose.Schema({
     teamLeadName: String,
     contact_phone: String,
     vid_link: String,
-    payment_link:String,
+    payment_link:{
+        type:String,
+        required : true
+    }
 });
 
 const Admads = mongoose.model('Admads', AdmadsSchema);

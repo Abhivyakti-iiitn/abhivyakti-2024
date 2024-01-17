@@ -21,7 +21,10 @@ const GrooveGenesisSchema = mongoose.Schema({
     instrumentsNameBacktrack: String,
     vid_link: String,
     aud_link: String,
-    payment_link:String
+    payment_link:{
+        type:String,
+        required : true
+    }
 });
 
 const GrooveGenesis = mongoose.model('GrooveGenesis', GrooveGenesisSchema);

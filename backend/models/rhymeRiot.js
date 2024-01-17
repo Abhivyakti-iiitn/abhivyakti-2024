@@ -20,7 +20,10 @@ const RhymeriotSchema = mongoose.Schema({
     instrumentsName: String,
     vid_link: String,
     aud_link: String,
-    payment_link:String
+    payment_link:{
+        type:String,
+        required : true
+    }
 });
 
 const Rhymeriot = mongoose.model('Rhymeriot', RhymeriotSchema);

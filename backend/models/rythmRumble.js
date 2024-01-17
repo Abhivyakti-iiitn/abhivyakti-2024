@@ -18,7 +18,10 @@ const RythmRumbleSchema = mongoose.Schema({
     clgName: String,
     aud_link: String,
     vid_link: String,
-    payment_link:String
+    payment_link:{
+        type:String,
+        required : true
+    }
 });
 
 const RythmRumble = mongoose.model('RythmRumble', RythmRumbleSchema);
