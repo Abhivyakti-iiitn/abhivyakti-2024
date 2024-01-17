@@ -94,7 +94,7 @@ function Profile() {
     }
 
     useEffect(() => {
-        console.log("ahskhd")
+        // console.log("ahskhd")
         document.querySelector(".profile_heading").scrollIntoView(0);
         
         if(!window.localStorage.getItem("access_token"))

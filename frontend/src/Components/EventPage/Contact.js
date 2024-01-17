@@ -4,6 +4,14 @@ import Arr from '../../assets/EventPageAsst/arrow.png';
 import clubDetails from "../../assets/clubdata.json";
 import emailjs from '@emailjs/browser';
 import MailLoader from '../Loader';
+import { toast } from 'react-toastify';
+
+
+const PUB_API = process.env.REACT_APP_EMAILJS_PUB_API;
+const TEMP_ID = process.env.REACT_APP_EMAILJS_TEMP_ID;
+const SERV_ID = process.env.REACT_APP_EMAILJS_SEVICE_ID;
+
+
 
 function Contact(props) {
 
@@ -12,7 +20,7 @@ function Contact(props) {
     const form = useRef(null);
 
     useEffect(() => {
-        emailjs.init("JOzFmAVAKi2Qo2yGB");
+        emailjs.init(PUB_API);
     }, [])
 
 
@@ -23,15 +31,19 @@ function Contact(props) {
         // console.log(form.current.message.value)
 
 
-        await emailjs.sendForm("service_hu6aba2", "template_batddsm", form.current)
+        await emailjs.sendForm(SERV_ID, TEMP_ID, form.current)
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
+                // console.log('SUCCESS!', response.status, response.text);
                 form.current.from_name.value = "";
                 form.current.email_phone.value = "";
                 form.current.message.value = "";
 
+                
+                toast.success("Mail Sent Successfully!");
+                
             }, function (error) {
                 console.log('FAILED...', error);
+                toast.error("Failed to send the mail! Please contact manually through the given information! ");
             });
 
 
@@ -83,9 +95,9 @@ function Contact(props) {
                 <form className='box_4' ref={form} onSubmit={handleSubmit}>
                     {isSending && <div className='loader'><MailLoader /></div>}
 
-                    <input type='text' required placeholder='Name' name='from_name' className='input_tag tag1'></input><br></br>
-                    <input type='text' required placeholder='phone no./email address' name='email_phone' className='input_tag tag2'></input><br></br>
-                    <textarea type='text' required multiple placeholder='ask your Queries' name='message' className='input_tag tag3'></textarea>
+                    <input type='text' required placeholder='Name' name='from_name' className='input_tag tag1' style={{color:'lightgrey'}}></input><br></br>
+                    <input type='text' required placeholder='phone no./email address' name='email_phone' className='input_tag tag2' style={{color:'lightgrey'}}></input><br></br>
+                    <textarea type='text' required multiple placeholder='ask your Queries' name='message' className='input_tag tag3' style={{color:'lightgrey'}}></textarea>
                     <button type='submit' className={'contactSubmitBtn'} disabled={isSending}>Submit</button>
 
                 </form>
