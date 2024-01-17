@@ -22,6 +22,7 @@ import mun from '../assets/EventPageAsst/munmain.png';
 import roadtoredcarpet from '../assets/EventPageAsst/Road to red carpet.png';
 import defaultImg from '../assets/EventImages/a.jpg';
 import profilepic from "../assets/ProfilePage/profilepic.png"
+import Loader from '../Components/Loader';
 
 
 function Profile() {
@@ -29,6 +30,7 @@ function Profile() {
     const context = useContext(NewContext);
 
     const [eventData, seteventData] = useState(null);
+    const [loading, setLoading] = useState(true);
     const handleSignout = () => {
         window.localStorage.removeItem("access_token");
         context.setuserData(null);
@@ -82,19 +84,22 @@ function Profile() {
         return imgSrc;
     }
     const fetchEvent = async () => {
-        const data = await context.fetchEventData(window.localStorage.getItem("access_token"));
-
-        if (data.success) {
-            seteventData(data.datajson);
-        } else {
-            toast.error("Failed to fetch Events!");
-            toast.error(data.msg);
+        try {
+            const data = await context.fetchEventData(window.localStorage.getItem("access_token"));
+            if (data.success) {
+                seteventData(data.datajson);
+            } else {
+                toast.error("Failed to fetch Events!");
+                toast.error(data.msg);
+            }
+        } finally {
+            setLoading(false);
         }
-
     }
 
     useEffect(() => {
-        console.log("ahskhd")
+        if(loading === false) {
+            console.log("ahskhd")
         document.querySelector(".profile_heading").scrollIntoView(0);
         
         if(!window.localStorage.getItem("access_token"))
@@ -112,10 +117,17 @@ function Profile() {
                 })
             })
         }
+        }
+    }, [loading])
+
+    useEffect(() => {
         fetchEvent();
     }, [])
 
     return (
+        loading?(
+            <Loader />
+        ):(
         <>
             <StickyHeader type={1} handleSignout={handleSignout} />
             <div className='profile_page'>
@@ -207,6 +219,7 @@ function Profile() {
             </div>
             <Footer />
         </>
-    );
+    )
+    )
 }
 export default Profile;

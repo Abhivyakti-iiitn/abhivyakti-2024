@@ -53,7 +53,7 @@ const Rhymeriot = ({ formData, setFormData, onCloseModal, onOpenModal, handleCha
         <label className='info_heading' htmlFor='yesno'>Will you be needing Drumkit?</label>
         {yesnoOptions.map((option, ind) => (
           <label htmlFor={ind} key={option}>
-            <input type="radio" name="yesno" value={option} className="input" onChange={handleChange} checked={formData?.yesno === option} />
+            <input required type="radio" name="yesno" value={option} className="input" onChange={handleChange} checked={formData?.yesno === option} />
             {option}
           </label>
         ))}
@@ -61,12 +61,12 @@ const Rhymeriot = ({ formData, setFormData, onCloseModal, onOpenModal, handleCha
       {/* List of Instruments used and number of vocalists. */}
       <div className='infoDiv'>
         <label htmlFor='instrumentsName'>List of Instruments used and number of vocalists.</label>
-        <input type="text" id='instrumentsName' name="instrumentsName" placeholder="Instruments Name" value={formData?.instrumentsName} className="input" onChange={handleChange} />
+        <input required type="text" id='instrumentsName' name="instrumentsName" placeholder="Instruments Name" value={formData?.instrumentsName} className="input" onChange={handleChange} />
       </div>
       {/* Video Submission */}
       <div className='infoDiv'>
         <label className='withtooltip' htmlFor='vid_link'>Video Submission<i className="fa-solid fa-circle-info tooltip"> <span className="tooltiptext">Upload the video to the drive, allow access to anyone with the link, and paste the link here.</span></i></label>
-        <input type="url" id='vid_link' name="vid_link" required placeholder="paste video link here" value={formData?.vid_link} className="input" onChange={handleChange} />
+        <input required type="url" id='vid_link' name="vid_link" placeholder="paste video link here" value={formData?.vid_link} className="input" onChange={handleChange} />
       </div>
 
       {/* Backtrack Submission (if used) */}
