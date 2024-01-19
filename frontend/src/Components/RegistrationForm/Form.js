@@ -14,7 +14,6 @@ import Andhkaar from './Andhkaar';
 import Bahumukhi from './Bahumukhi';
 import { toast } from "react-toastify";
 import Modal from '../Modal';
-import qr from "../../assets/qr.jpg"
 import NewContext from '../../context/NewContext';
 
 

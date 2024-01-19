@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import "../css/Modal.css"
-import qr from "../assets/qr.jpg"
+import qr from "../assets/qr.png"
 
 export default function Modal({ open, onClose, handleSubmit, formData, handleChange, underProcess }) {
     if (!open) return null
