@@ -18,7 +18,7 @@ import bronxbattleground from '../assets/EventPageAsst/Bronx Battleground.png';
 import andhakaar from '../assets/EventPageAsst/ANDHKAAR (Stage Play).png';
 import bahumukhi from '../assets/EventPageAsst/BAHUMUKHI (Monoact).png';
 import groovegenesis from '../assets/EventPageAsst/Groove Genesis(Instrumental).png'
-import mun from '../assets/EventPageAsst/munmain.png';
+import mun from '../assets/EventPageAsst/munmainbg.png';
 import roadtoredcarpet from '../assets/EventPageAsst/Road to red carpet.png';
 import admads from '../assets/EventPageAsst/AD Mad.png';
 import defaultImg from '../assets/EventImages/a.jpg';
@@ -88,6 +88,7 @@ function Profile() {
         return imgSrc;
     }
     const fetchEvent = async () => {
+        setLoading(true)
         try {
             const data = await context.fetchEventData(window.localStorage.getItem("access_token"));
             if (data.success) {
@@ -102,29 +103,31 @@ function Profile() {
     }
 
     useEffect(() => {
-        if (loading === false) {
-            // console.log("ahskhd")
-            document.querySelector(".profile_heading").scrollIntoView(0);
 
-            if (!window.localStorage.getItem("access_token")) {
-                navigateTo('/login');
-                return;
-            }
-            else if (!context.userData && window.localStorage.getItem("access_token")) {
-                const data = context.fetchUser(window.localStorage.getItem("access_token"));
-                data.then(res => {
-                    context.userData = res.findUser;
-                }).catch(error => {
-                    toast.info("backend error !", {
-                        toastId: "info1",
-                    })
-                })
-            }
+        // console.log("ahskhd")
+        document.querySelector(".profile_heading").scrollIntoView(0);
+
+        if (!window.localStorage.getItem("access_token")) {
+            navigateTo('/login');
+            return;
         }
-    }, [loading])
+        else if (!context.userData && window.localStorage.getItem("access_token")) {
+            const data = context.fetchUser(window.localStorage.getItem("access_token"));
+            data.then(res => {
+                context.userData = res.findUser;
+            }).catch(error => {
+                toast.info("backend error !", {
+                    toastId: "info1",
+                })
+            })
+        }
+
+    }, [])
 
     useEffect(() => {
+
         fetchEvent();
+
     }, [])
 
     return (
@@ -133,9 +136,9 @@ function Profile() {
             <StickyHeader type={1} handleSignout={handleSignout} />
             <div className='profile_page'>
                 <div className='profile_heading'>
-                    <div class="horizontal-line1"></div>
+                    <div className="horizontal-line1"></div>
                     <h1 className='profile'>PROFILE</h1>
-                    <div class="horizontal-line1"></div>
+                    <div className="horizontal-line1"></div>
                 </div>
                 {/* For laptop view */}
                 <div className='main_container'>
@@ -155,7 +158,7 @@ function Profile() {
                     </div>
                     <div className='registered_events'>REGISTERED EVENTS</div>
                     <div className='events_box'>
-                        {loading ? <Loader/> : eventData && Object.keys(eventData).map(el => {
+                        {loading ? <Loader /> : eventData && Object.keys(eventData).map(el => {
 
                             let date = new Date(eventData[el]?.date);
                             let istTime = date.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
@@ -195,7 +198,7 @@ function Profile() {
                     </div>
                     <div className='registered_events2'>REGISTERED EVENTS</div>
                     <div className='events_box2'>
-                        {loading ? <Loader/> : eventData && Object.keys(eventData).map(el => {
+                        {loading ? <Loader /> : eventData && Object.keys(eventData).map(el => {
 
                             let date = new Date(eventData[el]?.date);
                             let istTime = date.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
