@@ -125,6 +125,7 @@ const LoginPage = () => {
                                         // value={userEmail}
                                         // onChange={handleEmailChange}
                                         id='email'
+                                        required
                                         onChange={handleChange}
                                     />
                                 </div>
@@ -142,6 +143,7 @@ const LoginPage = () => {
                                             // value={userPassword}
                                             // onChange={handlePasswordChange}
                                             id='password'
+                                            required
                                             onChange={handleChange}
                                         />
                                         {(showPassword ?

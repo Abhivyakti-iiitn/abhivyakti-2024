@@ -112,6 +112,7 @@ const SignUpPage = () => {
                                         // value={userName}
                                         // onChange={handleNameChange}
                                         id='username'
+                                        required
                                         onChange={handleChange}
                                     />
                                 </div>
@@ -127,6 +128,7 @@ const SignUpPage = () => {
                                         // value={userEmail}
                                         // onChange={handleEmailChange}
                                         onChange={handleChange}
+                                        required
                                         id='email'
                                     />
                                 </div>
@@ -141,6 +143,7 @@ const SignUpPage = () => {
                                         // value={userEmail}
                                         // onChange={handleEmailChange}
                                         onChange={handleChange}
+                                        required
                                         id='phone'
                                     />
                                 </div>
@@ -151,11 +154,12 @@ const SignUpPage = () => {
                                     <input
                                         className='loginInput'
                                         name='collegeForm'
-                                        placeholder='college'
+                                        placeholder='IIIT Nagpur'
                                         // value={userEmail}
                                         // onChange={handleEmailChange}
                                         onChange={handleChange}
                                         id='college'
+                                        required
                                     />
                                 </div>
 
@@ -173,6 +177,7 @@ const SignUpPage = () => {
                                             // onChange={handlePasswordChange}
                                             onChange={handleChange}
                                             id='password'
+                                            required
                                         />
                                         {(showPassword ?
                                             <VisibilityOffOutlinedIcon
