@@ -27,7 +27,8 @@ export const signup = async (req, res, next) => {
         res.status(201).json(newUser);
     }
     catch (err) {
-        res.status(500).json(err);
+        console.log(err);
+        res.status(500).json({success:false, msg:"Please fill all the fields"});
     }
 };
 
