@@ -1,4 +1,9 @@
 {
+    "Mentor":[
+        {
+            "name": "Dr. Pooja Jain"
+        }
+    ],
     "secretaries": [
         {
             "position": "General Secretary",
@@ -15,6 +20,10 @@
         {
             "position": "Technical Secretary",
             "name": "Kumar Rishav"
+        },
+        {
+            "position": "Discipline Secretary",
+            "name": "Priyanshu Chhabda"
         }
     ],
     "coordinators": [
@@ -37,17 +46,15 @@
         },
         "Design": {
             "Lead": [
-                "Shubhendu Kumar",
                 "Sahil Mandi"
             ],
             "Co-Lead": [
-                "Kaustubh Shinde",
                 "Radhika Patil"
             ]
         },
         "Corporate Relations": {
             "Lead": ["Harsh Bajaj"],
-            "Co-Lead": ["Nishchint Kamat"]
+            "Co-Lead": ["Nishchint Kamath"]
         },
         "Event Management": {
             "Lead": [
@@ -92,7 +99,10 @@
                 "Anuj Jain",
                 "Shrived Tadas"
             ],
-            "Co-Lead": ["Kartik Nagpure"]
+            "Co-Lead": [
+                "Kartik Nagpure",
+                "Vasu Parashar"
+            ]
         },
         "Media": {
             "Lead": ["Vinay Badlani"],
@@ -100,7 +110,7 @@
         },
         "Decor": {
             "Lead": ["Aditi"],
-            "Co-Lead": []
+            "Co-Lead": ["Pranav Sonar"]
         }
     }
 }

@@ -25,10 +25,19 @@ function Teams() {
             </div>
             <div className="orgteamcat">
                 <div className="org_content">
+                    <h3>MENTOR</h3>
+                    <div className="lineteams"></div>
+                    <div className="team_content">
+                        <div className="team_item">
+                            <h3>Dr. Pooja Jain</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="org_content">
                     <h3>SECRETARIES</h3>
                     <div className="lineteams"></div>
                     <div className="team_content">
-                        {secretaries.map((el, ind) =>
+                    {coordinators.map((el, ind) =>
                             <div key={ind} className="team_item">
                                 <h3>{el.name}</h3>
                                 <h5>{el.position}</h5>
@@ -66,7 +75,7 @@ function Teams() {
                             </div>
                             {clubs[key].clubCoLead !== "" && <div className="team_item">
                                 <h3>{clubs[key].clubCoLead}</h3>
-                                <h5>{clubs[key].clubCoLead === 'Vinay Badlani' ? 'Lead' : 'Co-Lead'}</h5>
+                                <h5>{clubs[key].clubCoLead === "Vinay Badlani" ? 'Lead' : 'Co-Lead'}</h5>
                             </div>}
                         </div>
                     </div>
@@ -97,7 +106,7 @@ function Teams() {
                                     <h5>Co-Lead</h5>
                                 </div>
                             )}
-                            
+
                         </div>
                     </div>
                 })}
