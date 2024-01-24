@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2024 Abhivyakti@IITN. All rights reserved.</p>
+                <p>&copy; 2024 Abhivyakti@IIITN. All rights reserved.</p>
                 <p>
                     Developed and Managed by
                     <a href="/students" target="_blank" rel="noopener noreferrer">

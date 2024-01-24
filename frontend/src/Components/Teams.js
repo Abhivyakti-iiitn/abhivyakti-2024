@@ -37,7 +37,7 @@ function Teams() {
                     <h3>SECRETARIES</h3>
                     <div className="lineteams"></div>
                     <div className="team_content">
-                    {coordinators.map((el, ind) =>
+                    {secretaries.map((el, ind) =>
                             <div key={ind} className="team_item">
                                 <h3>{el.name}</h3>
                                 <h5>{el.position}</h5>
