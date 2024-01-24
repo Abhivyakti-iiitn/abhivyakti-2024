@@ -19,9 +19,9 @@ const Mun = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange })
   };
 
   const organizations = [
-    "UNHRC(United Nations Human Rights Council)",
-    "WTO(World Trade Organization)",
-    "Constituent Assembly of India Summit",
+    "United Nations Human Rights Council (UNHRC)",
+    "All India Political Parties Meet - Historic Conference Constituent Assembly (AIPPM)",
+    "Bollywood Committee Summit",
     "International Press Committee"
   ];
 
