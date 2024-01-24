@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import NewContext from '../../context/NewContext';
 import { toast } from 'react-toastify';
 
-const url = process.env.REACT_APP_HOST || "http://localhost:8080"
+const url = process.env.REACT_APP_HOST || "http://localhost:5000"
 
 const ShowStopper = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange }) => {
 

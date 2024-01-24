@@ -6,7 +6,7 @@ import Head from './Head'
 const EventContentRight = (props) => {
 
   // let roundRegex = /^[rR]ound [1-9]\d*/;
-  let roundRegex = /^(Preliminary Round|Preliminary Round Results|Finals|Judgement Criteria|[rR]ound [1-9]|General Rules)$/i;
+  let roundRegex = /^(Preliminary Round|Preliminary Round Results|Finals|Judgement Criteria|[rR]ound [1-9]|General Rules|Rules for duet|Rules for group)|Introduction|Model United Nations Explanation|COMMITTEES OVERVIEW|1. United Nations Human Rights Council|1.1. Samples-agenda :|2. All India Political Parties Meet - Historic Conference Constituent Assembly|2.1. Samples-Agenda :|3. Bollywood Committee Summit|3.1. Samples-agenda :|4. International Press|4.1. Samples-agenda :|HIGHLIGHTS OF THE EVENT|Miscellaneous$/i;
   let roundRegex2 = /^[1-9]\d*\./;
   const [alreadyGlowing, setAlreadyGlowing] = useState(false);
   const [glowIndex, setGlowIndex] = useState(-1);
@@ -55,8 +55,26 @@ const EventContentRight = (props) => {
             <div className="line"></div>
           </div>
         </div>
-        <div className='EventContent_content '>
-          {props.details}
+        {/* <div className='EventContent_content '> */}
+          {/* {props.details} */}
+          {/* <ul>
+              {props.details.map((detail, index) => (
+
+               roundRegex.test(detail) ? <h3 key={index}>{detail}</h3> : <li key={index}>{detail}</li>
+              ))}
+            </ul>
+        </div> */}
+        <div className='EventContent_content'>
+          {/* Updated rendering logic for details */}
+          {props.details.length === 1 ? (
+            <span>{props.details[0]}</span>
+          ) : (
+            <ul>
+              {props.details.map((detail, index) => (
+                roundRegex.test(detail) ? <h3 key={index}>{detail}</h3> : <li key={index}>{detail}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
       <div className='EventDetail roundsAndTimline'>
