@@ -20,7 +20,11 @@
         font: 32pt/0 $font-family;
         margin: auto;
         padding: 0 24px;
+        @media (max-width:768px) {
+            font-size: x-large;
+        }
     }
+    
 }
 
 .orgteamcat {

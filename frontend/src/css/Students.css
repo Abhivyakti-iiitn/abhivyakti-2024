@@ -18,6 +18,11 @@
   margin: auto;
   padding: 0 24px;
 }
+@media (max-width: 768px) {
+  .Students legend {
+    font-size: x-large;
+  }
+}
 
 .orgteamcat {
   display: flex;
