@@ -37,7 +37,7 @@ function EventCards(props) {
         case 'rhymeriot':
             imgSrc = rhymeriotImg;
             break;
-        case 'mun':
+        case 'modelunitednations(mun)':
             imgSrc = mun;
             break;
         case 'beatsmithshowdown':

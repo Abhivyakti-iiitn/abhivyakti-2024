@@ -66,7 +66,7 @@ function Teams() {
                             </div>
                             {clubs[key].clubCoLead !== "" && <div className="team_item">
                                 <h3>{clubs[key].clubCoLead}</h3>
-                                <h5>Co-Lead</h5>
+                                <h5>{clubs[key].clubCoLead === 'Vinay Badlani' ? 'Lead' : 'Co-Lead'}</h5>
                             </div>}
                         </div>
                     </div>

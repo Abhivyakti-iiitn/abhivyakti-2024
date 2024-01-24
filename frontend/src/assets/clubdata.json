@@ -1,4 +1,13 @@
 {
+    "orator": {
+        "name": "Orator (Public Speaking and Debate Club)",
+        "clubHead": "Harsh Suhan",
+        "contactLead": "8356950713",
+        "emailIdLead": "bt22csa034@iiitn.ac.in",
+        "clubCoLead": "",
+        "contactCoLead": "",
+        "emailIdCoLead": ""
+    },
     "estória": {
         "name": "Estória (Drama and Poetry Club)",
         "clubHead": "Sameer Jain",
@@ -34,14 +43,5 @@
         "clubCoLead": "Dikshita Sakhare",
         "contactCoLead": "9766721638",
         "emailIdCoLead": "bt22ece030@iiitn.ac.in"
-    },
-    "orator": {
-        "name": "Orator (Public Speaking and Debate Club)",
-        "clubHead": "Harsh Suhan",
-        "contactLead": "8356950713",
-        "emailIdLead": "bt22csa034@iiitn.ac.in",
-        "clubCoLead": "",
-        "contactCoLead": "",
-        "emailIdCoLead": ""
     }
 }

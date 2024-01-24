@@ -98,7 +98,7 @@ function MainPage() {
       </div>
       {/* <Sponsors /> */}
       <div className='temp'>
-        <h3> More Content Comming soon ...</h3>
+        <h3> More Content Coming soon ...</h3>
         <p>stay tuned</p>
       </div>
 
