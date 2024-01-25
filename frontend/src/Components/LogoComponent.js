@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/EventPageAsst/Glow-icon.svg"
-import iiitn from "../assets/IIITNLogo.png"
+import iiitn from "../assets/EventPageAsst/IIITNLogo.png"
 
 function LogoComponent() {
   const navigateTo = useNavigate();
