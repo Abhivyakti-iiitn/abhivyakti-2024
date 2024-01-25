@@ -7,8 +7,8 @@ function LogoComponent() {
   const navigateTo = useNavigate();
   return (
     <>
+      <img src={iiitn} style={{ cursor: 'pointer', width: '40px' , alignSelf:"center" }} alt="Logo Here" onClick={()=>window.open('https://iiitn.ac.in/','_blank')}  />
       <img src={logo} style={{ cursor: 'pointer' }} alt="Logo Here" onClick={() => navigateTo('/home')} />
-      <img src={iiitn} style={{ cursor: 'pointer', width: '75px' }} alt="Logo Here" onClick={() => navigateTo('/home')} />
     </>
   )
 }

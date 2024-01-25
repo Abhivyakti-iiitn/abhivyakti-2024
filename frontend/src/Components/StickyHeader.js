@@ -7,7 +7,7 @@ function StickyHeader(props) {
 
     const innerComp = (type) => {
         if (type === 1) {
-            return <ul>
+            return <ul style={{display:'flex', flexDirection:'column', justifyContent:'center', padding:'0px'}}>
                 <li onClick={() => navigateTo('/home')}>HOME</li>
                 <li onClick={props.handleSignout}>SIGN OUT</li>
             </ul>
@@ -30,7 +30,7 @@ function StickyHeader(props) {
                             <li onClick={()=>window.open("https://www.linkedin.com/in/abhivyakti-iiitn/", '_blank', 'noopener,noreferrer')}><i className="fa-brands fa-linkedin"></i></li>
                     </ul>
                 </div>
-                <div className="right">
+                <div className="right" style={{height:'100%', alignSelf:'center'}}>
                     {innerComp(props.type)}
                 </div>
             </div >

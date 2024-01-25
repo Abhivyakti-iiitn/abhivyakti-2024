@@ -1,10 +1,11 @@
 // components/Footer.js
 import React from 'react';
 import '../css/Footer.css';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import iiitn from "../assets/EventPageAsst/IIITNLogo.png"
 
 const Footer = () => {
-  // const navigateTo = useNavigate();
+  const navigateTo = useNavigate();
   return (
     <div className="footer">
 
@@ -44,6 +45,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
+      <img src={iiitn} style={{ cursor: 'pointer', width:'8%' , alignSelf:"center" }} alt="Logo Here" onClick={()=>window.open('https://iiitn.ac.in/','_blank')} />
         <p>&copy; 2024 Abhivyakti@IIITN. All rights reserved.</p>
         <p>
           Developed and Managed by
