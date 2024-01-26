@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../../css/prize.css';
 
 function Prize(props) {
-    const isModelUnitedNations = props.eventname === "modelunitednations";
+    const isModelUnitedNations = props.name === "modelunitednations";
     const navigateTo = useNavigate();
     return (
         <div className='prize_pool'>
@@ -19,7 +19,7 @@ function Prize(props) {
                     <div>{props.prize[1]}</div>
                 </div>}
                 {props.prize?.length > 0 && <div>
-                    <div>{!isModelUnitedNations ? 'Prize Pool':'First Prize'}</div>
+                    <div>{isModelUnitedNations ? 'Prize Pool':'First Prize'}</div>
                     <div>{props.prize[0]}</div>
                 </div>}
                 {props.prize?.length === 3 && <div>
