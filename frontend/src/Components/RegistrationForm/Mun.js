@@ -38,7 +38,7 @@ const Mun = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange })
         {/* School/College Name */}
         <div className='infoDiv'>
           <label htmlFor='teamLeadName'>School/College name</label>
-          <input type="text" id='teamLeadName' name="teamLeadName" required placeholder="Team Lead" value={formData?.teamLeadName} className="input" onChange={handleChange} />
+          <input type="text" id='teamLeadName' name="teamLeadName" required placeholder="School/College" value={formData?.teamLeadName} className="input" onChange={handleChange} />
         </div>
         {/* Committee Selection */}
         <div className='infoDiv'>

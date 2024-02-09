@@ -9,19 +9,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round  | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round  | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "18/02/24",
+          "20/02/24",
+          "29/02/24"
         ],
         "content": [
-          "In this round, participants are required to impress our judges with a 1-1.5 minute performance, sans props.From this round, 8-10 outstanding performers will be selected for the final round.",
-          "",
-          "In the finals, you'll have 4-6 minutes to showcase your skills. This is a prop round where you must incorporate at least two distinct props into your performance for a minimum of 10 seconds each.All dance forms are welcome, but the effective use of props will be a crucial judging criterion.Please note that dangerous props like fire,blades,sharp mirrors, scissors, and nails are not allowed, but all other props are permitted."
+          ["In this round, participants are required to impress our judges with a 1-1.5 minute performance, sans props.From this round, 8-10 outstanding performers will be selected for the final round."],
+          [""],
+          ["In the finals, you'll have 4-6 minutes to showcase your skills. This is a prop round where you must incorporate at least two distinct props into your performance for a minimum of 10 seconds each.All dance forms are welcome, but the effective use of props will be a crucial judging criterion.Please note that dangerous props like fire,blades,sharp mirrors, scissors, and nails are not allowed, but all other props are permitted."]
         ]
       }
     ],
@@ -56,7 +56,7 @@
       "Costume",
       "Overall Impact"
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Solo",
     "fees": "₹ 100",
     "pool": "₹ 15,000",
@@ -74,19 +74,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round  | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round  | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "18/02/24",
+          "20/02/24",
+          "01/03/24"
         ],
         "content": [
-          "Teams of 5 to 10 members must submit a 2-4 minute video of their performance. No props are allowed in this round, and costumes won't be part of the judging criteria.\n From the elimination round, 4 teams will advance to the finals.",
-          "",
-          "Teams will compete in a series of sub-rounds, including\n Solo Faceoff,\n Showdown, and\n Challenge Round.\n Only the listed dangerous props like fire, blades, sharp mirrors, scissors, and nails are prohibited in the competition."
+          ["Teams of 5 to 10 members must submit a 2-4 minute video of their performance. No props are allowed in this round, and costumes won't be part of the judging criteria.\n From the elimination round, 4 teams will advance to the finals."],
+          [""],
+          ["Teams will compete in a series of sub-rounds, including\n Solo Faceoff,\n Showdown, and\n Challenge Round.\n Only the listed dangerous props like fire, blades, sharp mirrors, scissors, and nails are prohibited in the competition."]
         ]
       }
     ],
@@ -121,7 +121,7 @@
       "The decision of the judges will be final.",
       "Violation of any above rule can lead to disqualification."
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Upto 10 members",
     "pool": "₹ 10,000",
     "prize": [
@@ -141,19 +141,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round  | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round  | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/02/24"
+          "18/02/24",
+          "20/2/24",
+          "01/03/24"
         ],
         "content": [
-          "For the Preliminary Round, participants are required to submit their street play videos online. This phase acts as the eliminator. Ensure that your submission aligns with the event's theme and guidelines, as it will decide your eligibility to progress to the thrilling final round.",
-          "",
-          "The ultimate stage is set for the live showdown in the conclusive round. Chosen participants will step into the spotlight, presenting their compelling narratives live, captivating an eager audience. Seize this moment to elevate your production, leave a lasting impression, and vie for prestigious accolades."
+          ["For the Preliminary Round, participants are required to submit their street play videos online. This phase acts as the eliminator. Ensure that your submission aligns with the event's theme and guidelines, as it will decide your eligibility to progress to the thrilling final round."],
+          [""],
+          ["The ultimate stage is set for the live showdown in the conclusive round. Chosen participants will step into the spotlight, presenting their compelling narratives live, captivating an eager audience. Seize this moment to elevate your production, leave a lasting impression, and vie for prestigious accolades."]
         ]
       }
     ],
@@ -236,7 +236,7 @@
       "Expressions",
       "Body language"
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Upto 20 members",
     "pool": "₹ 20,000",
     "prize": [
@@ -251,35 +251,39 @@
   },
   "rhymeriot": {
     "name": "Rhyme Riot",
-    "tagline": "Band Battle",
+    "tagline": "Battle of Bands",
     "clubName": "Crescendo",
-    "details": ["Get ready for an adrenaline-fueled showdown as the city's most electrifying bands converge for an epic clash of musical prowess at 'Rhyme Riot'! Brace yourself for a night of raw energy, sonic innovation, and a battle that will echo through the corridors of musical history. Who will emerge victorious in this fierce competition of rhythms and riffs?"],
+    "details": ["Get ready for an explosive clash of musical talent at 'Rhyme Riot: Battle of the Bands!' Join us for an electrifying night as bands from diverse genres compete for the crown, delivering unforgettable performances that will keep you on the edge of your seat. With a panel of industry judges, be part of the action and witness the birth of a new champion in a night filled with epic beats, thrilling rhythms, and unbeatable energy!"],
     "timeline": [
       {
         "head": [
-          "Preliminary Round | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round | 20/02/24",
+          "Preliminary Round Results | 21/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "20/02/24",
+          "21/02/24",
+          "29/02/24"
         ],
         "content": [
-          "Bands are required to can perform any number of songs (in Hindi, English or both) within a time limit of 7 minutes. showcasing their musical skills and interpretation of a specified theme or concept. The deadline for online submissions will be communicated. From the received entries, the top-performing bands will be selected to advance to the final showdown.",
-          "",
-          "The chosen bands will have the exciting opportunity to demonstrate their musical prowess at the venue, providing a stage to highlight and celebrate their creative abilities in the realm of battle of the bands. Each band will have the challenge of delivering a dynamic performance, offering a unique opportunity to showcase their musicality, stage presence, and cohesion in the context of a spirited battle of the bands competition."
+          ["Participants can perform any number of songs (in Hindi, English or both). The recording should be RAW, i.e. no FX modulation must have been done. However, participants can record via audio interfaces for clear sound quality.",
+           "In case of original composition, it should be mentioned as it includes extra marks.",
+           "Exceeding the time limit by 90 seconds will lead to disqualification",
+           "Participants can optionally perform with a backing track with a predefined instrument list used in it. This shall be e-mailed to carnelian@iiitn.ac.in [RR_COLLEGE NAME_TEAM NAME] for fair judgment.",
+           "The selected Bands get a chance to grab a direct spot in Abhivyakti’s finale in the main fest."],
+          [""],
+          [""]
         ]
       }
     ],
     "rules": [
       "General Rules",
-      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 7 minutes.",
-      "Exceeding the time limit by 60 seconds will lead to disqualification.",
+      "Participants can perform any number of songs (in Hindi, English or both) within a time limit of 15 minutes. Additional 5 mins shall be given for sound check.",
+      "In case of original composition, it should be mentioned as it includes extra marks and band members should be introduced.",
+      "Exceeding the time limit by 120 seconds will lead to disqualification",
       "Participants can optionally perform with a backing track with a predefined instrument list used in it.",
-      "The judges' collective scores across these categories will determine the final outcome of the competition.",
-      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+      "Any misconduct, obscenity or foul language can lead to on the spot disqualification"
     ],
     "regulations": [
       "Judgement Criteria",
@@ -287,7 +291,7 @@
       "Performance and Expression (30 points)",
       "Overall Presentation (30 points)"
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "20/02/24",
     "Team": "Upto 8",
     "pool": "₹ 20,000",
     "prize": [
@@ -297,39 +301,39 @@
     "contact": [
       ""
     ],
-    "fees": "₹ 300"
+    "fees": "₹ 300 (Per Band)"
   },
   "stellarsing-off": {
     "name": "Stellar Sing-Off",
     "tagline": "Solo singing",
     "clubName": "Crescendo",
-    "details": ["Prepare to be captivated as we present an enchanting evening of pure musical magic at 'Stellar Sing-Off,' where the spotlight shines on the extraordinary talent of solo singers! Join us for an unforgettable night of soul-stirring melodies, heartfelt performances, and the electrifying energy that only a solo singing extravaganza can deliver."],
+    "details": ["Step into the spotlight at Stardom Serenade, where solo talents take center stage in a symphony of voices! Join us for a mesmerizing showcase of vocal prowess as solo singers captivate hearts and minds with their soulful melodies and electrifying performances. From heart-rending ballads to powerhouse pop anthems, witness the birth of new stars in an evening destined to resonate with pure musical magic."],
     "timeline": [
       {
         "head": [
-          "Preliminary Round | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round | 20/02/24",
+          "Preliminary Round Results | 21/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "20/02/24",
+          "21/02/24",
+          "29/02/24"
         ],
         "content": [
-          "Participants are required to submit a video showcasing their solo singing performance based on a specified theme or concept. The deadline for online entries will be communicated in due course. From the received entries, outstanding individuals will be selected to progress to the final round.",
-          "",
-          "on the stage at the IIIT Nagpur campus, providing a platform to spotlight and celebrate their creative abilities in the realm of solo singing. Each participant will choose a song for the final performance, offering a distinctive opportunity to demonstrate their storytelling and vocal expertise in the context of a solo singing competition."
+          ["Participants can perform any number of songs (in Hindi, English or both) within a time limit of 3 minutes. The recording should be RAW, i.e. no FX modulation must have been done. However, participants can record via audio interfaces for clear sound quality.","In case of original composition, it should be mentioned as it includes extra marks.","Exceeding the time limit by 60 seconds will lead to disqualification","Participants can optionally perform with a backing track with a predefined instrument list used in it. This shall be e-mailed to carnelian@iiitn.ac.in [RR_COLLEGE NAME_TEAM NAME] for fair judgment.","The selected Singers get a chance to grab a direct spot in Abhivyakti’s finale in the main fest."],
+          [""],
+          [""]
         ]
       }
     ],
     "rules": [
       "General Rules",
-      "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 3 minutes.",
-      "Exceeding the time limit by 20 seconds will lead to disqualification.",
-      "Participants can optionally perform with one instrumental accompaniment or with a backing track.",
-      "The judges' collective scores across these categories will determine the final outcome of the competition.",
-      "Any misconduct, obscenity, or foul language can leadto on-the-spot disqualification."
+      "Participants can perform any number of songs (in Hindi, English or both) within a time limit of 5 minutes. Additional 1 min shall be given for sound check.",
+      "In case of original composition, it should be mentioned as it includes extra marks.",
+      "Exceeding the time limit by 60 seconds will lead to disqualification",
+      "Participants can optionally perform with a accompanist or backing track with a predefined instrument list used in it. This shall be e-mailed to carnelian@iiitn.ac.in [SS_COLLEGE NAME_TEAM NAME]for fair judgment.",
+      "Any misconduct, obscenity or foul language can lead to on the spot disqualification"
     ],
     "regulations": [
       "Judgement Criteria",
@@ -337,8 +341,8 @@
       "Performance and Expression (30 points)",
       "Overall Presentation (30 points)"
     ],
-    "registrationDate": "10/02/24",
-    "Team": "Solo",
+    "registrationDate": "20/02/24",
+    "Team": "Solo (Accompanist allowed)",
     "pool": "₹ 12,000",
     "prize": [
       "₹ 8,000",
@@ -358,19 +362,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24-23/2/24"
+          "Preliminary Round | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24-01/02/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "22/2/24"
+          "18/02/24",
+          "20/02/24",
+          "29/02/24"
         ],
         "content": [
-          "Teams will submit a video on the given concept. The deadline for online entries is. From the pool of entries, the top teams will be chosen to advance to the finals.",
-          "",
-          "The chosen team will have the opportunity to exhibit their ad-making prowess at IIIT Nagpur campus, providing a platform to showcase and celebrate their creative abilities in the field of ad-making. Each team will be allocated a product for the final advertisement, offering a unique opportunity to demonstrate their storytelling and promotional expertise in the context of advertising."
+          ["The preliminary round takes place on Unstop, where participants must submit their entries. Those shortlisted are required to register on the website and pay the registration fees to confirm their participation in the final round of the competition."],
+          [""],
+          ["The chosen team will have the opportunity to exhibit their ad-making prowess at IIIT Nagpur campus, providing a platform to showcase and celebrate their creative abilities in the field of ad-making. Each team will be allocated a product for the final advertisement, offering a unique opportunity to demonstrate their storytelling and promotional expertise in the context of advertising."]
         ]
       }
     ],
@@ -412,7 +416,7 @@
       "Pre-recorded dialogues or sound effects are not allowed.",
       "The judge's decision will be final in all cases."
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "upto 7 members",
     "pool": "₹ 15,000",
     "prize": [
@@ -432,7 +436,7 @@
     "clubName": "Orator",
     "details": [
       "Introduction",
-      "The IIIT Nagpur Model United Nations (IIITN MUN) - Chapter 2 is a prestigious event scheduled for February 22-23, 2024, at IIIT Nagpur under Abhivyakti. The event aims to provide participants with a unique platform to engage in diplomatic discourse, address global issues, and simulate the workings of international organizations.",
+      "The IIIT Nagpur Model United Nations (IIITN MUN) - Chapter 2 is a prestigious event scheduled for February 29 - March 1, 2024, at IIIT Nagpur under Abhivyakti. The event aims to provide participants with a unique platform to engage in diplomatic discourse, address global issues, and simulate the workings of international organizations.",
       "Model United Nations Explanation",
       "Model United Nations (MUN) is a simulated diplomatic event where participants,  referred to as \"delegates\", represent countries or historical figures in various committees. The primary objective is to engage in diplomatic discussions, propose resolutions, and address global challenges. MUN serves as a valuable educational tool, fostering skills such as public speaking, negotiation, and critical thinking.",
       "COMMITTEES OVERVIEW",
@@ -444,12 +448,11 @@
       "Combatting Discrimination: Discussions may revolve around strategies to combat discrimination based on race, gender, or other factors, with an emphasis on promoting inclusivity and equality.",
       "Protecting Minority Rights: Delegates might engage in discussions on safeguarding the rights of minority groups, exploring ways to prevent discrimination and ensure equal opportunities.",
       "The final agendas will be different from the ones written above. They will be communicated 15 days before the event",
-      "2. All India Political Parties Meet - Historic Conference Constituent Assembly",
+      "2. All India Political Parties Meet - In Present Era",
       "This committee is of utmost importance in understanding the historical context of Indian political decisions and the impact they have had on the country's development.",
       "Participants are expected to wear appropriate attire representing an Indian political figure who shall be an MP of either house, The figures shall be chosen by the candidates after registration.",
       "2.1. Samples-agenda :",
-      "Drafting Constitutional Principles: Delegates may find themselves deliberating and drafting key constitutional principles that shaped India's governance structure.",
-      "Debating Fundamental Rights: Discussions could center around the inclusion of fundamental rights in the Constitution, exploring the balance between individual freedoms and societal interests.",
+      "Structuring The Pillars Of Democracy: Delegates may find themselves deliberating and drafting key constitutional principles that shaped India's governance structure.",
       "Discussing/Reframing the existing law: The committee will have the opportunity to ponder over some of the fundamental laws, which has guided the lifestyle of millions of people of the country .Delegates may change the existing rules in the resolution passed by the committee.",
       "Structuring the Government: Participants might engage in debates on the optimal structure of the government, defining the roles and powers of different branches.",
       "The final agendas will be different from the ones written above. They will be communicated 15 days before the event",
@@ -486,16 +489,16 @@
     "timeline": [
       {
         "head": [
-          "Day 1 - Initiation of Debates | 22/2/24",
-          "Day 2 - The Day of Conclusion | 23/2/24"
+          "Day 1 - Initiation of Debates | 29/02/24",
+          "Day 2 - The Day of Conclusion | 01/03/24"
         ],
         "date": [
-          "22/2/24",
-          "23/2/24"
+          "29/02/24",
+          "01/03/24"
         ],
         "content": [
-          "The inaugural day of IIITN MUN Chapter 2 features participant registration from sharp 8:00 A.M., a grand opening ceremony from 10:00 A.M., committee sessions,  lunch and tea break, and a blend of formal discussions and informal networking opportunities.",
-          "The concluding day focuses on intensive committee sessions from 8:30 A.M., a break for lunch, tea and networking, a potential fun activity, and concludes with a formal closing ceremony, including awards and expressions of gratitude."
+          ["The inaugural day of IIITN MUN Chapter 2 features participant registration from sharp 8:00 A.M., a grand opening ceremony from 10:00 A.M., committee sessions,  lunch and tea break, and a blend of formal discussions and informal networking opportunities."],
+          ["The concluding day focuses on intensive committee sessions from 8:30 A.M., a break for lunch, tea and networking, a potential fun activity, and concludes with a formal closing ceremony, including awards and expressions of gratitude."]
         ]
       }
     ],
@@ -517,11 +520,12 @@
       "Participants are expected to comply with all the rules and guidelines set forth by the Organizing Committee. Failure to adhere to these rules may result in penalties or disqualification.",
       "Participants are encouraged to seek clarification on any rule or procedure they find ambiguous or unclear. Requests for clarification should be directed to the organizing committee in a timely manner.",
       "Participants should be aware that the event may be covered by the media. By participating, delegates implicitly consent to being photographed, recorded, or interviewed for promotional and documentation purposes related to the event.",
-      "Delegates are expected to respect the privacy and confidentiality of fellow participants. Any information shared in confidence during the event should not be disclosed without the explicit consent of the concerned parties."
+      "Delegates are expected to respect the privacy and confidentiality of fellow participants. Any information shared in confidence during the event should not be disclosed without the explicit consent of the concerned parties.",
+      "Accommodations will be provided on a paid and first-come-first-serve basis. If needed, please contact the contacts given below."
     ],
     "regulations": [
     ],
-    "registrationDate": "15/02/24",
+    "registrationDate": "25/02/24",
     "Team": "Solo",
     "pool": "₹ 70,000",
     "prize": [
@@ -537,41 +541,42 @@
     "name": "Groove Genesis",
     "tagline": "Instrumental",
     "clubName": "Crescendo",
-    "details": ["Embark on a musical adventure like no other at 'Groove Genesis,' where the rhythmic beats and soulful melodies take center stage in a spectacular celebration of instrumental excellence. Join us for an evening that transcends genres, pushing the boundaries of sound and rhythm to create an unforgettable experience for all music enthusiasts."],
+    "details": ["Get ready for a musical extravaganza at Abhivyakti's Cadence Clash, an instrumental competition that will set the stage on fire! Join us for a symphony of talent as musicians showcase their virtuosity and passion, weaving mesmerizing melodies and breathtaking rhythms. From soul-stirring solos to captivating ensembles, experience the thrill of Cadence Clash, where musical prowess takes center stage in a celebration of creativity and artistry during the college fest."],
     "timeline": [
       {
         "head": [
-          "Preliminary Round | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round | 20/02/24",
+          "Preliminary Round Results | 21/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/1/24"
+          "20/02/24",
+          "21/02/24",
+          "29/01/24"
         ],
         "content": [
-          "Participants are required to submit a video showcasing their instrumental performance based on a specified theme or concept. The deadline for online entries will be communicated. From the received entries, the top instrumentalists will be selected to advance to the final round.",
-          "",
-          "The chosen instrumentalists will have the exclusive opportunity to demonstrate their musical prowess at the venue, providing a stage to highlight and celebrate their creative abilities in the realm of instrumental music. Each participant will be tasked with delivering a captivating performance, offering a unique opportunity to showcase their technical skills, interpretation, and musical expression in the context of an instrumental competition."
+          ["Participants can perform any number of songs/solos/original compositions within a time limit of 3 minutes. The recording should be RAW, i.e. no FX modulation must have been done. However, participants can record via audio interfaces for clear sound quality.","In case of original composition, it should be mentioned as it includes extra marks.","Exceeding the time limit by 90 seconds will lead to disqualification","Participants can optionally perform with a backing track with a predefined instrument list used in it. This shall be e-mailed to carnelian@iiitn.ac.in [RR_COLLEGE NAME_TEAM NAME] for fair judgment.","The selected Instrumentalists get a chance to grab a direct spot in Abhivyakti’s finale in the main fest."],
+          [""],
+          [""]
         ]
       }
     ],
     "rules": [
       "General Rules",
-      "Participants can perform any number of songs, solos, or original compositions within a time limit of 2-4 minutes.",
-      "Exceeding the time limit by 30 seconds will lead to disqualification.",
-      "Participants can optionally perform with a backing track.",
-      "Theme, accuracy, and timing (40 points)",
-      "Performance and expression (30 points)",
-      "Overall sync and coordination (30 points)",
-      "The judges' collective scores across these categories will determine the final outcome of the competition. Winners get a chance to grab a direct spot in Abhivyakt's finale in the main fest."
+      "Participants can perform any number of songs (in Hindi, English or both) within a time limit of 10 minutes. Additional 5 mins shall be given for sound check.",
+      "In case of original composition, it should be mentioned as it includes extra marks.",
+      "Exceeding the time limit by 120 seconds will lead to disqualification",
+      "Participants can optionally perform with a accompanist or backing track with a predefined instrument list used in it. This shall be e-mailed to carnelian@iiitn.ac.in [SS_COLLEGE NAME_TEAM NAME]for fair judgment.",
+      "Any misconduct, obscenity or foul language can lead to on the spot disqualification"
     ],
     "regulations": [
       "Judgement Criteria",
-      "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification."
+      "Theme, accuracy and timing  (40 points).",
+      "Overall Sync and Coordination (30 points). ",
+      "Overall Presentation (30 points)."
+
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "20/02/24",
     "Team": "Upto 5 members",
     "pool": "₹ 12,000",
     "prize": [
@@ -592,19 +597,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round  | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round  | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "18/02/24",
+          "20/02/24",
+          "01/03/24"
         ],
         "content": [
-          "In Round 1 of 'Bahumukhi,' participants will submit their solo acts through video entries. This round serves as the eliminator, where your creativity and exceptional talent will take center stage on screen. Ensure that your submission aligns with the theme and guidelines, as it will determine if you progress to the thrilling final round, where you'll continue your journey toward stardom.",
-          "",
-          "The final round of 'Bahumukhi' is an offline spectacle. The chosen participants will step onto the stage, where they will perform live, breathing life into their captivating solo acts before an eager and supportive audience. This is your moment to shine, seizing the opportunity to elevate your performance to new heights, leaving an indelible mark, and vying for the highest accolades."
+          ["In Round 1 of 'Bahumukhi,' participants will submit their solo acts through video entries. This round serves as the eliminator, where your creativity and exceptional talent will take center stage on screen. Ensure that your submission aligns with the theme and guidelines, as it will determine if you progress to the thrilling final round, where you'll continue your journey toward stardom."],
+          [""],
+          ["The final round of 'Bahumukhi' is an offline spectacle. The chosen participants will step onto the stage, where they will perform live, breathing life into their captivating solo acts before an eager and supportive audience. This is your moment to shine, seizing the opportunity to elevate your performance to new heights, leaving an indelible mark, and vying for the highest accolades."]
         ]
       }
     ],
@@ -681,7 +686,7 @@
       "17. Expressions",
       "18. Body language"
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Solo",
     "pool": "₹ 10,000",
     "prize": [
@@ -702,19 +707,19 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round  | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round  | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "18/02/24",
+          "20/02/24",
+          "01/03/24"
         ],
         "content": [
-          "In Round 1, participants will submit their video performances online. This round serves as the eliminator, where your creativity and talent will be showcased on screen. Make sure your submission reflects the theme and rules, as it will determine if you advance to the exciting final round.",
-          "",
-          "The final round is an offline round. The selected participants will take the stage to perform live, bringing their unique stories to life in front of an enthusiastic audience. This is your chance to shine, with the opportunity to take your production to the next level, make your mark, and compete for top honors."
+          ["In Round 1, participants will submit their video performances online. This round serves as the eliminator, where your creativity and talent will be showcased on screen. Make sure your submission reflects the theme and rules, as it will determine if you advance to the exciting final round."],
+          [""],
+          ["The final round is an offline round. The selected participants will take the stage to perform live, bringing their unique stories to life in front of an enthusiastic audience. This is your chance to shine, with the opportunity to take your production to the next level, make your mark, and compete for top honors."]
         ]
       }
     ],
@@ -797,7 +802,7 @@
       "20. Expressions",
       "21. Body language"
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Upto 20 members",
     "pool": "₹ 25,000",
     "prize": [
@@ -818,19 +823,20 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24-23/2/24"
+          "Preliminary Round | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 28/02/24-01/02/24"
         ],
         "date": [
-          "10/2/24",
-          "15/2/24",
-          "22/02/24"
+          "18/02/24",
+          "20/02/24",
+          "28/02/24"
         ],
         "content": [
-          "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals.",
-          "",
-          "It is an open-themed competition. The deadline for online entries is  _________ . Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."
+          ["The preliminary round takes place on Unstop, where participants must submit their entries. Those shortlisted are required to register on the website and pay the registration fees to confirm their participation in the final round of the competition.",
+          "It is an open-themed competition. The deadline for online entries is 18/02/2024. Submitted files must be in mp4 format with a minimum resolution of 1080 x 720p. Short films for the preliminary round should range from 5 to 7 minutes in duration. From the pool of entries, the top 8 teams will be chosen to advance to the finals."],
+          [""],
+          ["The chosen teams will have the opportunity to exhibit their filmmaking prowess at IIIT Nagpur campus, providing a platform to showcase and celebrate their creative abilities in the field of filmmaking . Each team will be allocated a theme for the final short film submission, offering a unique opportunity to demonstrate their storytelling and promotional expertise in the context of filmmaking."]
         ]
       }
     ],
@@ -863,7 +869,7 @@
       "Reiterate the importance of maintaining a professional and respectful demeanour."
     ],
     "regulations": [],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Upto 10 members",
     "pool": "₹ 25,000",
     "prize": [
@@ -881,22 +887,22 @@
     "timeline": [
       {
         "head": [
-          "Preliminary Round (Duet) | 10/2/24",
-          "Preliminary Round (Group) | 10/2/24",
-          "Preliminary Round Results | 15/2/24",
-          "Finals | 22/2/24 - 23/2/24"
+          "Preliminary Round (Duet) | 18/02/24",
+          "Preliminary Round (Group) | 18/02/24",
+          "Preliminary Round Results | 20/02/24",
+          "Finals | 29/02/24 - 01/03/24"
         ],
         "date": [
-          "10/2/24",
-          "10/2/24",
-          "15/2/24",
-          "23/2/24"
+          "18/02/24",
+          "18/02/24",
+          "20/02/24",
+          "01/03/24"
         ],
         "content": [
-          "Present a 1-1.5 minute video showcasing your moves, with no props allowed.All dance forms are allowed in this round.Costumes are not a judging factor in this round.From this round, approximately 8 teams will advance to the final round.",
-          "Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.Just like duets, the dance form is your canvas, and costumes are not a judging factor.Approximately 8 teams will advance to the final round.",
-          "",
-          "Both duets and groups will have 6-9 minutes to mesmerize the audience.Props are allowed in this round, and the chosen song should be relevant to the fest's theme.Transitions and sound effects are permitted, but keep safety in mind.fire, blades, sharp mirrors, scissors, and nails are prohibited as props."
+          ["Present a 1-1.5 minute video showcasing your moves, with no props allowed.All dance forms are allowed in this round.Costumes are not a judging factor in this round.From this round, approximately 8 teams will advance to the final round."],
+          ["Gather 3-15 members and submit a video of your 1-1.5 minute performance with no props.Just like duets, the dance form is your canvas, and costumes are not a judging factor.Approximately 8 teams will advance to the final round."],
+          [""],
+          ["Both duets and groups will have 6-9 minutes to mesmerize the audience.Props are allowed in this round, and the chosen song should be relevant to the fest's theme.Transitions and sound effects are permitted, but keep safety in mind.fire, blades, sharp mirrors, scissors, and nails are prohibited as props."]
         ]
       }
     ],
@@ -943,7 +949,7 @@
       "The competition organizers reserve the right to disqualify any team displaying unsportsmanlike conduct or violating the spirit of fair competition.",
       "Teams must be ready for their performance at the designated time. Late arrivals may result in time deductions or disqualification."
     ],
-    "registrationDate": "10/02/24",
+    "registrationDate": "18/02/24",
     "Team": "Upto 15 members",
     "pool": "₹ 18,000",
     "prize": [

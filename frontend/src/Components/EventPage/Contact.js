@@ -88,7 +88,7 @@ function Contact(props) {
                     <div className='other_contact'>
                         <div className='title1 title3'>CULTURAL COORDINATOR </div>
                         <div className='contact_info'>Divyanshu Singh</div>
-                        <div>+917234032401</div>
+                        {/* <div>+917234032401</div> */}
                         <div><a style={{ color: 'brown', textDecorationLine: 'none' }} href="mailto:bt21cse162@iiitn.ac.in">bt21cse162@iiitn.ac.in</a></div>
                     </div>
                 </div>

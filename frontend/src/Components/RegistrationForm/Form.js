@@ -78,7 +78,6 @@ const Form = (props) => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
 
     setunderProcess(true)
 
@@ -146,7 +145,7 @@ const Form = (props) => {
       <div ref={formRef} className='form'>
         {selector(props.name)}
       </div>
-      <Modal open={open} onClose={onCloseModal} handleChange={handleChange} handleSubmit={handleSubmit} underProcess={underProcess} center />
+      <Modal open={open} onClose={onCloseModal} handleChange={handleChange} handleSubmit={handleSubmit} underProcess={underProcess} fees={props.fees} formData={formData} center />
     </div>
   );
 };
