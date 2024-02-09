@@ -16,7 +16,7 @@ const FormPage = () => {
 
           <FormPageLeft name={content[evtName].name} rules={content[evtName].rules} regulations={content[evtName].regulations} />
           <div className='lineVer'></div>
-          <Form name={evtName} />
+          <Form name={evtName} fees={content[evtName].fees}/>
         </div>
         <Footer />
       </div>
