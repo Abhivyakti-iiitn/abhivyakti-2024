@@ -12,6 +12,11 @@
     margin-bottom: 2rem;
   }
 }
+.formDiv__registrationclosed {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Carta Marina W00 Regular";
+}
 
 .form {
   display: flex;
