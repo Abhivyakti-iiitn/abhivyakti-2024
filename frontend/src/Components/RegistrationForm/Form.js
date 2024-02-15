@@ -15,12 +15,14 @@ import Bahumukhi from './Bahumukhi';
 import { toast } from "react-toastify";
 import Modal from '../Modal';
 import NewContext from '../../context/NewContext';
+import eventContent from '../../assets/EventContent.json';
 
 
 const Form = (props) => {
 
   const navigateTo = useNavigate();
   const [open, setOpen] = useState(false);
+  const eventInfo = eventContent[props.name];
 
   const [underProcess, setunderProcess] = useState(false)
   const context = useContext(NewContext);
@@ -51,10 +53,22 @@ const Form = (props) => {
   // const handleRadioChange = (questionId, value) => {
   //   setAnswers({...answers, [questionId]: value });
   // };
+  const isRegistrationDateValid = (registrationDate) => {
+    const [day, month, year] = registrationDate.split('/').map(Number);
+    const registrationDateObj = new Date(2000 + year, month - 1, day);
+    const currentDate = new Date();
+  
+    return currentDate <= registrationDateObj;
+  }
 
+  // useEffect(() => {
+  //   if(isRegistrationDateValid(eventInfo.registrationDate) == false) {
+  //     navigateTo(-1);
+  //     toast.error(`Registration Closed for ${eventInfo.name}`)
+  //   }
+  // }, [eventInfo.registrationDate]);
 
   useEffect(() => {
-
     if (!window.localStorage.getItem("access_token")) {
       toast.error("You have to log in first before you can register for an event. !!", {
         toastId: "loginfirst"
@@ -90,23 +104,13 @@ const Form = (props) => {
       toast.error("Application Failed!");
       toast.error(data.msg);
     }
-    // console.log('Form Data:', formData);
-    // console.log('Answers:', answers);
-    // You can handle form submission logic here
-    // console.log(formRef.current.organizations?.value)
 
     setunderProcess(false)
-
-
   };
 
   let strArray = ["stellarsing-off", "rhymeriot", "groovegenesis"];
 
   const selector = (eventName) => {
-
-
-
-    // console.log(organizations)
     switch (eventName) {
       case "modelunitednations":
         return <Mun onOpenModal={onOpenModal} onCloseModal={onCloseModal} handleChange={handleChange} formData={formData} />;
@@ -135,24 +139,24 @@ const Form = (props) => {
       default:
         break;
     }
-
   }
 
   return (
     <div className={`formDiv ${strArray.includes(props.name) ? "" : "fixheight"}`}>
-      <h1>Registration Form</h1>
-      {/* <div onSubmit={handleSubmit} ref={formRef} className='form'> */}
-      <div ref={formRef} className='form'>
-        {selector(props.name)}
+    {isRegistrationDateValid(eventInfo.registrationDate)?(
+      <>
+        <h1>Registration Form</h1>
+        <div ref={formRef} className='form'>
+          {selector(props.name)}
+        </div>
+        <Modal open={open} onClose={onCloseModal} handleChange={handleChange} handleSubmit={handleSubmit} underProcess={underProcess} fees={props.fees} formData={formData} center />
+      </>
+    ):(
+      <div style={{color:'#fff'}} className='formDiv__registrationclosed'>
+        Registrations closed for {eventInfo.name}
       </div>
-      <Modal open={open} onClose={onCloseModal} handleChange={handleChange} handleSubmit={handleSubmit} underProcess={underProcess} fees={props.fees} formData={formData} center />
+    )}
     </div>
   );
 };
 export default Form
-
-
-
-
-
-

@@ -18,6 +18,7 @@ import stellarsingoff from '../assets/EventPageAsst/Steller singOff.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import defaultImg from '../assets/EventImages/a.jpg';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const eventImages = {
@@ -50,6 +51,21 @@ const EventSlide = (props) => {
         backgroundPosition: 'center',
     };
 
+    const isRegistrationDateValid = (registrationDate) => {
+        const [day, month, year] = registrationDate.split('/').map(Number);
+        const registrationDateObj = new Date(2000 + year, month - 1, day);
+        const currentDate = new Date();
+      
+        return currentDate <= registrationDateObj;
+      }
+
+    const handleRegisterClick = () => {
+        if(isRegistrationDateValid(props.event.registrationDate))
+            nav(`/form/${props.event.name.toLowerCase().replaceAll(' ', '')}`);
+        else 
+            toast.error(`Registration Closed for ${props.event.name}`);
+    }
+
     return (
         <>
             <div className='EventSlide'>
@@ -65,7 +81,7 @@ const EventSlide = (props) => {
                             <div className='EventSlide__learnmore' onClick={() => { nav(`/event/${props.event.name.toLowerCase().replaceAll(' ', '').replaceAll("(mun)","")}`) }}>Learn More <ArrowForwardIcon className='EventSlide__learnmore-Arrow' fontSize='small' /> </div>
                         </div>
                         <div className='EventSlide__btn'>
-                            <button className='EventRegBtn' onClick={() => nav(`/form/${props.event.name.toLowerCase().replaceAll(' ', '')}`)}>
+                            <button className='EventRegBtn' onClick={handleRegisterClick}>
                                 Register
                             </button>
                         </div>
