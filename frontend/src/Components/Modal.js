@@ -7,7 +7,10 @@ import { toast } from 'react-toastify'
 export default function Modal({ open, onClose, handleSubmit, formData, handleChange, underProcess,fees }) {
     if (!open) return null
     // const Regex = /^https:\/\/drive\.google\.com\//;
-    const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?usp=sharing)?$/;
+    // const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?usp=sharing)?$/;
+    const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?.*?(?:usp=sharing|usp=drive_link))?$/;
+
+
     const regcheck = (e) => {
         e.preventDefault(); 
         if (Regex.test(formData?.payment_link)){
