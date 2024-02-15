@@ -61,13 +61,6 @@ const Form = (props) => {
     return currentDate <= registrationDateObj;
   }
 
-  // useEffect(() => {
-  //   if(isRegistrationDateValid(eventInfo.registrationDate) == false) {
-  //     navigateTo(-1);
-  //     toast.error(`Registration Closed for ${eventInfo.name}`)
-  //   }
-  // }, [eventInfo.registrationDate]);
-
   useEffect(() => {
     if (!window.localStorage.getItem("access_token")) {
       toast.error("You have to log in first before you can register for an event. !!", {
