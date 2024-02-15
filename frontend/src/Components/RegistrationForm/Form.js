@@ -145,7 +145,7 @@ const Form = (props) => {
         <Modal open={open} onClose={onCloseModal} handleChange={handleChange} handleSubmit={handleSubmit} underProcess={underProcess} fees={props.fees} formData={formData} center />
       </>
     ):(
-      <div style={{color:'#fff'}} className='formDiv__registrationclosed'>
+      <div className='formDiv__registrationclosed'>
         Registrations closed for {eventInfo.name}
       </div>
     )}
