@@ -8,7 +8,7 @@ export default function Modal({ open, onClose, handleSubmit, formData, handleCha
     if (!open) return null
     // const Regex = /^https:\/\/drive\.google\.com\//;
     // const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?usp=sharing)?$/;
-    const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?.*?(?:usp=sharing|usp=drive_link))?$/;
+    const Regex = /^https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/|drive\/folders\/)([a-zA-Z0-9_-]{28,})(?:\/view)?(?:\?.*?(?:usp=sharing|usp=drive_link|usp=drivesdk))?$/;
 
 
     const regcheck = (e) => {
