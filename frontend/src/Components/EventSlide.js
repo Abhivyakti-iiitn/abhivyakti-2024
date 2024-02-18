@@ -53,7 +53,7 @@ const EventSlide = (props) => {
 
     const isRegistrationDateValid = (registrationDate) => {
         const [day, month, year] = registrationDate.split('/').map(Number);
-        const registrationDateObj = new Date(2000 + year, month - 1, day);
+        const registrationDateObj = new Date(2000 + year, month - 1, day+1);
         const currentDate = new Date();
       
         return currentDate <= registrationDateObj;
