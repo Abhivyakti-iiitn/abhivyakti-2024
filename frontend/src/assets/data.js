@@ -12,6 +12,27 @@ import sponsor2 from "./sponsors/sponsor2.svg";
 import sponsor3 from "./sponsors/sponsor3.svg";
 import sponsor4 from "./sponsors/sponsor4.svg";
 import sponsor5 from "./sponsors/sponsor5.svg";
+import hp from './sponsors/hp.jpg';
+import sbi from './sponsors/sbi.png';
+import madeats from './sponsors/madeats.jpg';
+import vedicvalley from './sponsors/vedicvalley.jpg';
+import gb from './sponsors/gb.jpg';
+import emt from './sponsors/emt.png';
+import fhq from './sponsors/FuelHQ.png';
+import mp from './sponsors/MaxProtein.png';
+import ynw from './sponsors/ynw.png';
+import vivo from './sponsors/vivo.png';
+import mw from './sponsors/mw.png';
+import ab from './sponsors/ab.png';
+import zeb from './sponsors/zeb.png';
+import siuk from './sponsors/siuk.png';
+import lk from './sponsors/lk.png';
+import cc from './sponsors/cc.png';
+import rc from './sponsors/rc.png';
+import km from './sponsors/km.png';
+import sg from './sponsors/sg.png';
+import iiit from './sponsors/iiit.jpg';
+import saregama from './sponsors/saregama.jpg';
 
 const data = {
   pastGlimpsesImages: [
@@ -49,10 +70,27 @@ const data = {
       "Abhivyakti, IIIT Nagpur's annual cultural event, is a dynamic fusion of art, talent, and diversity. It provides a platform for students to express their creativity and celebrate their uniqueness. From intercollege competitions to inspiring speakers, Abhivyakti is a journey from passion to stardom. It's a path where persistence conquers obstacles, leading to a constellation of success.",
     image: aboutUs,
   },
-  titleSponsors: [sponsor1, sponsor2],
-  coSponsors: [sponsor3, sponsor4],
-  poweredBy: [sponsor5],
-  eventSponsors: [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5],
+  titleSponsors: [madeats],
+  coSponsors: [sbi],
+  poweredBy: [hp],
+  associateSponsor: [vedicvalley],
+  eventSponsors: [gb,
+      emt,
+      fhq,
+      mp,
+      ynw,
+      vivo,
+      mw,
+      ab,
+      zeb,
+      siuk,
+      lk,
+      cc,
+      rc,
+      km,
+      sg,
+      iiit,
+      saregama],
 };
 
 export default data;
