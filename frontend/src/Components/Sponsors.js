@@ -1,5 +1,6 @@
 // components/Sponsors.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import SponsorSection from './SponsorSection';
 import data from '../assets/data'; // Ensure correct path
 // import "../scss/Sponsors.scss";
@@ -28,17 +29,19 @@ const Sponsors = () => {
     "Music Partner": "saregama",
   };
 
+  const navigateTo = useNavigate();
+
   return (
     <div className="sponsors">
       <div className='sponsors__img-top'>
-        <img src={iiitn} className='sponsors__logo' />
+        <img src={iiitn} className='sponsors__logo' onClick={()=>window.open('https://iiitn.ac.in/','_blank')} />
         <div className='sponsors__top'>
           <SponsorSection title="Powered By" name="hp" up={true} fs={'1.5vw'} mt={'20vh'} h={'2.5vw'} />
           <SponsorSection title="Co-Sponsor" name="sbi" up={true} fs={'1.75vw'} mt={'10vh'} h={'3vw'} />
           <SponsorSection title="Title Sponsor" name="madeats" up={true} fs={'2vw'} mt={'1vh'} h={'9vw'} />
           <SponsorSection title="Associate Sponsor" name="vedicvalley" up={true} fs={'1.5vw'} mt={'12vh'} h={'4vw'} />
         </div>
-        <img src={logo} className='sponsors__logo-evt' />
+        <img src={logo} className='sponsors__logo-evt' onClick={() => navigateTo('/home')} />
 
       </div>
       <div className='sponsors__text'>
