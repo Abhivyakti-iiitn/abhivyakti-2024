@@ -96,7 +96,7 @@ function MainPage() {
       <div className="horizontalScroll">
         <HorizontalScrolling />
       </div>
-      {/* <Sponsors /> */}
+      <Sponsors />
       <div className='temp'>
         <h3> More Content Coming soon ...</h3>
         <p>stay tuned</p>
