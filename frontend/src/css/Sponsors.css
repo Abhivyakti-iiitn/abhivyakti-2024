@@ -40,7 +40,8 @@
   margin-bottom: 10vh;
 }
 .sponsor-section .sponsor-grid img {
-  max-width: 8vw;
+  /* max-width: 8vw; */
+  max-height: 8vh;
   height: auto;
   box-sizing: border-box;
   border-radius: 4px;

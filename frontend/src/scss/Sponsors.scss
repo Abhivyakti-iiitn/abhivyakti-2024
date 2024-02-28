@@ -44,9 +44,11 @@
     justify-content: center;
     gap: 1vh; // Adjusted gap using viewport height
     margin-bottom: 10vh;
+    padding: 0 1vw;
 
     img {
-      max-width: 8vw; // Adjusted max-width using viewport width
+      // max-width: 8vw; // Adjusted max-width using viewport width
+      max-height: 12vh;
       height: auto;
       box-sizing: border-box;
       border-radius: 4px;
