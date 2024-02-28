@@ -1,0 +1,72 @@
+.sponsors {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../../public/sponsor_bg.svg");
+}
+.sponsors__img-top {
+  height: 35vh;
+  display: flex;
+}
+.sponsors__img-bottom {
+  height: 12vh;
+  min-height: fit-content;
+  width: 100%;
+  background: #fff;
+  margin-top: auto;
+  align-self: end;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1134px) {
+  .sponsors__img-bottom {
+    flex-wrap: wrap;
+  }
+}
+.sponsors__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sponsors__logo {
+  height: 6vw;
+  width: 6vw;
+  padding-left: 1vw;
+}
+.sponsors__logo-evt {
+  height: 7vw;
+  width: 7vw;
+  padding-right: 1vw;
+  margin-left: auto;
+}
+.sponsors__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.sponsors__text > * {
+  width: fit-content;
+}
+.sponsors__heading {
+  font-family: "Carta Marina W00 Regular";
+  height: fit-content;
+  color: #fff;
+  font-size: 9.5vw;
+  letter-spacing: 1.2vw;
+  text-transform: uppercase;
+}
+.sponsors__year {
+  font-family: "Crimson Pro";
+  font-size: 3vw;
+  color: #f9daa8;
+}
+.sponsors__tag {
+  text-transform: uppercase;
+  color: red;
+  font-size: 4vw;
+}
+.sponsors__date {
+  color: #fff;
+  font-size: 1.5vw;
+}
