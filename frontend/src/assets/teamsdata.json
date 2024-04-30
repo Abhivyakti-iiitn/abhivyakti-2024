@@ -38,18 +38,17 @@
     ],
     "teams": {
         "Web Development": {
-            "Lead": ["Kumar Rishav"],
+            "Lead": ["Shashank Tripathi"],
             "Co-Lead": [
-                "Shashank Tripathi",
-                "Adhiraj Singh Deep"
+                "Sahil Mandi"
             ]
         },
         "Design": {
             "Lead": [
-                "Sahil Mandi"
+                "Radhika Patil"
             ],
             "Co-Lead": [
-                "Radhika Patil"
+                "Sujal Ahirao"
             ]
         },
         "Corporate Relations": {
